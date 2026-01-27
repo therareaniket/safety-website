@@ -107,6 +107,7 @@ header{
 .hero-row{
     height: 100%;
     gap:65px;
+    justify-content: space-between;
 }
 .hero-col-one{
     width: 756px;
@@ -200,9 +201,7 @@ header{
 .stats-col-two{
     width: 885px;
 }
-.stats-count-row{
-    margin: 60px 0 0;
-}
+
 .stats-list{
     gap:60px;
     justify-content: flex-end;
@@ -274,12 +273,16 @@ footer{
     margin-bottom: 16px;
     padding: 12px 20px;
     color: var(--grey);
+    font-size: 16px;
 }
 .newletter-form{
     margin-top: 14px;;
 }
 .social-links{
     gap: 10px;
+}
+.copyright {
+    padding-bottom: 30px;
 }
 .copyright-links{
     gap:34px;

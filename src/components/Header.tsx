@@ -1,13 +1,14 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
+import { useState } from "react";
 import "@/assets/css/shalaka/responsive.css"
 import Logo from '../assets/images/logo.svg'
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
  
     return (
-        <>
         <header>
             <div className="container">
                 <nav className="nav-wrapper">
@@ -49,13 +50,13 @@ export default function Header() {
                         </li>
                     </ul>
 
-                       <div className="hamburger">
+                       <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>
-                    </div>
+                    </button>
 
-                    <ul className="navbar-links nav-mobile">
+                    <ul className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}>
                         <li>
                             <Link href="/" className="nav-link text-18">
                                 Home
@@ -90,20 +91,6 @@ export default function Header() {
                 </nav>
             </div>
         </header>
-
-        <Script id="mobile-nav" strategy="afterInteractive">
-        {`
-     const hamburger = document.querySelector('.hamburger');
-        const navMobile = document.querySelector('.nav-mobile');
-        if (hamburger && navMobile) {
-            hamburger.addEventListener('click', function() {
-                hamburger.classList.toggle('active');
-                navMobile.classList.toggle('active');
-            });
-        }
-        `}
-        </Script>
-        </>
     );
 
     

@@ -10,7 +10,7 @@ export default function HomeHero() {
         <>
             <section className="hero-wrapper centered-block">
                 <div className="container">
-                    <div className="hero-row  centered-block">
+                    <div className="hero-row flex items-center">
                         <div className="hero-col-one">
                             <h1>Central Hub for Patient Safety Intelligence</h1>
                             <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p>

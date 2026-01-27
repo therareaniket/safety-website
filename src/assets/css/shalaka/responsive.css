@@ -12,29 +12,140 @@
 /* ======= MIN-WIDTH COMPLETED ======= */
 
 
-@media screen and (max-width: 1799px) {}
+@media screen and (max-width: 1799px) {
+    .stats-row {
+    gap: 128px;
+}
+.stats-item {
+    width: 245px;
+}
+.stats-col-one {
+    width: 380px;
+}
+.stats-col-two {
+    width: 860px;
+}
+}
 
 @media screen and (max-width: 1599px) {
-    .recent-activity-circle{
-        width: 500px;
-        height: 500px;
+     .recent-activity-circle{
+        width: 550px;
+        height: 550px;
     }
-    .ra-circle-mini{
-       width: 400px;
-        height: 400px; 
-    }
-    .hero-col-one {
-    width: 535px;
+.hero-col-one {
+    width: 615px;
+}
+   .ra-circle-lg{
+    width: 70px;
+    height: 70px; 
+}
+.ra-circle-lg svg{
+    width: 51px;
+}
+.stats-list{
+    gap:40px;
+}
+.stats-col-one {
+    width: 340px;
+}
+.stats-col-two {
+    width: 839px;
 }
 } 
 
-@media screen and (max-width: 1439px) {}
+@media screen and (max-width: 1439px) {
+ 
+    .hero-col-one {
+        width: 505px;
+    }
+    .hero-row {
+    gap: 45px;
+    }
+    .stats-col-one {
+    width: 280px;
+}
+    .stats-col-two {
+    width: 719px;
+}
+.stats-row{
+    gap:100px;
+}
+.stats-count-row{
+    margin: 20px 0 0;
+}
+.f-col-one{
+    width: 250px;
+}
+.f-right-cols {
+    gap: 60px;
+}
+    .stats-item {
+        width: 215px;
+    }
+    .stats-item.three {
+    height: 341px;
+}
+.stats-item.two {
+    height: 266px;
+}
+.stats-item{
+    padding:20px;
+}
+}
 
 @media screen and (max-width: 1359px) {}   
 
 @media screen and (max-width:1299px){
     .navbar-links {
     gap: 25px;
+}
+    .hero-col-one {
+        width: 450px;
+    }
+    .hero-row{
+        gap:35px;
+    }
+        .recent-activity-circle {
+        width: 500px;
+        height: 500px;
+    }
+    .ra-circle-mini{
+        width: 400px;
+        height: 400px;
+    }
+    .book-demo-inner{
+        margin-top: 50px;
+    }
+        .stats-col-two {
+        width: 616px;
+    }
+    .stats-col-one {
+        width: 291px;
+    }
+    .stats-row{
+        gap:60px;
+    }
+        .stats-list {
+        gap: 30px;
+    }
+        .stats-item {
+        width: 195px;
+    }
+    .stats-count .h6{
+        font-size: 18px;
+    }
+        .f-col-one {
+        width: 245px;
+    }
+        .f-right-cols {
+        gap: 30px;
+    }
+    .copyright-links {
+    gap: 24px;
+}
+footer .text-16{
+    font-size: 14px;
+    line-height: 20px;
 }
 }
 

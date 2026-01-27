@@ -24,11 +24,11 @@ export default function Footer() {
                         <div className="f-contact">
                             <div className="f-c-list flex">
                                 <Image className="f-icon" src={Phone} alt="call" />
-                                <p>+1 512 843 2002</p>
+                                <p className='text-16'>+1 512 843 2002</p>
                             </div>
                             <div className="f-c-list flex">
                                 <Image className="f-icon" src={Email} alt="email" />
-                                <p>enquiry@dhatusafety.com</p>
+                                <p className='text-16'>enquiry@dhatusafety.com</p>
                             </div>
                         </div>
 
@@ -99,7 +99,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="copyright flex">
+                <div className="copyright flex items-center">
                     <ul className='flex social-links'>
                         <li><Image className="social-img" src={Facebook} alt="facebook" width={30}
                                 height={30} priority /></li>
