@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function HomeStatistics() {
     return (
 
-        <section className="statistic-swrapper section">
+        <section className="statistic-wrapper section">
             <div className="container">
                 <div className="stats-row flex">
                     <div className="stats-col-one">
