@@ -21,7 +21,8 @@ p,
 .text-white{
     color: var(--white);
 }
-.bg-white{
+.bg-white,
+.btn-icon.bg-white{
     background: var(--white);
 }
 .bg-purple{
@@ -35,6 +36,9 @@ p,
 }
 .bg-dark-grey{
     background: var(--darkGrey);
+}
+.bg-light-grey{
+    background: var(--lightGrey);
 }
 .main-title.center{
     margin-bottom: 62px;
@@ -110,7 +114,7 @@ header{
 
 /*******Hero Wrapper**********/
 .hero-wrapper{
-    height: 100vh;
+    height: 850px;
     background: linear-gradient(180deg, #fff 0%, #efecf4 41%, #f2f8eb 100%);
 }
 .hero-row{
@@ -462,6 +466,59 @@ margin-bottom: 0;
     top:45%;
 }
 
+/*****Ecosystem******/
+.eco-row{
+    gap:30px;
+}
+.eco-item{
+    width: 336px;
+}
+.eco-title{
+    margin-top:20px;
+    padding:20px;
+    background: #cdcdcd2b;
+   backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+    height: 188px;
+}
+.eco-title.top{
+    margin:0 0 20px 0;
+}
+.eco-title .h4{
+    margin-bottom: 12px;
+}
+.eco-title p{
+    margin-bottom: 0;
+}
+
+/*********Plans**************/
+.plan-item{
+    width: 50%;
+    padding:30px;
+}
+.plan-title{
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.plan-list-text{
+    gap:20px;
+    margin-bottom: 12px;
+}
+.plan-btn{
+    margin-top: 62px;
+}
+.p-price{
+    gap:6px;
+    align-items: center;
+}
+.p-price h4,
+.plan-title .h4{
+    margin-bottom: 0;
+}
+.plan-list-text svg{
+    margin-top: 6px;
+}
 /*******Footer**********/
 footer{
     background-color: var(--lightGrey);

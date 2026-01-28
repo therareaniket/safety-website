@@ -104,10 +104,25 @@
 .op-item-title.four{
     left: 0;
 }
+    .tools-row {
+    gap: 25px;
+}
+.tools-row.two {
+    margin-top: 25px;
+}
+.eco-title .h4 {
+    margin-bottom: 10px;
+}
+.eco-title{
+    height: 200px;
+}
+
 } 
 
 @media screen and (max-width: 1439px) {
- 
+ .hero-wrapper{
+    height: 790px;
+ }
     .hero-col-one {
         width: 505px;
     }
@@ -175,6 +190,9 @@
 @media screen and (max-width: 1359px) {}   
 
 @media screen and (max-width:1299px){
+     .hero-wrapper{
+    height: 760px;
+ }
     .navbar-links {
     gap: 25px;
 }
