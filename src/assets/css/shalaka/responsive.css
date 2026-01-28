@@ -25,6 +25,21 @@
 .stats-col-two {
     width: 860px;
 }
+.tools-item{
+    padding: 50px 30px 30px 40px; 
+}
+.op-desc {
+    width: 95%;
+}
+.op-col-one {
+    width: 621px;
+}
+.op-col-two {
+    width: 701px;
+}
+.hero-col-one h1{
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 1599px) {
@@ -50,6 +65,44 @@
 }
 .stats-col-two {
     width: 839px;
+}
+.tools-item{
+    padding: 40px 30px 30px 40px; 
+    height: 408px;
+}
+.tools-item.purple{
+    width: 657px;
+}
+.tools-item.orange {
+    width: 630px;
+}
+.tools-title .h6{
+    font-size: 18px;
+    line-height: 26px;
+}
+.tools-img{
+    margin-top: 30px;
+}
+.tools-title .h4{
+    margin-bottom: 10px;
+}
+.op-row {
+    gap: 36px;
+}
+.op-col-one{
+    width: 584px;
+}
+.op-col-two{
+    width: 659px;
+}
+.op-desc{
+    width: 99%;
+}
+.op-item-title.two{
+    right: -40px;
+}
+.op-item-title.four{
+    left: 0;
 }
 } 
 
@@ -91,6 +144,32 @@
 .stats-item{
     padding:20px;
 }
+    .tools-item.purple {
+        width: 545px;
+    }
+     .tools-item.orange {
+        width: 510px;
+    }
+    .tools-item{
+        padding:30px;
+        height: 428px;
+    }
+    .ai-center-icon{
+        width: 196px;
+        height: 196px;
+    }
+    .op-col-one{
+    width: 500px;
+}
+.op-col-two{
+    width: 564px;
+}
+    .op-item-title.two {
+        right: -86px;
+    }
+    .op-item-title.four {
+        left: -32px;
+    }
 }
 
 @media screen and (max-width: 1359px) {}   
@@ -147,6 +226,48 @@ footer .text-16{
     font-size: 14px;
     line-height: 20px;
 }
+.main-title.center {
+    margin-bottom: 52px;
+}
+    .tools-item.purple {
+        width: 497px;
+    }
+    .tools-item.orange {
+        width: 465px;
+    }
+    .tools-row {
+    gap: 20px;
+}
+.tools-row.two {
+    margin-top: 20px;
+}
+    .tools-img {
+        margin-top: 20px;
+    }
+    .ai-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .ai-icon img{
+        width: 45%;
+    }
+    .op-col-two{
+        width: 60%;
+    }
+    .op-col-one{
+        width: 40%;
+    }
+    .op-item-title.two{
+        right: -74px;
+        width: 199px;
+    }
+    .op-item-title.four{
+        left:-28px;
+    }
+    .h5{
+    font-size: 22px;
+    line-height: 30px;
+    }
 }
 
 @media screen and (max-width: 1199px) {

@@ -2,6 +2,7 @@ import HomeHero from "@/components/Homepage/HomeHero";
 import HomeStatistics from "@/components/Homepage/HomeStatistics";
 import HomeTools from "@/components/Homepage/HomeTools";
 import HomeModals from "@/components/Homepage/HomeModals";
+import HomeOperations from "@/components/Homepage/HomeOperations";
 
 export default function Home() {
     return(
@@ -10,6 +11,7 @@ export default function Home() {
             <HomeStatistics />
             <HomeTools/>
             <HomeModals/>
+            <HomeOperations/>
         </>
     );
 }
