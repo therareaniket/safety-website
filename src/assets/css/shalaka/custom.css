@@ -310,7 +310,7 @@ header{
 }
 .tool-lg,
 .tool-sm{
-    box-shadow: drop-shadow(0px 2.53px 18.99px rgba(0, 0, 0, 0.04));
+    filter: drop-shadow(0px 2.53px 18.99px rgba(0, 0, 0, 0.04));
 }
 .tool-lg{
     margin-left: auto;
@@ -619,9 +619,16 @@ margin-bottom: 0;
 }
 .custom-navigation .swiper-button-prev, .custom-navigation .swiper-button-next{
     position: static;
+    width: auto;
+    height: auto;
+    margin-top: 0;
 }
 .testi-item{
     height: 100%;
+}
+:is(.swiper-button-prev, .swiper-button-next) svg{
+    width: auto !important; 
+    height: auto !important;
 }
 
 /*********FAQ***********/

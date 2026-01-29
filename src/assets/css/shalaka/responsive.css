@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: 1599px) {
+    h6, .h6, p{
+    font-size: 18px;
+    line-height: 26px;
+}
      .recent-activity-circle{
         width: 550px;
         height: 550px;
@@ -82,10 +86,7 @@
 .tools-item.orange {
     width: 630px;
 }
-.tools-title .h6{
-    font-size: 18px;
-    line-height: 26px;
-}
+
 .tools-img{
     margin-top: 30px;
 }
@@ -102,7 +103,7 @@
     width: 659px;
 }
 .op-desc{
-    width: 99%;
+    width: 96%;
 }
 .op-item-title.two{
     right: -40px;
@@ -119,9 +120,9 @@
 .eco-title .h4 {
     margin-bottom: 10px;
 }
-.eco-title{
+/* .eco-title{
     height: 200px;
-}
+} */
 .b-feature-item {
     width: 579px;
 }
@@ -149,6 +150,30 @@
 } 
 
 @media screen and (max-width: 1439px) {
+    h1, .h1 {
+    font-size: 44px;
+    line-height: 56px;
+}
+h2, .h2{
+    font-size: 36px;
+    line-height: 46px;
+}
+h4, .h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+h5, .h5 {
+    font-size: 22px;
+    line-height: 32px;
+}
+.t-name .h5{
+    font-size: 20px;
+    line-height: 28px;
+}
+.t-name .text-18{
+     font-size: 16px;
+    line-height: 24px;
+}
  .hero-wrapper{
     height: 790px;
  }
@@ -159,10 +184,10 @@
     gap: 45px;
     }
     .stats-col-one {
-    width: 280px;
+    width: 310px;
 }
     .stats-col-two {
-    width: 719px;
+    width: 698px;
 }
 .stats-row{
     gap:100px;
@@ -189,10 +214,10 @@
     padding:20px;
 }
     .tools-item.purple {
-        width: 545px;
+        width: 555px;
     }
      .tools-item.orange {
-        width: 510px;
+        width: 520px;
     }
     .tools-item{
         padding:30px;
@@ -201,6 +226,9 @@
     .ai-center-icon{
         width: 196px;
         height: 196px;
+    }
+    .op-item-title.two {
+    width: 200px;
     }
     .op-col-one{
     width: 500px;
@@ -233,11 +261,17 @@
         height: 100%;
         object-fit: cover;
     }
+    .b-col-one{
+    width: 55%;
+}
+.b-col-two {
+    width: 45%;
+}
     .team-testimonial-inner {
-    gap: 120px;
+    gap: 100px;
 }
 .t-testimonial-slider{
-    width: calc(100% - 222px - 120px);
+    width: calc(100% - 222px - 100px);
 }
 .t-testimonial-slider .testi-desc{
     padding:40px 30px;
@@ -262,11 +296,38 @@
     .faq-accordian .accordion-header{
         padding:16px;
     }
+    .tools-item.orange .tool-sm {
+    bottom: -40px;
+    left: -14px;
+}
+.eco-row {
+    gap: 20px;
+}
 }
 
 @media screen and (max-width: 1359px) {}   
 
 @media screen and (max-width:1299px){
+       h1, .h1 {
+    font-size: 38px;
+    line-height: 48px;
+}
+h2, .h2{
+    font-size: 32px;
+    line-height: 40px;
+}
+h4, .h4 {
+    font-size: 24px;
+    line-height: 32px;
+}
+h5, .h5 {
+    font-size: 22px;
+    line-height: 32px;
+}
+h6, .h6, p{
+    font-size: 16px;
+    line-height: 24px;
+}
      .hero-wrapper{
     height: 760px;
  }
@@ -325,7 +386,7 @@ footer .text-16{
     margin-bottom: 52px;
 }
     .tools-item.purple {
-        width: 497px;
+        width: 507px;
     }
     .tools-item.orange {
         width: 465px;
@@ -359,10 +420,7 @@ footer .text-16{
     .op-item-title.four{
         left:-28px;
     }
-    .h5{
-    font-size: 22px;
-    line-height: 30px;
-    }
+
     .b-feature-item{
         width: 446px;
     }
@@ -374,6 +432,27 @@ footer .text-16{
     }
     .b-post-items.mini .b-post-title {
         width: calc(100% - 241px);
+    }
+    .eco-title{
+        padding:16px;
+    }
+    .eco-title .h4,
+    .b-post-items.mini .b-post-title .h4{
+        font-size: 22px;
+        line-height: 30px;
+    }
+        .team-testimonial-inner {
+        gap: 60px;
+    }
+    .t-testimonial-slider{
+    width: calc(100% - 222px - 60px);
+}
+    .t-name .h5 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+        .t-testimonial-slider .testi-desc {
+        padding: 30px;
     }
 }
 
