@@ -13,6 +13,27 @@
 
 
 @media screen and (max-width: 1799px) {
+    .section {
+    padding: 130px 0;
+}
+.recent-activity-circle{
+    width: 550px;
+    height: 550px;
+}
+.ra-circle-mini{
+    width: 400px;
+    height: 400px;
+}
+.ra-circle-lg{
+    width: 70px;
+    height: 70px; 
+}
+.ra-circle-lg svg{
+    width: 51px;
+}
+.hero-col-one {
+    width: 736px;
+}
     .stats-row {
     gap: 128px;
 }
@@ -53,19 +74,8 @@
     font-size: 18px;
     line-height: 26px;
 }
-     .recent-activity-circle{
-        width: 550px;
-        height: 550px;
-    }
 .hero-col-one {
     width: 615px;
-}
-   .ra-circle-lg{
-    width: 70px;
-    height: 70px; 
-}
-.ra-circle-lg svg{
-    width: 51px;
 }
 .stats-list{
     gap:40px;
@@ -182,6 +192,21 @@ h5, .h5 {
     }
     .hero-row {
     gap: 45px;
+    }
+      .recent-activity-circle {
+        width: 500px;
+        height: 500px;
+    }
+    .ra-circle-mini{
+        width: 370px;
+        height: 370px;
+    }
+        .ra-circle-lg {
+        width: 65px;
+        height: 65px;
+    }
+    .ra-circle-lg svg{
+        width: 51px;
     }
     .stats-col-one {
     width: 310px;
@@ -339,14 +364,6 @@ h6, .h6, p{
     }
     .hero-row{
         gap:35px;
-    }
-        .recent-activity-circle {
-        width: 500px;
-        height: 500px;
-    }
-    .ra-circle-mini{
-        width: 400px;
-        height: 400px;
     }
     .book-demo-inner{
         margin-top: 50px;

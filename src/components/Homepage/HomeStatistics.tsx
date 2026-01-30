@@ -24,8 +24,8 @@ export default function HomeStatistics() {
                         </div>
                         <div className="stats-item two bg-lavender">
                             <div className="stats-count flex flex-col">
-                                <h3 className="h1 text-md text-white">60%</h3>
-                                <p className="h6 text-white">Boost In Signal Case</p>
+                                <h3 className="h1 text-md text-black">60%</h3>
+                                <p className="h6 text-black">Boost In Signal Case</p>
                             </div>
                         </div>
                         <div className="stats-item three bg-dark-grey">
