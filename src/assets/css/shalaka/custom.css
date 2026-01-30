@@ -483,9 +483,10 @@ margin-bottom: 0;
 .eco-title{
     margin-top:20px;
     padding:20px;
-    background: #c7c7c71a;
-  backdrop-filter: blur(15px) saturate(40%);
-    /* -webkit-backdrop-filter: blur(35px) saturate(100%); */
+    background:rgba(255, 255, 255, 0.10);
+    /* background: #c7c7c71a; */
+     border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px) saturate(120%);
     height: 188px;
 }
 .eco-title.top{
@@ -503,6 +504,9 @@ margin-bottom: 0;
     width: 50%;
     padding:30px;
 }
+.plans-row{
+    gap:40px;
+}
 .plan-title{
     align-items: center;
     justify-content: space-between;
@@ -513,7 +517,7 @@ margin-bottom: 0;
     margin-bottom: 12px;
 }
 .plan-btn{
-    margin-top: 62px;
+    margin-top: 40px;
 }
 .p-price{
     gap:6px;
@@ -525,6 +529,16 @@ margin-bottom: 0;
 }
 .plan-list-text svg{
     margin-top: 6px;
+}
+.plan-separator{
+    width: 1;
+    height: 100%;
+    background-color: var(--grey);
+    height: 188px;
+    margin: auto;
+}
+.main-btn:hover{
+    cursor: pointer;
 }
 
 /********Blog***************/

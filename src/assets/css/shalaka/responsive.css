@@ -454,6 +454,9 @@ footer .text-16{
         .t-testimonial-slider .testi-desc {
         padding: 30px;
     }
+    .plans-row {
+    gap: 30px;
+}
 }
 
 @media screen and (max-width: 1199px) {
