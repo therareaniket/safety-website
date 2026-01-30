@@ -483,10 +483,10 @@ margin-bottom: 0;
 .eco-title{
     margin-top:20px;
     padding:20px;
-    background:rgba(255, 255, 255, 0.10);
-    /* background: #c7c7c71a; */
+     background: linear-gradient(-135deg,rgba(255, 255, 255, 1) 0%,rgba(249, 250, 251, 1) 45%,rgba(243, 244, 246, 1) 100%);
+    /* background:rgba(255, 255, 255, 0.10);
      border: 1px solid rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(20px) saturate(120%);
+    backdrop-filter: blur(20px) saturate(120%); */
     height: 188px;
 }
 .eco-title.top{
