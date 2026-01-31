@@ -13,7 +13,7 @@ export default function Header() {
             <div className="container">
                 <nav className="nav-wrapper">
                     <div className="navbar-img-wrapper">
-                        <Image className="navbar-img" src={Logo} alt="dhatusafety-logo" width={150}
+                        <Image className="navbar-logo" src={Logo} alt="dhatusafety-logo" width={150}
                             height={25} priority />
                     </div>
 

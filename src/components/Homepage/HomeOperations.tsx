@@ -22,10 +22,10 @@ export default function HomeOperations() {
                                     <div className="op-items-desc absolute text-center">
                                         <p className="op-text text-18 text-white">Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.</p>
                                     </div>
-                                    <div className="op-item-number left-center rounded-full one absolute centered-block"><span>1</span></div>
-                                    <div className="op-item-number top-center rounded-full two absolute centered-block"><span>2</span></div>
-                                    <div className="op-item-number left-center rounded-full three absolute centered-block"><span>3</span></div>
-                                    <div className="op-item-number top-center rounded-full four absolute centered-block"><span>4</span></div>
+                                    <div className="op-item-number left-center rounded-full one absolute centered-block"><span className="text-md">1</span></div>
+                                    <div className="op-item-number top-center rounded-full two absolute centered-block"><span className="text-md">2</span></div>
+                                    <div className="op-item-number left-center rounded-full three absolute centered-block"><span className="text-md">3</span></div>
+                                    <div className="op-item-number top-center rounded-full four absolute centered-block"><span className="text-md">4</span></div>
                                 </div> 
                                 <h3 className="op-item-title one left-center absolute h5 text-white">Unified Data Intake</h3>
                                 <h3 className="op-item-title two top-center absolute h5 text-white">Cash Managment</h3>

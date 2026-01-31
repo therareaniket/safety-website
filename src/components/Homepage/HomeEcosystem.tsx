@@ -26,7 +26,7 @@ export default function HomeEcosystem() {
                     </div>
                     <div className="eco-item">
                         <div className="eco-title top">
-                            <h3 className="h4 text-md">Cros</h3>
+                            <h3 className="h4 text-md">CROs</h3>
                             <p className="h6">Depend for efficiently manage safety operations for multiple clients</p>
                         </div>
                         <div className="eco-img">
