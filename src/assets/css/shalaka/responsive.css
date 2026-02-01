@@ -4,35 +4,15 @@
 
 @media screen and (min-width: 992px) {}
 
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: calc(992px + 36px)
-    }
-}
+@media screen and (min-width: 1200px) { .container { max-width: calc(992px + 36px) }}
 
-@media screen and (min-width: 1300px) {
-    .container {
-        max-width: calc(1100px + 36px)
-    }
-}
+@media screen and (min-width: 1300px) { .container { max-width: calc(1100px + 36px) } }
 
-@media screen and (min-width: 1440px) {
-    .container {
-        max-width: calc(1280px + 36px)
-    }
-}
+@media screen and (min-width: 1440px) { .container { max-width: calc(1200px + 36px) }}
 
-@media screen and (min-width: 1600px) {
-    .container {
-        max-width: calc(1360px + 36px)
-    }
-}
+@media screen and (min-width: 1600px) { .container { max-width: calc(1300px + 36px) } }
 
-@media screen and (min-width: 1800px) {
-    .container {
-        max-width: calc(1440px + 36px);
-    }
-}
+@media screen and (min-width: 1800px) { .container { max-width: calc(1440px + 36px); } }
 
 
 

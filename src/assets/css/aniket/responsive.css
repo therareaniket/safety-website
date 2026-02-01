@@ -1,10 +1,11 @@
-@media screen and (min-width: 640px) {}
-@media screen and (min-width: 768px) {}
+@media screen and (max-width: 575px) { .container { max-width: calc(100% + 36px); } }
+@media screen and (min-width: 640px) { .container { max-width: calc(600px + 36px); } }
+@media screen and (min-width: 768px) { .container { max-width: calc(700px + 36px); } }
 @media screen and (min-width: 992px) {}
-@media screen and (min-width: 1024px) {}
-@media screen and (min-width: 1360px) {}
-@media screen and (min-width: 1440px) {}
-@media screen and (min-width: 1600px) {}
+@media screen and (min-width: 1024px) { .container { max-width: calc(840px + 36px); } }
+@media screen and (min-width: 1360px) { .container { max-width: calc(992px + 36px); } }
+@media screen and (min-width: 1440px) { .container { max-width: calc(1180px + 36px); } }
+@media screen and (min-width: 1600px) { .container { max-width: calc(1280px + 36px); } }
 @media screen and (min-width: 1800px) { .container { max-width: calc(1440px + 36px); } }
 
 
