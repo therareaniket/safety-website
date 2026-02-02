@@ -24,7 +24,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" className="nav-link text-18">
+                            <Link href="/About" className="nav-link text-18">
                                 About Platform
                             </Link>
                         </li>
