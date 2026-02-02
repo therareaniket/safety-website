@@ -28,6 +28,10 @@ export default function AboutEfficiencyCaseHandling() {
             },
         },
         breakpoints: {
+            375: {
+                slidesPerView: 1,
+                navigation: false,
+            },
             1023: {
                 slidesPerView: 2,
                 navigation: false,
