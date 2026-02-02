@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/assets/css/rajvi/custom.css"
-import "@/assets/css/rajvi/responsive.css"
 import "@/assets/css/shalaka/custom.css"
 import "@/assets/css/shalaka/responsive.css"
+import "@/assets/css/rajvi/custom.css"
+import "@/assets/css/rajvi/responsive.css"
 import "@/assets/css/aniket/custom.css"
 import "@/assets/css/aniket/responsive.css"
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+// import Header from "@/components/Header";
+// import Footer from "@/components/Footer";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const metadata: Metadata = {
 	title: "DhatuSafety | Central Hub for Patient Safety Intelligence",
@@ -19,11 +22,11 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en">
     	<body>
-			<Header/>
+			{/* <Header/> */}
 
         	{children}
 
-			<Footer/>
+			{/* <Footer/> */}
     	</body>
     </html>
   );

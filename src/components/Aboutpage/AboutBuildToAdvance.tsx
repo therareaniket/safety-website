@@ -1,8 +1,6 @@
-"Use Client"
+'Use Client';
 
 import Image from "next/image";
-
-
 
 export default function AboutBuildToAdvance() {
     return (

@@ -1,4 +1,5 @@
-"Use Client"
+'Use Client';
+
 export default function AboutHero() {
   return (
     <section className="about-hero-wrapper section"> 

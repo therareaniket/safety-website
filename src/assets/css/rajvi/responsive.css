@@ -1,37 +1,176 @@
-@media screen and (max-width: 575px) { .container { max-width: calc(100% + 36px); } }
-@media screen and (min-width: 640px) { .container { max-width: calc(600px + 36px); } }
-@media screen and (min-width: 768px) { .container { max-width: calc(700px + 36px); } }
-@media screen and (min-width: 992px) {}
-@media screen and (min-width: 1024px) { .container { max-width: calc(840px + 36px); } }
-@media screen and (min-width: 1360px) { .container { max-width: calc(992px + 36px); } }
-@media screen and (min-width: 1440px) { .container { max-width: calc(1180px + 36px); } }
-@media screen and (min-width: 1600px) { .container { max-width: calc(1280px + 36px); } }
-@media screen and (min-width: 1800px) { .container { max-width: calc(1440px + 36px); } }
-
-
-
 /* ======= MIN-WIDTH COMPLETED ======= */
 
 
-@media screen and (max-width: 1799px) {}
+@media screen and (max-width: 1799px) {
+    /* font-sizes */
+    h1, .h1{ font-size: 48px; line-height: 56px; }
+    h2, .h2{ font-size: 38px; line-height: 46px; }
 
-@media screen and (max-width: 1599px) {} 
+    /* about */
+    .build-to-advance-right-wrapper{ width: 630px; padding: 50px 30px; }
+    .build-to-advance-left-wrapper{ width: 550px; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 50px; height: 50px; }
+    .build-toadvance-icon img{ width: 20px !important; height: 20px !important; }
+    .compliance-driven-wrapper p{ margin-bottom: 0; }
+    .efficiency-step-card{ height: 385px; }
+    .compliance-driven-wrapper .h5{ margin-bottom: 12px; }
+}
 
-@media screen and (max-width: 1439px) {}
+@media screen and (max-width: 1599px) {
+    /* fonts */
+    h2, .h2{ font-size: 34px; line-height: 42px; }
 
-@media screen and (max-width: 1359px) {}   
+    /* about */
+    .efficiency-step-card{ height: 400px; padding: 30px 20px; }
+    .about-steps-arrow{ left: 22.1%; }
+    .about-steps-arrow-1{ left: 48.7%; }
+    .about-steps-arrow-2{ left: 74.7%; }
+    .build-to-advance-right-wrapper{ width: 580px; }
+    .build-to-advance-left-wrapper p{ padding-top: 10px; }
+    .compliance-driven-wrapper{ width: 435px; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 46px; height: 46px; }
+} 
 
-@media screen and (max-width: 1199px) {}
+@media screen and (max-width: 1439px) {
+    /* font-sizes */
+    h1, .h1{ font-size: 46px; line-height: 54px; }
 
-@media screen and (max-width: 1023px) {}
+    /* about */
+    .about-hero-wrapper{ height: 590px; }
+    .about-hero-text{ width: 655px; gap: 25px; }
+    .efficiency-step-card h3{ height: 96px; }
+    .build-to-advance-right-wrapper{ width: 510px; }
+    .compliance-driven-wrapper{ width: 375px; }
+    .build-to-advance-left-wrapper{ width: 435px; }
+    .efficiency-step-card{ width: 230px; height: 413px; }
+    .about-steps-arrow{ left: 22.5%; }
+    .about-steps-arrow-1{ left: 48%; }
+    .about-steps-arrow-2{ left: 73.6%; }
+    .efficiency-step-card ul li span{ padding-top: 10px; }
+    .efficiency-step-card ul li{ align-items: flex-start; }
+    .efficiency-step-card h3{ width: 100%; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 42px; height: 42px; }
+    .build-toadvance-icon img{ width: 18px !important; height: 18px !important; }
+    .efficiency-steps-wrapper{ margin-top: 50px; }
+}
 
-@media screen and (max-width: 991px) {} 
+@media screen and (max-width: 1359px) {
+    /* font-sizes */
+    h1, .h1{ font-size: 42px; line-height: 50px; }
+    h2, .h2{ font-size: 30px; line-height: 38px; }
+    h5, .h5{ font-size: 18px; line-height: 24px; }
+    .text-18{ font-size: 16px; line-height: 20px; }
 
-@media screen and (max-width: 839px) {}
+    /* about */
+    .about-hero-text{ width: 750px; }
+    .build-to-advance-right-wrapper{ width: 435px; }
+    .compliance-driven-wrapper{ width: 300px; }
+    .build-to-advance-left-wrapper{ width: 365px; }
+    .build-to-advance-right-wrapper{ padding: 30px; }
+    .efficiency-step-card h3{ height: 72px; }
+    .efficiency-step-card{ width: 195px; height: 392px; padding: 20px; }
+    .about-steps-arrow{ width: 30px; height: 30px; }
+    .about-steps-arrow img{ width: 16px; height: 20px; }
+    .about-steps-arrow-1{ left: 48.1%; }
+    .about-steps-arrow-2{ left: 73.8%; }
+    .efficiencycase-wrapper{ width: 600px; margin: 0 auto; }
+    .efficiency-step-card ul li{ gap: 10px; } 
+    .build-to-advance-left-wrapper p{ padding-top: 0; }
+}   
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 1199px) {
+    /* fonts */
+    h1, .h1{ font-size: 38px; line-height: 46px; }
+    h2, .h2{ font-size: 28px; line-height: 36px; }
+    h6, .h6{ font-size: 14px; line-height: 22px; }
 
-@media screen and (max-width: 639px) {}
+    /* about */
+    .about-hero-wrapper{ height: 440px; }
+    .about-hero-text{ width: 710px; }
+    .build-to-advance-left-wrapper h2{ margin-bottom: 15px; }
+    .efficiency-step-card h3{ margin-bottom: 10px;}
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 28px; height: 28px; }
+    .build-toadvance-icon img{ width: 12px !important; height: 12px !important; }
+    .efficiency-steps-wrapper{ margin-top: 40px; }
+    .efficiency-step-card{ height: 344px; } 
+    .compliance-driven-wrapper .h5{ margin-bottom: 10px; }
+    .build-to-advance-right-wrapper{ gap: 20px; }
+}
+
+@media screen and (max-width: 1023px) {
+    h1, .h1{ font-size: 34px; line-height: 42px; }
+
+    /* about */
+    .about-hero-wrapper{ height: 450px; }
+    .about-hero-text{ width: 640px; }
+    .build-to-advance-wrapper{ flex-direction: column; gap: 20px; }
+    .build-to-advance-left-wrapper{ width: 100%; text-align: center; }
+    .build-to-advance-right-wrapper{ width: 100%; }
+    .compliance-driven-wrapper{ width: 100%; }
+    .build-to-advance-right-wrapper{ gap: 30px; }
+    .compliance-driven-by, .build-for-real-world{ gap: 30px; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 40px; height: 40px; }
+    .compliance-driven-wrapper{ width: 500px; }
+    .build-toadvance-icon img{ width: 18px !important; height: 18px !important; }
+    .efficiency-step-card{ width: calc(50% - 10px); }
+    .efficiency-step-card h3{ height: 50px; }
+    .efficiency-steps-wrapper{ display: none;}
+    .efficiency-steps-wrapper-responsive{ display: flex !important; }
+
+    .aboutSwiper-wrapper .swiper-slide { width: 340px !important; height: 260px !important; margin-top: 30px; margin-bottom: 50px; }
+    .aboutSwiper-wrapper .swiper-slide .efficiency-step-card {  width: 100%; }
+    .aboutSwiper-wrapper .swiper-pagination { z-index: 1000; bottom: 0px !important; }
+    .aboutSwiper-wrapper .swiper-pagination-bullet-active { background-color: var(--secondary-green) !important; }
+}
+
+@media screen and (max-width: 991px) {
+    .section{ padding: 80px 0; }
+    /* fonts */
+    /* h1, .h1{ font-size: 30px; line-height: 38px; } */
+    h2, .h2{ font-size: 26px; line-height: 34px; }
+
+    /* about */
+    .build-to-advance-left-wrapper{ width: 650px; margin: 0 auto; }
+} 
+
+@media screen and (max-width: 839px) {
+    .section{ padding: 70px 0; }
+    /* fonts */
+    h1, .h1{ font-size: 32px; line-height: 40px; }
+
+    /* about */
+    .about-hero-wrapper{ height: 400px; }
+    .about-hero-text p{ margin-bottom: 0; }
+    .aboutSwiper-wrapper .swiper-slide{ margin-top: 0; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 32px; height: 32px; }
+    .compliance-driven-by span img, .build-for-real-world span img{ width: 14px !important; height: 14px !important; }
+}
+
+@media screen and (max-width: 767px) {
+    /* fonts */
+    h1, .h1{ font-size: 28px; line-height: 36px; }
+    h2, .h2{ font-size: 24px; line-height: 32px; }
+    /* about */
+    .about-hero-text{ width: 590px; }
+    .build-to-advance-left-wrapper{ width: 100%; }
+    .aboutSwiper-wrapper .swiper-slide{ width: 300px !important; }
+    .efficiencycase-wrapper{ width: 100%; }
+}
+
+@media screen and (max-width: 639px) {
+    .section{ padding: 50px 0; }
+
+    /* fonts */
+    h1, .h1{ font-size: 26px; line-height: 32px; }
+    h2, .h2{ font-size: 22px; line-height: 30px; }
+    h5, .h5{ font-size: 16px; line-height: 22px; }
+    .text-18{ font-size: 14px; line-height: 22px; }
+
+    /* about */
+    .about-hero-text{ width: 100%; }
+    .aboutSwiper-wrapper .swiper-slide{ width: 260px !important; }
+    .compliance-driven-wrapper{ width: 380px; }
+}
 
 @media screen and (max-width: 575px) {}
 
