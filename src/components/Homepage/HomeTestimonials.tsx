@@ -41,6 +41,15 @@ export default function HomeTestimonials() {
                         }}
                         spaceBetween={30}
                         slidesPerView={2}
+                        breakpoints={{
+                            0: {
+                            slidesPerView: 1,
+                            spaceBetween: 16,
+                            },
+                            1024: {
+                            slidesPerView: 2, 
+                            },
+                        }}
                         >
                             <SwiperSlide>
                             <div className="testi-item">
@@ -64,8 +73,8 @@ export default function HomeTestimonials() {
                                     <div className="testi-title flex items-center">
                                         <div className="name-initial centered-block bg-lavender"><h4 className="h5 text-black mb-0">S</h4></div>
                                         <div className="t-name">
-                                            <h4 className="h5 text-black mb-0">Safety Operations Manager</h4>
-                                            <span className="text-18 text-blakc">Global Pharma Company</span>
+                                            <h4 className="h5 text-black mb-0">Safety Manager</h4>
+                                            <span className="text-18 text-black">Global Pharma Company</span>
                                         </div>
                                     </div>
                                 </div>

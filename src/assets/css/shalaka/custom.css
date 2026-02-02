@@ -482,16 +482,12 @@ margin-bottom: 0;
     width: 336px;
 }
 .eco-title{
-    margin-top:20px;
     padding:20px;
      background: linear-gradient(-90deg,rgba(255, 255, 255, 1) 0%,rgba(249, 250, 251, 1) 45%,rgba(243, 244, 246, 1) 100%);
     /* background:rgba(255, 255, 255, 0.10);
      border: 1px solid rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(20px) saturate(120%); */
     height: 188px;
-}
-.eco-title.top{
-    margin:0 0 20px 0;
 }
 .eco-title .h4{
     margin-bottom: 12px;
@@ -503,7 +499,6 @@ margin-bottom: 0;
 /*********Plans**************/
 .plan-item{
     width: 50%;
-    padding:30px;
 }
 .plans-row{
     gap:40px;
@@ -601,7 +596,7 @@ margin-bottom: 0;
     width: calc(100% - 222px - 215px);
 }
 .team-testimonial-inner{
-    gap:180px;
+    gap:215px;
 }
 .t-testimonial-slider .testi-desc{
     background-color: var(--white);
@@ -753,6 +748,7 @@ footer{
     padding: 12px 20px;
     color: var(--grey);
     font-size: 16px;
+    width: 100%;
 }
 .newletter-form{
     margin-top: 14px;;

@@ -10,12 +10,11 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer>
-            
+        <footer>          
             <div className="container">
                 <div className="footer-inner-main flex">
                     <div className="f-col-one flex flex-col">
-                        <div>
+                        <div className='f-logo'>
                             <Image className="navbar-img" src={Logo} alt="dhatusafety-logo" width={150}
                                 height={25} priority />
                             <p className='f-desc text-16'>
@@ -36,7 +35,7 @@ export default function Footer() {
                     </div>
                     <div className="f-right-cols flex">
                         <div className="f-col-two">
-                            <h3 className='text-18 text-sb text-grey'>Quick Links</h3>
+                            <h2 className='text-18 text-sb text-grey'>Quick Links</h2>
                             <ul>
                                 <li>
                                     <Link href="/" className="f-link text-16 text-grey">
@@ -71,7 +70,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="f-col-three">
-                            <h3 className='text-18 text-sb text-grey'>Further Information</h3>
+                            <h2 className='text-18 text-sb text-grey'>Further Information</h2>
                             <ul>
                                 <li>
                                     <Link href="/" className="f-link text-16 text-grey">
@@ -86,7 +85,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="f-col-four">
-                            <h3 className='text-18 text-sb text-grey'>Newsletter</h3>
+                            <h2 className='text-18 text-sb text-grey'>Newsletter</h2>
                              <p className='f-desc text-16 mt-0'>
                                Join Our Newsletter and get notified with latest updates.
                             </p>

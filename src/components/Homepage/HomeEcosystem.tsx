@@ -38,14 +38,14 @@ export default function HomeEcosystem() {
                             <Image className="ec-img" src={Pharma} alt="Pharma & Biotech" width={336} height={413} priority />
                         </div>
                         <div className="eco-title">
-                            <h3 className="h4 text-md">Pharma & Biotech</h3>
+                            <h3 className="h4 text-md">Pharma</h3>
                             <p className="h6">To unify case manage, evaluate emerging safety signals, and meet global</p>
                         </div>
                     </div>
                     <div className="eco-item">
                         <div className="eco-title top">
                             <h3 className="h4 text-md">MaHs</h3>
-                            <p className="h6">Marketing Authorization Holders rely to manage their full pharma trials</p>
+                            <p className="h6">Marketing Authorization Holders rely to manage</p>
                         </div>
                         <div className="eco-img">
                             <Image className="ec-img" src={Mahs} alt="MaHs" width={336} height={413} priority />
