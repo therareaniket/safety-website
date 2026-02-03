@@ -9,12 +9,14 @@ import AddReaction from '../../assets/images/ai-icons/add_reaction.svg'
 import Assignment from '../../assets/images/ai-icons/assignment.svg'
 import ChatBubble from '../../assets/images/ai-icons/chat_bubble.svg'
 import ThumbUp from '../../assets/images/ai-icons/thumb_up.svg'
+import CurveLines from '../../assets/images/ai-icons/ai-lines.svg'
 
 export default function HomeModals() {
     return (
 
-        <section className="modals-wrapper section pt-0 relative">
+        <section className="modals-wrapper centered-block section pt-0 relative">
              <Image className="curve-sm absolute" src={CurveSm} alt="curve" width={1970} height={410} priority />
+              <Image className="curve-lg absolute" src={CurveLines} alt="curve" width={1920} height={756} priority />
             <div className="container">
                 <div className="main-title center text-center">
                     <h2 className="text-md">AI At The Heart Of Safety</h2>

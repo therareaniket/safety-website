@@ -61,12 +61,13 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:44px 0;
+    padding:40px 0;
 }
 header{
     position: fixed;
     width: 100%;
     z-index:99;
+    background: var(--white);
 }
 .navbar-links{
     gap:40px;
@@ -331,14 +332,21 @@ header{
 }
 
 /******AI Modals Icons********/
-.modals-wrapper{
-    height: 600px;
+.modals-wrapper.section{
+        height: 756px;
+    padding: 0;
     z-index: 1;
 }
 .curve-sm{
     left:0;
-    top:41%;
+    top:58%;
     transform: translateY(-50%);
+    z-index:-1;
+}
+.curve-lg{
+    left:0;
+    top:-31px;
+    opacity: 0.3;
     z-index:-1;
 }
 .ai-modals-row{
@@ -664,15 +672,21 @@ text-align: left;
     margin-bottom: 20px;
 }
 .fq-show-icon {
-    width: 24px;
-    height: 24px;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+    background:var(--lavender);
+}
+.faq-img{
+    margin:0 auto 35px;
 }
 .f-minus,
 .f-plus{
     opacity: 0;
     transition: opacity 0.5 ease-in-out;
-    top:6px;
-    right: 0;
+    left: auto;
+    top:auto
 }
 .fq-show-icon.minus .f-minus,
 .fq-show-icon.plus .f-plus{
@@ -686,6 +700,8 @@ text-align: left;
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.35s ease;
+  border-width: 0 1px 1px 1px;
+  border-color: var(--midGrey);
 }
 
 .accordion-content.open {

@@ -13,7 +13,7 @@ export default function HomeOperations() {
                     <div className="op-row flex items-center">
                         <div className="op-col-one">
                             <h2 className="text-md text-white">How DhatuSafety Streams Safety Operations</h2>
-                            <p className="h6 op-desc text-white">DhatuSafety’s workflow is designed to simplify and strengthen every stage of pharmacovigilance and patient safety management. We begin by bringing together safety data from multiple sources, ensuring a unified and consistent intake.</p>                           
+                            <p className="h6 op-desc mb-0 text-white">DhatuSafety’s workflow is designed to simplify and strengthen every stage of pharmacovigilance and patient safety management. We begin by bringing together safety data from multiple sources, ensuring a unified and consistent intake.</p>                           
                         </div>
                          <div className="op-col-two">
                             <div className="op-items-inner relative centered-block">
