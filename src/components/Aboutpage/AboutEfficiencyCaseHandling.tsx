@@ -7,33 +7,30 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 export default function AboutEfficiencyCaseHandling() {
     const swiperConfig: SwiperProps = {
-        modules: [Navigation, Pagination, Autoplay],
+        modules: [Pagination, Autoplay],
         spaceBetween: 20,
         slidesPerView: 2,
-        // slidesPerGroup: 2,
         loop: true,
+
         autoplay: {
             delay: 5000,
-            disableOnInteraction: false
+            disableOnInteraction: false,
         },
-        loopAdditionalSlides: 2,
+
         pagination: {
             clickable: true,
-            dynamicBullets: true,
-            dynamicMainBullets: 2,
-            renderBullet: (index, className) => {
-                // Only render 2 bullets total (groups of 2 slides)
-                if (index > 1) return '';
-                return `<span class="${className}"></span>`;
-            },
         },
+
         breakpoints: {
-            1023: {
+            0: {
+                slidesPerView: 1,
+            },
+            401: {
                 slidesPerView: 2,
-                navigation: false,
             },
         },
     };
+
     return (
         <>
             <section className="section" style={{ paddingTop: '0' }}>

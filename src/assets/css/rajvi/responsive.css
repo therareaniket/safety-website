@@ -14,6 +14,17 @@
     .compliance-driven-wrapper p{ margin-bottom: 0; }
     .efficiency-step-card{ height: 385px; }
     .compliance-driven-wrapper .h5{ margin-bottom: 12px; }
+    .signal-management-text-left{ width: 500px; }
+    .about-medical-card-row-2{ width: 472px; }
+    .about-signal-management-cards{ height: 470px; }
+    .signal-management-right{ width: 480px; }
+    .compliance-reporting-point-1:nth-child(1){ padding-bottom: 20px; }
+    .compliance-reporting-point-1:nth-child(2){ padding-top: 20px; padding-bottom: 20px; }
+    .compliance-reporting-point-1:nth-child(3){ padding-top: 20px; }
+    .compliance-reporting-point-1 h3{ margin-bottom: 10px; }
+    .about-reporting-compliance-left{ padding: 30px 40px; width: 855px; height: 550px; }
+    .about-signal-management-title{ width: 595px; }
+    .about-signal-management-para{ width: 655px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -21,7 +32,7 @@
     h2, .h2{ font-size: 34px; line-height: 42px; }
 
     /* about */
-    .efficiency-step-card{ height: 400px; padding: 30px 20px; }
+    .efficiency-step-card{ height: 350px; padding: 30px 20px; }
     .about-steps-arrow{ left: 22.1%; }
     .about-steps-arrow-1{ left: 48.7%; }
     .about-steps-arrow-2{ left: 74.7%; }
@@ -29,6 +40,15 @@
     .build-to-advance-left-wrapper p{ padding-top: 10px; }
     .compliance-driven-wrapper{ width: 435px; }
     .compliance-driven-by span, .build-for-safety-Operations{ width: 46px; height: 46px; }
+
+    .about-data-card-text{ width: 264px; }
+    .medical-detail-cards{ height: 222px; }
+    .about-signal-management-title{ width: 530px; }
+    .about-signal-management-para{ width: 590px; }
+    .about-signal-management-cards{ padding: 60px 90px; height: 430px; }
+    .about-reporting-compliance-left{ height: 497px; }
+    .about-reporting-compliance-right{ height: 497px; }
+    .about-reporting-compliance-right img{ height: 100% !important; object-fit: cover;}
 } 
 
 @media screen and (max-width: 1439px) {
@@ -38,20 +58,32 @@
     /* about */
     .about-hero-wrapper{ height: 590px; }
     .about-hero-text{ width: 655px; gap: 25px; }
-    .efficiency-step-card h3{ height: 96px; }
+    .efficiency-step-card h3{ height: 60px; width: 100%;  }
     .build-to-advance-right-wrapper{ width: 510px; }
     .compliance-driven-wrapper{ width: 375px; }
     .build-to-advance-left-wrapper{ width: 435px; }
-    .efficiency-step-card{ width: 230px; height: 413px; }
+    .efficiency-step-card{ width: 260px; height: 413px; }
     .about-steps-arrow{ left: 22.5%; }
     .about-steps-arrow-1{ left: 48%; }
     .about-steps-arrow-2{ left: 73.6%; }
     .efficiency-step-card ul li span{ padding-top: 10px; }
     .efficiency-step-card ul li{ align-items: flex-start; }
-    .efficiency-step-card h3{ width: 100%; }
     .compliance-driven-by span, .build-for-safety-Operations{ width: 42px; height: 42px; }
     .build-toadvance-icon img{ width: 18px !important; height: 18px !important; }
     .efficiency-steps-wrapper{ margin-top: 50px; }
+
+    .efficiency-step-card{ height: 350px; }
+    .about-data-meets-medical-cards-wrapper{ padding-bottom: 20px; }
+    .medical-detail-cards{ padding: 20px; height: 187px; }
+    .about-signal-management-para{ width: 495px; }
+    .about-reporting-compliance-left{ width: 750px; }
+    .compliance-reporting-point-1{ width: 670px; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 480px; }
+    .about-medical-card-row-2{ height: 350px; }
+    .about-medical-card-row-2 img{ height: 100% !important; object-fit: cover; }
+    .about-data-card{ height: 144px; }
+    .about-signal-management-cards{ height: 400px; padding: 50px; }
+    .signal-management-right{ width: 425px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -68,14 +100,27 @@
     .build-to-advance-left-wrapper{ width: 365px; }
     .build-to-advance-right-wrapper{ padding: 30px; }
     .efficiency-step-card h3{ height: 72px; }
-    .efficiency-step-card{ width: 195px; height: 392px; padding: 20px; }
+    .efficiency-step-card{ width: 233px; height: 370px; padding: 20px; }
     .about-steps-arrow{ width: 30px; height: 30px; }
     .about-steps-arrow img{ width: 16px; height: 20px; }
-    .about-steps-arrow-1{ left: 48.1%; }
-    .about-steps-arrow-2{ left: 73.8%; }
+    .about-steps-arrow{ left: 22.8%; }
+    .about-steps-arrow-1{ left: 48.4%; }
+    .about-steps-arrow-2{ left: 73.9%; }
     .efficiencycase-wrapper{ width: 600px; margin: 0 auto; }
     .efficiency-step-card ul li{ gap: 10px; } 
     .build-to-advance-left-wrapper p{ padding-top: 0; }
+
+    .about-reporting-compliance-left{ width: 820px; }
+    .compliance-reporting-point-1{ width: 100%; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 525px; }
+    .about-data-card{ width: 290px; }
+    .about-data-meets-medical-cards-wrapper{ gap: 30px; }
+    .about-medical-card-row-2{ height: max-content; }
+    .medical-detail-cards{ height: 170px; }
+    .signal-management-text-left{ width: 410px; }
+    .signal-management-right{ width: 410px; }
+    .about-signal-management-cards{ height: 370px; }
+    .about-reporting-compliance-left{ width: 940px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -87,7 +132,7 @@
     /* about */
     .about-hero-wrapper{ height: 440px; }
     .about-hero-text{ width: 710px; }
-    .build-to-advance-left-wrapper h2{ margin-bottom: 15px; }
+    .build-to-advance-left-wrapper h2, .efficiencycase-wrapper h2, .about-data-meets-medical-inner h2, .about-signal-management-title, .about-reporting-submission-compliance-title { margin-bottom: 15px; }
     .efficiency-step-card h3{ margin-bottom: 10px;}
     .compliance-driven-by span, .build-for-safety-Operations{ width: 28px; height: 28px; }
     .build-toadvance-icon img{ width: 12px !important; height: 12px !important; }
@@ -95,6 +140,18 @@
     .efficiency-step-card{ height: 344px; } 
     .compliance-driven-wrapper .h5{ margin-bottom: 10px; }
     .build-to-advance-right-wrapper{ gap: 20px; }
+    .about-data-card{ width: 244px; height: 150px; }
+    .about-data-card-text{ width: 180px; }
+    .about-data-cards-svg{ width: 30px; height: 30px; }
+    .about-data-cards-svg img{ width: 16px; height: 16px; }
+    .medical-detail-cards h4{ margin-bottom: 10px; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 480px; }
+    .about-reporting-compliance-left{ padding: 20px; }
+    .about-reporting-submission-compliance-inner{ margin-bottom: 40px; }
+    .about-signal-management-cards{ height: 320px; }
+    .signal-management-text-left h3{ width: 100%; }
+    .signal-management-text-left, .signal-management-right{ width: 340px; }
+    .compliance-reporting-point-1{ border-bottom: 1px solid #dbd9d9; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -121,16 +178,44 @@
     .aboutSwiper-wrapper .swiper-slide .efficiency-step-card {  width: 100%; }
     .aboutSwiper-wrapper .swiper-pagination { z-index: 1000; bottom: 0px !important; }
     .aboutSwiper-wrapper .swiper-pagination-bullet-active { background-color: var(--secondary-green) !important; }
-}
+    .about-reporting-compliance-left{ width: 845px; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 510px; }
+    .about-signal-management-cards{ height: 365px; }
+    .about-data-meets-medical-cards-wrapper-responsive{ display: flex; flex-direction: column; }
+    .about-data-cardd{ width: calc( 50% - 15px ); }
+    .about-medical-card-row{ display: flex; flex-wrap: wrap;  gap: 30px; margin: 0 auto; }
+    .about-data-card{ width: calc( 50% - 15px); height: 128px; }
+    .about-data-card-text{ width: 267px; }
+    .about-data-meets-medical-cards-wrapper-desktop{ display: none; }
+    .about-medical-card-row-2{ margin: 0 auto; }
+    .about-data-card-5 img{ width: 100% !important; height: auto !important; object-fit: cover; }
+    .medical-detail-cards-wrapper{ gap: 20px; }
+    .medical-detail-cards{ width: 220px; height: 215px; }
+    .about-data-meets-medical-cards-wrapper{ padding-top: 50px; padding-bottom: 30px; }
+    .about-signal-management-content{ flex-direction: column; gap: 0px; text-align: center; }
+    .about-signal-management-title{ width: 100%; }
+    .about-signal-management-para{ margin: 0 auto; }
+    .about-signal-management-cards{ height: 305px; padding: 30px; margin-top: 30px; }
+    .about-data-cards-svg{ width: 40px; height: 40px; }
+    .about-data-cards-svg img{ width: 20px; height: 20px; }
+} 
 
 @media screen and (max-width: 991px) {
     .section{ padding: 80px 0; }
     /* fonts */
     /* h1, .h1{ font-size: 30px; line-height: 38px; } */
     h2, .h2{ font-size: 26px; line-height: 34px; }
-
+    h4, .h4{ font-size: 20px; line-height: 28px; }
     /* about */
     .build-to-advance-left-wrapper{ width: 650px; margin: 0 auto; }
+    .about-data-meets-medical-cards-wrapper{ padding-top: 30px; }
+    .about-data-card-5{ height: 250px; }
+    .about-data-card-5 img{ height: 100% !important; object-fit: cover; }
+    .about-data-meets-medical-cards-wrapper{ gap: 30px; }
+    .medical-detail-cards{ height: 205px;}
+    .about-reporting-compliance-left{ width: 775px; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 545px; }
+    .about-reporting-submission-compliance-inner{ margin-bottom: 30px; }
 } 
 
 @media screen and (max-width: 839px) {
@@ -141,7 +226,6 @@
     /* about */
     .about-hero-wrapper{ height: 400px; }
     .about-hero-text p{ margin-bottom: 0; }
-    .aboutSwiper-wrapper .swiper-slide{ margin-top: 0; }
     .compliance-driven-by span, .build-for-safety-Operations{ width: 32px; height: 32px; }
     .compliance-driven-by span img, .build-for-real-world span img{ width: 14px !important; height: 14px !important; }
 }
@@ -155,6 +239,15 @@
     .build-to-advance-left-wrapper{ width: 100%; }
     .aboutSwiper-wrapper .swiper-slide{ width: 300px !important; }
     .efficiencycase-wrapper{ width: 100%; }
+    .about-data-card-text h3{ margin-bottom: 12px; }
+    .about-data-card-text{ width: 200px; }
+    .about-data-cards-svg{ width: 32px; height: 32px; }
+    .about-data-cards-svg img{ width: 18px; height: 18px; }
+    .medical-detail-cards{ height: 230px; }
+    .about-signal-management-cards{ height: max-content; }
+    .about-reporting-compliance-detail-pointers{ flex-direction: column-reverse; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ width: 100%; height: auto; }
+    .about-reporting-compliance-right img{ width: 100% !important; height: 350px !important; object-fit: cover; object-position: center; }
 }
 
 @media screen and (max-width: 639px) {
@@ -170,15 +263,58 @@
     .about-hero-text{ width: 100%; }
     .aboutSwiper-wrapper .swiper-slide{ width: 260px !important; }
     .compliance-driven-wrapper{ width: 380px; }
+    .medical-detail-cards-wrapper{ flex-direction: column; }
+    .medical-detail-cards{ width: 100%; height: auto; }
 }
 
-@media screen and (max-width: 575px) {}
+@media screen and (max-width: 575px) {
+    .compliance-driven-wrapper{ width: 310px; }
+    .aboutSwiper-wrapper .swiper-slide{ width: 220px !important; height: 295px !important; }
+    .about-medical-card-row-2{ width: 100%; }
+    .about-data-card-text{ width: 350px; }
+    .about-data-card{ width: 100%; height: auto; }
+    .about-signal-management-cards{ flex-direction: column; gap: 20px; padding: 30px; }
+    .signal-management-text-left{ width: 100%; }
+    .signal-management-text-left p{ margin-bottom: 0; }
+    .about-signal-management-para{ width: 100%; }
+    .signal-management-right{ width: 290px; }
+}
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    h1, .h1{ font-size: 24px; line-height: 32px; }
 
-@media screen and (max-width: 459px) {}
+    /* about */
+    .aboutSwiper-wrapper .swiper-slide{ width: 230px !important; }
+    .signal-management-right{ width: 260px; }
+    .about-hero-text, .build-to-advance-left-wrapper, .efficiencycase-wrapper, .about-data-meets-medical-inner h2, .data-meets-medical-desc, .about-signal-management-content, .about-reporting-submission-compliance-inner{ text-align: left; }
+}
 
-@media screen and (max-width: 400px) {}
+@media screen and (max-width: 459px) {
+    .section{ padding: 40px 0; }
+    /* about */
+    .build-to-advance-right-wrapper{ padding: 20px; }
+    .compliance-driven-wrapper{ width: 100%; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 38px !important; height: 32px !important; }
+    .about-reporting-compliance-right img{ height: 300px !important;  }
+    .signal-management-right{ width: 230px; }
+    .about-data-card-text{ width: 300px; }
+}
+
+@media screen and (max-width: 400px) {
+    .aboutSwiper-wrapper .swiper-slide{ width: 100% !important; height: 262px !important; }
+    .about-hero-wrapper{ background-position: left; }
+    .about-data-card-text{ width: 260px; }
+    .compliance-driven-by, .build-for-real-world{ gap: 20px; }
+    .compliance-driven-by span, .build-for-safety-Operations{ width: 40px !important; height: 40px !important; }
+    .compliance-driven-wrapper{ width: 210px; }
+    .compliance-driven-by span img, .build-for-real-world span img{ width: 16px !important; height: 16px !important; }
+    .about-medical-card-row{ gap: 20px; flex-wrap: wrap; }
+    .about-data-card-text{ width: 100%; }
+    .about-data-card{ width: calc( 50% - 10px ); flex-direction: column; }
+    .efficiency-step-card h3{ height: max-content; margin-bottom: 12px; }
+    .about-data-cards-svg{ width: 40px; height: 40px; }
+    .about-data-cards-svg img{ width: 20px; height: 20px; }
+}
 
 @media screen and (max-width: 374px) {}
 
