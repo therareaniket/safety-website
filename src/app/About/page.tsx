@@ -3,6 +3,9 @@
 import AboutHero from '@/components/Aboutpage/AboutHero'
 import AboutBuildToAdvance from '@/components/Aboutpage/AboutBuildToAdvance'
 import AboutEfficiencyCaseHandling from '@/components/Aboutpage/AboutEfficiencyCaseHandling'
+import AboutDataMeetsMedical from '@/components/Aboutpage/AboutDataMeetsMedical'
+import AboutSignalManagement from '@/components/Aboutpage/AboutSignalManagement'
+import AboutReportingSubmissionCompliance from '@/components/Aboutpage/AboutReportingSubmissionCompliance'
 
 export default function About() {
   return (
@@ -12,6 +15,12 @@ export default function About() {
       <AboutBuildToAdvance />
 
       <AboutEfficiencyCaseHandling />
+
+      <AboutDataMeetsMedical />
+
+      <AboutSignalManagement />
+
+      <AboutReportingSubmissionCompliance/>
     </>
   )
 }
