@@ -345,7 +345,8 @@ header{
 }
 .curve-lg{
     left:0;
-    top:-31px;
+    top: 52%;
+    transform: translateY(-50%);
     opacity: 0.3;
     z-index:-1;
 }

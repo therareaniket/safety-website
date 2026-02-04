@@ -21,7 +21,7 @@ export default function HomeModals() {
                     </div>
 
                      <div className="ai-icon absolute rounded-full calender centered-block">
-                         <Image src='/images/homepage/ai-icons/calender.svg' alt="calender" width={32} height={35} priority />
+                         <Image src='/images/homepage/ai-icons/calendar.svg' alt="calender" width={32} height={35} priority />
                     </div>
                        <div className="ai-icon absolute rounded-full add-reaction centered-block">
                         <Image  src='/images/homepage/ai-icons/add_reaction.svg' alt="add-reaction" width={39} height={37} priority />

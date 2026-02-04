@@ -33,9 +33,6 @@
     .modals-wrapper.section{
           height: 726px;  
     }
-    .curve-lg{
-        top:0;
-    }
     .curve-sm{
         top:57%;
     }
@@ -208,10 +205,13 @@
 .f-right-cols {
     gap: 60px;
 }
+.tools-img .tool-lg{
+    width: 88%;
+}
 
     .tools-item {
         padding: 40px 30px 30px 40px;
-        height: 398px;
+        height: 378px;
     }
 
     .tools-item.purple,
@@ -416,9 +416,6 @@
     .modals-wrapper.section{
         height: 650px;
     }
-        .curve-lg {
-        top: 34px;
-    }
 
     .book-demo-inner .text-18 {
         font-size: 16px;
@@ -426,7 +423,10 @@
     }
 
     .hero-col-one {
-        width: 505px;
+        width: 555px;
+    }
+    .curve-lg{
+        top:55%;
     }
 
     .hero-row {
@@ -469,6 +469,9 @@
     .f-col-four {
     width: 40%;
 }
+.faq-img{
+    width: 148px;
+}
     .stats-item {
         width: 195px;
     }
@@ -478,7 +481,7 @@
     }
 
     .stats-item.two {
-        height: 266px;
+        height: 256px;
     }
 
     .stats-item {
@@ -497,8 +500,11 @@
 
     .tools-item {
         padding: 30px;
-        height: 375px;
+        height: 355px;
     }
+        /* .tools-img .tool-lg {
+        width: 82%;
+    } */
 
     .ai-center-icon {
         width: 196px;
@@ -607,6 +613,9 @@
     .eco-title .h6 {
         font-size: 16px;
         line-height: 24px;
+    }
+    .eco-title{
+        height: 155px;
     }
     .b-post-title .h4 {
         margin-bottom: 10px;
@@ -747,8 +756,8 @@
         gap: 25px;
     }
 
-    .hero-col-one {
-        width: 450px;
+       .hero-col-one {
+        width: 505px;
     }
 
     .hero-row {
@@ -799,6 +808,9 @@
         .modals-wrapper {
         height: 480px;
     }
+        .stats-item.two {
+        height: 251px;
+    }
 
     .stats-count-row {
         margin: 20px 0 0;
@@ -838,6 +850,9 @@
     .f-right-cols {
         width: calc(100% - 245px - 40px);
     }
+        .faq-img {
+        width: 118px;
+    }
 
     .stats-item.three {
         height: 321px;
@@ -874,7 +889,7 @@
         margin-top: 20px;
     }
     .tools-item {
-        height: 370px;
+        height: 345px;
         padding: 30px 20px;
     }
 
@@ -1004,6 +1019,19 @@
     .plans-row {
         gap: 30px;
     }
+    .b-post-items.mini .b-post-title .h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+        .b-col-two {
+        width: 47%;
+    }
+        .b-col-one {
+        width: 53%;
+    }
+        .nav-seprator {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1013,6 +1041,10 @@
       .fq-show-icon {
     width: 55px;
     height: 55px;
+    }
+    .eco-img img{
+        height: 230px;
+        object-fit: cover;
     }
   
         .recent-activity-circle {
@@ -1178,6 +1210,12 @@
         .eco-title {
         height: 188px;
         }
+        .tools-img .tool-lg {
+        width: 84%;
+    }
+    .tools-item{
+        height: 335px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1264,6 +1302,9 @@
     .eco-title{
         height: 144px;
     }
+    .eco-img img {
+        height: 360px;
+    }
     .tools-item {
         height: 340px;
     }
@@ -1273,6 +1314,9 @@
     .f-col-one,
     .f-right-cols{
         width: 100%;
+    }
+    .faq-img {
+       display: none;
     }
       .footer-inner-main{
         flex-direction: column;
@@ -1322,6 +1366,9 @@
     .hero-wrapper {
         height: 560px;
     }
+    .tools-item {
+        height: 320px;
+    }
 
 }
 
@@ -1335,6 +1382,9 @@
     width: 140px;
     margin: 0 auto 25px;
 }
+ .eco-img img {
+        height: 340px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -1425,13 +1475,9 @@
     .curve-sm {
         top: 58%;
     }
-    /* .ai-center-icon {
-        width: 146px;
-        height: 146px;
+       .eco-img img {
+        height: 300px;
     }
-    .ai-icon.chat {
-        right: 11%;
-    } */
 .plan-separator {
         height: 1px;
         width: 100%;
@@ -1537,7 +1583,8 @@ bottom: 16%;
         width: 100%;
     }
     .tools-item {
-        height: 370px;
+        height: 354px;
+        padding: 18px;
     }
         .main-title.center {
         margin-bottom: 30px;
@@ -1581,6 +1628,9 @@ bottom: 16%;
         .modals-wrapper.section {
         height: 350px;
     } 
+         .eco-img img {
+        height: 280px;
+    }
 
 }
 
@@ -1592,6 +1642,12 @@ bottom: 16%;
     .stats-row{
         flex-direction: column;
         gap:0;
+    }
+        .stats-item {
+        padding: 16px;
+    }
+        .stats-list {
+        gap: 18px;
     }
         .fq-show-icon {
         width: 35px;
@@ -1605,13 +1661,16 @@ bottom: 16%;
     .faq-img {
         width: 90px;
     }
+    .eco-img img {
+        height: 250px;
+    }
     h2{
         margin-bottom: 10px;
     }
     .stats-item.one,
     .stats-item.two,
     .stats-item.three{
-        height: 150px;
+        height: 140px;
     }
     .stats-item.one{
         width: 60%;
@@ -1691,16 +1750,20 @@ bottom: 16%;
         .eco-title .h4 {
         font-size: 20px;
         line-height: 28px;
+        margin-bottom: 6px;
+    }
+        .eco-title .h6 {
+        font-size: 14px;
+        line-height: 22px;
     }
     .eco-title{
-        height: 184px;
+        height: 154px;
     }
         .blog-row-inner {
         margin-top: 10px;
     }
     .curve-lg {
-        top: 55%;
-        transform: translateY(-50%);
+        top: 59%;
     }
     .curve-sm {
         top: 56%;
@@ -1788,6 +1851,9 @@ bottom: 16%;
         margin-top: 20px;
         gap:20px;
     }
+    .tools-item {
+        height: 330px;
+    }
 
 }
 
@@ -1800,7 +1866,7 @@ bottom: 16%;
         width: 100%;
     }
         .eco-title {
-        height: 124px;
+        height: auto;
     }
     .eco-item:nth-child(even){
         display: flex;
@@ -1833,9 +1899,12 @@ bottom: 16%;
         .op-item-title.two{
             right: -10px;
         }
-        /* .op-items-inner {
-        width: 100%;
-        } */
+           .tools-item {
+        height: 293px;
+    }
+     .eco-img img {
+        height: 400px;
+    }
     
 }
 
@@ -1859,9 +1928,18 @@ bottom: 16%;
         .op-col-two {
         height: 348px;
     }
+        .tools-item {
+        height: 304px;
+    }
+        .eco-img img {
+        height: 360px;
+    }
 }
 
 @media screen and (max-width: 400px) {
+        .tools-item {
+        height: 303px;
+    }
         .recent-activity-circle {
         width: 300px;
         height: 300px;
@@ -1932,7 +2010,7 @@ bottom: 16%;
         height: 440px;
     }
         .stats-item.one, .stats-item.two, .stats-item.three {
-        height: 130px;
+        height: 110px;
     }
         .hero-wrapper {
         padding: 130px 0 70px;
@@ -1940,6 +2018,9 @@ bottom: 16%;
         .stats-count .h1 {
         font-size: 26px;
         line-height: 33px;
+    }
+        .eco-img img {
+        height: 340px;
     }
 
 }
@@ -1958,6 +2039,15 @@ bottom: 16%;
     }
         .modals-wrapper {
         height: 450px;
+    }
+        .tools-item {
+        height: 312px;
+    }
+        .eco-img img {
+        height: 300px;
+    }
+        .curve-lg {
+        top: 62%;
     }
 }
 
