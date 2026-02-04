@@ -27,7 +27,7 @@ export default function AboutDataMeetsMedical() {
 
                                         <p className="text-rg h6 text-grey">Safety data is collected from emails, portals, call centers.</p>
                                     </div>
-                                </div>    .
+                                </div>  
 
                                 <div className="about-data-card about-data-card-2">
                                     <span className="about-data-cards-svg about-data-cards-svg-2">
@@ -39,13 +39,13 @@ export default function AboutDataMeetsMedical() {
 
                                         <p className="text-rg h6 text-grey">Create clear, regulator ready narratives using standardized, version.</p>
                                     </div>
-                                </div>    .
+                                </div>   
                             </div>
 
                             <div className="about-medical-card-row about-medical-card-row-2">
                                 <div className=" about-data-card-5">
                                     <Image src="/images/aboutpage/where-data-meets-medical-image.webp" alt="image" width={613} height={366}></Image>
-                                </div>    .
+                                </div>   
                             </div>
 
                             <div className="about-medical-card-row about-medical-card-row-3">
@@ -59,7 +59,7 @@ export default function AboutDataMeetsMedical() {
 
                                         <p className="text-rg h6 text-grey">Link assessments directly to RSI, and Investigator’s Brochure for context. </p>
                                     </div>
-                                </div>    .
+                                </div> 
 
                                 <div className="about-data-card about-data-card-4">
                                     <span className="about-data-cards-svg about-data-cards-svg-4">
@@ -71,7 +71,7 @@ export default function AboutDataMeetsMedical() {
 
                                         <p className="text-rg h6 text-grey">Ensure medical sign-off through defined review and approval workflows.</p>
                                     </div>
-                                </div>    .
+                                </div>    
                             </div>
                         </div>
 
