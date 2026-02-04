@@ -1,9 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import IcsrLg from '../../assets/images/icrc.webp'
-import SignalLg from '../../assets/images/signal.webp'
-import ComplianceLg from '../../assets/images/compliance.webp'
-import SaftyLg from '../../assets/images/safety.webp'
 
 
 export default function HomeTools() {
@@ -22,7 +18,7 @@ export default function HomeTools() {
                             <p className="h6">Efficient tools to capture, review, and process Individual Case Safety Reports with accuracy and speed.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src={IcsrLg} alt="ICSR Case Management" width={596} height={199} priority />
+                            <Image className="tool-lg" src='/images/homepage/icrc.webp' alt="ICSR Case Management" width={596} height={199} priority />
                         </div>
                     </div>
                     <div className="tools-item purple">
@@ -31,7 +27,7 @@ export default function HomeTools() {
                             <p className="h6">Intelligent analytics to identify emerging safety signals early and monitor risk throughout the product lifecycle.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src={SignalLg} alt="Signal Detection & Risk Tracking" width={580} height={200} priority /> 
+                            <Image className="tool-lg" src='/images/homepage/signal.webp' alt="Signal Detection & Risk Tracking" width={580} height={200} priority /> 
                         </div>
                     </div>  
                 </div>
@@ -42,7 +38,7 @@ export default function HomeTools() {
                             <p className="h6">Built‑in support for audit trails, quality oversight, and timely generation of regulatory‑ready aggregate reports.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src={ComplianceLg} alt="Compliance & Regulatory Reporting" width={516} height={207} priority />  
+                            <Image className="tool-lg" src='/images/homepage/compliance.webp' alt="Compliance & Regulatory Reporting" width={516} height={207} priority />  
                         </div>
                     </div>
                     <div className="tools-item green">
@@ -51,7 +47,7 @@ export default function HomeTools() {
                             <p className="h6">Seamless collection of safety information from various sources including literature, reports clinical systems.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src={SaftyLg} alt="Multi‑Source Safety Data Intake" width={466} height={203} priority /> 
+                            <Image className="tool-lg" src='/images/homepage/safety.webp' alt="Multi‑Source Safety Data Intake" width={466} height={203} priority /> 
                         </div>
                     </div>  
                 </div>

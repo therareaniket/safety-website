@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import QouteIcon from '../../assets/images/quote-icon.svg'
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,7 +19,7 @@ export default function HomeTestimonials() {
                 </div>
                 <div className="team-testimonial-inner flex">
                     <div className="t-title">
-                        <Image className="quote-img" src={QouteIcon} alt="Quote Icon" width={97} height={74} priority />
+                        <Image className="quote-img" src='/images/homepage/quote-icon.svg' alt="Quote Icon" width={97} height={74} priority />
                         <h3 className="text-md h4">Hear What Our Customers Say For Us</h3>
                         <div className="custom-navigation flex items-center">
                             <div className="s-nav swiper-button-prev"><svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">

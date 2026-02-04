@@ -2,7 +2,6 @@
 "use client";
 
 import { useState } from "react";
-import FaqIcon from '../../assets/images/faq-icon.svg'
 import Image from "next/image";
 
 
@@ -36,7 +35,7 @@ export default function HomeFAQ() {
                 <div className="container">
                     <div className="faq-row flex">
                         <div className="fq-col-one">
-                            <Image className="faq-img" src={FaqIcon} alt="FAQ" width={211}
+                            <Image className="faq-img" src='images/homepage/faq-icon.svg' alt="FAQ" width={211}
                                 height={226} priority />
                             <h2 className="text-md text-black">Plans Designed for Smarter Safety Management</h2>
                             <p className="h6 op-desc text-black">Here are answers to the top questions teams ask about DhatuSafety, helping you understand our features, workflows.</p>

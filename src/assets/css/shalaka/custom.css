@@ -714,7 +714,7 @@ text-align: left;
     margin-top:46px;
 }
 .f-cta-block{
-    background: url(../../images/cta-bg.webp);
+    background: url(/images/homepage/cta-bg.webp);
     padding:40px 20px;
 }
 /*******Footer**********/

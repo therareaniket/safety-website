@@ -1,10 +1,3 @@
-import Logo from '../assets/images/logo.svg'
-import Phone from '../assets/images/call.svg'
-import Email from '../assets/images/mail.svg'
-import Facebook from '../assets/images/facebook.svg'
-import Insta from '../assets/images/insta.svg'
-import X from '../assets/images/x.svg'
-import Linkedin from '../assets/images/linkedin.svg'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,7 +8,7 @@ export default function Footer() {
                 <div className="footer-inner-main flex">
                     <div className="f-col-one flex flex-col">
                         <div className='f-logo'>
-                            <Image className="navbar-img" src={Logo} alt="dhatusafety-logo" width={150}
+                            <Image className="navbar-img" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
                                 height={25} priority />
                             <p className='f-desc text-16'>
                                 Empowering organizations with smart, reliable, and compliant pharmacovigilance workflows
@@ -23,11 +16,11 @@ export default function Footer() {
                         </div>
                         <div className="f-contact">
                             <div className="f-c-list flex">
-                                <Image className="f-icon" src={Phone} alt="call" />
+                                <Image className="f-icon" src='/images/homepage/call.svg' width={18} height={18} alt="call" />
                                 <p className='text-16'>+1 512 843 2002</p>
                             </div>
                             <div className="f-c-list flex">
-                                <Image className="f-icon" src={Email} alt="email" />
+                                <Image className="f-icon" src='/images/homepage/mail.svg' width={20} height={16} alt="email" />
                                 <p className='text-16'>enquiry@dhatusafety.com</p>
                             </div>
                         </div>
@@ -101,13 +94,13 @@ export default function Footer() {
 
                 <div className="copyright flex items-center">
                     <ul className='flex social-links'>
-                        <li><Image className="social-img" src={Facebook} alt="facebook" width={30}
+                        <li><Image className="social-img" src='/images/homepage/facebook.svg' alt="facebook" width={30}
                                 height={30} priority /></li>
-                                 <li><Image className="social-img" src={Insta} alt="instagram" width={30}
+                                 <li><Image className="social-img" src='/images/homepage/instagram.svg' alt="instagram" width={30}
                                 height={30} priority /></li>
-                                 <li><Image className="social-img" src={X} alt="x" width={30}
+                                 <li><Image className="social-img" src='/images/homepage/x.svg' alt="x" width={30}
                                 height={30} priority /></li>
-                                 <li><Image className="social-img" src={Linkedin} alt="linkedin" width={30}
+                                 <li><Image className="social-img" src='/images/homepage/linkedin.svg' alt="linkedin" width={30}
                                 height={30} priority /></li>
                     </ul>
                     <div className="copyright-links flex">                       

@@ -1,9 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import Star from '../../assets/images/star.svg'
-import GraphOne from '../../assets/images/graph-01.webp'
-import GraphTwo from '../../assets/images/graph-02.webp'
-import GraphThree from '../../assets/images/graph-03.webp'
+
 
 export default function HomeOperations() {
     return (
@@ -18,7 +13,7 @@ export default function HomeOperations() {
                          <div className="op-col-two">
                             <div className="op-items-inner relative centered-block">
                                 <div className="op-dashed-circle rounded-full relative centered-block">
-                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" stroke-dasharray="10 10"/></svg>
+                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10"/></svg>
                                     <div className="op-items-desc absolute text-center">
                                         <p className="op-text text-18 text-white">Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.</p>
                                     </div>

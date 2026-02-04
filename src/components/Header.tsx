@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import "@/assets/css/shalaka/responsive.css"
-import Logo from '../assets/images/logo.svg'
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +12,7 @@ export default function Header() {
             <div className="container">
                 <nav className="nav-wrapper">
                     <div className="navbar-img-wrapper">
-                        <Image className="navbar-logo" src={Logo} alt="dhatusafety-logo" width={150}
+                        <Image className="navbar-logo" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
                             height={25} priority />
                     </div>
 

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import postOne from '../../assets/images/blogs/b-01.webp'
 
 export default function HomeBlog() {
     return (
@@ -18,7 +17,7 @@ export default function HomeBlog() {
                 <div className="blog-row-inner flex">
                     <div className="b-feature-item">
                        <div className="b-post-img">
-                        <Image src={postOne} alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
+                        <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
                        </div>
                        <div className="b-post-content">
                        <div className="b-post-title">
@@ -37,7 +36,7 @@ export default function HomeBlog() {
                     <div className="b-post-items flex mini">
                         <div className="post-item flex">
                             <div className="b-post-img">
-                                <Image src={postOne} alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
+                                <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
                                 <Link href='#'><h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3></Link>
@@ -46,7 +45,7 @@ export default function HomeBlog() {
                         </div>
                         <div className="post-item flex">
                             <div className="b-post-img">
-                                <Image src={postOne} alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
+                                <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
                                 <Link href='#'><h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3></Link>
@@ -55,7 +54,7 @@ export default function HomeBlog() {
                         </div>
                         <div className="post-item flex">
                             <div className="b-post-img">
-                                <Image src={postOne} alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
+                                <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
                                 <Link href='#'><h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3></Link>

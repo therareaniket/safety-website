@@ -1,9 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Sponsor from '../../assets/images/sponsor.webp'
-import Cros from '../../assets/images/cros.webp'
-import Pharma from '../../assets/images/pharma.webp'
-import Mahs from '../../assets/images/mahs.webp'
 
 export default function HomeEcosystem() {
     return (
@@ -17,7 +13,7 @@ export default function HomeEcosystem() {
                 <div className="eco-row flex">
                     <div className="eco-item">
                         <div className="eco-img">
-                            <Image className="ec-img" src={Sponsor} alt="Clinical Sponsors" width={336} height={413} priority />
+                            <Image className="ec-img" src='/images/homepage/sponsor.webp' alt="Clinical Sponsors" width={336} height={413} priority />
                         </div>
                         <div className="eco-title">
                             <h3 className="h4 text-md">Clinical Sponsors</h3>
@@ -30,12 +26,12 @@ export default function HomeEcosystem() {
                             <p className="h6">Depend for efficiently manage safety operations for multiple clients</p>
                         </div>
                         <div className="eco-img">
-                            <Image className="ec-img" src={Cros} alt="Cros" width={336} height={413} priority />
+                            <Image className="ec-img" src='/images/homepage/cros.webp' alt="Cros" width={336} height={413} priority />
                         </div>                        
                     </div>
                     <div className="eco-item">
                         <div className="eco-img">
-                            <Image className="ec-img" src={Pharma} alt="Pharma & Biotech" width={336} height={413} priority />
+                            <Image className="ec-img" src='/images/homepage/pharma.webp' alt="Pharma & Biotech" width={336} height={413} priority />
                         </div>
                         <div className="eco-title">
                             <h3 className="h4 text-md">Pharma</h3>
@@ -48,7 +44,7 @@ export default function HomeEcosystem() {
                             <p className="h6">Marketing Authorization Holders rely to manage</p>
                         </div>
                         <div className="eco-img">
-                            <Image className="ec-img" src={Mahs} alt="MaHs" width={336} height={413} priority />
+                            <Image className="ec-img" src='/images/homepage/mahs.webp' alt="MaHs" width={336} height={413} priority />
                         </div>                        
                     </div>
                 </div>
