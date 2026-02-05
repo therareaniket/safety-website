@@ -33,7 +33,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/insights" className="nav-link text-18">
+                            <Link href="/Compliance" className="nav-link text-18">
                                 Compliance & quality
                             </Link>
                         </li>
@@ -62,7 +62,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/about" className="nav-link text-18">
+                            <Link href="/About" className="nav-link text-18">
                                 About Platform
                             </Link>
                         </li>
@@ -72,7 +72,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/insights" className="nav-link text-18">
+                            <Link href="/Compliance" className="nav-link text-18">
                                 Compliance & quality
                             </Link>
                         </li>
