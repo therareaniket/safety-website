@@ -1,6 +1,55 @@
-
+"use client"
+import { useState, useEffect } from "react";
 
 export default function HomeOperations() {
+
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const totalItems = 4;
+    
+    useEffect(()=>{
+        const interval = setInterval(()=>{
+            setActiveIndex((prev)=> (prev + 1) % totalItems)
+        }, 3000);
+        return () => clearInterval(interval);
+    },[]);
+
+    const opDesc = [
+        {
+            text: 'Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.'
+        },{
+            text: 'Streamline Individual Case Safety Report handling from data entry and validation to medical review.'
+        },{
+            text: 'Generate aggregate reports, manage regulatory submissions, and maintain complete quality controls.'
+        }
+        ,{
+            text: 'Identify, assess, and track safety signals through their full lifecycle with automated insights monitoring.'
+        }
+    ]
+
+    const opNumber = [
+        {
+            num:1,
+            position:'left-center',
+            keyClass: 'one'
+        },
+        {
+            num:2,
+            position:'top-center',
+            keyClass: 'two'
+        },
+          {
+            num:3,
+            position:'left-center',
+            keyClass: 'three'
+        },
+          {
+            num:4,
+            position:'top-center',
+            keyClass: 'four'
+        }
+    ]
+
     return (
         <>
             <section className="operations-wrapper bg-dark-grey section centered-block">
@@ -14,13 +63,15 @@ export default function HomeOperations() {
                             <div className="op-items-inner relative centered-block">
                                 <div className="op-dashed-circle rounded-full relative centered-block">
                                     <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10"/></svg>
-                                    <div className="op-items-desc absolute text-center">
-                                        <p className="op-text text-18 text-white">Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.</p>
+                                    <div className="op-items-desc centered-block absolute text-center">
+                                        {opDesc.map((text, index) => (
+                                             <p key={index} className={`op-text text-18 text-white ${activeIndex === index ? 'active' : ''}`}>{text.text}</p> 
+                                        ))}                                                                  
                                     </div>
-                                    <div className="op-item-number left-center rounded-full one absolute centered-block"><span className="text-md">1</span></div>
-                                    <div className="op-item-number top-center rounded-full two absolute centered-block"><span className="text-md">2</span></div>
-                                    <div className="op-item-number left-center rounded-full three absolute centered-block"><span className="text-md">3</span></div>
-                                    <div className="op-item-number top-center rounded-full four absolute centered-block"><span className="text-md">4</span></div>
+                                    {opNumber.map((num,index) => (
+                                        <div className={`op-item-number ${activeIndex === index ? 'active' : ''} ${num.keyClass} ${num.position} rounded-full  absolute centered-block`}><span className="text-md">{num.num}</span></div>   
+                                    ))}
+                                    
                                 </div> 
                                 <h3 className="op-item-title one left-center absolute h5 text-white">Unified Data Intake</h3>
                                 <h3 className="op-item-title two top-center absolute h5 text-white">Cash Managment</h3>

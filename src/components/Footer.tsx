@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
+import FooterCTA from '../components/FooterCTA/FooterCTA'
 
 export default function Footer() {
     return (
-        <footer>          
+        <footer> 
+            
             <div className="container">
+                <div className="footer-inner relative">
+                <FooterCTA/>     
                 <div className="footer-inner-main flex">
                     <div className="f-col-one flex flex-col">
                         <div className='f-logo'>
@@ -96,7 +100,7 @@ export default function Footer() {
                     <ul className='flex social-links'>
                         <li><Image className="social-img" src='/images/homepage/facebook.svg' alt="facebook" width={30}
                                 height={30} priority /></li>
-                                 <li><Image className="social-img" src='/images/homepage/instagram.svg' alt="instagram" width={30}
+                                 <li><Image className="social-img" src='/images/homepage/insta.svg' alt="instagram" width={30}
                                 height={30} priority /></li>
                                  <li><Image className="social-img" src='/images/homepage/x.svg' alt="x" width={30}
                                 height={30} priority /></li>
@@ -109,6 +113,7 @@ export default function Footer() {
                             <p className='text-16'>DhatuSafety 2025.1.1</p>
                     </div>
                 </div>
+            </div>
             </div>
         </footer>
     );

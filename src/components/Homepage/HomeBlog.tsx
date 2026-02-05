@@ -22,7 +22,7 @@ export default function HomeBlog() {
                        <div className="b-post-content">
                        <div className="b-post-title">
                             <Link href='#'><h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3></Link>
-                            <p className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
+                            <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
                        </div>
                        <div className="b-meta">
                             <p className="text-16 text-mid-grey">Arjun Deshpande , Clinical Research Lead</p>
