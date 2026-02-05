@@ -41,6 +41,14 @@
 
     .operational-card-right{ width: 555px; }
     .operational-card span{ width: 56px; height: 56px; }
+    .compliance-security-btn-middle{ width: 400px; height: 190px; }
+
+    .compliance-steps-card{ flex: 0 0 290px; }
+    .compliance-steps-card:first-child:before{ width: 325px; }
+    .compliance-steps-card:nth-child(2):before{ width: 285px; }
+    .compliance-steps-card:nth-child(3):before{ left: 50px; width: 330px; }
+    .compliance-steps-card:nth-child(4):before{ width: 280px; }
+    .compliance-steps-card:nth-child(5)::before{ left: 50px; width: 330px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -77,6 +85,15 @@
     .operational-card-right{ width: 460px; }
     .operational-card span{ width: 50px; height: 50px; }
     .operational-card span img{ width: 24px; height: 24px; }
+
+    .compliance-security-btn-right{ width: 310px; }
+    .compliance-security-btn-middle{ width: 360px; }
+    .compliance-steps-card{ flex: 0 0 255px ; }
+    .compliance-steps-card:first-child:before{ width: 290px; }
+    .compliance-steps-card:nth-child(2):before{ width: 258px; top: -71px; }
+    .compliance-steps-card:nth-child(3):before{ width: 291px; top: 22px; }
+    .compliance-steps-card:nth-child(4):before{ width: 266px; top: -71px;  right: -57px; }
+    .compliance-steps-card:nth-child(5):before{ width: 290px; top: 22px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -131,7 +148,8 @@
     .compliance-flexible-operations-right{ width: 500px; }
     .operational-card span{ width: 48px; height: 48px; }
     .compliance-operations-stats-wrapper{ width: 550px; margin-top: 120px; }
-
+    .compliance-security-btn-middle{ width: 320px; height: 160px; }
+    .security-btn{ height: 60px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -187,6 +205,11 @@
     .compliance-flexible-operations-right{ width: 435px; }
     .operational-card-right{ width: 360px; }
     .operational-card span{ width: 44px; height: 44px; }
+    .compliance-security-btn-left{ width: 530px;}
+    .compliance-security-btn-left div h3{ padding-bottom: 20px; }
+    .compliance-security-btn-middle{ width: 340px; }
+    .compliance-security-button-wrapper{ margin-top: 60px; }
+    .compliance-step-span{ width: 36px; height: 36px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -234,6 +257,18 @@
     .operational-card-right{ width: 300px; }
     .operational-card span{ width: 40px; height: 40px; }
     .operational-card span img{ width: 20px; height: 20px; }
+    .compliance-security-head-wrapper h2{ margin-bottom: 15px; }
+    .compliance-security-btn-left{ width: 430px; }
+    .compliance-security-btn-middle{ width: 330px; height: 130px; }
+    .compliance-security-button-wrapper{ gap: 30px; }
+    .security-btn img{ width: 12px; height: 12px; }
+    .compliance-steps-card{ flex: 0 0 225px; }
+    .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ transform: translateY(75px); }
+    .compliance-steps-card:first-child:before{ width: 257px; }
+    .compliance-steps-card:nth-child(2):before{ width: 228px; top: -58px; }
+    .compliance-steps-card:nth-child(3):before{ width: 261; top: 17px; left: 46px; }
+    .compliance-steps-card:nth-child(4):before{ width: 229px; top: -59px; right: -52px; }        
+    .compliance-steps-card:nth-child(5):before { width: 255px; top: 16px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -297,6 +332,9 @@
     .compliance-operations-stats-wrapper{ width: 350px; }
     .operational-card-right{ width: 240px; }
     .compliance-operations-head-text-wrapper h2{ margin-bottom: 15px; }
+    .compliance-security-btn-left{ width: 365px; }
+    .security-btn{ height: 55px; }
+    .compliance-security-btn-middle{ width: 285px; height: 155px; }
 } 
 
 @media screen and (max-width: 991px) {
@@ -318,6 +356,8 @@
 
     /* compliance */
     .compliance-operational-wrapper{ gap: 30px; }
+    .compliance-security-btn-left{ width: 365px; }
+    .compliance-security-btn-left div h3{ padding-bottom: 20px; padding-right: 10px; }
 } 
 
 @media screen and (max-width: 839px) {
@@ -330,6 +370,46 @@
     .site-hero-text p{ margin-bottom: 0; }
     .compliance-driven-by span, .build-for-safety-Operations{ width: 32px; height: 32px; }
     .compliance-driven-by span img, .build-for-real-world span img{ width: 14px !important; height: 14px !important; }
+    .compliance-security-btn-middle{ width: 300px; height: 150px; }
+    .compliance-steps-divider-desktop{ display: none; }
+    .compliance-steps-divider-mobile{ display: block; }
+    .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ flex-direction: column; gap: 30px; }
+    .compliance-steps-divider-mobile .compliance-validation-steps-wrapper .compliance-steps-card{ flex: 0 0 0; }
+    .compliance-steps-card-responsive{ width: 360px; position: relative; }
+    .compliance-steps-card-responsive p { width: 290px; }
+    .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ transform: translateY(0px); transform: translateX(100%); }
+    .compliance-validation-steps-wrapper 
+    .compliance-steps-card-responsive:nth-child(odd)::before{
+        content:"";
+        position:absolute;
+        width:340px;
+        height:300px;
+        background-image:url('/images/compliancepage/compliance-steps-responsive-arrow-left.svg');
+        background-repeat:no-repeat;
+        background-size:contain;
+        top:-150px;
+        left:13px;
+        z-index:1;
+    }
+
+    .compliance-validation-steps-wrapper 
+    .compliance-steps-card-responsive:nth-child(even)::before{
+        content:"";
+        position:absolute;
+        width:340px;
+        height:300px;
+        background-image:url('/images/compliancepage/compliance-steps-responsive-arrow.svg');
+        background-repeat:no-repeat;
+        background-size:contain;    
+        top:-150px;
+        left:-316px;
+        z-index:1;
+    }
+    .compliance-validation-steps-wrapper 
+    .compliance-steps-card-responsive:nth-child(1)::before{
+        display: none;
+    }
+    .compliance-validation-steps-wrapper{ padding: 0; overflow-x: hidden; }
 }
 
 @media screen and (max-width: 767px) {
@@ -364,6 +444,11 @@
     .operational-card-right{ width: 530px; }
     .compliance-flexible-operations-right{ gap: 20px; }
     .operational-card span{ width: 36px; height: 36px; }
+    .compliance-security-btn-middle{ width: 260px; height: 174px; }
+    .compliance-steps-card-responsive{ width: 290px; }
+    .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ gap: 0; }
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before { width: 275px; top: -119px; left: -249px; } 
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{ width: 275px; top: -117px; }      
 }
 
 @media screen and (max-width: 639px) {
@@ -389,6 +474,21 @@
     .compliance-validation-support-svg img{ width: 18px; height: 18px; }
     .compliance-immutable-card-right{ width: 100%; }
     .operational-card-right{ width: 465px; }
+    .compliance-security-button-wrapper{ display: none; }
+    .compliance-security-responsive-accordion{ display: block; margin-top: 50px; }
+    .eco-system-accord h3{ margin-bottom: 0 !important; }
+    .compliance-accordions .compliance-security-accordion-title button.open{ background-color: red; }
+    .compliance-security-accordion-title{ margin-bottom: 0; }
+    .compliance-security-accordion-desciption{ background-color: #c7b0d8; padding: 10px; border-top: 1px solid #B8B8B8; border-radius: 0 0 10px 10px; }
+    .compliance-accordions .text-muted-foreground{ color: #c7b0d8; }
+    .compliance-steps-card-responsive p{ width: 100%; }
+    .compliance-steps-card-responsive{ width: 265px; }
+        .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before {
+        width: 240px;
+        top: -119px;
+        left: -221px;
+    }
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{width: 240px;}
 }
 
 @media screen and (max-width: 575px) {
@@ -406,6 +506,10 @@
     /* compliance */
     .compliance-validation-support-card{ height: 280px; }
     .operational-card-right{ width: 385px; }
+    .compliance-steps-card-responsive{ width: 220px; }
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before{ display: none; }
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n+1)::before{ display: none; }
+    .compliance-steps-head-text-wrapper{ text-align: left; }
 }
 
 @media screen and (max-width: 480px) {
@@ -423,10 +527,11 @@
    .compliance-validation-support-card{ width: 100%; height: 100%; }
    .compliance-validation-row{ flex-direction: column; gap: 20px; }
    .compliance-validation-head-text-wrapper{ text-align: left; }
-    .compliance-immutable-card-right{ text-align: left; }
-    .compliance-operations-head-text-wrapper{ text-align: left; }
-    .compliance-operations-head-text-wrapper p{ margin-bottom: 0; }
-    .operational-card-right{ width: 365px; }
+   .compliance-immutable-card-right{ text-align: left; }
+   .compliance-operations-head-text-wrapper{ text-align: left; }
+   .compliance-operations-head-text-wrapper p{ margin-bottom: 0; }
+   .operational-card-right{ width: 365px; }
+   .compliance-security-head-wrapper{ text-align: left; }
 }
 
 @media screen and (max-width: 459px) {
@@ -441,6 +546,9 @@
 
     /* compliance  */
     .operational-card-right{ width: 290px; }
+    .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ gap: 20px; }
+    .compliance-steps-card-responsive{ width: 100%; }
+    .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ transform: translateX(0); }
 }
 
 @media screen and (max-width: 400px) {

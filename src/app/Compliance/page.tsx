@@ -2,9 +2,10 @@
 
 import ComplianceHero from "@/components/Compliancepage/ComplianceHero";
 import ComplianceInspectionReadiness from "@/components/Compliancepage/ComplianceInspectionReadiness";
-// import ComplianceStepsValidation from "@/components/Compliancepage/ComplianceStepsValidation";
+import ComplianceStepsValidation from "@/components/Compliancepage/ComplianceStepsValidation";
 import ComplianceValidationSupport from "@/components/Compliancepage/ComplianceValidationSupport";
 import ComplianceImmutableTrials from "@/components/Compliancepage/ComplianceImmutableTrials";
+import ComplianceSecureConnectivity from "@/components/Compliancepage/ComplianceSecureConnectivity";
 import ComplianceFlexibleOperations from "@/components/Compliancepage/ComplianceFlexibleOperations";
 
 export default function Compliance() {
@@ -14,11 +15,13 @@ export default function Compliance() {
 
             <ComplianceInspectionReadiness />
 
-             {/* <ComplianceStepsValidation /> */}
+             <ComplianceStepsValidation />
 
              <ComplianceValidationSupport />
 
              <ComplianceImmutableTrials />
+
+             <ComplianceSecureConnectivity />
 
              <ComplianceFlexibleOperations />
         </>
