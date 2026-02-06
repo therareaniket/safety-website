@@ -49,6 +49,21 @@
     .compliance-steps-card:nth-child(3):before{ left: 50px; width: 330px; }
     .compliance-steps-card:nth-child(4):before{ width: 280px; }
     .compliance-steps-card:nth-child(5)::before{ left: 50px; width: 330px; }
+    .resources-tab-content .resource-card-image-wrapper{ height: 365px; }
+
+    /* resourcesdetail */
+    .blog-sm-container{ width: 1100px; }
+    .resource-detail-hero-wrapper{ padding-top: 150px; }
+    .resource-detail-banner-img{ width: 1300px; height: 700px; margin: 0 auto; }
+    .resource-detail-banner-img img{ width: 100%; height: 100%; object-fit: cover; }
+
+    /* contact */
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea { width: 800px; }
+    .cnct-form-row-1 input{ width: 380px; }
+
+    /* pricing */
+    .pc-item{ align-items: flex-start; }
+
 }
 
 @media screen and (max-width: 1599px) {
@@ -94,6 +109,21 @@
     .compliance-steps-card:nth-child(3):before{ width: 291px; top: 22px; }
     .compliance-steps-card:nth-child(4):before{ width: 266px; top: -71px;  right: -57px; }
     .compliance-steps-card:nth-child(5):before{ width: 290px; top: 22px; }
+
+    /* resources */
+    .resource-heading-wrapper{ padding-top: 150px; }
+    .resources-tab-content .resource-card-image-wrapper{ height: 300px;  }
+
+    /* resourcesdetail */
+    .resource-detail-banner-img{ width: 1200px; }
+    .resource-detail-banner-img{ height: 580px; }
+    .blog-sm-container{ width: 900px; }
+    /* .resources-detail-social-links{ padding: 30px 0; } */
+    .blog-detail-text-wrapper{ padding-bottom: 60px; }
+
+    /* contact */
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea{ width: 725px; }
+    .cnct-form-row-1 input{ width: 342px; }
 } 
 
 @media screen and (max-width: 1439px) {
@@ -150,6 +180,16 @@
     .compliance-operations-stats-wrapper{ width: 550px; margin-top: 120px; }
     .compliance-security-btn-middle{ width: 320px; height: 160px; }
     .security-btn{ height: 60px; }
+
+    /* resources */
+    .resources-tab-content .resource-card-image-wrapper{ height: 280px; }
+    .resource-detail-banner-img{ width: 1055px; height: 490px; }
+    .blog-sm-container{ width: 830px; }
+
+    /* contact */
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea{ width: 660px; }
+    .cnct-form-row-1 input{ width: 310px; }
+    .cnct-button-wrapper .btn-icon{ width: 45px; height: 45px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -210,6 +250,23 @@
     .compliance-security-btn-middle{ width: 340px; }
     .compliance-security-button-wrapper{ margin-top: 60px; }
     .compliance-step-span{ width: 36px; height: 36px; }
+
+    /* resources */
+    .resources-tab-content .resource-card-image-wrapper{ height: 240px; }
+    .resource-heading-wrapper{ padding-top: 110px; }
+    .resource-detail-banner-img{ width: 100%; height: 430px; }
+    .social-icons-wrapper img{ width: 24px; height: 24px; }
+    .resources-detail-social-links{ padding-bottom: 30px; }
+
+    /* contact */
+    .cnct-form-row-1{ gap: 20px; }
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea{ width: 560px; padding: 15px 20px; }
+    .cnct-form-row-1 input{ width: 270px; padding: 15px 20px; }
+    .cnct-form-row-3 textarea{ height: 138px; }
+    .contact-form-text-left{ width: 360px;  }
+    .contact-form-card span{ width: 40px; height: 40px; }
+    .contact-hero-wrapper h1{ margin-bottom: 15px; }
+    .cnct-button-wrapper{ margin-top: 40px; }
 }   
 
 @media screen and (max-width: 1199px) {
@@ -226,7 +283,7 @@
     .compliance-driven-by span, .build-for-safety-Operations{ width: 28px; height: 28px; }
     .build-toadvance-icon img{ width: 12px !important; height: 12px !important; }
     .efficiency-steps-wrapper{ margin-top: 40px; }
-    .efficiency-step-card{ height: 344px; } 
+    .efficiency-step-card{ height: 370px; } 
     .compliance-driven-wrapper .h5{ margin-bottom: 10px; }
     .build-to-advance-right-wrapper{ gap: 20px; }
     .about-data-card{ width: 244px; height: 150px; }
@@ -269,6 +326,31 @@
     .compliance-steps-card:nth-child(3):before{ width: 261; top: 17px; left: 46px; }
     .compliance-steps-card:nth-child(4):before{ width: 229px; top: -59px; right: -52px; }        
     .compliance-steps-card:nth-child(5):before { width: 255px; top: 16px; }
+
+    /* resources */
+    .resources-card-text-wrapper{ padding-top: 0; }
+    .resources-card-btn-dtl-left span{ padding: 6px 8px; }
+    .resource-card-btn-wrapper{ padding: 20px 0; }
+    .resources-card-text-wrapper h3{ margin-bottom: 12px; }
+    .resources-card-text-wrapper p{ margin-bottom: 8px; }
+    .resource-card-date p{ font-size: 12px; line-height: 20px; }
+    .resource-listing-tabs-wrapper{ margin-bottom: 40px; }
+    .resource-heading-wrapper h1{ margin-bottom: 15px; }
+    .resources-tab-content .resource-card-image-wrapper{ height: 200px; }
+
+    /* resource detail */
+    .blog-sm-container { width: 700px; }
+    .resource-detail-more-blogs .resources-card-text-wrapper{ padding-top: 20px; }
+    .breadcrumb-list{ gap: 10px; font-size: 14px; line-height: 22px; }
+    .resource-detail-hero-wrapper{ padding-top: 120px; }
+
+    /* contact */
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea, .cnct-form-row-1 input{ width: 445px; }
+    .cnct-form-row-3 textarea{ height: 120px; }
+    .cnct-form-row-1{ flex-direction: column; }
+
+    /* pricing */
+    .plans-wrapper.pricing .plan-item{ display: flex; flex-direction: column; justify-content: space-between; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -276,7 +358,7 @@
 
     /* about */
     .site-hero-wrapper{ height: 450px; }
-    .site-hero-text{ width: 640px; }
+    .site-hero-text{ width: 100%; }
     .build-to-advance-wrapper{ flex-direction: column; gap: 20px; }
     .build-to-advance-left-wrapper{ width: 100%; text-align: center; }
     .build-to-advance-right-wrapper{ width: 100%; }
@@ -303,12 +385,12 @@
     .about-medical-card-row{ display: flex; flex-direction: row; flex-wrap: wrap; gap: 30px; width: 100%; }
 
     .about-data-card{ width: calc( 50% - 15px); height: 128px; }
-    .about-data-card-text{ width: 267px; }
+    .about-data-card-text{ width: 225px; }
     .about-data-meets-medical-cards-wrapper-desktop{ display: none; }
     .about-medical-card-row-2{ margin: 0 auto; }
     .about-data-card-5 img{ width: 100% !important; height: auto !important; object-fit: cover; }
     .medical-detail-cards-wrapper{ gap: 20px; }
-    .medical-detail-cards{ width: 220px; height: 215px; }
+    .medical-detail-cards{ width: 220px; height: 230px; }
     .about-data-meets-medical-cards-wrapper{ padding-top: 50px; padding-bottom: 30px; }
     .about-signal-management-content{ flex-direction: column; gap: 0px; text-align: center; }
     .about-signal-management-title{ width: 100%; }
@@ -316,25 +398,84 @@
     .about-signal-management-cards{ height: 305px; padding: 30px; margin-top: 30px; }
     .about-data-cards-svg{ width: 40px; height: 40px; }
     .about-data-cards-svg img{ width: 20px; height: 20px; }
-    /* .about-data-card-text{ width: 100%; } */
+    .about-reporting-compliance-detail-pointers{ flex-direction: column-reverse; }
+    .about-reporting-compliance-left, .about-reporting-compliance-right{ width: 100%; height: max-content; }
+    .about-reporting-compliance-right{ width: 100%; height: 250px; }
+    .about-reporting-compliance-right img{ width: 100%;}
+
     /* compliance */
     .compliance-head-text-wrapper{ text-align: center; }
     .compliance-pointers-card{ width: calc( 50% - 10px );}
     .compliance-validation-head-text-wrapper{ width: 100%; text-align: center; }
-    .compliance-validation-support-card-1, .compliance-validation-support-card-4{ width: 350px; height: 220px; }
-    .compliance-validation-support-card-2, .compliance-validation-support-card-3{ width: 330px; height: 220px; }
+    .compliance-validation-support-card-1, .compliance-validation-support-card-4{ width: 350px; height: 240px; }
+    .compliance-validation-support-card-2, .compliance-validation-support-card-3{ width: 330px; height: 240px; }
     .compliance-validation-support-card h3{ margin-bottom: 12px; }
     .compliance-immutable-card-left{ width: 280px; }
     .compliance-immutable-card-right{ width: 380px; }
-    .compliance-immutable-row-2{ padding-top: 50px; }
+    .compliance-immutable-row{ flex-direction: column-reverse; gap: 20px; }
+    .compliance-immutable-card-right{ width: 100%; text-align: center;  }
+    .compliance-immutable-card-left{ width: 100%; }
     .compliance-immutable-card-right h2{ margin-bottom: 15px; }
+    .compliance-immutable-row-2{ padding-top: 40px; }
     .compliance-operations-head-text-wrapper{ width: 320px; }
     .compliance-operations-stats-wrapper{ width: 350px; }
     .operational-card-right{ width: 240px; }
     .compliance-operations-head-text-wrapper h2{ margin-bottom: 15px; }
     .compliance-security-btn-left{ width: 365px; }
-    .security-btn{ height: 55px; }
-    .compliance-security-btn-middle{ width: 285px; height: 155px; }
+    .security-btn{ height: 45px; }
+    .compliance-security-btn-middle{ width: 285px; height: 176px; }
+    .compliance-operational-wrapper{ flex-direction: column; }
+    .compliance-operations-head-text-wrapper{ width: 100%; text-align: center; margin-bottom: 30px; }
+    .compliance-operations-stats-wrapper{ margin: 0 auto; }
+    .compliance-flexible-operations-right{ width: 100%; flex-direction: row; gap: 20px; }
+    .operational-card{ flex-direction: column; width: calc(50% - 10px); }
+    .operational-card-right{ width: 100%; }
+    
+    /* resource */
+    .resources-card-btn-detail-right{ font-size: 14px; line-height: 22px; }
+    .resources-card-text-wrapper p{  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp:3; overflow: hidden; }
+    .resources-tab-content{ width: calc( 50% - 10px); }
+    .resources-cards-wrapper{ gap: 20px; }
+    .resource-listing-tabs-wrapper{ margin-bottom: 30px; }
+    .resource-listing-tabs-wrapper .resource-tab-btn{ padding: 6px 12px; }
+    .resources-card-btn-dtl-left span{ display: none; }
+
+    /* resource detail */
+    .blog-sm-container{ width: 100%; }
+    .resource-detail-banner-img{ height: 291px; }
+    .blog-detail-text-wrapper{ padding-bottom: 40px; }
+    .resources-detail-social-links .resources-card-btn-dtl-left span{ display: none; }
+    .resource-detail-middle p { font-size: 14px; line-height: 22px; }
+    .resource-detail-middle span{ font-size: 14px; line-height: 22px; }
+    .resources-detail-social-links{ padding-bottom: 20px; }
+    .resource-detail-qna h3{ margin-bottom: 12px; }
+    .resource-detail-qna{ margin-top: 20px; }
+    .social-icons-wrapper img{ width: 20px; height: 20px; }
+    .social-icons-wrapper{ gap: 15px; }
+    .resources-tab-content .resource-card-image-wrapper{ height: 180px; }
+
+    /* contact */
+    .contact-form{ flex-direction: column; }
+    .contact-form-text-left{ width: 100%; }
+    .contactform-text-wrapper{ text-align: center; }
+    .contactform-text-wrapper h2{ margin-bottom: 15px; }
+    .contact-form-address-card-wrapper{ flex-direction: row; flex-wrap: wrap; }
+    .contact-form-card{ width: calc( 50% - 10px );  }
+    .cnct-form-row-1{ flex-direction: row; }
+    .contact-form-text-right { width: 100%; } 
+    .cnct-form-row-1 input{ width: calc( 50% - 10px ); }
+    .cnct-form-row-2 input, .cnct-form-row-3 textarea{ width: 100%; }
+    .contact-form-address-card-wrapper{ margin-top: 50px; }
+    .contact-form-card span{ width: 36px; height: 36px; }
+    .contact-form-card span img{ width: 18px; height: 18px; }
+    .contact-hero-section{ padding-top: 120px;  }
+
+    .cnct-button-wrapper{ display: flex; align-items: center; justify-content: end; margin-top: 30px; }
+
+    /* pricing */
+    .pricing-title-row{ flex-direction: column; gap: 0; text-align: center; }
+    .pr-col-one, .pr-col-two{ width: 100%; }
+    .pr-col-one h2{ margin-bottom: 15px; }
 } 
 
 @media screen and (max-width: 991px) {
@@ -349,15 +490,19 @@
     .about-data-card-5{ height: 250px; }
     .about-data-card-5 img{ height: 100% !important; object-fit: cover; }
     .about-data-meets-medical-cards-wrapper{ gap: 30px; }
-    .medical-detail-cards{ height: 205px;}
-    .about-reporting-compliance-left{ width: 775px; }
-    .about-reporting-compliance-left, .about-reporting-compliance-right{ height: 545px; }
+
     .about-reporting-submission-compliance-inner{ margin-bottom: 30px; }
 
     /* compliance */
     .compliance-operational-wrapper{ gap: 30px; }
     .compliance-security-btn-left{ width: 365px; }
     .compliance-security-btn-left div h3{ padding-bottom: 20px; padding-right: 10px; }
+
+    /* resource */
+    .resource-detail-hero-wrapper{ padding-top: 120px; }
+
+    /* contact */
+    .contact-hero-section{ padding-top: 120px; }
 } 
 
 @media screen and (max-width: 839px) {
@@ -370,7 +515,7 @@
     .site-hero-text p{ margin-bottom: 0; }
     .compliance-driven-by span, .build-for-safety-Operations{ width: 32px; height: 32px; }
     .compliance-driven-by span img, .build-for-real-world span img{ width: 14px !important; height: 14px !important; }
-    .compliance-security-btn-middle{ width: 300px; height: 150px; }
+    .compliance-security-btn-middle{ width: 300px; height: 180px; }
     .compliance-steps-divider-desktop{ display: none; }
     .compliance-steps-divider-mobile{ display: block; }
     .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ flex-direction: column; gap: 30px; }
@@ -410,6 +555,16 @@
         display: none;
     }
     .compliance-validation-steps-wrapper{ padding: 0; overflow-x: hidden; }
+
+    /* resources */
+    .resources-tab-content .resource-card-image-wrapper{ height: 180px; }
+    .resource-detail-hero-wrapper{ padding-top: 120px; }
+    .resource-detail-more-blogs{ gap: 20px; }
+    .resources-card-btn-detail-right{ font-size: 12px; line-height: 20px; }
+
+    /* contact  */
+    .contact-hero-section{ padding-top: 100px; }
+    .cnct-button-wrapper .btn-icon{ width: 42px; height: 42px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -417,7 +572,7 @@
     h1, .h1{ font-size: 28px; line-height: 36px; }
     h2, .h2{ font-size: 24px; line-height: 32px; }
     /* about */
-    .site-hero-text{ width: 590px; }
+    .site-hero-text{ width: 100%; }
     .build-to-advance-left-wrapper{ width: 100%; }
     .aboutSwiper-wrapper .swiper-slide{ width: 300px !important; }
     .efficiencycase-wrapper{ width: 100%; }
@@ -425,11 +580,15 @@
     .about-data-card-text{ width: 200px; }
     .about-data-cards-svg{ width: 32px; height: 32px; }
     .about-data-cards-svg img{ width: 18px; height: 18px; }
-    .medical-detail-cards{ height: 230px; }
+    .compliance-driven-wrapper{ width: 375px; }
+    .medical-detail-cards{ width: 100%; height: max-content; }
+    .medical-detail-cards-wrapper{ flex-direction: column; gap: 30px; }
     .about-signal-management-cards{ height: max-content; }
     .about-reporting-compliance-detail-pointers{ flex-direction: column-reverse; }
     .about-reporting-compliance-left, .about-reporting-compliance-right{ width: 100%; height: auto; }
-    .about-reporting-compliance-right img{ width: 100% !important; height: 350px !important; object-fit: cover; object-position: center; }
+    .about-reporting-compliance-right img{ width: 100% !important; height: 250px !important; object-fit: cover; object-position: center; }
+    .about-signal-management-cards{ flex-direction: column; }
+    .signal-management-text-left, .signal-management-right{ width: 100%; }
 
     /* compliance */
     .compliance-validation-support-card{ width: calc( 50% - 10px ); height: 260px; }
@@ -440,7 +599,7 @@
     .compliance-operational-wrapper{ flex-direction: column; gap: 30px; }
     .compliance-operations-head-text-wrapper{ width: 100%; text-align: center; }
     .compliance-operations-stats-wrapper{ margin: 0 auto; margin-top: 30px; }
-    .operational-card, .compliance-flexible-operations-right{ width: 100%; }
+    .operational-card, .compliance-flexible-operations-right{ flex-direction: column; width: 100%; }
     .operational-card-right{ width: 530px; }
     .compliance-flexible-operations-right{ gap: 20px; }
     .operational-card span{ width: 36px; height: 36px; }
@@ -448,7 +607,35 @@
     .compliance-steps-card-responsive{ width: 290px; }
     .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ gap: 0; }
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before { width: 275px; top: -119px; left: -249px; } 
-    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{ width: 275px; top: -117px; }      
+    .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{ width: 275px; top: -117px; } 
+        .compliance-security-button-wrapper{ display: none; }
+    .compliance-security-responsive-accordion{ display: block; margin-top: 50px; }
+    .eco-system-accord h3{ margin-bottom: 0 !important; }
+    .compliance-accordions .compliance-security-accordion-title button.open{ background-color: red; }
+    .compliance-security-accordion-title{ margin-bottom: 0; }
+    .compliance-security-accordion-desciption{ background-color: #c7b0d8; padding: 10px; border-top: 1px solid #B8B8B8; border-radius: 0 0 10px 10px; }
+    .compliance-accordions .text-muted-foreground{ color: #c7b0d8; } 
+    
+    /* resources */
+    .resource-listing-tabs-wrapper .resource-tab-btn{ padding: 6px 12px; }
+    .resources-card-btn-dtl-left span{ display: none; }
+    .resources-tab-content{ width: 100%; }
+    .resources-tab-content .resource-card-image-wrapper{ height: 210px; }
+    .resource-listing-tabs-wrapper .resource-tab-btn{ margin-bottom: 0; }
+
+    /* resource detail */
+    .resource-detail-banner-img{ height: 255px; }
+    .resource-detail-middle{ display: none; }
+    .blog-detail-text-wrapper{ padding: 30px 0; }
+    .resources-detail-social-links{ padding: 20px 0; }
+    .resource-detail-more-blogs{ flex-direction: column; }
+
+    /* contact */
+    .contact-form-card div{ width: 180px; }
+    .cnct-form-row-1 input, .cnct-form-row-3 textarea{ padding: 12px 20px; }
+    .cnct-form-row-3 textarea{ height: 100px; }
+    .cnct-button-wrapper .btn-icon{ width: 40px; height: 40px; }
+    .cnct-button-wrapper .btn-icon .cnct-svg-arrow{ width: 20px; height: 20px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -467,6 +654,7 @@
     .medical-detail-cards-wrapper{ flex-direction: column; }
     .medical-detail-cards{ width: 100%; height: auto; }
 
+
     /* compliance */
     .compliance-pointers-svg{ width: 38px; height: 38px; }
     .compliance-pointers-card h3{ margin-bottom: 10px; margin-top: 8px; }
@@ -474,13 +662,7 @@
     .compliance-validation-support-svg img{ width: 18px; height: 18px; }
     .compliance-immutable-card-right{ width: 100%; }
     .operational-card-right{ width: 465px; }
-    .compliance-security-button-wrapper{ display: none; }
-    .compliance-security-responsive-accordion{ display: block; margin-top: 50px; }
-    .eco-system-accord h3{ margin-bottom: 0 !important; }
-    .compliance-accordions .compliance-security-accordion-title button.open{ background-color: red; }
-    .compliance-security-accordion-title{ margin-bottom: 0; }
-    .compliance-security-accordion-desciption{ background-color: #c7b0d8; padding: 10px; border-top: 1px solid #B8B8B8; border-radius: 0 0 10px 10px; }
-    .compliance-accordions .text-muted-foreground{ color: #c7b0d8; }
+
     .compliance-steps-card-responsive p{ width: 100%; }
     .compliance-steps-card-responsive{ width: 265px; }
         .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before {
@@ -489,6 +671,15 @@
         left: -221px;
     }
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{width: 240px;}
+
+    /* resources detail */
+    .resource-detail-hero-wrapper{ padding-top: 120px; }
+    .resource-detail-qna{ margin-top: 25px; }
+    .resource-detail-qna h3{ margin-bottom: 10px; }
+
+
+    /* contact */
+    .contact-hero-section{ padding-top: 100px; }
 }
 
 @media screen and (max-width: 575px) {
@@ -502,6 +693,8 @@
     .signal-management-text-left p{ margin-bottom: 0; }
     .about-signal-management-para{ width: 100%; }
     .signal-management-right{ width: 290px; }
+    .about-reporting-compliance-right img{ height: 230px !important; }
+    .site-hero-text, .build-to-advance-left-wrapper, .efficiencycase-wrapper, .about-data-meets-medical-inner h2, .data-meets-medical-desc, .about-signal-management-content, .about-reporting-submission-compliance-inner{ text-align: left; }
 
     /* compliance */
     .compliance-validation-support-card{ height: 280px; }
@@ -510,6 +703,27 @@
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before{ display: none; }
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n+1)::before{ display: none; }
     .compliance-steps-head-text-wrapper{ text-align: left; }
+
+    /* resources */
+    .resource-heading-wrapper{ text-align: left; }
+    .resource-listing-tabs-wrapper{ flex-wrap: wrap; gap: 20px; }
+    .resource-listing-tabs-wrapper .resource-tab-btn{ width: calc( 50% - 7px ) !important; }
+    .resources-card-text-wrapper p{ margin-bottom: 12px; }
+
+    /* contact */
+    .contact-form-card div{ width: 152px; }
+    .contact-hero-wrapper{ text-align: left; }
+    .contactform-text-wrapper{ text-align: left; }
+    .contact-hero-section{ padding-top: 120px; }
+    .contact-form-address-card-wrapper{ margin-top: 40px; }
+       .compliance-head-text-wrapper{ text-align: left; }
+   .compliance-validation-head-text-wrapper{ text-align: left; }
+   .compliance-immutable-card-right{ text-align: left; }
+   .compliance-security-head-wrapper{ text-align: left; }
+   .compliance-operations-head-text-wrapper{ text-align: left; }
+
+    /* pricing */
+    .pricing-title-row{ text-align: start; }
 }
 
 @media screen and (max-width: 480px) {
@@ -518,20 +732,25 @@
     /* about */
     .aboutSwiper-wrapper .swiper-slide{ width: 230px !important; }
     .signal-management-right{ width: 260px; }
-    .site-hero-text, .build-to-advance-left-wrapper, .efficiencycase-wrapper, .about-data-meets-medical-inner h2, .data-meets-medical-desc, .about-signal-management-content, .about-reporting-submission-compliance-inner{ text-align: left; margin-bottom: 12px; }
    
    /* compliance */
-   .compliance-head-text-wrapper{ text-align: left; }
    .compliance-head-text-wrapper h2{ margin-bottom: 12px; }
    .compliance-pointers-wrapper{ padding-top: 30px; }
    .compliance-validation-support-card{ width: 100%; height: 100%; }
    .compliance-validation-row{ flex-direction: column; gap: 20px; }
-   .compliance-validation-head-text-wrapper{ text-align: left; }
-   .compliance-immutable-card-right{ text-align: left; }
-   .compliance-operations-head-text-wrapper{ text-align: left; }
+
    .compliance-operations-head-text-wrapper p{ margin-bottom: 0; }
    .operational-card-right{ width: 365px; }
-   .compliance-security-head-wrapper{ text-align: left; }
+
+   /* resources detail */
+   .resource-detail-banner-img{ height: 200px; }
+
+   /* contact */
+   .contact-form-address-card-wrapper{ flex-direction: column; }
+   .contact-form-card{ width: 100%; }
+   .contact-form-card div{ width: 200px; }
+   .cnct-form-row-1{ flex-direction: column; }
+   .cnct-form-row-1 input{ width: 100%; padding: 15px 20px; }
 }
 
 @media screen and (max-width: 459px) {
@@ -543,6 +762,7 @@
     .about-reporting-compliance-right img{ height: 300px !important;  }
     .signal-management-right{ width: 230px; }
     .about-data-card-text{ width: 300px; }
+    .about-reporting-compliance-right img{ height: 200px !important; }
 
     /* compliance  */
     .operational-card-right{ width: 290px; }
@@ -565,11 +785,15 @@
     .efficiency-step-card h3{ height: max-content; margin-bottom: 12px; }
     .about-data-cards-svg{ width: 40px; height: 40px; }
     .about-data-cards-svg img{ width: 20px; height: 20px; }
+    .signal-management-right{ width: 100%; }
 
     /* compliance */
     .compliance-immutable-row{ padding-top: 40px; }
     .compliance-operations-stats-wrapper{ width: 100%; padding: 20px; }
     .compliance-operations-stat-card-1, .compliance-operations-stat-card-3{ width: 100%; }
+
+    /* resourcedetail */
+    .resources-detail-social-links{ padding-bottom: 10px; }
 }
 
 @media screen and (max-width: 374px) {

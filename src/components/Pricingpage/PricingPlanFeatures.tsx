@@ -23,7 +23,7 @@ export default function PricingPlanFeatures() {
                     </div>
                     <div className="pf-item text-center orange">
                         <div className="pf-icon centered-block rounded-full bg-orange">
-                            <Image src='/images/pricingpage/pf-01.svg' alt="Experienced Professionals" width={16.67} height={15.83} priority />
+                            <Image src='/images/pricingpage/pf-02.svg' alt="Experienced Professionals" width={16.67} height={15.83} priority />
                         </div>
                         <div className="pf-content">
                             <h3 className="h5 text-md">Experienced Professionals</h3>

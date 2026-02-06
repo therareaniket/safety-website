@@ -38,12 +38,12 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="nav-link text-18">
+                            <Link href="/Resource" className="nav-link text-18">
                                 Resourses
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="nav-link text-18">
+                            <Link href="/Contact" className="nav-link text-18">
                                 Contact
                             </Link>
                         </li>
@@ -67,7 +67,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/pricing" className="nav-link text-18">
+                            <Link href="/Pricing" className="nav-link text-18">
                                 Pricing
                             </Link>
                         </li>
@@ -77,12 +77,12 @@ export default function Header() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/contact" className="nav-link text-18">
+                            <Link href="/Resource" className="nav-link text-18">
                                 Resourses
                             </Link>
                         </li>
                         <li>
-                            <Link href="/find-rep" className="nav-link text-18">
+                            <Link href="/Contact" className="nav-link text-18">
                                 Contact
                             </Link>
                         </li>

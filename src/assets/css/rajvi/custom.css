@@ -164,7 +164,7 @@
 
 .compliance-head-text-wrapper p{ margin-bottom: 0; }
 .compliance-pointers-wrapper{ display: flex; align-items: flex-start; flex-wrap: wrap; gap: 20px; padding-top: 60px; }
-.compliance-pointers-card { width: calc(33% - 10px); box-shadow: inset -30px 0 20px -25px rgba(140, 120, 170, 0.11);}
+.compliance-pointers-card { width: calc(33% - 10px); }
 
 
 .compliance-pointers-card h3{ margin-top: 10px; margin-bottom: 14px; }
@@ -381,3 +381,100 @@
   cursor: pointer;
   border-bottom: 1px solid #B8B8B8;
 }
+
+.resource-heading-wrapper{ text-align: center; padding-top: 192px; }
+.resource-heading-wrapper p{ margin-bottom: 0; }
+
+.resources-tab-content .resource-card-image-wrapper{ width: 100%; height: 404px; }
+.resources-tab-content .resource-card-image-wrapper img{ width: 100%; height: 100%; object-fit: cover; }
+.resources-tab-content{ width: calc(50% - 20px); display: block; }
+.resources-card-text-wrapper{ width: 100%; padding-top: 20px; }
+.resource-card-btn-wrapper{ display: flex; align-items: center; justify-content: space-between; padding-top: 30px; }
+.resources-card-btn-dtl-left{ display: flex; align-items: flex-start; gap: 18px; }
+.resources-card-btn-dtl-left span{ background-color: var(--lightGrey); padding: 10px 11px; font-size: 14px; line-height: 22px; }
+.resources-card-btn-detail-right{ 
+  padding: 3px 15px;     
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #EFECF4 41%,
+    #F2F8EB 100%
+    );
+  color: #4B0081;
+}
+
+.resource-listing-tabs-wrapper{ margin-bottom: 60px; background-color: transparent; gap: 14px; }
+.resource-listing-tabs-wrapper .resource-tab-btn{ 
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #EFECF4 41%,
+    #F2F8EB 100%
+    );
+    padding: 8px 20px;
+    border-radius: 0;
+  color: #4B0081;  
+}
+/* .resource-listing-tabs-wrapper  */
+.resources-cards-wrapper{ display: flex;  gap: 40px; flex-wrap: wrap; }
+
+.resource-detail-hero-wrapper{ padding-top: 200px; }
+.blog-sm-container{ width: 1200px; }
+.blog-detail-text-wrapper{ padding-top: 30px; padding-bottom: 80px; }
+
+.blog-detail-text-wrapper p{ margin-bottom: 0px; }
+.resource-detail-banner-img img{ width: 1440px; }
+.resources-detail-social-links{ display: flex; justify-content: space-between; align-items: center;  padding-top: 30px; padding-bottom: 50px; }
+.social-icons-wrapper{ display: flex; align-items: center; gap: 20px; }
+.resource-detail-middle{ display: flex; align-items: center; gap: 10px; }
+.resource-detail-middle span{    background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #EFECF4 41%,
+    #F2F8EB 100%
+    );
+    padding: 3px 8px;
+  color: #4B0081;  
+}
+.blog-detail-qna-wrapper{ margin: 0 auto; }
+.resource-detail-qna{ margin-top: 30px;}
+.resource-detail-qna p{ margin-bottom: 0; }
+
+.resource-detail-more-blogs{ display: flex; align-items: flex-start; gap: 40px; padding-top: 80px; }
+
+.contact-hero-wrapper{ text-align: center; padding-top: 40px; }
+.contact-form-wrapper{ width: 100%; height: max-content; background-color: var(--darkGrey); }
+
+.contact-form-text-left{ width: 540px; }
+
+.contact-form-card span{ 
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #F2F2F2;
+}
+
+.contact-form-address-card-wrapper{ 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+  justify-content: flex-start; 
+  gap: 20px; 
+  margin-top: 40px;
+}
+
+.contact-form-card{ width: 307px; display: flex; align-items: flex-start; gap: 20px; }
+.contact-form-card p{ margin-bottom: 0; }
+
+.contact-form{ display: flex; align-items: flex-start;gap: 40px; justify-content: space-between; }
+.cnct-form-row-1{ display: flex; align-items: center; gap: 40px; }
+.cnct-form-row-1 input{ width: 409px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0; }
+.cnct-form-row-2 input{ width: 859px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0;  }
+.cnct-form-row-3 textarea{ width: 859px; height: 160px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0;  }
+.contact-form-text-right{ display: flex; flex-direction: column; gap: 20px; }
+ 
+.cnct-button-wrapper{ margin-top: 60px; }
+.cnct-button-wrapper .btn-icon{ width: 50px; height: 50px; }
