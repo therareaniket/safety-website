@@ -11,45 +11,21 @@ export default function Header() {
         <header>
             <div className="container">
                 <nav className="nav-wrapper">
-                    <div className="navbar-img-wrapper">
+                    <Link href="/" className="navbar-img-wrapper">
                         <Image className="navbar-logo" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
                             height={25} priority />
-                    </div>
+                    </Link>
 
                     <ul className="navbar-links flex">
-                        <li>
-                            <Link href="/" className="nav-link text-18">
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/About" className="nav-link text-18">
-                                About Platform
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/Pricing" className="nav-link text-18">
-                                Pricing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/Compliance" className="nav-link text-18">
-                                Compliance & quality
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/Resource" className="nav-link text-18">
-                                Resourses
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/Contact" className="nav-link text-18">
-                                Contact
-                            </Link>
-                        </li>
+                        <li> <Link href="/" className="nav-link text-16"> Home </Link> </li>
+                        <li> <Link href="/About" className="nav-link text-16"> About Platform </Link> </li>
+                        <li> <Link href="/pricing" className="nav-link text-16"> Pricing </Link> </li>
+                        <li> <Link href="/Compliance" className="nav-link text-16"> Compliance & quality </Link> </li>
+                        <li> <Link href="/contact" className="nav-link text-16"> Resourses </Link> </li>
+                        <li> <Link href="/find-rep" className="nav-link text-16"> Contact </Link> </li>
                     </ul>
 
-                       <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
+                    <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
                         <div className="bar"></div>
                         <div className="bar"></div>
                         <div className="bar"></div>

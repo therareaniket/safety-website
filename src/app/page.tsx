@@ -8,10 +8,13 @@ import HomePlans from "@/components/Homepage/HomePlans";
 import HomeBlog from "@/components/Homepage/HomeBlog";
 import HomeTestimonials from "@/components/Homepage/HomeTestimonials";
 import HomeFAQ from "@/components/Homepage/HomeFAQ";
+import Header from "@/components/Header";
 
 export default function Home() {
     return(
         <>
+            <Header />
+
             <HomeHero />
             <HomeStatistics />
             <HomeTools/>

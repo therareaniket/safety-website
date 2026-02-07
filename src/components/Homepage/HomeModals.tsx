@@ -9,7 +9,7 @@ export default function HomeModals() {
               <Image className="curve-lg absolute" src='/images/homepage/ai-icons/ai-lines.svg' alt="curve" width={1920} height={756} priority />
             <div className="container">
                 <div className="main-title center text-center">
-                    <h2 className="text-md">AI At The Heart Of Safety</h2>
+                    <h2 className="text-md">AI at The Heart Of Safety</h2>
                     <p className="h6">Advanced models that power clear insights, accurate detection, and efficient decision‑making.</p>
                 </div>
                 <div className="ai-modals-row relative centered-block">

@@ -6,10 +6,13 @@ import AboutEfficiencyCaseHandling from '@/components/Aboutpage/AboutEfficiencyC
 import AboutDataMeetsMedical from '@/components/Aboutpage/AboutDataMeetsMedical'
 import AboutSignalManagement from '@/components/Aboutpage/AboutSignalManagement'
 import AboutReportingSubmissionCompliance from '@/components/Aboutpage/AboutReportingSubmissionCompliance'
+import Header from '@/components/Header'
 
 export default function About() {
   return (
     <>
+      <Header />
+  
       <AboutHero />
       
       <AboutBuildToAdvance />

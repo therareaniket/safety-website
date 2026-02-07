@@ -8,7 +8,7 @@ export default function HomeHero() {
                 <div className="container">
                     <div className="hero-row flex items-center">
                         <div className="hero-col-one">
-                            <h1 className="text-md">Central Hub for Patient Safety Intelligence</h1>
+                            <h1 className="text-md">Central Hub of Safety & Intelligence</h1>
                             <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p>                           
                             <div className="book-demo-main lg">
                                 <Link href='#'>
@@ -27,9 +27,9 @@ export default function HomeHero() {
                             <div className="recent-activity-circle relative centered-block">
                                 <div className="ra-circle-mini centered-block">
                                     <div className="ra-graph-images relative">
-                                        <Image className="graph-one" src='/images/homepage/graph-01.webp' alt="graph" width={386} height={273} priority />
-                                        <Image className="graph-two absolute" src='/images/homepage/graph-02.webp' alt="graph" width={444} height={319} priority />
-                                        <Image className="graph-three absolute" src='/images/homepage/graph-03.webp' alt="graph" width={430} height={318} priority />
+                                        <Image className="graph-one site-radius-10" src='/images/homepage/hero-graph.webp' alt="hero-graph" width={300} height={206} priority />
+                                        {/* <Image className="graph-two absolute" src='/images/homepage/graph-02.webp' alt="graph" width={444} height={319} priority />
+                                        <Image className="graph-three absolute" src='/images/homepage/graph-03.webp' alt="graph" width={430} height={318} priority /> */}
                                     </div>
                                 </div>
                                 <div className="ra-spin-circle">

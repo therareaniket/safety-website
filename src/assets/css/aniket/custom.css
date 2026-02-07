@@ -1,1 +1,2 @@
-.nav-wrapper { padding: 30px 0 20px; }
+
+header { position: sticky; top: 0; }

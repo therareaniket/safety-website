@@ -68,7 +68,11 @@
 
 @media screen and (max-width: 1599px) {
     /* fonts */
-    h2, .h2{ font-size: 34px; line-height: 42px; }
+    h1, .h1 { font-size: 42px; line-height: 50px; }
+    h2, .h2 { font-size: 34px; line-height: 42px; }
+    h3, .h3 { font-size: 28px; line-height: 36px; }
+    h6, .h6 { font-size: 16px; line-height: 24px; }
+    .text-18 { font-size: 16px; line-height: 24px; }
 
     /* about */
     .efficiency-step-card{ height: 350px; padding: 30px 20px; }
@@ -128,7 +132,7 @@
 
 @media screen and (max-width: 1439px) {
     /* font-sizes */
-    h1, .h1{ font-size: 46px; line-height: 54px; }
+    /* h1, .h1{ font-size: 46px; line-height: 54px; } */
 
     /* about */
     .site-hero-wrapper{ height: 590px; }
@@ -194,10 +198,9 @@
 
 @media screen and (max-width: 1359px) {
     /* font-sizes */
-    h1, .h1{ font-size: 42px; line-height: 50px; }
+    h1, .h1{ font-size: 36px; line-height: 42px; }
     h2, .h2{ font-size: 30px; line-height: 38px; }
     h5, .h5{ font-size: 18px; line-height: 24px; }
-    .text-18{ font-size: 16px; line-height: 20px; }
 
     /* about */
     .site-hero-text{ width: 750px; }
@@ -271,7 +274,6 @@
 
 @media screen and (max-width: 1199px) {
     /* fonts */
-    h1, .h1{ font-size: 38px; line-height: 46px; }
     h2, .h2{ font-size: 28px; line-height: 36px; }
     h6, .h6{ font-size: 14px; line-height: 22px; }
 
@@ -570,7 +572,7 @@
 @media screen and (max-width: 767px) {
     /* fonts */
     h1, .h1{ font-size: 28px; line-height: 36px; }
-    h2, .h2{ font-size: 24px; line-height: 32px; }
+    h2, .h2, .fq-col-one h2{ font-size: 24px; line-height: 32px; }
     /* about */
     .site-hero-text{ width: 100%; }
     .build-to-advance-left-wrapper{ width: 100%; }
@@ -643,7 +645,8 @@
 
     /* fonts */
     h1, .h1{ font-size: 26px; line-height: 32px; }
-    h2, .h2{ font-size: 22px; line-height: 30px; }
+    h2, .h2, .fq-col-one h2{ font-size: 22px; line-height: 30px; }
+    h4, .h4{ font-size: 18px; line-height: 26px; }
     h5, .h5{ font-size: 16px; line-height: 22px; }
     .text-18{ font-size: 14px; line-height: 22px; }
 
@@ -768,7 +771,10 @@
     .operational-card-right{ width: 290px; }
     .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ gap: 20px; }
     .compliance-steps-card-responsive{ width: 100%; }
-    .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ transform: translateX(0); }
+    .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6 { transform: translateX(0); }
+    .fq-show-icon { top: 50%; transform: translateY(-50%); }
+    .b-feature-item img { height: 200px; }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -794,6 +800,19 @@
 
     /* resourcedetail */
     .resources-detail-social-links{ padding-bottom: 10px; }
+
+    .recent-activity-circle { width: 280px; height: 280px; }
+    .ra-circle-mini { width: 220px; height: 220px; }
+    .book-demo-inner { margin-top: 40px; }
+    .op-dashed-circle svg { width: 190px; height: 190px; }
+    .op-item-title.two, .op-item-title.four { top: 52%; }
+    .eco-img img { height: 220px; } 
+    .b-feature-item img, .b-post-items.mini .b-post-img img, .b-post-items.mini .b-post-img { height: 180px; }
+    .faq-wrapper.section { padding-top: 30px !important; }
+    .post-item:last-child .h4 { margin-bottom: 0 !important; }
+    .main-title.center { mix-blend-mode: 40px; }
+    .stats-count-row { margin-top: 20px; }
+
 }
 
 @media screen and (max-width: 374px) {

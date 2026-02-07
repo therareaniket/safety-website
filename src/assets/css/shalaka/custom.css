@@ -193,7 +193,7 @@ header {
 
 /*******Hero Wrapper**********/
 .hero-wrapper {
-    height: 850px;
+    height: calc(850px - 78px);
     background: linear-gradient(180deg, #fff 0%, #efecf4 41%, #f2f8eb 100%);
 }
 
@@ -315,9 +315,6 @@ header {
     border-radius: 50%;
 }
 
-.hero-col-two {
-    padding-top: 36px;
-}
 
 /*********home statistics wrapper************/
 .stats-row {
@@ -954,15 +951,15 @@ header {
 
 /*******Footer**********/
 .f-cta-btn {
-    margin-top: 46px;
+    margin-top: 30px;
 }
 
 .f-cta-block {
     background: url(/images/homepage/cta-bg.webp) center no-repeat;
-    padding: 40px 20px 53px;
+    padding: 40px 20px;
     width: 527px;
     position: absolute;
-    top: -200px;
+    top: -150px;
     left: 0;
 }
 
@@ -1189,3 +1186,5 @@ background: var(--grey);
         transform: rotate(360deg);
     }
 }
+
+.nav-wrapper { padding: 30px 0 20px; }

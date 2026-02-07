@@ -73,7 +73,7 @@ export default function HomeTestimonials() {
                                         <div className="name-initial centered-block bg-lavender"><h4 className="h5 text-black mb-0">S</h4></div>
                                         <div className="t-name">
                                             <h4 className="h5 text-black mb-0">Safety Manager</h4>
-                                            <span className="text-18 text-black">Global Pharma Company</span>
+                                            <span className="text-18 text-black">Global Pharma Co.</span>
                                         </div>
                                     </div>
                                 </div>
