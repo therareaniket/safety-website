@@ -19,27 +19,24 @@ export default function HomeModals() {
                     <div className="ai-icon absolute rounded-full person centered-block">
                         <Image src='/images/homepage/ai-icons/person.svg' alt="person" width={28} height={28} priority />
                     </div>
-
                      <div className="ai-icon absolute rounded-full calender centered-block">
                          <Image src='/images/homepage/ai-icons/calendar.svg' alt="calender" width={32} height={35} priority />
                     </div>
-                       <div className="ai-icon absolute rounded-full add-reaction centered-block">
+                    <div className="ai-icon absolute rounded-full add-reaction centered-block">
                         <Image  src='/images/homepage/ai-icons/add_reaction.svg' alt="add-reaction" width={39} height={37} priority />
-                       </div>
-                        
-<div className="ai-icon absolute rounded-full thumb-up centered-block">
-    <Image src='/images/homepage/ai-icons/thumb_up.svg' alt="Thumb-up" width={36} height={35} priority />
-</div>
-                        <div className="ai-icon absolute rounded-full chat centered-block">
-                            <Image src='/images/homepage/ai-icons/chat_bubble.svg' alt="chat-bubble" width={35} height={35} priority />
-                        </div>
-                        <div className="ai-icon absolute rounded-full assignment centered-block">
-                            <Image src='/images/homepage/ai-icons/assignment.svg' alt="assignment" width={31} height={35} priority />
-                        </div>
-                        <div className="ai-icon absolute rounded-full add-ad centered-block">
-                            <Image src='/images/homepage/ai-icons/add_Ad.svg' alt="add-ad" width={38} height={31} priority />
-                        </div>                       
-                    
+                    </div>
+                    <div className="ai-icon absolute rounded-full thumb-up centered-block">
+                        <Image src='/images/homepage/ai-icons/thumb_up.svg' alt="Thumb-up" width={36} height={35} priority />
+                    </div>
+                    <div className="ai-icon absolute rounded-full chat centered-block">
+                        <Image src='/images/homepage/ai-icons/chat_bubble.svg' alt="chat-bubble" width={35} height={35} priority />
+                    </div>
+                    <div className="ai-icon absolute rounded-full assignment centered-block">
+                        <Image src='/images/homepage/ai-icons/assignment.svg' alt="assignment" width={31} height={35} priority />
+                    </div>
+                    <div className="ai-icon absolute rounded-full add-ad centered-block">
+                        <Image src='/images/homepage/ai-icons/add_ad.svg' alt="add-ad" width={38} height={31} priority />
+                    </div>
                 </div>
             </div>
         </section>

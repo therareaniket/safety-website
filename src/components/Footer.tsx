@@ -8,7 +8,8 @@ export default function Footer() {
             
             <div className="container">
                 <div className="footer-inner relative">
-                <FooterCTA/>     
+                <FooterCTA/>
+
                 <div className="footer-inner-main flex">
                     <div className="f-col-one flex flex-col">
                         <div className='f-logo'>
@@ -28,8 +29,8 @@ export default function Footer() {
                                 <p className='text-16'>enquiry@dhatusafety.com</p>
                             </div>
                         </div>
-
                     </div>
+
                     <div className="f-right-cols flex">
                         <div className="f-col-two">
                             <h2 className='text-18 text-sb text-grey'>Quick Links</h2>
@@ -40,32 +41,33 @@ export default function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/about" className="f-link text-16 text-grey">
+                                    <Link href="/About" className="f-link text-16 text-grey">
                                         About Platform
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/pricing" className="f-link text-16 text-grey">
+                                    <Link href="/Pricing" className="f-link text-16 text-grey">
                                         Pricing
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/insights" className="f-link text-16 text-grey">
+                                    <Link href="/Compliance" className="f-link text-16 text-grey">
                                         Compliance & quality
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/contact" className="f-link text-16 text-grey">
+                                    <Link href="/Resource" className="f-link text-16 text-grey">
                                         Resourses
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/find-rep" className="f-link text-16 text-grey">
+                                    <Link href="/Contact" className="f-link text-16 text-grey">
                                         Contact
                                     </Link>
                                 </li>
                             </ul>
                         </div>
+
                         <div className="f-col-three">
                             <h2 className='text-18 text-sb text-grey'>Further Information</h2>
                             <ul>
@@ -81,6 +83,7 @@ export default function Footer() {
                                 </li>                                
                             </ul>
                         </div>
+
                         <div className="f-col-four">
                             <h2 className='text-18 text-sb text-grey'>Newsletter</h2>
                              <p className='f-desc text-16 mt-0'>
@@ -110,7 +113,7 @@ export default function Footer() {
                     <div className="copyright-links flex">                       
                         <p className='text-16'>Copyright ©2025, all rights reserved.</p>
                         <p className='text-16'>Powered by DFOLDS</p>
-                            <p className='text-16'>DhatuSafety 2025.1.1</p>
+                        <p className='text-16'>DhatuSafety 2025.1.1</p>
                     </div>
                 </div>
             </div>
