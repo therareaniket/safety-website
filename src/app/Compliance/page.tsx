@@ -7,10 +7,13 @@ import ComplianceValidationSupport from "@/components/Compliancepage/ComplianceV
 import ComplianceImmutableTrials from "@/components/Compliancepage/ComplianceImmutableTrials";
 import ComplianceSecureConnectivity from "@/components/Compliancepage/ComplianceSecureConnectivity";
 import ComplianceFlexibleOperations from "@/components/Compliancepage/ComplianceFlexibleOperations";
+import Header from "@/components/Header";
 
 export default function Compliance() {
     return (
         <>
+            <Header />
+
             <ComplianceHero />
 
             <ComplianceInspectionReadiness />

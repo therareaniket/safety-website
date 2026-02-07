@@ -812,6 +812,9 @@
     .post-item:last-child .h4 { margin-bottom: 0 !important; }
     .main-title.center { mix-blend-mode: 40px; }
     .stats-count-row { margin-top: 20px; }
+    .nav-seprator { width: 40px; }
+    .nav-wrapper { padding: 10px 0; }
+    
 
 }
 

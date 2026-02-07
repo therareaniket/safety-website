@@ -17,12 +17,12 @@ export default function Header() {
                     </Link>
 
                     <ul className="navbar-links flex">
-                        <li> <Link href="/" className="nav-link text-16"> Home </Link> </li>
-                        <li> <Link href="/About" className="nav-link text-16"> About Platform </Link> </li>
-                        <li> <Link href="/pricing" className="nav-link text-16"> Pricing </Link> </li>
-                        <li> <Link href="/Compliance" className="nav-link text-16"> Compliance & quality </Link> </li>
-                        <li> <Link href="/contact" className="nav-link text-16"> Resourses </Link> </li>
-                        <li> <Link href="/find-rep" className="nav-link text-16"> Contact </Link> </li>
+                        <li> <Link href="/" className="nav-link text-16">Home</Link> </li>
+                        <li> <Link href="/About" className="nav-link text-16">About Platform</Link> </li>
+                        <li> <Link href="/Pricing" className="nav-link text-16">Pricing</Link> </li>
+                        <li> <Link href="/Compliance" className="nav-link text-16">Compliance & Quality</Link> </li>
+                        <li> <Link href="/Resource" className="nav-link text-16">Resourses</Link> </li>
+                        <li> <Link href="/Contact" className="nav-link text-16">Contact</Link> </li>
                     </ul>
 
                     <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
@@ -33,34 +33,22 @@ export default function Header() {
 
                     <ul className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}>
                         <li>
-                            <Link href="/" className="nav-link text-18">
-                                Home
-                            </Link>
+                            <Link href="/" className="nav-link text-18">Home</Link>
                         </li>
                         <li>
-                            <Link href="/About" className="nav-link text-18">
-                                About Platform
-                            </Link>
+                            <Link href="/About" className="nav-link text-18">About Platform</Link>
                         </li>
                         <li>
-                            <Link href="/Pricing" className="nav-link text-18">
-                                Pricing
-                            </Link>
+                            <Link href="/Pricing" className="nav-link text-18">Pricing</Link>
                         </li>
                         <li>
-                            <Link href="/Compliance" className="nav-link text-18">
-                                Compliance & quality
-                            </Link>
+                            <Link href="/Compliance" className="nav-link text-18">Compliance & Quality</Link>
                         </li>
                         <li>
-                            <Link href="/Resource" className="nav-link text-18">
-                                Resourses
-                            </Link>
+                            <Link href="/Resource" className="nav-link text-18">Resourses</Link>
                         </li>
                         <li>
-                            <Link href="/Contact" className="nav-link text-18">
-                                Contact
-                            </Link>
+                            <Link href="/Contact" className="nav-link text-18">Contact</Link>
                         </li>
                     </ul>
                 </nav>
