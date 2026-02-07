@@ -810,12 +810,10 @@
     .b-feature-item img, .b-post-items.mini .b-post-img img, .b-post-items.mini .b-post-img { height: 180px; }
     .faq-wrapper.section { padding-top: 30px !important; }
     .post-item:last-child .h4 { margin-bottom: 0 !important; }
-    .main-title.center { mix-blend-mode: 40px; }
+    .main-title.center { margin-bottom: 50px; }
     .stats-count-row { margin-top: 20px; }
     .nav-seprator { width: 40px; }
     .nav-wrapper { padding: 10px 0; }
-    
-
 }
 
 @media screen and (max-width: 374px) {

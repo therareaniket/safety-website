@@ -402,7 +402,9 @@
     .tools-item { display: flex; flex-direction: column; justify-content: space-between; }
     .tools-img { margin-top: 0px !important; }
     .b-post-items.mini .b-post-title .h4 { font-size: 24px; margin-bottom: 14px; }
-    
+    .nav-seprator { width: 120px; }
+
+    .fq-show-icon { height: 100%; }
 }
 
 @media screen and (max-width: 1439px) {
