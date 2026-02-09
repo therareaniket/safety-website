@@ -1,13 +1,6 @@
 'use client';
 
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    BreadcrumbLink,
-    BreadcrumbList,
-    BreadcrumbPage,
-    BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,17 +9,12 @@ export default function ResourceDetailHeading() {
         <>
             <section className="section resource-detail-hero-wrapper">
                 <div className="container">
-                    <Breadcrumb className="text-18 text-rg">
-                        <BreadcrumbList className="text-18 text-rg breadcrumb-list">
-                            <BreadcrumbItem className="text-18 text-rg">
-                                <BreadcrumbLink href="/Resource" className="text-18 text-rg text-grey">Resources</BreadcrumbLink>
-                            </BreadcrumbItem>
-                            <BreadcrumbSeparator />
-                            <BreadcrumbItem className="text-18 text-rg">
-                                <BreadcrumbPage className="text-18 text-rg">How AI Is Reshaping Modern Pharmacovigilance</BreadcrumbPage>
-                            </BreadcrumbItem>
-                        </BreadcrumbList>
-                    </Breadcrumb>
+
+                    <div className="resource-detail-breadcrumb">
+                        <span className="text-18 text-rg text-grey">{"<"}</span>
+                        <Link href="/Resource" className="text-18 text-rg text-grey">Back to Resources</Link>
+
+                    </div>
 
                     <div className="blog-sm-container blog-detail-text-wrapper">
                         <h2 className="text-md">How AI Is Reshaping Modern Pharmacovigilance</h2>

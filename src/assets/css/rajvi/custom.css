@@ -407,16 +407,17 @@
 
 .resource-listing-tabs-wrapper{ margin-bottom: 60px; background-color: transparent; gap: 14px; }
 .resource-listing-tabs-wrapper .resource-tab-btn{ 
-  background: linear-gradient(
-    180deg,
-    #FFFFFF 0%,
-    #EFECF4 41%,
-    #F2F8EB 100%
-    );
-    padding: 8px 20px;
-    border-radius: 0;
+  border: 1px solid var(--lavender);
+  padding: 8px 20px;
+  border-radius: 0;
   color: #4B0081;  
+  margin-bottom: 0;
 }
+
+.group-data-\[variant\=default\]\/tabs-list\:data-\[state\=active\]\:shadow-sm:is(:where(.group\/tabs-list)[data-variant="default"] *)[data-state="active"]{
+  background: var(--lavender);
+}
+
 /* .resource-listing-tabs-wrapper  */
 .resources-cards-wrapper{ display: flex;  gap: 40px; flex-wrap: wrap; }
 
@@ -472,10 +473,21 @@
 
 .contact-form{ display: flex; align-items: flex-start;gap: 40px; justify-content: space-between; }
 .cnct-form-row-1{ display: flex; align-items: center; gap: 40px; }
-.cnct-form-row-1 input{ width: 409px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0; }
-.cnct-form-row-2 input{ width: 859px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0;  }
-.cnct-form-row-3 textarea{ width: 859px; height: 160px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; border-radius: 10px; margin-bottom: 0;  }
+.cnct-form-row-1 input{ width: 409px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8;  margin-bottom: 0; }
+.cnct-form-row-2 input{ width: 859px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8;margin-bottom: 0;  }
+.cnct-form-row-3 textarea{ width: 859px; height: 160px; padding: 20px; color: var(--lightGrey); border: 1px solid #B8B8B8; margin-bottom: 0;  }
 .contact-form-text-right{ display: flex; flex-direction: column; gap: 20px; }
  
 .cnct-button-wrapper{ margin-top: 60px; }
 .cnct-button-wrapper .btn-icon{ width: 50px; height: 50px; }
+
+.further-link-wrapper{ display: flex; align-items: center; gap: 10px; padding-bottom: 10px;  }
+.terms-condition-links ul{ display: flex; align-items: center; gap: 34px; }
+.f-cta-block{ top: -130px; }
+.f-col-three{ width: 245px; }
+.social-links{ gap: 15px; }
+.f-right-cols{ gap: 60px; }
+.footer-social-icons{ font-size: 28px !important; }
+.f-cta-block{  text-align: center !important; }
+.form-control{ border: 1px solid #d1cece; }
+.resource-detail-breadcrumb{ display: flex; align-items: center; gap: 10px; }

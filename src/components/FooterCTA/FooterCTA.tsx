@@ -1,7 +1,7 @@
 export default function FooterCTA() {
         return(
             <div className="f-cta-block centered-block flex-col">
-                <h2 className="text-md text-center text-white mb-0 h3">Ready to Redefine Pharmacovigilance for a World That Can’t Wait?</h2>
+                <h2 className="text-md text-white mb-0 h4">Ready to Redefine Pharmacovigilance for a World That Can’t Wait?</h2>
                 <div className="f-cta-btn">
                     <button className='main-btn flex'><span className='btn-icon bg-white centered-block'>
                         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">

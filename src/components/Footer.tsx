@@ -13,14 +13,21 @@ export default function Footer() {
                     <div className="footer-inner-main flex">
                         <div className="f-col-one flex flex-col">
                             <div className='f-logo'>
-                                <Image className="navbar-img" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
-                                    height={25} priority />
+                                <Link href="/" className="navbar-img-wrapper">
+                                    <Image className="navbar-logo" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
+                                        height={25} priority />
+                                </Link>
                                 <p className='f-desc text-16'>
                                     Empowering organizations with smart, reliable, and compliant pharmacovigilance workflows
                                 </p>
                             </div>
                             <div className="f-contact flex">
-
+                                <ul className='flex social-links'>
+                                    <li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li>
+                                    <li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li>
+                                    <li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li>
+                                    <li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li>
+                                </ul>
                             </div>
                         </div>
 
@@ -63,17 +70,17 @@ export default function Footer() {
 
                             <div className="f-col-three">
                                 <h2 className='text-18 text-sb text-grey'>Further Information</h2>
-                                <ul>
+                                <ul className="">
                                     <li>
-                                        <Link href="/" className="f-link text-16 text-grey">
-                                    <Image className="f-icon" src='/images/homepage/call.svg' width={18} height={18} alt="call" />
-                                    <p className='text-16'>+1 512 843 2002</p>
+                                        <Link href="/" className="further-link-wrapper f-link flex text-16 text-grey ">
+                                            <span className="icon-footerCall"></span>
+                                            <p className='text-16 text-grey'>+1 512 843 2002</p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/about" className="f-link text-16 text-grey">
-                                    <Image className="f-icon" src='/images/homepage/mail.svg' width={20} height={16} alt="email" />
-                                    <p className='text-16'>enquiry@dhatusafety.com</p>
+                                        <Link href="/about" className="further-link-wrapper f-link flex text-16 text-grey">
+                                            <span className="icon-footerMail"></span>
+                                            <p className='text-16 text-grey'>enquiry@dhatusafety.com</p>
                                         </Link>
                                     </li>
                                 </ul>
@@ -81,7 +88,7 @@ export default function Footer() {
 
                             <div className="f-col-four">
                                 <h2 className='text-18 text-sb text-grey'>Newsletter</h2>
-                                <p className='f-desc text-16 mt-0'>
+                                <p className='f-desc text-16 mt-0 text-grey'>
                                     Join Our Newsletter and get notified with latest updates.
                                 </p>
                                 <form action="" className='newletter-form'>
@@ -95,20 +102,18 @@ export default function Footer() {
                     </div>
 
                     <div className="copyright flex items-center">
-                        <ul className='flex social-links'>
-                            <li><Image className="social-img" src='/images/homepage/facebook.svg' alt="facebook" width={30}
-                                height={30} priority /></li>
-                            <li><Image className="social-img" src='/images/homepage/insta.svg' alt="instagram" width={30}
-                                height={30} priority /></li>
-                            <li><Image className="social-img" src='/images/homepage/x.svg' alt="x" width={30}
-                                height={30} priority /></li>
-                            <li><Image className="social-img" src='/images/homepage/linkedin.svg' alt="linkedin" width={30}
-                                height={30} priority /></li>
-                        </ul>
+
                         <div className="copyright-links flex">
-                            <p className='text-16'>Copyright ©2025, all rights reserved.</p>
-                            <p className='text-16'>Powered by DFOLDS</p>
-                            <p className='text-16'>DhatuSafety 2025.1.1</p>
+                            <p className='text-16 text-grey'>Powered by DFOLDS</p>
+                            <p className='text-16 text-grey'>DhatuSafety 2026.1.1</p>
+                            <p className='text-16 text-grey'>Copyright ©2026, all rights reserved.</p>
+                        </div>
+
+                        <div className="terms-condition-links flex">
+                            <ul className="flex">
+                                <li><Link href="#" className="text-16 text-grey">Terms of Use</Link></li>
+                                <li><Link href="#" className="text-16 text-grey">Privacy Policy</Link></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
