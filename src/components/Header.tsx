@@ -31,26 +31,35 @@ export default function Header() {
                         <div className="bar"></div>
                     </button>
 
-                    <ul className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}>
-                        <li>
-                            <Link href="/" className="nav-link text-18">Home</Link>
-                        </li>
-                        <li>
-                            <Link href="/About" className="nav-link text-18">About Platform</Link>
-                        </li>
-                        <li>
-                            <Link href="/Pricing" className="nav-link text-18">Pricing</Link>
-                        </li>
-                        <li>
-                            <Link href="/Compliance" className="nav-link text-18">Compliance & Quality</Link>
-                        </li>
-                        <li>
-                            <Link href="/Resource" className="nav-link text-18">Resourses</Link>
-                        </li>
-                        <li>
-                            <Link href="/Contact" className="nav-link text-18">Contact</Link>
-                        </li>
-                    </ul>
+                    <div className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}>
+                        <ul className="mobile-menu-ul">
+                            <li><Link href="/" className="nav-link text-18">Home</Link> </li>
+
+                            <li><Link href="/About" className="nav-link text-18">About Platform</Link> </li>
+                            
+                            <li><Link href="/Pricing" className="nav-link text-18">Pricing</Link> </li>
+                            
+                            <li><Link href="/Compliance" className="nav-link text-18">Compliance & Quality</Link> </li>
+                            
+                            <li><Link href="/Resource" className="nav-link text-18">Resourses</Link> </li>
+                            
+                            <li><Link href="/Contact" className="nav-link text-18">Contact</Link> </li>
+                        </ul>
+
+                        <span className="menu-hl"></span>
+
+                        <div className="nav-contact-block">
+                            <Link href="tel:+1 512 843 2002"><i className="icon-footerCall"></i>+1 512 843 2002</Link>
+                            <Link href="mailto:enquiry@dhatusafety.com"><i className="icon-footerMail"></i>enquiry@dhatusafety.com</Link>
+
+                            <ul className="nav-connect-socials">
+                                <li><Link href="#"><i className="icon-linkedin"></i></Link></li>
+                                <li><Link href="#"><i className="icon-twitter"></i></Link></li>
+                                <li><Link href="#"><i className="icon-instagram"></i></Link></li>
+                                <li><Link href="#"><i className="icon-facebook"></i></Link></li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>

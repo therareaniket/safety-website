@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function HomeBlog() {
     return (
-
         <section className="blog-wrapper section">
             <div className="container">
                 <div className="blog-title-row flex">
@@ -65,6 +64,5 @@ export default function HomeBlog() {
                 </div>
             </div>
         </section>
-
     )
 }

@@ -1836,6 +1836,7 @@
     .recent-activity-circle { width: 280px; height: 280px; }
     .ra-circle-mini { width: 210px; height: 210px; }
     .hero-col-one { width: 370px; }
+    .ra-graph-images { width: 160px; }
     .nav-wrapper { padding: 16px 0; }
     .stats-item .h1 { font-size: 30px; }
     .stats-item .h6 { font-size: 16px; }
@@ -1868,7 +1869,6 @@
 @media screen and (max-width: 991px) {
     .footer-inner { padding-top: 170px; }
     .f-cta-block { top: -130px; }
-
     footer { margin-top: 130px; }
     .main-title.center { margin-bottom: 50px; }
     .modals-wrapper.section { height: 380px; }
@@ -1876,7 +1876,7 @@
     .op-item-title.four { left: 0; }
     .b-post-items.mini .b-post-title a + p { display: none; }
     .b-post-items.mini .b-post-title .h4 { font-size: 17px; line-height: 25px; }
-    .section { padding: 70px 0 !important; }
+    .section { padding: 70px 0; }
     .testimonial-wrapper.section { padding-top: 20px !important; }
 }
 

@@ -166,6 +166,62 @@
     font-display: swap;
 }
 
+
+/* ICONS */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../public/fonts/icons/icomoon.ttf?fym8r') format('truetype'),
+      url('../../public/fonts/icons/icomoon.woff?fym8r') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\e900";
+}
+.icon-contact-location:before {
+  content: "\e91f";
+}
+.icon-contact-call:before {
+  content: "\e921";
+}
+.icon-contact-mail:before {
+  content: "\e923";
+}
+.icon-footerCall:before {
+  content: "\e932";
+}
+.icon-footerMail:before {
+  content: "\e933";
+}
+.icon-twitter:before {
+  content: "\e934";
+}
+.icon-instagram:before {
+  content: "\e935";
+}
+.icon-facebook:before {
+  content: "\e936";
+}
+
+
 /* Typography */
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 { font-family: 'poppins-md'; font-weight: normal; font-style: normal; }
