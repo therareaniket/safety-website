@@ -1876,7 +1876,7 @@
     .op-item-title.four { left: 0; }
     .b-post-items.mini .b-post-title a + p { display: none; }
     .b-post-items.mini .b-post-title .h4 { font-size: 17px; line-height: 25px; }
-    .section { padding: 70px 0; }
+    /* .section { padding: 70px 0 !important; } */
     .testimonial-wrapper.section { padding-top: 20px !important; }
 }
 
@@ -2726,7 +2726,7 @@
     .ps-item{ flex-direction: row; }
 
     .hero-desc { margin-top: 10px; }
-    .section { padding: 60px 0 !important; }
+    /* .section { padding: 60px 0 !important; } */
     .stats-list { gap: 12px; }
     .stats-item { padding: 13px; }
     .stats-item.one, .stats-item.two, .stats-item.three { height: 100px; }

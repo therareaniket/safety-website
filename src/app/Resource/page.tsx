@@ -3,7 +3,7 @@
 import Header from "@/components/Header";
 import ResourceHeading from "@/components/Resourcepage/ResourceHeading";
 import ResourceListingCards from "@/components/Resourcepage/ResourceListingCards";
-import ResourceTrendingPost from "@/components/Resourcepage/ResourceTrendingPost";
+// import ResourceTrendingPost from "@/components/Resourcepage/ResourceTrendingPost";
 
 export default function Resource() {
     return (
@@ -12,7 +12,7 @@ export default function Resource() {
 
             <ResourceHeading/>
 
-            <ResourceTrendingPost />
+            {/* <ResourceTrendingPost /> */}
 
             <ResourceListingCards />
         </>

@@ -19,7 +19,7 @@ export default function ResourceDetailHeading() {
                     <Breadcrumb className="text-18 text-rg">
                         <BreadcrumbList className="text-18 text-rg breadcrumb-list">
                             <BreadcrumbItem className="text-18 text-rg">
-                                <BreadcrumbLink href="/Resource" className="text-18 text-rg">Resources</BreadcrumbLink>
+                                <BreadcrumbLink href="/Resource" className="text-18 text-rg text-grey">Resources</BreadcrumbLink>
                             </BreadcrumbItem>
                             <BreadcrumbSeparator />
                             <BreadcrumbItem className="text-18 text-rg">

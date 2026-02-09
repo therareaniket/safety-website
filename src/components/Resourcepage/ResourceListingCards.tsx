@@ -12,17 +12,17 @@ import Link from "next/link";
 export default function ResourceListingCards() {
     return (
         <>
-            <section className="section" style={{ paddingTop: '0' }}>
+            <section className="section" style={{ paddingTop: 0 }} >
                 <div className="container">
                     <div className="resporce-listing-wrapper">
                         <div className="resporce-listing-tab-wrapper">
                             <Tabs defaultValue="workflows" className="">
 
                                 <TabsList className="resource-listing-tabs-wrapper h6 text-rg">
-                                    <TabsTrigger value="workflows" className="resource-tab-btn h6 text-md">Workflows</TabsTrigger>
-                                    <TabsTrigger value="monitoring" className="resource-tab-btn h6 text-md">Monitoring</TabsTrigger>
-                                    <TabsTrigger value="automation" className="resource-tab-btn h6 text-md">Automation</TabsTrigger>
-                                    <TabsTrigger value="detection" className="resource-tab-btn h6 text-md">Detection</TabsTrigger>
+                                    <TabsTrigger value="workflows" className="resource-tab-btn h6 text-rg">Workflows</TabsTrigger>
+                                    <TabsTrigger value="monitoring" className="resource-tab-btn h6 text-rg">Monitoring</TabsTrigger>
+                                    <TabsTrigger value="automation" className="resource-tab-btn h6 text-rg">Automation</TabsTrigger>
+                                    <TabsTrigger value="detection" className="resource-tab-btn h6 text-rg">Detection</TabsTrigger>
                                 </TabsList>
 
                                 <TabsContent value="workflows" className="resources-cards-wrapper">
