@@ -18,7 +18,7 @@ export default function Header() {
 
                     <ul className="navbar-links flex">
                         <li> <Link href="/" className="nav-link text-16">Home</Link> </li>
-                        <li> <Link href="/About" className="nav-link text-16">About Platform</Link> </li>
+                        <li> <Link href="/About" className="nav-link text-16">About</Link> </li>
                         <li> <Link href="/Pricing" className="nav-link text-16">Pricing</Link> </li>
                         <li> <Link href="/Compliance" className="nav-link text-16">Compliance & Quality</Link> </li>
                         <li> <Link href="/Resource" className="nav-link text-16">Resourses</Link> </li>
@@ -35,7 +35,7 @@ export default function Header() {
                         <ul className="mobile-menu-ul">
                             <li><Link href="/" className="nav-link text-18">Home</Link> </li>
 
-                            <li><Link href="/About" className="nav-link text-18">About Platform</Link> </li>
+                            <li><Link href="/About" className="nav-link text-18">About</Link> </li>
                             
                             <li><Link href="/Pricing" className="nav-link text-18">Pricing</Link> </li>
                             

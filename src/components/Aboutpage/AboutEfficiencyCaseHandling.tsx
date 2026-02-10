@@ -43,7 +43,7 @@ export default function AboutEfficiencyCaseHandling() {
 
                     <div className="efficiency-steps-wrapper">
                         <div className="efficiency-step-card efficiency-step-card-1">
-                            <span className="text-mid-grey text-18 text-md">Step 01</span>
+                            <span className="text-mid-grey text-18">Step 01</span>
 
                             <h3 className="text-md h5">Intake & Case Creation</h3>
 
@@ -60,7 +60,7 @@ export default function AboutEfficiencyCaseHandling() {
                         </div>
 
                         <div className="efficiency-step-card efficiency-step-card-2">
-                            <span className="text-mid-grey text-18 text-md">Step 02</span>
+                            <span className="text-mid-grey text-18">Step 02</span>
 
                             <h3 className="text-md h5">Case Processing & Medical Review</h3>
 
@@ -77,7 +77,7 @@ export default function AboutEfficiencyCaseHandling() {
                         </div>
 
                         <div className="efficiency-step-card efficiency-step-card-3">
-                            <span className="text-mid-grey text-18 text-md">Step 03</span>
+                            <span className="text-mid-grey text-18">Step 03</span>
 
                             <h3 className="text-md h5">Regulatory & Aggregate Report</h3>
 
@@ -94,7 +94,7 @@ export default function AboutEfficiencyCaseHandling() {
                         </div>
 
                         <div className="efficiency-step-card efficiency-step-card-4">
-                            <span className="text-mid-grey text-18 text-md">Step 04</span>
+                            <span className="text-mid-grey text-18">Step 04</span>
 
                             <h3 className="text-md h5">Signal & Safety Oversight</h3>
 

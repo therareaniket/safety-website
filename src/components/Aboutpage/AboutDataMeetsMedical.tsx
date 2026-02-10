@@ -25,7 +25,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Seriousness & causality assessment</h3>
 
-                                        <p className="text-rg h6 text-grey">Safety data is collected from emails, portals, call centers.</p>
+                                        <p className="text-rg text-18 text-grey">Safety data is collected from emails, portals, call centers.</p>
                                     </div>
                                 </div>  
 
@@ -37,7 +37,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Structured narrative templates</h3>
 
-                                        <p className="text-rg h6 text-grey">Create clear, regulator ready narratives using standardized, version.</p>
+                                        <p className="text-rg text-18 text-grey">Create clear, regulator ready narratives using standardized, version.</p>
                                     </div>
                                 </div>   
                             </div>
@@ -57,7 +57,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Reference safety information linkage</h3>
 
-                                        <p className="text-rg h6 text-grey">Link assessments directly to RSI, and Investigator’s Brochure for context. </p>
+                                        <p className="text-rg text-18 text-grey">Map assessments to RSI, guided by the Investigator’s Brochure.</p>
                                     </div>
                                 </div> 
 
@@ -69,7 +69,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Controlled medical approvals</h3>
 
-                                        <p className="text-rg h6 text-grey">Ensure medical sign-off through defined review and approval workflows.</p>
+                                        <p className="text-rg text-18 text-grey">Ensure medical sign-off through defined review and approval workflows.</p>
                                     </div>
                                 </div>    
                             </div>
@@ -91,7 +91,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Seriousness & causality assessment</h3>
 
-                                        <p className="text-rg h6 text-grey">Safety data is collected from emails, portals, call centers.</p>
+                                        <p className="text-rg text-18 text-grey">Safety data is collected from emails, portals, call centers.</p>
                                     </div>
                                 </div>    
 
@@ -103,7 +103,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Structured narrative templates</h3>
 
-                                        <p className="text-rg h6 text-grey">Create clear, regulator ready narratives using standardized, version.</p>
+                                        <p className="text-rg text-18 text-grey">Create clear, regulator ready narratives using standardized, version.</p>
                                     </div>
                                 </div>
 
@@ -115,7 +115,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Reference safety information linkage</h3>
 
-                                        <p className="text-rg h6 text-grey">Link assessments directly to RSI, and Investigator’s Brochure for context. </p>
+                                        <p className="text-rg text-18 text-grey">Map assessments to RSI, guided by the Investigator’s Brochure.</p>
                                     </div>
                                 </div>   
 
@@ -127,7 +127,7 @@ export default function AboutDataMeetsMedical() {
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Controlled medical approvals</h3>
 
-                                        <p className="text-rg h6 text-grey">Ensure medical sign-off through defined review and approval workflows.</p>
+                                        <p className="text-rg text-18 text-grey">Ensure medical sign-off through defined review and approval workflows.</p>
                                     </div>
                                 </div>     
                             </div>
@@ -137,7 +137,7 @@ export default function AboutDataMeetsMedical() {
                             <div className="medical-detail-cards">
                                 <h4 className="h5 text-md text-white">MedDRA Integration</h4>
 
-                                <p className="text-rg h6 text-grey">
+                                <p className="text-rg text-18 text-grey">
                                     Use to streamline safety data capture, case processing, and literature surveillance during trials.
                                 </p>
                             </div>
@@ -145,16 +145,16 @@ export default function AboutDataMeetsMedical() {
                             <div className="medical-detail-cards">
                                 <h4 className="h5 text-md text-white">Coding & review</h4>
 
-                                <p className="text-rg h6 text-grey">
+                                <p className="text-rg text-18 text-grey">
                                     Accelerate coding with intelligent suggestions while preserving medical oversight.
                                 </p>
                             </div>
 
                             <div className="medical-detail-cards">
-                                <h4 className="h5 text-md text-white">Complete audit traceability</h4>
+                                <h4 className="h5 text-md text-white">Audit traceability</h4>
 
-                                <p className="text-rg h6 text-grey">
-                                    Track every coding decision, change, and approval with a complete, audit trail.
+                                <p className="text-rg text-18 text-grey">
+                                    Track every coding decision, change, and approval with a complete, end‑to‑end audit trail.
                                 </p>
                             </div>
                         </div>
