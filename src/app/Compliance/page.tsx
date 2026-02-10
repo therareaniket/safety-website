@@ -18,15 +18,15 @@ export default function Compliance() {
 
             <ComplianceInspectionReadiness />
 
-             <ComplianceStepsValidation />
+            <ComplianceStepsValidation />
 
-             <ComplianceValidationSupport />
+            <ComplianceValidationSupport />
 
-             <ComplianceImmutableTrials />
+            <ComplianceImmutableTrials />
 
-             <ComplianceSecureConnectivity />
-
-             <ComplianceFlexibleOperations />
+            <ComplianceSecureConnectivity />
+            
+            <ComplianceFlexibleOperations />
         </>
     );
 }

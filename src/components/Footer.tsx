@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import FooterCTA from '../components/FooterCTA/FooterCTA'
 
+
 export default function Footer() {
     return (
         <footer>
-
             <div className="container">
                 <div className="footer-inner relative">
                     <FooterCTA />
+                    
 
                     <div className="footer-inner-main flex">
                         <div className="f-col-one flex flex-col">
@@ -111,8 +112,8 @@ export default function Footer() {
 
                         <div className="terms-condition-links flex">
                             <ul className="flex">
-                                <li><Link href="#" className="text-16 text-grey">Terms of Use</Link></li>
-                                <li><Link href="#" className="text-16 text-grey">Privacy Policy</Link></li>
+                                <li><Link href="/Terms&Condition" className="text-16 text-grey">Terms of Use</Link></li>
+                                <li><Link href="/PrivacyPolicy" className="text-16 text-grey">Privacy Policy</Link></li>
                             </ul>
                         </div>
                     </div>
