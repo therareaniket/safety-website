@@ -1,15 +1,21 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 import FooterCTA from '../components/FooterCTA/FooterCTA'
 
 
 export default function Footer() {
+    const pathname = usePathname();
     return (
-        <footer>
+        <footer className={pathname === "/Contact" ? "foot-margin" : ""}>
             <div className="container">
-                <div className="footer-inner relative">
-                    <FooterCTA />
-                    
+                {/* <div className="footer-inner relative"> */}
+                <div className={`footer-inner relative ${ pathname === "/Contact" ? "foot-padding": "" }`}>
+
+                    {pathname === "/Contact" ? "" : <FooterCTA />}
 
                     <div className="footer-inner-main flex">
                         <div className="f-col-one flex flex-col">
@@ -24,10 +30,10 @@ export default function Footer() {
                             </div>
                             <div className="f-contact flex">
                                 <ul className='flex social-links'>
-                                    <li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li>
-                                    <li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li>
-                                    <li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li>
-                                    <li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li>
+                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
+                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
+                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
+                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
                                 </ul>
                             </div>
                         </div>
@@ -35,37 +41,42 @@ export default function Footer() {
                         <div className="f-right-cols flex">
                             <div className="f-col-two">
                                 <h2 className='text-18 text-sb text-grey'>Quick Links</h2>
-                                <ul>
-                                    <li>
-                                        <Link href="/" className="f-link text-16 text-grey">
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/About" className="f-link text-16 text-grey">
-                                            About Platform
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/Pricing" className="f-link text-16 text-grey">
-                                            Pricing
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/Compliance" className="f-link text-16 text-grey">
-                                            Compliance & quality
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/Resource" className="f-link text-16 text-grey">
-                                            Resourses
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/Contact" className="f-link text-16 text-grey">
-                                            Contact
-                                        </Link>
-                                    </li>
+                                <ul className="footer-links">
+                                <li>
+                                    <Link href="/" className={`f-link text-16 text-grey ${pathname === "/" ? "active-link" : ""}`}>
+                                        Home
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/About" className={`f-link text-16 text-grey ${pathname === "/About" ? "active-link" : ""}`}>
+                                        About Platform
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/Pricing" className={`f-link text-16 text-grey ${pathname === "/Pricing" ? "active-link" : ""}`}>
+                                        Pricing
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/Compliance" className={`f-link text-16 text-grey ${pathname === "/Compliance" ? "active-link" : ""}`}>
+                                        Compliance & quality
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/Resourse" className={`f-link text-16 text-grey ${pathname === "/Resourse" ? "active-link" : ""}`}>
+                                        Resourses
+                                    </Link>
+                                </li>
+
+                                <li>
+                                    <Link href="/Contact" className={`f-link text-16 text-grey ${pathname === "/Contact" ? "active-link" : ""}`}>
+                                        Contact
+                                    </Link>
+                                </li>
                                 </ul>
                             </div>
 

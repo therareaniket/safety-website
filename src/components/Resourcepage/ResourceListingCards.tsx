@@ -26,9 +26,9 @@ export default function ResourceListingCards() {
                                 </TabsList>
 
                                 <TabsContent value="workflows" className="resources-cards-wrapper">
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-1">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-1.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -54,9 +54,9 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-2">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-2.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -82,9 +82,9 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-3">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-3">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-3.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-3.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -108,14 +108,11 @@ export default function ResourceListingCards() {
 
                                             <p className="h6 text-rg text-grey">Explore how automated aggregate reporting tools are helping safety teams reduce manual errors, streamline submissions, and stay audit‑ready across global regulatory requirements.</p>
                                         </div>
-
-
-
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-4.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-4.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -143,9 +140,9 @@ export default function ResourceListingCards() {
                                 </TabsContent>
 
                                 <TabsContent value="monitoring">
-                                    <Link href='/Resourcedetail'className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resoursedetail'className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-4.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-4.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -173,9 +170,9 @@ export default function ResourceListingCards() {
                                 </TabsContent>
 
                                 <TabsContent value="automation">
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-1">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-1.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -203,9 +200,9 @@ export default function ResourceListingCards() {
                                 </TabsContent>
 
                                 <TabsContent value="detection">
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
+                                    <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-2">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-2.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">

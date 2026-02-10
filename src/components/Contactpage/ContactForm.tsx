@@ -15,24 +15,24 @@ export default function ContactForm() {
                             </div>
 
                             <div className="contact-form-address-card-wrapper">
-                                <div className="contact-form-card">
-                                    <span><Image src="/images/contactpage/phone-number.svg" alt="phone-icon" width={20} height={20}></Image></span>
+                                <div className="contact-form-card contact-form-card-1">
+                                    <span className="icon-contact-call"></span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Phone Number</p>
                                         <p className="text-18 text-rg text-grey">+1 512 843 2002</p>
                                     </div>
                                 </div>
-                                <div className="contact-form-card">
-                                    <span><Image src="/images/contactpage/location.svg" alt="phone-icon" width={20} height={20}></Image></span>
+                                <div className="contact-form-card contact-form-card-2">
+                                    <span className="icon-contact-location"></span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Location</p>
                                         <p className="text-18 text-rg text-grey">240, Newark, DE 19702, USA</p>
                                     </div>
                                 </div>
-                                <div className="contact-form-card">
-                                    <span><Image src="/images/contactpage/email.svg" alt="phone-icon" width={20} height={20}></Image></span>
+                                <div className="contact-form-card contact-form-card-3">
+                                    <span className="icon-contact-mail"></span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Email</p>

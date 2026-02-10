@@ -12,7 +12,7 @@ export default function ResourceDetailHeading() {
 
                     <div className="resource-detail-breadcrumb">
                         <span className="text-18 text-rg text-grey">{"<"}</span>
-                        <Link href="/Resource" className="text-18 text-rg text-grey">Back to Resources</Link>
+                        <Link href="/Resourse" className="text-18 text-rg text-grey">Back to Resources</Link>
 
                     </div>
 
@@ -23,7 +23,7 @@ export default function ResourceDetailHeading() {
                     </div>
 
                     <div className="resource-detail-banner-img">
-                        <Image src="/images/resourcedetailpage/resource-detail-banner.png" alt="" width={1400} height={830}></Image>
+                        <Image src="/images/resourcedetailpage/resource-detail-banner.webp" alt="" width={1400} height={830}></Image>
                     </div>
 
                     <div className="resources-detail-social-links">
@@ -77,9 +77,9 @@ export default function ResourceDetailHeading() {
                     </div>
 
                     <div className="resource-detail-more-blogs">
-                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
+                        <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
-                                <Image src="/images/resourcepage/resource-card-1.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
 
                             <div className="resources-card-text-wrapper">
@@ -89,9 +89,9 @@ export default function ResourceDetailHeading() {
                             </div>
                         </Link>
 
-                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
+                        <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-2">
                             <div className="resource-card-image-wrapper">
-                                <Image src="/images/resourcepage/resource-card-2.png" alt="resource-tab-1" width={680} height={404}></Image>
+                                <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
 
                             <div className="resources-card-text-wrapper">

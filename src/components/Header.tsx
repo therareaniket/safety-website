@@ -2,11 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import "@/assets/css/shalaka/responsive.css"
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
- 
+    const pathname = usePathname();
+
     return (
         <header>
             <div className="container">
@@ -17,12 +20,17 @@ export default function Header() {
                     </Link>
 
                     <ul className="navbar-links flex">
-                        <li> <Link href="/" className="nav-link text-16">Home</Link> </li>
-                        <li> <Link href="/About" className="nav-link text-16">About</Link> </li>
-                        <li> <Link href="/Pricing" className="nav-link text-16">Pricing</Link> </li>
-                        <li> <Link href="/Compliance" className="nav-link text-16">Compliance & Quality</Link> </li>
-                        <li> <Link href="/Resource" className="nav-link text-16">Resourses</Link> </li>
-                        <li> <Link href="/Contact" className="nav-link text-16">Contact</Link> </li>
+                        <li><Link href="/" className={`nav-link text-16 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
+
+                        <li><Link href="/About" className={`nav-link text-16 ${pathname === "/About" ? "active-link" : ""}`}>About</Link> </li>
+
+                        <li><Link href="/Pricing" className={`nav-link text-16 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link> </li>
+
+                        <li><Link href="/Compliance" className={`nav-link text-16 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link> </li>
+
+                        <li><Link href="/Resourse" className={`nav-link text-16 ${pathname === "/Resourse" ? "active-link" : ""}`}>Resourses</Link> </li>
+
+                        <li><Link href="/Contact" className={`nav-link text-16 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link> </li>
                     </ul>
 
                     <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
@@ -33,17 +41,17 @@ export default function Header() {
 
                     <div className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}>
                         <ul className="mobile-menu-ul">
-                            <li><Link href="/" className="nav-link text-18">Home</Link> </li>
+                            <li><Link href="/" className={`nav-link text-18 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
 
-                            <li><Link href="/About" className="nav-link text-18">About</Link> </li>
-                            
-                            <li><Link href="/Pricing" className="nav-link text-18">Pricing</Link> </li>
-                            
-                            <li><Link href="/Compliance" className="nav-link text-18">Compliance & Quality</Link> </li>
-                            
-                            <li><Link href="/Resource" className="nav-link text-18">Resourses</Link> </li>
-                            
-                            <li><Link href="/Contact" className="nav-link text-18">Contact</Link> </li>
+                            <li><Link href="/About" className={`nav-link text-18 ${pathname === "/About" ? "active-link" : ""}`}>About</Link> </li>
+
+                            <li><Link href="/Pricing" className={`nav-link text-18 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link> </li>
+
+                            <li><Link href="/Compliance" className={`nav-link text-18 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link> </li>
+
+                            <li><Link href="/Resourse" className={`nav-link text-18 ${pathname === "/Resourse" ? "active-link" : ""}`}>Resourses</Link> </li>
+
+                            <li><Link href="/Contact" className={`nav-link text-18 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link> </li>
                         </ul>
 
                         <span className="menu-hl"></span>
@@ -65,5 +73,5 @@ export default function Header() {
         </header>
     );
 
-    
+
 }

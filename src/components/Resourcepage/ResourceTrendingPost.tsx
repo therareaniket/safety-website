@@ -1,72 +1,121 @@
-// 'use client';
+'use client';
 
-// import Image from "next/image";
-// import Link from "next/link";
+import { type SwiperProps } from 'swiper/react';
+import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
-// export default function ResourceTrendingPost() {
-//     return (
+export default function ResourceTrendingPost() {
+    const swiperConfig: SwiperProps = {
+        modules: [Pagination, Autoplay],
+        spaceBetween: 20,
+        slidesPerView: 1,
+        loop: true,
 
-//         <section className="blog-wrapper section">
-//             <div className="container">
-//                 {/* <div className="blog-title-row flex">
-//                     <div className="b-col-one">
-//                         <h2 className="text-md">Elevate Your Safety Knowledge for a Smarter, Safer Tomorrow</h2>
-//                     </div>
-//                     <div className="b-col-two">
-//                         <p className="h6 text-black b-desc">Stay informed with valuable content on case management, AI, and safety innovation.</p>
-//                     </div>
-//                 </div> */}
-//                 <div className="blog-row-inner flex" style={{marginTop:0}}>
-//                     <div className="b-feature-item">
-//                        <div className="b-post-img">
-//                         <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
-//                        </div>
-//                        <div className="b-post-content">
-//                        <div className="b-post-title">
-//                             <Link href='#'><h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3></Link>
-//                             <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
-//                        </div>
-//                        <div className="b-meta">
-//                             <p className="text-16 text-mid-grey">Arjun Deshpande , Clinical Research Lead</p>
-//                             <div className="b-category-inner flex">
-//                                 <p className="text-16 text-mid-grey">20 January 2026</p>
-//                                 <span className="b-category text-purple text-16">Automation</span>
-//                             </div>
-//                        </div>
-//                        </div>
-//                     </div>
-//                     <div className="b-post-items flex mini">
-//                         <div className="post-item flex">
-//                             <div className="b-post-img">
-//                                 <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
-//                             </div>
-//                             <div className="b-post-title">
-//                                 <Link href='#'><h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3></Link>
-//                                 <p className="text-black">A deep dive into the importance of gathering safety information</p>
-//                             </div>
-//                         </div>
-//                         <div className="post-item flex">
-//                             <div className="b-post-img">
-//                                 <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
-//                             </div>
-//                             <div className="b-post-title">
-//                                 <Link href='#'><h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3></Link>
-//                                 <p className="text-black">Organizations are modernizing their safety processes</p>
-//                             </div>
-//                         </div>
-//                         <div className="post-item flex">
-//                             <div className="b-post-img">
-//                                 <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
-//                             </div>
-//                             <div className="b-post-title">
-//                                 <Link href='#'><h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3></Link>
-//                                 <p className="text-black">Real‑time monitoring tools are helping organizations</p>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
 
-//     )
-// }
+        pagination: {
+            clickable: true,
+        },
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            401: {
+                slidesPerView: 1,
+            },
+        },
+    };
+    return (
+
+        <section className="blog-wrapper section">
+            <div className="container">
+                <div className="resource-listing-swiper-wrapper">
+                    <Swiper {...swiperConfig} className='resource-listSwiper-wrapper'>
+                        <SwiperSlide className='resource-swiper-card resource-swiper-card-1'>
+                            <div className="blog-swiper-left">
+                                <Image src="/images/resourcepage/trending-post-1.webp" alt="" width={714} height={424}></Image>
+                            </div>
+
+                            <div className="blog-swiper-right">
+                                <h2 className='text-md text-purple'>Trending Post</h2>
+
+                                <h3 className="h4 text-md">How AI Is Reshaping Modern Pharmacovigilance</h3>
+
+                                <p className='h6 text-rg'>Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future with intelligent automation, deeper insights, and more proactive safety strategies and smarter data intelligence.</p>
+
+                                <div className="trending-date-span">
+                                    <div className="trending-post-pn">
+                                        <p className='text-14 text-sb'>AD</p>
+                                    </div>
+
+                                    <div className="trending-post-name-span">
+                                        <span className='text-rg text-16 text-grey'>Arjun Deshpande</span>
+
+                                        <span className='text-rg text-16 text-grey'>27 January 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide className='resource-swiper-card resource-swiper-card-3'>
+                            <div className="blog-swiper-left">
+                                <Image src="/images/resourcepage/trending-post-3.webp" alt="" width={714} height={424}></Image>
+                            </div>
+
+                            <div className="blog-swiper-right">
+                                <h2 className='text-md text-purple'>Trending Post</h2>
+
+                                <h3 className="h4 text-md">Enhancing Compliance With Intelligent Reporting</h3>
+
+                                <p className='h6 text-rg'>Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future with intelligent automation, deeper insights, and more proactive safety strategies and smarter data intelligence.</p>
+
+                                <div className="trending-date-span">
+                                    <div className="trending-post-pn">
+                                        <p className='text-14 text-sb'>NP</p>
+                                    </div>
+
+                                    <div className="trending-post-name-span">
+                                        <span className='text-rg text-16 text-grey'>Neha Pandey</span>
+
+                                        <span className='text-rg text-16 text-grey'>27 January 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide className='resource-swiper-card resource-swiper-card-2'>
+                            <div className="blog-swiper-left">
+                                <Image src="/images/resourcepage/trending-post-2.webp" alt="" width={714} height={424}></Image>
+                            </div>
+
+                            <div className="blog-swiper-right">
+                                <h2 className='text-md text-purple'>Trending Post</h2>
+
+                                <h3 className="h4 text-md">Building a Future Ready Safety Workflow For Intelligence</h3>
+
+                                <p className='h6 text-rg'>Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future with intelligent automation, deeper insights, and more proactive safety strategies and smarter data intelligence.</p>
+
+                                <div className="trending-date-span">
+                                    <div className="trending-post-pn">
+                                        <p className='text-14 text-sb'>ST</p>
+                                    </div>
+
+                                    <div className="trending-post-name-span">
+                                        <span className='text-rg text-16 text-grey'>Sarah Thompson</span>
+
+                                        <span className='text-rg text-16 text-grey'>27 January 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </div>
+        </section>
+    )
+}
