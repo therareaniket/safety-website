@@ -155,7 +155,7 @@
     .curve-lg { top: 60%; }
     .b-post-items.mini .b-post-img img { height: 220px; }
     .b-post-items.mini .b-post-img, .b-feature-item img { height: 220px; }
-    
+    .fq-text { width: 90%; }
 }
 
 @media screen and (max-width: 480px) {

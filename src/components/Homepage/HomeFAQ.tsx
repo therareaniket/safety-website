@@ -10,20 +10,19 @@ export default function HomeFAQ() {
     const faqs = [
         {
             question: 'What is DhatuSafety?',
-            answer: 'DhatuAcademy is a specialized training platform offering portal-specific courses certifications to help you work on real-world projects.'
+            answer: 'DhatuSafety is a unified patient safety and pharmacovigilance platform that helps teams manage ICSRs, track safety signals, monitor literature.'
         }, {
             question: 'Who can use DhatuSafety?',
-            answer: 'DhatuAcademy is a specialized training platform offering portal-specific courses certifications to help you work on real-world projects..'
-        },
-        {
+            answer: 'It is designed for MAHs, clinical trial sponsors, CROs, pharma & biotech company and any organization involved in safety monitoring and regulatory reporting.'
+        }, {
             question: 'Can DhatuSafety integrate with other systems?',
-            answer: 'DhatuAcademy is a specialized training platform offering portal-specific courses certifications to help you work on real-world projects.'
+            answer: 'Yes. DhatuSafety supports integrations with EHR, ERP, EDC, and other clinical systems to ensure seamless data intake and workflow automation.'
         }, {
             question: 'Does DhatuSafety support global regulatory compliance?',
-            answer: 'DhatuAcademy is a specialized training platform offering portal-specific courses certifications to help you work on real-world projects.'
+            answer: 'Yes . The platform includes features for regulatory reporting, audit trails, compliance tracking, and jurisdiction‑specific requirements (US/EU/IN).'
         }, {
             question: 'What kind of support is offered?',
-            answer: 'DhatuAcademy is a specialized training platform offering portal-specific courses certifications to help you work on real-world projects.'
+            answer: 'Provides dedicated onboarding, training, documentation, and ongoing support. Enterprise plans also include priority assistance and advanced configuration.'
         }
     ];
 

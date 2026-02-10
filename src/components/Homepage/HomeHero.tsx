@@ -8,7 +8,7 @@ export default function HomeHero() {
                 <div className="container">
                     <div className="hero-row flex items-center">
                         <div className="hero-col-one">
-                            <h1 className="text-md">Central Hub of Safety & Intelligence</h1>
+                            <h1 className="text-md">Central Hub of <br /> Safety & Intelligence</h1>
                             <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p>                           
                             <div className="book-demo-main lg">
                                 <Link href='#'>
