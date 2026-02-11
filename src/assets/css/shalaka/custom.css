@@ -16,10 +16,14 @@
     --blue:#053EFF;
     --orange: #F8791E;
     --yellow:#FEAF06;
+    --lightBlue: #CDD8FF;
 }
 
 .text-grey {
     color: var(--grey);
+}
+.text-lightblue {
+    color: var(--lightBlue);
 }
 
 .text-black,
@@ -47,9 +51,17 @@ p {
 .text-purple {
     color: var(--purple);
 }
+.text-lavender {
+    color: var(--lavender);
+}
 
-.bg-lavender {
-    background: var(--lavender);
+.bg-lavender,
+.btn-icon.bg-lavender {
+    background-color: var(--lavender);
+}
+.bg-blue,
+.btn-icon.bg-lightblue {
+    background: var(--lightBlue);
 }
 
 .bg-dark-grey {
@@ -474,7 +486,7 @@ header {
 
 .curve-lg {
     left: 0;
-    top: 52%;
+    top: 49%;
     transform: translateY(-50%);
     opacity: 0.3;
     z-index: -1;
@@ -485,9 +497,12 @@ header {
 }
 
 .ai-center-icon {
-    width: 216px;
-    height: 216px;
+    width: 206px;
+    height: 206px;
     background: linear-gradient(180deg, #EEEEEE 0%, #EFECF4 41%, #F2F8EB 100%);
+}
+.ai-center-icon img{
+    width: 106px;
 }
 
 .ai-icon {
@@ -699,7 +714,9 @@ header {
 .plans-row {
     gap: 40px;
 }
-
+.plan-list{
+    margin-top:30px;
+}
 .plan-title {
     align-items: center;
     justify-content: space-between;
@@ -1077,6 +1094,11 @@ footer {
     width: 45%;
     margin: auto auto 6px;
 }
+    .pf-content .h6{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
 
 /********Feature*******/
 .pricing-feature-inner{
@@ -1109,6 +1131,14 @@ footer {
     width: 40px;
     height: 40px;
     margin: auto;
+}
+.ps-icon img{
+    width: 22px;
+    height: 22px;
+}
+.pf-icon img{
+    width: 20px;
+    height: 20px;
 }
 .pf-content{
     margin-top: 6px;
@@ -1145,6 +1175,7 @@ width: 1px;
 height: 26px;
 background: var(--grey);
 }
+
 .pc-text.four{
     width: 206px;
 }
@@ -1154,6 +1185,7 @@ background: var(--grey);
 .pc-text:last-child::after{
     content: none;
 }
+
 .pc-text .h5{
     margin-bottom: 0;
 }
@@ -1179,6 +1211,9 @@ background: var(--grey);
 }
 .ps-content .h6{
     width: 98%;
+}
+.blog-slider-sm{
+    display: none;
 }
 
 @keyframes spin {
