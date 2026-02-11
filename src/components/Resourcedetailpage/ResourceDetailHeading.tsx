@@ -8,11 +8,11 @@ export default function ResourceDetailHeading() {
     return (
         <>
             <section className="section resource-detail-hero-wrapper">
-                <div className="container">
+                <div className="container container-sm">
 
                     <div className="resource-detail-breadcrumb">
                         <span className="text-18 text-rg text-grey">{"<"}</span>
-                        <Link href="/Resourse" className="text-18 text-rg text-grey">Back to Resources</Link>
+                        <Link href="/Resource" className="text-18 text-rg text-grey">Back to Resources</Link>
 
                     </div>
 
@@ -77,7 +77,7 @@ export default function ResourceDetailHeading() {
                     </div>
 
                     <div className="resource-detail-more-blogs">
-                        <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-1">
+                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
@@ -89,7 +89,7 @@ export default function ResourceDetailHeading() {
                             </div>
                         </Link>
 
-                        <Link href='/Resoursedetail' className="resources-tab-content resources-tab-content-2">
+                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>

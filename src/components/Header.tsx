@@ -28,7 +28,7 @@ export default function Header() {
 
                         <li><Link href="/Compliance" className={`nav-link text-16 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link> </li>
 
-                        <li><Link href="/Resourse" className={`nav-link text-16 ${pathname === "/Resourse" ? "active-link" : ""}`}>Resourses</Link> </li>
+                        <li><Link href="/Resource" className={`nav-link text-16 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link> </li>
 
                         <li><Link href="/Contact" className={`nav-link text-16 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link> </li>
                     </ul>
@@ -49,7 +49,7 @@ export default function Header() {
 
                             <li><Link href="/Compliance" className={`nav-link text-18 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link> </li>
 
-                            <li><Link href="/Resourse" className={`nav-link text-18 ${pathname === "/Resourse" ? "active-link" : ""}`}>Resourses</Link> </li>
+                            <li><Link href="/Resource" className={`nav-link text-18 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link> </li>
 
                             <li><Link href="/Contact" className={`nav-link text-18 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link> </li>
                         </ul>

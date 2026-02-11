@@ -50,7 +50,7 @@ export default function Footer() {
 
                                 <li>
                                     <Link href="/About" className={`f-link text-16 text-grey ${pathname === "/About" ? "active-link" : ""}`}>
-                                        About Platform
+                                        About
                                     </Link>
                                 </li>
 
@@ -67,8 +67,8 @@ export default function Footer() {
                                 </li>
 
                                 <li>
-                                    <Link href="/Resourse" className={`f-link text-16 text-grey ${pathname === "/Resourse" ? "active-link" : ""}`}>
-                                        Resourses
+                                    <Link href="/Resource" className={`f-link text-16 text-grey ${pathname === "/Resource" ? "active-link" : ""}`}>
+                                        Resources
                                     </Link>
                                 </li>
 
@@ -101,7 +101,7 @@ export default function Footer() {
                             <div className="f-col-four">
                                 <h2 className='text-18 text-sb text-grey'>Newsletter</h2>
                                 <p className='f-desc text-16 mt-0 text-grey'>
-                                    Join Our Newsletter and get notified with latest updates.
+                                    Join for latest updates.
                                 </p>
                                 <form action="" className='newletter-form'>
                                     <input type="text" className='form-control' placeholder='Enter your mail' />

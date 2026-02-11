@@ -18,7 +18,7 @@ export default function AboutDataMeetsMedical() {
                         <div className="about-data-meets-medical-cards-wrapper about-data-meets-medical-cards-wrapper-desktop">
                             <div className="about-medical-card-row about-medical-card-row-1">
                                 <div className="about-data-card about-data-card-1">
-                                    <span className="about-data-cards-svg about-data-cards-svg-1">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-1">
                                         <Image src="/images/aboutpage/seriousness-assessment-card-1.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -30,7 +30,7 @@ export default function AboutDataMeetsMedical() {
                                 </div>  
 
                                 <div className="about-data-card about-data-card-2">
-                                    <span className="about-data-cards-svg about-data-cards-svg-2">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-2">
                                         <Image src="/images/aboutpage/structurednarrative-card-2.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -50,7 +50,7 @@ export default function AboutDataMeetsMedical() {
 
                             <div className="about-medical-card-row about-medical-card-row-3">
                                 <div className="about-data-card about-data-card-3">
-                                    <span className="about-data-cards-svg about-data-cards-svg-3">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-3">
                                         <Image src="/images/aboutpage/reference-safety-card-3.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -62,7 +62,7 @@ export default function AboutDataMeetsMedical() {
                                 </div> 
 
                                 <div className="about-data-card about-data-card-4">
-                                    <span className="about-data-cards-svg about-data-cards-svg-4">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-4">
                                         <Image src="/images/aboutpage/controlled-medical-approval-card-4.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -84,7 +84,7 @@ export default function AboutDataMeetsMedical() {
 
                             <div className="about-medical-card-row">
                                 <div className="about-data-card about-data-card-1">
-                                    <span className="about-data-cards-svg about-data-cards-svg-1">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-1">
                                         <Image src="/images/aboutpage/seriousness-assessment-card-1.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -96,7 +96,7 @@ export default function AboutDataMeetsMedical() {
                                 </div>    
 
                                 <div className="about-data-card about-data-card-2">
-                                    <span className="about-data-cards-svg about-data-cards-svg-2">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-2">
                                         <Image src="/images/aboutpage/structurednarrative-card-2.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -108,7 +108,7 @@ export default function AboutDataMeetsMedical() {
                                 </div>
 
                                 <div className="about-data-card about-data-card-3">
-                                    <span className="about-data-cards-svg about-data-cards-svg-3">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-3">
                                         <Image src="/images/aboutpage/reference-safety-card-3.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 
@@ -120,7 +120,7 @@ export default function AboutDataMeetsMedical() {
                                 </div>   
 
                                 <div className="about-data-card about-data-card-4">
-                                    <span className="about-data-cards-svg about-data-cards-svg-4">
+                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-4">
                                         <Image src="/images/aboutpage/controlled-medical-approval-card-4.svg" alt="medical icon" width={24} height={24}></Image>
                                     </span>
 

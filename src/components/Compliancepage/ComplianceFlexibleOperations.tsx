@@ -16,22 +16,22 @@ export default function ComplianceFlexibleOperations() {
 
                             <div className="compliance-operations-stats-wrapper">
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-1">
-                                    <h2 className="text-md">60%</h2>
-                                    <p className="text-rg h6">Faster Workflow Adaptation</p>
+                                    <h2 className="h3 text-md">60%</h2>
+                                    <p className="text-rg text-18">Faster Workflow Adaptation</p>
                                 </div>
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-2">
 
                                 </div>
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-3">
-                                    <h2 className="text-md">40%</h2>
-                                    <p className="text-rg h6">Reduction in SLA Breaches</p>
+                                    <h2 className="h3 text-md">40%</h2>
+                                    <p className="text-rg text-18">Reduction in SLA Breaches</p>
                                 </div>
                             </div>
                         </div>
 
                         <div className="compliance-flexible-operations-right">
                             <div className="operational-card operational-card-1">
-                                <span className="operational-svg operational-svg-1"><Image src="/images/compliancepage/config-workflows.svg" alt="Operational Card 1" width={32} height={32}></Image></span>
+                                <span className="operational-svg site-all-svg operational-svg-1"><Image src="/images/compliancepage/config-workflows.svg" alt="Operational Card 1" width={32} height={32}></Image></span>
 
                                 <div className="operational-card-right">
                                     <h4 className="h5 text-md">Configurable Workflows</h4>
@@ -41,7 +41,7 @@ export default function ComplianceFlexibleOperations() {
                             </div>
 
                             <div className="operational-card operational-card-2">
-                                <span className="operational-svg operational-svg-2"><Image src="/images/compliancepage/sla-management.svg" alt="Operational Card 2" width={32} height={32}></Image></span>
+                                <span className="operational-svg site-all-svg operational-svg-2"><Image src="/images/compliancepage/sla-management.svg" alt="Operational Card 2" width={32} height={32}></Image></span>
 
                                 <div className="operational-card-right">
                                     <h4 className="h5 text-md">SLA Management & Escalation</h4>
@@ -51,7 +51,7 @@ export default function ComplianceFlexibleOperations() {
                             </div>
 
                             <div className="operational-card operational-card-3">
-                                <span className="operational-svg operational-svg-3"><Image src="/images/compliancepage/case-lifecycle-config.svg" alt="Operational Card 3" width={32} height={32}></Image></span>
+                                <span className="operational-svg site-all-svg operational-svg-3"><Image src="/images/compliancepage/case-lifecycle-config.svg" alt="Operational Card 3" width={32} height={32}></Image></span>
 
                                 <div className="operational-card-right">
                                     <h4 className="h5 text-md">Case Lifecycle Configuration</h4>

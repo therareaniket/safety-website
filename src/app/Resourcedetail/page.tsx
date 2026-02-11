@@ -3,7 +3,7 @@
 import Header from "@/components/Header";
 import ResourceDetailHeading from "@/components/Resourcedetailpage/ResourceDetailHeading";
 
-export default function Resoursedetail() {
+export default function Resourcedetail() {
     return (
         <>
             <Header />
