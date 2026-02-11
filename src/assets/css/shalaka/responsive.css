@@ -61,12 +61,12 @@
     }
 
     .ra-circle-lg {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
 
     .ra-circle-lg svg {
-        width: 51px;
+        width: 41px;
     }
 
     .hero-col-one {
@@ -2347,6 +2347,9 @@
         width: 327px;
         top: -120px;
     }
+        .ra-graph-images {
+        width: 150px;
+    }
      .hero-wrapper { padding-top: 10px !important; padding: 150px 0 50px; }
     .recent-activity-circle {
         width: 260px;
@@ -3081,19 +3084,9 @@
         width: 22px;
     }
 
-    .ra-circle-lg {
-        width: 35px;
-        height: 35px;
-    }
-
     .ra-shapes.diamond.one {
         top: -6px;
         right: 35%;
-    }
-
-    .ra-shapes {
-        width: 20px;
-        height: 20px;
     }
 
     .ra-shapes.circle.left {
@@ -3162,7 +3155,7 @@
     }
 
     .hero-wrapper {
-        padding: 130px 0 70px;
+        padding: 130px 0 50px;
     }
 
     .eco-img img {

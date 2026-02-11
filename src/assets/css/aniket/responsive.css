@@ -200,6 +200,18 @@
     .stats-item.two { width: 85%; height: 85px; }
     .stats-item.three { width: 100%; height: 85px; }
     .curve-lg { top: 59%; }
+    /***Shalaka****/
+        .recent-activity-circle {
+        width: 240px;
+        height: 240px;
+    }
+        .ra-circle-mini {
+        width: 180px;
+        height: 180px;
+    }
+        .ra-graph-images {
+        width: 140px;
+    }
 }
 
 @media screen and (max-width: 374px) {
