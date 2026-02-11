@@ -153,51 +153,187 @@ export default function ComplianceStepsValidation() {
                     <div className="compliance-steps-divider-mobile">
                         <div className="compliance-validation-steps-wrapper">
                             <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-1 ">
-                                <span className="text-md h5 compliance-step-span">1</span>
+                                <span className="text-md h5 site-all-svg compliance-step-span">1</span>
 
-                                <h3 className="h5 text-md text-white">CSV Compliance</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
 
-                                <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
                             </div>
 
-                            <div className= "compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-2">
-                                <span className="text-md h5 compliance-step-span">2</span>
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-2">
+                                <span className="text-md h5 site-all-svg compliance-step-span">2</span>
 
-                                <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
 
-                                <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
                             </div>
 
                             <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-3">
-                                <span className="text-md h5 compliance-step-span">3</span>
+                                <span className="text-md h5 site-all-svg compliance-step-span">3</span>
 
-                                <h3 className="h5 text-md text-white">Change Control</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Change Control</h3>
 
-                                <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                </div>
                             </div>
 
                             <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-4">
-                                <span className="text-md h5 compliance-step-span">4</span>
+                                <span className="text-md h5 site-all-svg compliance-step-span">4</span>
 
-                                <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
 
-                                <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                </div>
                             </div>
 
                             <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-5">
-                                <span className="text-md h5 compliance-step-span">5</span>
+                                <span className="text-md h5 site-all-svg compliance-step-span">5</span>
 
-                                <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
 
-                                <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                </div>
                             </div>
 
                             <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-6">
-                                <span className="text-md h5 compliance-step-span">6</span>
+                                <span className="text-md h5 site-all-svg compliance-step-span">6</span>
 
-                                <h3 className="h5 text-md text-white">Validation Status</h3>
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Validation Status</h3>
 
-                                <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="compliance-steps-divider-responsive compliance-carousel">
+                        <div className="compliance-steps-scroll compliance-carousel-track">
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-1 ">
+                                <span className="text-md h5 site-all-svg compliance-step-span">1</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
+
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-2">
+                                <span className="text-md h5 site-all-svg compliance-step-span">2</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-3">
+                                <span className="text-md h5 site-all-svg compliance-step-span">3</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Change Control</h3>
+
+                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-4">
+                                <span className="text-md h5 site-all-svg compliance-step-span">4</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
+
+                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-5">
+                                <span className="text-md h5 site-all-svg compliance-step-span">5</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+
+                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-6">
+                                <span className="text-md h5 site-all-svg compliance-step-span">6</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Validation Status</h3>
+
+                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-1 ">
+                                <span className="text-md h5 site-all-svg compliance-step-span">1</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
+
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-2">
+                                <span className="text-md h5 site-all-svg compliance-step-span">2</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-3">
+                                <span className="text-md h5 site-all-svg compliance-step-span">3</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Change Control</h3>
+
+                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-4">
+                                <span className="text-md h5 site-all-svg compliance-step-span">4</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
+
+                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-left compliance-steps-card-5">
+                                <span className="text-md h5 site-all-svg compliance-step-span">5</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+
+                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                </div>
+                            </div>
+
+                            <div className="compliance-steps-card-responsive compliance-steps-card-responsive-card-right compliance-steps-card-6">
+                                <span className="text-md h5 site-all-svg compliance-step-span">6</span>
+
+                                <div className="compliance-steps-card-text">
+                                    <h3 className="h5 text-md text-white">Validation Status</h3>
+
+                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

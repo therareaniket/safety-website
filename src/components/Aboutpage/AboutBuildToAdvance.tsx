@@ -15,7 +15,7 @@ export default function AboutBuildToAdvance() {
                     </div>
                     <div className="build-to-advance-right-wrapper">
                         <div className="compliance-driven-by">
-                            <span className="build-toadvance-icon">
+                            <span className="build-toadvance-icon site-all-svg">
                                 <Image src="/images/aboutpage/compliace-driven-icon.svg" alt="compliance-driven-icon" width={26} height={26} />
                             </span>
 
@@ -27,7 +27,7 @@ export default function AboutBuildToAdvance() {
                         </div>
 
                         <div className="build-for-real-world">
-                            <span className="build-toadvance-icon build-for-safety-Operations">
+                            <span className="build-toadvance-icon site-all-svg build-for-safety-Operations">
                                 <Image src="/images/aboutpage/build-real-safety.svg" alt="compliance-driven-icon" width={26} height={26} />
                             </span>
 

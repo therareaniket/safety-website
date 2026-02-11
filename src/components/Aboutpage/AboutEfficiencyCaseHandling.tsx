@@ -25,6 +25,9 @@ export default function AboutEfficiencyCaseHandling() {
             0: {
                 slidesPerView: 1,
             },
+                        392: {
+                slidesPerView: 1,
+            },
             401: {
                 slidesPerView: 2,
             },
