@@ -21,13 +21,14 @@ export default function HomeBlog() {
                     </div>
                 </div>
                 <div className="blog-row-inner lg flex">
-                    <div className="b-feature-item">
+                    <Link href='#' className="b-feature-item">
                         <div className="b-post-img">
                             <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
                         </div>
+
                         <div className="b-post-content">
                             <div className="b-post-title">
-                                <Link href='#'><h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3></Link>
+                                <h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3>
                                 <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
                             </div>
                             <div className="b-meta">
@@ -38,35 +39,38 @@ export default function HomeBlog() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
+
                     <div className="b-post-items flex mini">
-                        <div className="post-item flex">
+                        <Link href='#' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-2.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <Link href='#'><h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3></Link>
+                                <h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3>
                                 <p className="text-black">A deep dive into the importance of gathering safety information</p>
                             </div>
-                        </div>
-                        <div className="post-item flex">
+                        </Link>
+
+                        <Link href='#' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-3.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <Link href='#'><h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3></Link>
+                                <h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3>
                                 <p className="text-black">Organizations are modernizing their safety processes</p>
                             </div>
-                        </div>
-                        <div className="post-item flex">
+                        </Link>
+
+                        <Link href='#' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-4.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <Link href='#'><h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3></Link>
+                                <h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3>
                                 <p className="text-black">Real‑time monitoring tools are helping organizations</p>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -78,8 +82,8 @@ export default function HomeBlog() {
                             clickable: true,
                         }}
                         spaceBetween={20}
-                        slidesPerView={1}
-                    >
+                        slidesPerView={1}>
+
                         <SwiperSlide>
                             <div className="b-feature-item">
                                 <div className="b-post-img">
@@ -87,7 +91,8 @@ export default function HomeBlog() {
                                 </div>
                                 <div className="b-post-content">
                                     <div className="b-post-title">
-                                        <Link href='#'><h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3></Link>
+                                        <h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3>
+                                        
                                         <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
                                     </div>
                                     <div className="b-meta">
@@ -99,39 +104,46 @@ export default function HomeBlog() {
                                 </div>
                             </div>
                         </SwiperSlide>
+
                         <SwiperSlide>
                             <div className="post-item flex">
                                 <div className="b-post-img">
                                     <Image src='/images/homepage/blogs/home-blog-2.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                                 </div>
                                 <div className="b-post-title">
-                                    <Link href='#'><h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3></Link>
+                                    <h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3>
+                                    
                                     <p className="text-black">A deep dive into the importance of gathering safety information</p>
                                 </div>
                             </div>
                         </SwiperSlide>
+
                         <SwiperSlide>
                             <div className="post-item flex">
                                 <div className="b-post-img">
                                     <Image src='/images/homepage/blogs/home-blog-3.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                                 </div>
                                 <div className="b-post-title">
-                                    <Link href='#'><h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3></Link>
+                                    <h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3>
+                                    
                                     <p className="text-black">Organizations are modernizing their safety processes</p>
                                 </div>
                             </div>
                         </SwiperSlide>
+
                         <SwiperSlide>
                             <div className="post-item flex">
                                 <div className="b-post-img">
                                     <Image src='/images/homepage/blogs/home-blog-4.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                                 </div>
                                 <div className="b-post-title">
-                                    <Link href='#'><h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3></Link>
+                                    <h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3>
+                                    
                                     <p className="text-black">Real‑time monitoring tools are helping organizations</p>
                                 </div>
                             </div>
                         </SwiperSlide>
+                        
                         <div className="swiper-pagination"></div>
                     </Swiper>
                 </div>

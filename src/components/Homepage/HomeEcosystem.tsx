@@ -17,15 +17,15 @@ export default function HomeEcosystem() {
                             <Image className="ec-img" src='/images/homepage/sponsor.webp' alt="Clinical Sponsors" width={336} height={413} priority />
                         </div>
                         <div className="eco-title">
-                            <h3 className="h4 text-md">Clinical Sponsors</h3>
-                            <p className="h6">Use to streamline safety data capture, case processing</p>
+                            <h3 className="h5 text-md">Clinical Sponsors</h3>
+                            <p className="text-18">Use to streamline safety data capture, case processing</p>
                         </div>
                     </div>
 
                     <div className="eco-item">
                         <div className="eco-title top">
-                            <h3 className="h4 text-md">CROs</h3>
-                            <p className="h6">Depend for efficiently manage safety operations for multiple clients</p>
+                            <h3 className="h5 text-md">CROs</h3>
+                            <p className="text-18">Depend for efficiently manage safety operations for multiple clients</p>
                         </div>
                         <div className="eco-img">
                             <Image className="ec-img" src='/images/homepage/cros.webp' alt="Cros" width={336} height={413} priority />
@@ -37,15 +37,15 @@ export default function HomeEcosystem() {
                             <Image className="ec-img" src='/images/homepage/pharma.webp' alt="Pharma & Biotech" width={336} height={413} priority />
                         </div>
                         <div className="eco-title">
-                            <h3 className="h4 text-md">Pharma</h3>
-                            <p className="h6">To unify case manage, evaluate emerging safety signals, and meet global</p>
+                            <h3 className="h5 text-md">Pharma</h3>
+                            <p className="text-18">To unify case manage, evaluate emerging safety signals, and meet global</p>
                         </div>
                     </div>
                     
                     <div className="eco-item">
                         <div className="eco-title top">
-                            <h3 className="h4 text-md">MAHs</h3>
-                            <p className="h6">Marketing Authorization Holders rely to manage</p>
+                            <h3 className="h5 text-md">MAHs</h3>
+                            <p className="text-18">Marketing Authorization Holders rely to manage</p>
                         </div>
                         <div className="eco-img">
                             <Image className="ec-img" src='/images/homepage/mahs.webp' alt="MAHs" width={336} height={413} priority />

@@ -16,19 +16,19 @@ export default function HomeStatistics() {
                     <div className="stats-list flex">
                         <div className="stats-item one bg-dark-grey">
                             <div className="stats-count flex flex-col">
-                                <h3 className="h1 text-md text-white">40%</h3>
+                                <h3 className="h2 text-md text-white">40%</h3>
                                 <p className="h6 text-white">Faster Case Processing</p>
                             </div>
                         </div>
                         <div className="stats-item two bg-lavender">
                             <div className="stats-count flex flex-col">
-                                <h3 className="h1 text-md text-black">60%</h3>
+                                <h3 className="h2 text-md text-black">60%</h3>
                                 <p className="h6 text-black">Boost In Signal Case</p>
                             </div>
                         </div>
                         <div className="stats-item three bg-dark-grey">
                             <div className="stats-count flex flex-col">
-                                <h3 className="h1 text-md text-white">99.2%</h3>
+                                <h3 className="h2 text-md text-white">99.2%</h3>
                                 <p className="h6 text-white">Accuracy in Case Processing</p>
                             </div>
                         </div>

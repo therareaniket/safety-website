@@ -18,6 +18,7 @@
     height: 167px;
 }
 .stats-item{
+    width: 230px;
     padding: 20px 30px;  
 }
 .pc-type .h4{
@@ -29,8 +30,8 @@
 }
 
 .ai-center-icon {
-    width: 186px;
-    height: 186px;
+    width: 170px;
+    height: 170px;
 }
 .ai-center-icon img {
     width: 96px;
@@ -51,13 +52,13 @@
 }
 
     .recent-activity-circle {
-        width: 510px;
-        height: 510px;
+        width: 480px;
+        height: 480px;
     }
 
     .ra-circle-mini {
-        width: 380px;
-        height: 380px;
+        width: 360px;
+        height: 360px;
     }
 
     .ra-circle-lg {
@@ -99,16 +100,12 @@
         gap: 96px;
     }
 
-    .stats-item {
-        width: 245px;
-    }
-
     .stats-col-one {
-        width: 353px;
+        width: 450px;
     }
 
     .stats-col-two {
-        width: calc(100% - 353px - 96px);
+        width: 740px;
     }
 
     .tools-item {
@@ -120,7 +117,7 @@
     }
 
     .stats-list {
-        gap: 50px;
+        gap: 40px;
     }
 
     .op-desc {
@@ -169,29 +166,17 @@
         gap: 160px;
     }
 
-    .t-testimonial-slider {
-        width: calc(100% - 222px - 160px);
-    }
-
-    .nav-seprator {
-        width: 161px;
-    }
-
-    .eco-item {
-        width: 297px;
-    }
-
-    .f-cta-block {
-        width: 497px;
-    }
-
-    .footer-inner {
-        padding-top: 220px;
-    }
-
+    .t-testimonial-slider { width: calc(100% - 222px - 160px); }
+    .nav-seprator { width: 161px; }
+    .eco-item { width: 297px; }
+    .f-cta-block { width: 497px; }
+    .footer-inner { padding-top: 220px; }
     .hero-wrapper { height: 680px; }
-    .ra-graph-images { width: 280px; }
-
+    .ra-graph-images { width: 260px; }
+    .curve-lg { top: 57%; }
+    .eco-item { width: 303px; }
+    .eco-title .h5 { margin-bottom: 8px; }
+    footer { margin-top: 130px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -272,39 +257,14 @@
         margin-top: 40px;
     }
 
-    .navbar-links .text-18 {
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .stats-list {
-        gap: 40px;
-    }
-
-    .stats-col-one {
-        width: 330px;
-    }
-
-    .stats-col-two {
-        width: calc(100% - 330px - 96px);
-    }
-
-    .stats-item {
-        width: 225px;
-        padding: 30px 20px;
-    }
-
-    .stats-item.three {
-        height: 341px;
-    }
-
-    .stats-item.two {
-        height: 256px;
-    }
-
-    .f-right-cols {
-        gap: 60px;
-    }
+    .navbar-links .text-18 { font-size: 16px; line-height: 22px; }
+    .stats-list { gap: 40px; }
+    .stats-col-one { width: 410px; }
+    .stats-col-two { width: 700px; margin-bottom: 35px; }
+    .stats-item { width: 210px; padding: 30px 20px; }
+    .stats-item.three { height: 341px; }
+    .stats-item.two { height: 256px; }
+    .f-right-cols { gap: 60px; }
 
     .tools-img .tool-lg {
         width: 88%;
@@ -430,9 +390,9 @@
     .navbar-logo { width: 135px; }
     .nav-wrapper { padding: 25px 0 20px; }
     .navbar-links { gap: 32px; }
-    .recent-activity-circle { width: 430px; height: 430px; }
-    .ra-circle-mini { width: 330px; height: 330px; }
-    .ra-graph-images { width: 250px; }
+    .recent-activity-circle { width: 420px; height: 420px; }
+    .ra-circle-mini { width: 320px; height: 320px; }
+    .ra-graph-images { width: 230px; }
     .book-demo-inner { margin-top: 30px; }
     .book-btn-icon { width: 45px; height: 45px; }
     .f-cta-btn { margin-top: 25px; }
@@ -445,8 +405,17 @@
     .nav-seprator { width: 120px; }
 
     .fq-show-icon { height: 100%; }
-}
+    .main-title.center { margin-bottom: 40px; }
 
+    .eco-item { width: 277px; }
+    .eco-title { height: 150px; }
+    .main-title.center { margin-bottom: 60px; }
+    .blog-row-inner { margin-top: 20px; }
+    footer { margin-top: 115px; }
+    .footer-inner { padding-top: 180px !important; }
+
+}
+ 
 @media screen and (max-width: 1439px) {
 
     h1,
@@ -897,6 +866,18 @@
     .fq-col-one { width: 470px; }
     .fq-col-two { width: calc(100% - 510px); }
     .faq-img { margin-bottom: 25px; }
+    .recent-activity-circle { width: 380px; height: 380px; }
+    .ra-circle-mini { width: 280px; height: 280px;  }
+    .ra-graph-images { width: 210px; }
+    .stats-col-one { width: 400px; }
+    .stats-col-two { width: 580px; margin-bottom: 20px; }
+    .stats-list { gap: 25px; }
+    .stats-item { width: 175px; }
+    .stats-count .h1 { margin-bottom: 6px; }
+    .curve-lg { top: 56%; }
+    .eco-title { height: 144px; }
+    .main-title.center { margin-bottom: 44px; }
+    .blog-row-inner { margin-top: 22px; }
 }
 
 @media screen and (max-width:1359px) {
@@ -1325,8 +1306,18 @@
     .faq-accordian .accordion-header { padding: 14px; }
     .fq-show-icon { width: 54px; height: 54px; }
     .fq-text { font-size: 15px; }
+    .hero-wrapper { height: 470px; }
+    .recent-activity-circle { width: 340px; height: 340px; }
+    .ra-circle-mini { width: 250px; height: 250px; }
+    .ra-graph-images { width: 190px; }
+    .stats-col-one { width: 350px; }
+    .stats-col-two { width: 580px; }
+    .stats-item { width: 174px; }
+    .curve-lg { top: 56%; }
+    .eco-title { height: 156px; }
+    .blog-row-inner, .b-post-items.mini { gap: 20px; }
+}   
 
-}
 
 @media screen and (max-width: 1199px) {
     .f-cta-block {
@@ -2310,8 +2301,7 @@
     .ra-circle-lg svg {
         width: 22px;
     }
-    .hero-row { gap: 20px; }
-    .hero-col-one { text-align: center; }
+    .hero-row { padding-top: 20px; gap: 20px; }
     .ra-graph-images { width: 170px; }
     .nav-wrapper { padding: 15px 0; }
     .hamburger { width: 30px; height: 30px; }
@@ -2339,7 +2329,7 @@
     .b-post-items.mini .post-item .h4 { margin-bottom: 20px; }
     .blog-row-inner { gap: 16px; }
     .b-post-title .h4 { margin-bottom: 20px; }
-    
+    .b-post-title p { display: none; }
 }
 
 @media screen and (max-width: 639px) {
