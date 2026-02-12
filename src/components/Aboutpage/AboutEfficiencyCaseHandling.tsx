@@ -65,7 +65,7 @@ export default function AboutEfficiencyCaseHandling() {
                         <div className="efficiency-step-card efficiency-step-card-2">
                             <span className="text-mid-grey text-18">Step 02</span>
 
-                            <h3 className="text-md h5">Case Processing & Medical Review</h3>
+                            <h3 className="text-md h5">Processing & Medical Review</h3>
 
                             <ul className="text-rg h6">
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Case data management</li>
@@ -82,7 +82,7 @@ export default function AboutEfficiencyCaseHandling() {
                         <div className="efficiency-step-card efficiency-step-card-3">
                             <span className="text-mid-grey text-18">Step 03</span>
 
-                            <h3 className="text-md h5">Regulatory & Aggregate Report</h3>
+                            <h3 className="text-md h5">Regulatory & Report</h3>
 
                             <ul className="text-rg h6">
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>E2B (R3), CIOMS, PDFs</li>

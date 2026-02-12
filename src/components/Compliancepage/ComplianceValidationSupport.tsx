@@ -24,7 +24,7 @@ export default function ComplianceValidationSupport() {
                                 <div className="ongoing-support-text-card">
                                     <h3 className="h5 text-md">Requirements & Solution Design</h3>
 
-                                    <p className="h6 text-rg text-grey">Structured requirement assessment and solution design aligned with regulatory expectations and organizational SOPs.</p>
+                                    <p className="h6 text-rg text-grey">Structured requirement assessment and solution design aligned with regulatory expectations and SOPs.</p>
                                 </div>
 
                             </div>

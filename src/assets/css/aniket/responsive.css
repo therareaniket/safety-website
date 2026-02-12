@@ -155,7 +155,7 @@
 
 @media screen and (max-width: 575px) {
     .nav-mobile { width: 320px; }
-    .stats-list { gap: 10px; }
+    .stats-list { gap: 15px; }
     .stats-item.one { width: 250px; height: 100px; }
     .stats-item.two { width: 310px; height: 100px; }
     .stats-item.three { width: 370px; height: 100px; }

@@ -17,7 +17,7 @@ export default function ResourceDetailHeading() {
                     </div>
 
                     <div className="blog-sm-container blog-detail-text-wrapper">
-                        <h2 className="text-md">How AI Is Reshaping Modern Pharmacovigilance</h2>
+                        <h1 className="text-md h2">How AI Is Reshaping Modern Pharmacovigilance</h1>
 
                         <p className="h6 text-rg">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future of safety management with intelligent automation and real‑time insights.</p>
                     </div>

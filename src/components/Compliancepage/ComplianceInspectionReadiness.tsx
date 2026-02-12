@@ -14,7 +14,7 @@ export default function ComplianceInspectionReadiness() {
                     </div>
 
                     <div className="compliance-pointers-wrapper">
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-car-1">
                             <span className="compliance-pointers-svg site-all-svg global-standard-alignment"><Image src="/images/compliancepage/global-standard-alignment.svg" alt="compliance-icon-1" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">
@@ -24,7 +24,7 @@ export default function ComplianceInspectionReadiness() {
                             </div>
                         </div>
 
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-card-2">
                             <span className="compliance-pointers-svg site-all-svg gvp-part-11-compliance"><Image src="/images/compliancepage/gvp-compliance.svg" alt="compliance-icon-2" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">
@@ -35,7 +35,7 @@ export default function ComplianceInspectionReadiness() {
                             </div>
                         </div>
 
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-card-3">
                             <span className="compliance-pointers-svg site-all-svg regional-regulatory-support"><Image src="/images/compliancepage/regulatory-support.svg" alt="compliance-icon-3" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">
@@ -45,7 +45,7 @@ export default function ComplianceInspectionReadiness() {
                             </div>
                         </div>
 
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-card-4">
                             <span className="compliance-pointers-svg site-all-svg inspection-ready-outputs"><Image src="/images/compliancepage/inspection-ready.svg" alt="compliance-icon-4" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">
@@ -56,7 +56,7 @@ export default function ComplianceInspectionReadiness() {
                             </div>
                         </div>
 
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-card-5">
                             <span className="compliance-pointers-svg site-all-svg end-to-end-traceability"><Image src="/images/compliancepage/end-to-end.svg" alt="compliance-icon-5" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">
@@ -66,7 +66,7 @@ export default function ComplianceInspectionReadiness() {
                             </div>
                         </div>
 
-                        <div className="compliance-pointers-card">
+                        <div className="compliance-pointers-card compliance-pointers-card-6">
                             <span className="compliance-pointers-svg site-all-svg inspection-audit-support"><Image src="/images/compliancepage/audit-support.svg" alt="compliance-icon-6" width={32} height={32}></Image></span>
 
                             <div className="compliance-pointers-text">

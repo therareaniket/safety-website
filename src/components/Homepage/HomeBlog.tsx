@@ -29,7 +29,7 @@ export default function HomeBlog() {
                         <div className="b-post-content">
                             <div className="b-post-title">
                                 <h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3>
-                                <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
+                                <p id='feature-desc' className="text-black text-blog-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
                             </div>
                             <div className="b-meta">
                                 <p className="text-16 text-mid-grey">Arjun Deshpande , Clinical Research Lead</p>
@@ -48,7 +48,7 @@ export default function HomeBlog() {
                             </div>
                             <div className="b-post-title">
                                 <h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3>
-                                <p className="text-black">A deep dive into the importance of gathering safety information</p>
+                                <p className="text-black text-blog-black">A deep dive into the importance of gathering safety information</p>
                             </div>
                         </Link>
 
@@ -58,7 +58,7 @@ export default function HomeBlog() {
                             </div>
                             <div className="b-post-title">
                                 <h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3>
-                                <p className="text-black">Organizations are modernizing their safety processes</p>
+                                <p className="text-black text-blog-black">Organizations are modernizing their safety processes</p>
                             </div>
                         </Link>
 
@@ -68,7 +68,7 @@ export default function HomeBlog() {
                             </div>
                             <div className="b-post-title">
                                 <h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3>
-                                <p className="text-black">Real‑time monitoring tools are helping organizations</p>
+                                <p className="text-black text-blog-black">Real‑time monitoring tools are helping organizations</p>
                             </div>
                         </Link>
                     </div>
@@ -93,7 +93,7 @@ export default function HomeBlog() {
                                     <div className="b-post-title">
                                         <h3 className="h4 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3>
                                         
-                                        <p id='feature-desc' className="text-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
+                                        <p id='feature-desc' className="text-black text-blog-black">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
                                     </div>
                                     <div className="b-meta">
                                         <p className="text-16 text-mid-grey">Arjun Deshpande , Clinical Research Lead</p>
@@ -113,7 +113,7 @@ export default function HomeBlog() {
                                 <div className="b-post-title">
                                     <h3 className="h4 text-md text-black">Why Use Unified Safety Data</h3>
                                     
-                                    <p className="text-black">A deep dive into the importance of gathering safety information</p>
+                                    <p className="text-black text-blog-black">A deep dive into the importance of gathering safety information</p>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -126,7 +126,7 @@ export default function HomeBlog() {
                                 <div className="b-post-title">
                                     <h3 className="h4 text-md text-black">Building a Future Ready Safety Workflow</h3>
                                     
-                                    <p className="text-black">Organizations are modernizing their safety processes</p>
+                                    <p className="text-black text-blog-black">Organizations are modernizing their safety processes</p>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -139,7 +139,7 @@ export default function HomeBlog() {
                                 <div className="b-post-title">
                                     <h3 className="h4 text-md text-black">The Rising Importance of Real‑Time Signal</h3>
                                     
-                                    <p className="text-black">Real‑time monitoring tools are helping organizations</p>
+                                    <p className="text-black text-blog-black">Real‑time monitoring tools are helping organizations</p>
                                 </div>
                             </div>
                         </SwiperSlide>

@@ -67,7 +67,7 @@ export default function ComplianceSecureConnectivity() {
                     <div
                         className="compliance-security-btn-middle"
                         style={{
-                            marginTop: `${activeIndex * 72}px`,  
+                            marginTop: `${activeIndex * 65}px`,  
                             transition: "0.4s"
                         }}
                     >
