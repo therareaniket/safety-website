@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 export default function HomePlans() {
+const sectionRef = useRef<HTMLDivElement | null>(null);
 
-  const sectionRef = useRef(null);
 
   useEffect(() => {
     if (!sectionRef.current) return;
