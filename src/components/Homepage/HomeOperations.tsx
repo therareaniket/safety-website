@@ -72,24 +72,14 @@ export default function HomeOperations() {
                                             <span className="text-md">{num.num}</span>
                                         </div>
                                     ))}
-
                                 </div>
-                                <h3 className={`op-item-title one left-center absolute h5 ${activeIndex === 0 ? 'active' : ''}`}>
-                                    Unified Data Intake
-                                </h3>
+                                <h3 className={`op-item-title one left-center absolute h5 ${activeIndex === 0 ? 'active' : ''}`}>Unified Data Intake</h3>
 
-                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}>
-                                    Cash Managment
-                                </h3>
+                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}> Cash Managment </h3>
 
-                                <h3 className={`op-item-title three left-center absolute h5 ${activeIndex === 2 ? 'active' : ''}`}>
-                                    Reporting & Compliance
-                                </h3>
+                                <h3 className={`op-item-title three left-center absolute h5 ${activeIndex === 2 ? 'active' : ''}`}> Reporting & Compliance </h3>
 
-                                <h3 className={`op-item-title four top-center absolute h5 ${activeIndex === 3 ? 'active' : ''}`}>
-                                    Signal Detection
-                                </h3>
-
+                                <h3 className={`op-item-title four top-center absolute h5 ${activeIndex === 3 ? 'active' : ''}`}> Signal Detection </h3>
                             </div>
                         </div>
                     </div>

@@ -413,7 +413,7 @@
     .blog-row-inner { margin-top: 20px; }
     footer { margin-top: 115px; }
     .footer-inner { padding-top: 180px !important; }
-
+    .faq-img { width: 140px; }
 }
  
 @media screen and (max-width: 1439px) {
@@ -1317,7 +1317,6 @@
     .eco-title { height: 156px; }
     .blog-row-inner, .b-post-items.mini { gap: 20px; }
 }   
-
 
 @media screen and (max-width: 1199px) {
     .f-cta-block {

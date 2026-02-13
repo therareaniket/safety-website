@@ -64,18 +64,11 @@ export default function ComplianceSecureConnectivity() {
                     </div>
 
                     {/* RIGHT DESCRIPTION */}
-                    <div
-                        className="compliance-security-btn-middle"
-                        style={{
-                            marginTop: `${activeIndex * 65}px`,  
-                            transition: "0.4s"
-                        }}
-                    >
+                    <div className="compliance-security-btn-middle" style={{ marginTop: `${activeIndex * 65}px`, transition: "0.4s" }}>
                         <p className="text-rg h6">
                             {descriptions[activeIndex]}
                         </p>
                     </div>
-
                 </div>
 
                 <div className="compliance-security-responsive-accordion">

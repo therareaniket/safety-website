@@ -6,6 +6,7 @@
 }
 
 .text-grey{ color: var(--grey); }
+/* .text-grey{ color: rgba(0, 0, 0, 0.5); } */
 .container-sm{ width: 1400px; margin: 0 auto; }
 
 
@@ -537,8 +538,8 @@
 .nav-link:hover::after { width: 100%; }
 .active-link { color: black; }
 .nav-link.active-link { color: black; }
-.nav-link.active-link::after { width: 100%; }
-
+/* .nav-link.active-link::after { width: 100%; } */
+.nav-link.active-link { color: #4b0081; }
 
 
 /* .footer-links a {

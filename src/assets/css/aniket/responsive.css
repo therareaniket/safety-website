@@ -15,6 +15,15 @@
 
 @media screen and (max-width: 1799px) {
     .ai-modals-row :not(.ai-center-icon) img { width: 38px; }
+
+    .tbl-col-1 { width: 135px; }
+    .tbl-col-2 { width: 220px; }
+    .tbl-col-3 { width: 220px; }
+    .tbl-col-4 { width: 245px; }
+    .tbl-col-5 { width: 180px; }
+    .tbl-col-6 { width: 150px; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 22px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 18px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -27,18 +36,25 @@
     .ai-modals-row div:not(.ai-center-icon) { width: 60px; height: 60px; }
     .ai-modals-row :not(.ai-center-icon) img { width: 32px; }
     .ai-icon.assignment { bottom: 30%; right: 10%; }
+
+    .table-headers, .table-standard, .table-enterprise { padding: 14px 0; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 20px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 17px; }
 }
 
 @media screen and (max-width: 1439px) {
-        .stats-item.one {
-        height: 140px;
-    }
-         .stats-item.two {
-        height: 200px;
-    }
-     .stats-item.three {
-        height: 260px;
-    }
+    .stats-item.one { height: 140px; }
+    .stats-item.two { height: 200px; }
+    .stats-item.three { height: 260px; }
+
+    .tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5 { padding-right: 26px; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 18px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 16px; }
+    .tbl-col-2 { width: 180px; }
+    .tbl-col-3 { width: 182px; }
+    .tbl-col-4 { width: 200px; }
+    .tbl-col-5 { width: 150px; }
+    .tbl-col-6 { width: 130px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -52,19 +68,42 @@
     .stats-item.two { height: 190px; }
     .stats-item.three { height: 250px; }
     .tools-item.orange, .tools-item.green { width: 45%; }
+
+    .tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5 { padding-right: 20px; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 17px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 15px; }
+    .tbl-col-1 { width: 110px; }
+    .tbl-col-2 { width: 168px; }
+    .tbl-col-3 { width: 170px; }
+    .tbl-col-4 { width: 185px; }
+    .tbl-col-5 { width: 140px; }
+    .tbl-col-6 { width: 114px; }
+
+    .ps-content .h5 { width: 70%; }
+    .navbar-links { gap: 35px; }
 }
 
 @media screen and (max-width: 1199px) {
     .stats-count .h6 { font-size: 16px; }
     .stats-item { width: 165px; }
     .ai-modals-row div:not(.ai-center-icon) { width: 50px; height: 50px; }
-        .ai-center-icon {
-        width: 120px;
-        height: 120px;
-    }
-        .ai-center-icon img {
-        width: 65px;
-    }
+    .ai-center-icon { width: 120px; height: 120px; }
+    .ai-center-icon img { width: 65px; }
+
+    .tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5 { padding-right: 10px; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 15px; line-height: 1; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 13px; line-height: 1; }
+    .table-headers, .table-standard, .table-enterprise { padding: 12px 0; }
+    .tbl-col-1 { width: 86px; }
+    .tbl-col-2 { width: 140px; }
+    .tbl-col-3 { width: 140px; }
+    .tbl-col-4 { width: 155px; }
+    .tbl-col-5 { width: 120px; }
+    .tbl-col-6 { width: 110px; }
+    
+    .pricing-comparison-wrapper .main-title.center { margin-bottom: 20px; }
+    .ps-content .h5 { width: 90%; }
+    .navbar-links { gap: 28px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -91,6 +130,20 @@
     .hamburger { width: 40px; height: 40px; }
 
     .statistic-wrapper + .tools-wrapper { padding-bottom: 40px; }
+    
+    .compari-tbl { display: flex; }
+    .table-headers, .table-standard, .table-enterprise { flex-direction: column;  width: 33.33%; border-bottom: none; text-align: center; }
+    .tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5, .tbl-col-6 { width: 100%; padding: 10px 20px; border-bottom: 1px solid rgba(229, 229, 229, 0.5);  }
+    .tbl-col-6 { border-right: 1px solid rgba(229, 229, 229, 0.5); }
+    .table-enterprise > * { border-right: 0px !important; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 16px; line-height: 1; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 14px; line-height: 1; }
+
+    .ps-content .h5 { width: 100%; }
+    .ps-content .h6 { width: 100%; }
+
+    .f-right-cols { gap: 30px; }
+    .footer-links li { padding-bottom: 6px; }
 }
 
 @media screen and (max-width: 991px) {
@@ -133,9 +186,13 @@
     .curve-sm { top: 66%; }
     .curve-lg { top: 60%; }
     .eco-title { height: max-content; }
+    
+    .table-headers { width: 40%; }
+    .table-standard { width: 30%; }
+    .table-enterprise { width: 30%; }
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 639px) {                                                                                                              
     .nav-mobile { width: 60%; }
     .mobile-menu-ul li { margin-bottom: 6px; }
     .tools-item.orange, .tools-item.green { width: 80%; }
@@ -171,7 +228,9 @@
     .modals-wrapper.section { height: 400px; }
     .curve-lg { top: 60%; }
     
-    
+    .table-headers { width: 45%; }
+    .table-standard { width: 27%; }
+    .table-enterprise { width: 27%; }
 }
 
 @media screen and (max-width: 480px) {
@@ -179,7 +238,11 @@
     .stats-item.two { width: 290px; height: 90px; }
     .stats-item.three { width: 350px; height: 90px; }
     .b-feature-item, .b-post-items.mini { width: 100%; }
-    
+        
+    .tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5, .tbl-col-6 { padding: 6px }
+    .table-headers { width: 46%; }
+    .table-standard { width: 28%; }
+    .table-enterprise { width: 28%; }
 }
 
 @media screen and (max-width: 459px) {
@@ -190,6 +253,11 @@
     
     .statistic-wrapper + .tools-wrapper { padding-bottom: 50px; }
     .modals-wrapper.section { height: 440px; }
+    
+    .table-headers, .table-standard, .table-enterprise { text-align: left; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 14px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 12px; }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -210,6 +278,11 @@
 
 @media screen and (max-width: 374px) {
     .curve-lg { top: 61%; }
+    .table-headers { width: 46%; }
+    .table-standard { width: 26%; }
+    .table-enterprise { width: 28%; }
+    .table-headers .h5, .table-standard .h5, .table-enterprise .h5 { font-size: 13px; }
+    .table-standard .h6, .table-enterprise .h6 { font-size: 12px; }
 }
 
 @media screen and (max-width: 359px) {}

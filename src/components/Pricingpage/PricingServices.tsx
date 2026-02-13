@@ -44,7 +44,7 @@ export default function PricingServices() {
                             <Image src='/images/pricingpage/ps-04.svg' alt="Custom Reports" width={16.89} height={16} priority />
                         </div>
                         <div className="ps-content">
-                            <h3 className="h5 text-md">Custom Reports</h3>
+                            <h3 className="h5 text-md">Custom Tailored Reports</h3>
                             <p className="h6 text-grey mb-0">Tailored reporting to your specifications for inspection plan</p>
                         </div>
                     </div>

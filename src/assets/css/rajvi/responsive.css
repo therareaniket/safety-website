@@ -1051,11 +1051,7 @@
     /* display flex */
     .compliance-steps-divider-mobile{ display: none; }  
     .compliance-steps-mobile-swiper{ display: flex; }
-    .compliance-steps-mobile-swiper {
-  width: 100%;
-  padding: 20px 0;
-  margin-bottom: 80px;
-}
+    .compliance-steps-mobile-swiper { width: 100%; padding: 20px 0; }
 
 /* main swiper */
 .compliance-steps-swiper {
@@ -1069,44 +1065,16 @@
 }
 
 /* card design */
-.compliance-swiper-card {
-
-background: rgba(255, 255, 255, 0.2);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-  /* border-radius: 16px; */
-  padding: 20px;
-  color: white;
-}
-
-/* inner */
-.card-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.compliance-steps-mobile-swiper .swiper-pagination {
-  margin-bottom: 30px !important;
-  /* position: relative; */
-  z-index: 11;
-}
-
-.compliance-steps-mobile-swiper .swiper-pagination-bullet {
-  background: green;
-  opacity: 0.5;
-}
-
-.compliance-steps-mobile-swiper .swiper-pagination-bullet-active {
-  background: burlywood!important;
-  opacity: 1;
-}
-
-
-   /* .compliance-steps-swiper-cards .swiper-slide{ width: 400px !important; height: 145px; margin-bottom: 50px; } */
+    .compliance-swiper-card { background: rgba(255, 255, 255, 0.2); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.3); padding: 20px; color: white;}
+    .card-inner { display: flex; flex-direction: column; gap: 10px; }
+    
+    /* RAJVI YOU NEED TO CHECK FOLLOWING THING, CHATGPT CAN NOT SOLVE EVERYTHING YOUR INSTING NEED TO BE STRONG! */
+    .compliance-steps-swiper { height: max-content; }
+    .compliance-steps-mobile-swiper .swiper-pagination { position: relative; top: auto; bottom: 0; left: 0; padding-top: 10px; }
+    .compliance-steps-mobile-swiper .swiper-pagination-bullet { background: white; opacity: 0.2; }
+    .compliance-steps-mobile-swiper .swiper-pagination-bullet-active { background: #c7b0d8; opacity: 1; }
+    .compliance-steps-mobile-swiper { padding-bottom: 0; }
+    .compliance-step-span + .h5 { margin-bottom: 0; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1265,6 +1233,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 @media screen and (max-width: 374px) {
     .operational-card-right{ width: 265px; }
     .compliance-steps-swiper-cards .swiper-slide{ height: 160px; }
+    .compliance-validation-support-card-1, .compliance-validation-support-card-4,.compliance-validation-support-card-2, .compliance-validation-support-card-3 { padding: 18px; }
 }
 
 @media screen and (max-width: 359px) {}

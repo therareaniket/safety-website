@@ -1,5 +1,12 @@
 header { position: sticky; top: 0; }
-
-/* .modals-wrapper.section { height: 630px; }
-.curve-sm { top: 64%; } */
 .statistic-wrapper + .tools-wrapper { padding-bottom: 0; }
+
+.table-headers, .table-standard, .table-enterprise { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(229, 229, 229, 0.5); padding: 16px 0; }
+.tbl-col-1, .tbl-col-2, .tbl-col-3, .tbl-col-4, .tbl-col-5 { padding-right: 30px; border-right: 1px solid rgba(229, 229, 229, 0.5); }
+.tbl-col-1 { width: 145px; }
+.tbl-col-2 { width: 250px; }
+.tbl-col-3 { width: 245px; }
+.tbl-col-4 { width: 280px; }
+.tbl-col-5 { width: 205px; }
+.tbl-col-6 { width: 170px; }
+.footer-links li { padding-bottom: 8px; }

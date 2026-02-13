@@ -7,6 +7,7 @@ import PricingPlanFeatures from "@/components/Pricingpage/PricingPlanFeatures";
 import PricingComparison from '@/components/Pricingpage/PricingComparison';
 import PricingServices from '@/components/Pricingpage/PricingServices';
 import Header from "@/components/Header";
+import PricingFAQ from "@/components/Pricingpage/PricingFAQ";
 
 export default function Pricing() {
     return (
@@ -18,7 +19,7 @@ export default function Pricing() {
             <PricingPlanFeatures/>
             <PricingComparison/>
             <PricingServices/>
-            <HomeFAQ/>           
+            <PricingFAQ />
         </>
     );
 }
