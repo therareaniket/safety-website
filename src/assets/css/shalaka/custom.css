@@ -598,11 +598,11 @@ header {
 }
 
 .op-item-number.active {
-    background-color: var(--secondaryPurple);
+    background-color: #e3cef1;
 }
 
 .op-item-number.active span {
-    color: var(--white);
+    color: var(--black);
 }
 
 .op-item-number span {

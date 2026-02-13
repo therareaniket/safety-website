@@ -1,9 +1,10 @@
+'use client';
+
 import Image from "next/image";
-import Link from "next/link";
 
 export default function HomeModals() {
-    return (
 
+    return (
         <section className="modals-wrapper centered-block section pt-0 relative">
              <Image className="curve-sm absolute" src='/images/homepage/curve-sm.svg' alt="curve" width={1970} height={410} priority />
               <Image className="curve-lg absolute" src='/images/homepage/ai-icons/ai-lines.svg' alt="curve" width={1920} height={756} priority />

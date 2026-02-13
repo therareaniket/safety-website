@@ -1,11 +1,13 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function HomeTools() {
-    return (
 
-        <section className="tools-wrapper section pt-0">
+
+    return (
+        <section  className="tools-wrapper section pt-0">
             <div className="container">
                 <div className="main-title center text-center">
                     <h2 className="text-md">Essential Tools for Reliable Patient Safety</h2>
@@ -27,9 +29,9 @@ export default function HomeTools() {
                             <p className="h6">Intelligent analytics to identify emerging safety signals early and monitor risk throughout the product lifecycle.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src='/images/homepage/signal.webp' alt="Signal Detection & Risk Tracking" width={580} height={200} priority /> 
+                            <Image className="tool-lg" src='/images/homepage/signal.webp' alt="Signal Detection & Risk Tracking" width={580} height={200} priority />
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <div className="tools-row two flex">
                     <div className="tools-item blue">
@@ -38,7 +40,7 @@ export default function HomeTools() {
                             <p className="h6">Built‑in support for audit trails, quality oversight, and timely generation of regulatory‑ready aggregate reports.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src='/images/homepage/compliance.webp' alt="Compliance & Regulatory Reporting" width={516} height={207} priority />  
+                            <Image className="tool-lg" src='/images/homepage/compliance.webp' alt="Compliance & Regulatory Reporting" width={516} height={207} priority />
                         </div>
                     </div>
                     <div className="tools-item green">
@@ -47,9 +49,9 @@ export default function HomeTools() {
                             <p className="h6">Seamless collection of safety information from various sources including literature, reports clinical systems.</p>
                         </div>
                         <div className="tools-img relative">
-                            <Image className="tool-lg" src='/images/homepage/safety.webp' alt="Multi‑Source Safety Data Intake" width={466} height={203} priority /> 
+                            <Image className="tool-lg" src='/images/homepage/safety.webp' alt="Multi‑Source Safety Data Intake" width={466} height={203} priority />
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>

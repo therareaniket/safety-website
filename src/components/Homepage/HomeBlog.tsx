@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function HomeBlog() {
+
     return (
         <section className="blog-wrapper section">
             <div className="container">

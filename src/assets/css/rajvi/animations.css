@@ -1,0 +1,28 @@
+/* animations */
+
+
+.b-arrw {
+  animation: arrowMove 3s ease-in-out infinite;
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(4px, -4px);   
+  }
+
+  75% {
+    transform: translate(-4px, 4px);   
+  }
+
+  100% {
+    transform: translate(0, 0);      
+  }
+}
+
+
+.op-item-title { color: white; transition: color 0.4s ease; }
+.op-item-title.active { color: #e3cef1;  }

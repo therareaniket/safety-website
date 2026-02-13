@@ -1,9 +1,12 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomeEcosystem() {
-    return (
 
+export default function HomeEcosystem() {
+
+    return (
         <section className="tools-wrapper section eco-system">
             <div className="container">
                 <div className="main-title center text-center">
@@ -29,7 +32,7 @@ export default function HomeEcosystem() {
                         </div>
                         <div className="eco-img">
                             <Image className="ec-img" src='/images/homepage/cros.webp' alt="Cros" width={336} height={413} priority />
-                        </div>                        
+                        </div>
                     </div>
 
                     <div className="eco-item">
@@ -41,7 +44,7 @@ export default function HomeEcosystem() {
                             <p className="text-18">To unify case manage, evaluate emerging safety signals, and meet global</p>
                         </div>
                     </div>
-                    
+
                     <div className="eco-item">
                         <div className="eco-title top">
                             <h3 className="h5 text-md">MAHs</h3>
@@ -49,7 +52,7 @@ export default function HomeEcosystem() {
                         </div>
                         <div className="eco-img">
                             <Image className="ec-img" src='/images/homepage/mahs.webp' alt="MAHs" width={336} height={413} priority />
-                        </div>                        
+                        </div>
                     </div>
                 </div>
             </div>
