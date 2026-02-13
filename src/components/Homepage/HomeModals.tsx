@@ -1,11 +1,28 @@
 'use client';
 
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export default function HomeModals() {
+        const sectionRef = useRef(null);
+    const [showIcons, setShowIcons] = useState(false);
 
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShowIcons(true);
+                }
+            },
+            { threshold: 0.4 } // trigger when 40% visible
+        );
+
+        if (sectionRef.current) observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
     return (
-        <section className="modals-wrapper centered-block section pt-0 relative">
+        <section ref={sectionRef} className={`modals-wrapper centered-block section pt-0 relative ${showIcons ? "animate-icons" : ""}`}>
              <Image className="curve-sm absolute" src='/images/homepage/curve-sm.svg' alt="curve" width={1970} height={410} priority />
               <Image className="curve-lg absolute" src='/images/homepage/ai-icons/ai-lines.svg' alt="curve" width={1920} height={756} priority />
             <div className="container">

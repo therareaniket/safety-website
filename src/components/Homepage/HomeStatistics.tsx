@@ -1,9 +1,28 @@
 'use client';
+import { useEffect, useRef, useState } from "react";
 
 export default function HomeStatistics() {
 
-  return (
-    <section className="statistic-wrapper section">
+  const ref = useRef(null);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return ( 
+    <section ref={ref} className={`statistic-wrapper section ${show ? "show" : ""}`}>
       <div className="container">
         <div className="stats-row flex">
           <div className="stats-col-one">

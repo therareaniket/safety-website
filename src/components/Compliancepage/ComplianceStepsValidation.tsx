@@ -1,9 +1,9 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { type SwiperProps } from 'swiper/react';
-import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import type { SwiperProps } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 export default function ComplianceStepsValidation() {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
@@ -91,7 +91,6 @@ export default function ComplianceStepsValidation() {
         };
     }, []);
 
-
     const swiperConfig: SwiperProps = {
         modules: [Pagination, Autoplay],
         spaceBetween: 20,
@@ -99,28 +98,12 @@ export default function ComplianceStepsValidation() {
         loop: true,
 
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
         },
 
         pagination: {
             clickable: true,
-        },
-
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-            },
-            392: {
-                slidesPerView: 1,
-            },
-            401: {
-                slidesPerView: 1,
-            },
-                        481
-                        : {
-                slidesPerView: 1,
-            },
         },
     };
 
@@ -251,70 +234,69 @@ export default function ComplianceStepsValidation() {
                     </div>
 
                     <div className="compliance-steps-mobile-swiper">
-                        <div className="compliance-steps-swiper-wrapper">
-                            <Swiper {...swiperConfig} className='compliance-steps-swiper-cards'>
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-1'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">1</span>
+                        <Swiper {...swiperConfig} className="compliance-steps-swiper">
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">CSV Compliance</h3>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                    <span className="text-md h5 compliance-step-span">1</span>
 
-                                        <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
-                                    </div>
-                                </SwiperSlide>
+                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
 
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-2'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">2</span>
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </SwiperSlide>
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                    <span className="text-md h5 compliance-step-span">2</span>
 
-                                        <p className="text-18 text-rg text-grey">Built-in support for Installation Qualification (IQ), Operational Qualification (OQ).</p>
-                                    </div>
-                                </SwiperSlide>
+                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
 
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-3'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">3</span>
+                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                </div>
+                            </SwiperSlide>
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">Change Control</h3>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                    <span className="text-md h5 compliance-step-span">3</span>
 
-                                        <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
-                                    </div>
-                                </SwiperSlide>
+                                    <h3 className="h5 text-md text-white">Change Control</h3>
 
+                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                </div>
+                            </SwiperSlide>
 
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-4'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">4</span>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                <span className="text-md h5 compliance-step-span">4</span>
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                <h3 className="h5 text-md text-white">Audit Trails</h3>
 
-                                        <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
-                                    </div>
-                                </SwiperSlide>
+                                <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                </div>
+                            </SwiperSlide>
 
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-5'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">5</span>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                <span className="text-md h5 compliance-step-span">5</span>
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
 
-                                        <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
-                                    </div>
-                                </SwiperSlide>
+                                <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                </div>
+                            </SwiperSlide>
 
-                                <SwiperSlide className='compliance-swiper-card compliance-swiper-card-4'>
-                                    <span className="text-md h5 site-all-svg compliance-step-span">6</span>
+                            <SwiperSlide className="compliance-swiper-card">
+                                <div className="card-inner">
+                                <span className="text-md h5 compliance-step-span">6</span>
 
-                                    <div className="compliance-steps-card-text">
-                                        <h3 className="h5 text-md text-white">Validation Status</h3>
+                                <h3 className="h5 text-md text-white">Validation Status</h3>
 
-                                        <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
+                                <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
                     </div>
                 </div>
             </section>
