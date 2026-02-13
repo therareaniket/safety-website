@@ -97,8 +97,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.top_initial ?? animations.left_initial,
-              visible: animations.top_animate ?? animations.left_animate,
+              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-img">
@@ -123,8 +123,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.bottom_initial ?? animations.left_initial,
-              visible: animations.bottom_animate ?? animations.left_animate,
+              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-title top">
@@ -149,8 +149,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.top_initial ?? animations.left_initial,
-              visible: animations.top_animate ?? animations.left_animate,
+              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-img">
@@ -175,8 +175,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.bottom_initial ?? animations.left_initial,
-              visible: animations.bottom_animate ?? animations.left_animate,
+              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-title top">
