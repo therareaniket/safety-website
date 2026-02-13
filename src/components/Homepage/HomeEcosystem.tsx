@@ -21,31 +21,16 @@ export default function HomeEcosystem() {
     const updateAnimations = () => {
       const isDesktop = window.innerWidth >= 768;
 
-      const config: EcoAnimations = isDesktop
-        ? {
+      const config: EcoAnimations = isDesktop ? {
             top_initial: { opacity: 0, y: -80 },
-            top_animate: {
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1, ease: "easeOut" },
-            },
+            top_animate: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" }, },
 
             bottom_initial: { opacity: 0, y: 80 },
-            bottom_animate: {
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1, ease: "easeOut" },
-            },
-
+            bottom_animate: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" }, },
             viewportAmount: 0.6,
-          }
-        : {
-            left_initial: { opacity: 0, x: -80 },
-            left_animate: {
-              opacity: 1,
-              x: 0,
-              transition: { duration: 0.7, ease: "easeOut" },
-            },
+          } : {
+            left_initial: { opacity: 1, x: 0 },
+            left_animate: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" }, },
 
             viewportAmount: 0.4,
           };
