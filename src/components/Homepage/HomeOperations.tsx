@@ -15,18 +15,12 @@ export default function HomeOperations() {
     }, []);
 
     const opDesc = [
-        {
-            text: 'Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.'
-        }, {
-            text: 'Streamline Individual Case Safety Report handling from data entry and validation to medical review.'
-        }, {
-            text: 'Generate aggregate reports, manage regulatory submissions, and maintain complete quality controls.'
-        }
-        , {
-            text: 'Identify, assess, and track safety signals through their full lifecycle with automated insights monitoring.'
-        }
+        { text: 'Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.' },
+        { text: 'Streamline Individual Case Safety Report handling from data entry and validation to medical review.' },
+        { text: 'Generate aggregate reports, manage regulatory submissions, and maintain complete quality controls.' },
+        { text: 'Identify, assess, and track safety signals through their full lifecycle with automated insights monitoring.' },
     ]
-
+                                                                                                                                                                                   
     const opNumber = [
         {
             num: 1,
@@ -63,7 +57,8 @@ export default function HomeOperations() {
                         <div className="op-col-two">
                             <div className="op-items-inner relative centered-block">
                                 <div className="op-dashed-circle rounded-full relative centered-block">
-                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10" /></svg>
+                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10"/></svg>
+                                    
                                     <div className="op-items-desc centered-block absolute text-center">
                                         {opDesc.map((text, index) => (
                                             <p key={index} className={`op-text text-18 text-white ${activeIndex === index ? 'active' : ''}`}>{text.text}</p>
