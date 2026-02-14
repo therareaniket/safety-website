@@ -43,9 +43,12 @@ export default function ResourceDetailHeading() {
                         </div>
 
                         <div className="resource-detail-right social-icons-wrapper">
-                            <Image src="/images/resourcedetailpage/facebook-icon.svg" alt="" width={28} height={28}></Image>
-                            <Image src="/images/resourcedetailpage/instagram-icon.svg" alt="" width={28} height={28}></Image>
-                            <Image src="/images/resourcedetailpage/twitter-icon.svg" alt="" width={28} height={28}></Image>
+                            <ul>
+                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
+                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
+                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
+                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
+                            </ul>
                         </div>
                     </div>
 

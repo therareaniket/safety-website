@@ -1,6 +1,5 @@
 /* ======= MIN-WIDTH COMPLETED ======= */
 
-
 @media screen and (max-width: 1799px) {
     /* font-sizes */
     h1, .h1{ font-size: 48px; line-height: 56px; }
@@ -84,7 +83,8 @@
 
     .tools-item.purple, .tools-item.blue{ width: 670px; }
     .tools-item.orange, .tools-item.green{ width: 620px; }
-
+    .faq-accordian .accordion-header { padding: 16px 20px; }
+    .fq-show-icon { width: 60px; height: 100%; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -183,7 +183,10 @@
     .tools-item.orange, .tools-item.green{ width: 560px; }
     .tool-lg{ margin: 0 auto; }
     .tools-img .tool-lg{ width: 80%; }
-} 
+
+    .faq-accordian .accordion-header { padding: 14px 20px; }
+    .fq-show-icon { width: 52px; }
+}
 
 @media screen and (max-width: 1439px) {
     /* font-sizes */
@@ -612,7 +615,7 @@
     .contact-form-card span{ width: 36px; height: 36px; }
     .contact-form-card span img{ width: 18px; height: 18px; }
 
-    .cnct-button-wrapper{ display: flex; align-items: center; justify-content: end; margin-top: 30px; }
+    .cnct-button-wrapper{ display: flex; align-items: center; justify-content: start; margin-top: 16px; }
 
     /* pricing */
     .pricing-title-row{ flex-direction: column; gap: 0; text-align: center; }
@@ -850,6 +853,7 @@
     .contact-form-card div{ width: 180px; }
     .cnct-form-row-1 input, .cnct-form-row-3 textarea{ padding: 12px 20px; }
     .cnct-form-row-3 textarea{ height: 100px; }
+    .cnct-button-wrapper { margin-top: 10px; }    
     .cnct-button-wrapper .btn-icon{ width: 40px; height: 40px; }
     .cnct-button-wrapper .btn-icon .cnct-svg-arrow{ width: 20px; height: 20px; }
 
@@ -1075,6 +1079,8 @@
     .compliance-steps-mobile-swiper .swiper-pagination-bullet-active { background: #c7b0d8; opacity: 1; }
     .compliance-steps-mobile-swiper { padding-bottom: 0; }
     .compliance-step-span + .h5 { margin-bottom: 0; }
+    /* .fq-show-icon { top: 0; right: 0; } */
+    .fq-show-icon { width: 35px; height: 35px; top: 50%; transform: translateY(-50%); }
 }
 
 @media screen and (max-width: 480px) {

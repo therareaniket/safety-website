@@ -598,11 +598,11 @@ header {
 }
 
 .op-item-number.active {
-    background-color: #e3cef1;
+    background-color: #A700F4;
 }
 
 .op-item-number.active span {
-    color: var(--black);
+    color: var(--white);
 }
 
 .op-item-number span {
@@ -670,8 +670,9 @@ header {
     text-align: center;
 }
 
-.op-item-title.h5 {
+.op-item-title.h5.active {
     margin-bottom: 0;
+    color: rgb(195, 67, 255);
 }
 
 .op-item-number.top-center {

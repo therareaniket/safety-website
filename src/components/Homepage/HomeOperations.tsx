@@ -66,9 +66,8 @@ export default function HomeOperations() {
                                     </div>
                                     {opNumber.map((num, index) => (
                                         <div
-                                            key={num.num} // or key={index}
-                                            className={`op-item-number ${activeIndex === index ? 'active' : ''} ${num.keyClass} ${num.position} rounded-full absolute centered-block`}
-                                        >
+                                            key={num.num}
+                                            className={`op-item-number ${activeIndex === index ? 'active' : ''} ${num.keyClass} ${num.position} rounded-full absolute centered-block`} >
                                             <span className="text-md">{num.num}</span>
                                         </div>
                                     ))}

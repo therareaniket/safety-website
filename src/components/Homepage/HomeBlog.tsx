@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 export default function HomeBlog() {
-
     return (
         <section className="blog-wrapper section">
             <div className="container">
@@ -17,13 +16,14 @@ export default function HomeBlog() {
                     <div className="b-col-one">
                         <h2 className="text-md">Elevate Your Safety Knowledge for a Smarter, Safer Tomorrow</h2>
                     </div>
+
                     <div className="b-col-two">
                         <p className="h6 text-black b-desc">Stay informed with valuable content on case management, AI, and safety innovation.</p>
                     </div>
                 </div>
-                
+
                 <div className="blog-row-inner lg flex">
-                    <Link href='#' className="b-feature-item">
+                    <Link href='/Resourcedetail' className="b-feature-item">
                         <div className="b-post-img">
                             <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
                         </div>
@@ -44,7 +44,7 @@ export default function HomeBlog() {
                     </Link>
 
                     <div className="b-post-items flex mini">
-                        <Link href='#' className="post-item flex">
+                        <Link href='/Resourcedetail' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-2.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
@@ -54,7 +54,7 @@ export default function HomeBlog() {
                             </div>
                         </Link>
 
-                        <Link href='#' className="post-item flex">
+                        <Link href='/Resourcedetail' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-3.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
@@ -64,7 +64,7 @@ export default function HomeBlog() {
                             </div>
                         </Link>
 
-                        <Link href='#' className="post-item flex">
+                        <Link href='/Resourcedetail' className="post-item flex">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-4.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
