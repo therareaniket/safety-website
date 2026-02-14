@@ -85,6 +85,9 @@
     .tools-item.orange, .tools-item.green{ width: 620px; }
     .faq-accordian .accordion-header { padding: 16px 20px; }
     .fq-show-icon { width: 60px; height: 100%; }
+
+    .margin-top-btn-4 { margin-top: calc(72px * 4 - 20px); }
+    .margin-top-btn-5 { margin-top: calc(72px * 5 - 40px); }
 }
 
 @media screen and (max-width: 1599px) {
@@ -186,6 +189,9 @@
 
     .faq-accordian .accordion-header { padding: 14px 20px; }
     .fq-show-icon { width: 52px; }
+
+    .margin-top-btn-4 { margin-top: calc(72px * 4 + 20px); }
+    .margin-top-btn-5 { margin-top: calc(72px * 5 + 10px); }
 }
 
 @media screen and (max-width: 1439px) {
@@ -270,6 +276,12 @@
 
     .tools-item.purple, .tools-item.blue{ width: 550px; }
     .tools-item.orange, .tools-item.green{ width: 500px; }
+
+    .margin-top-btn-1 { margin-top: calc(60px * 1); }
+    .margin-top-btn-2 { margin-top: calc(60px * 2); }
+    .margin-top-btn-3 { margin-top: calc(60px * 3); }
+    .margin-top-btn-4 { margin-top: calc(60px * 4); }
+    .margin-top-btn-5 { margin-top: calc(60px * 5 ); }
 }
 
 @media screen and (max-width: 1359px) {
@@ -648,6 +660,13 @@
 
     .tools-item.orange, .tools-item.green{ width: 300px !important; }
     .tools-item.purple, .tools-item.blue{ width: 370px !important; }
+
+    .margin-top-btn-0 { margin-top: 0px; }
+    .margin-top-btn-1 { margin-top: calc(45px * 1); }
+    .margin-top-btn-2 { margin-top: calc(45px * 2); }
+    .margin-top-btn-3 { margin-top: calc(45px * 3); }
+    .margin-top-btn-4 { margin-top: calc(45px * 4); }
+    .margin-top-btn-5 { margin-top: calc(45px * 5 ); }
 } 
 
 @media screen and (max-width: 991px) {
