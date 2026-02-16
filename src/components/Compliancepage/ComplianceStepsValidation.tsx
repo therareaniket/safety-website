@@ -8,38 +8,75 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function ComplianceStepsValidation() {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const [activeStep, setActiveStep] = useState<number>(0);
-
     useEffect(() => {
         const wrapper = wrapperRef.current;
         if (!wrapper) return;
 
-        const cards = wrapper.querySelectorAll<HTMLDivElement>(
-            '.compliance-steps-card'
-        );
+        const handleScroll = () => {
+            const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
 
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const index = Number(
-                            (entry.target as HTMLDivElement).dataset.index
-                        );
-                        setActiveStep(index);
-                    }
-                });
-            },
-            {
-                root: wrapper,
-                threshold: 0.3,
-                rootMargin: "0px -120px 0px -120px",
-            }
-        );
+            let closestIndex = 0;
+            let closestDistance = Infinity;
 
+            const wrapperRect = wrapper.getBoundingClientRect();
+            const wrapperCenter = wrapperRect.left + wrapperRect.width / 2;
 
-        cards.forEach((card) => observer.observe(card));
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                const cardCenter = rect.left + rect.width / 2;
 
-        return () => observer.disconnect();
+                const distance = Math.abs(wrapperCenter - cardCenter);
+
+                if (distance < closestDistance) {
+                    closestDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            setActiveStep(closestIndex);
+        };
+
+        wrapper.addEventListener("scroll", handleScroll);
+        return () => wrapper.removeEventListener("scroll", handleScroll);
     }, []);
+
+
+    useEffect(() => {
+        const section = document.querySelector('.compliance-steps-validation-section');
+        const wrapper = wrapperRef.current;
+        if (!section || !wrapper) return;
+
+        let interval: NodeJS.Timeout;
+
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                let step = 0;
+
+                interval = setInterval(() => {
+                    const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
+                    if (!cards.length) return;
+
+                    wrapper.scrollTo({
+                        left: cards[step].offsetLeft,
+                        behavior: "smooth"
+                    });
+
+                    setActiveStep(step);
+
+                    step++;
+                    if (step >= cards.length) clearInterval(interval);
+                }, 2000);
+            }
+        }, { threshold: 0.4 });
+
+        observer.observe(section);
+
+        return () => {
+            observer.disconnect();
+            clearInterval(interval);
+        };
+    }, []);
+
 
     useEffect(() => {
         const wrapper = wrapperRef.current;
@@ -143,7 +180,7 @@ export default function ComplianceStepsValidation() {
                                 <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
                             </div>
 
-                            <div className={`compliance-steps-card compliance-steps-card-4 ${activeStep === 3 ? 'active' : ''}`}>
+                            <div data-index={3} className={`compliance-steps-card compliance-steps-card-4 ${activeStep === 3 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">4</span>
 
                                 <h3 className="h5 text-md text-white">Audit Trails</h3>
@@ -268,31 +305,31 @@ export default function ComplianceStepsValidation() {
 
                             <SwiperSlide className="compliance-swiper-card">
                                 <div className="card-inner">
-                                <span className="text-md h5 compliance-step-span">4</span>
+                                    <span className="text-md h5 compliance-step-span">4</span>
 
-                                <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
 
-                                <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide className="compliance-swiper-card">
                                 <div className="card-inner">
-                                <span className="text-md h5 compliance-step-span">5</span>
+                                    <span className="text-md h5 compliance-step-span">5</span>
 
-                                <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
 
-                                <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide className="compliance-swiper-card">
                                 <div className="card-inner">
-                                <span className="text-md h5 compliance-step-span">6</span>
+                                    <span className="text-md h5 compliance-step-span">6</span>
 
-                                <h3 className="h5 text-md text-white">Validation Status</h3>
+                                    <h3 className="h5 text-md text-white">Validation Status</h3>
 
-                                <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
                                 </div>
                             </SwiperSlide>
 

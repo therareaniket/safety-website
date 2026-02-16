@@ -88,6 +88,15 @@
 
     .margin-top-btn-4 { margin-top: calc(72px * 4 - 20px); }
     .margin-top-btn-5 { margin-top: calc(72px * 5 - 40px); }
+
+
+    /* 404 */
+    .page-not-found-inner img{ width: 500px; height: 500px; object-fit: cover; }
+
+    .compliance-reporting-seperator{ margin-top: 20px; margin-bottom: 20px; }
+    .compliance-reporting-point-1:first-child{ padding-bottom: 0; }
+    .compliance-reporting-point-1:nth-child(3){ padding-top: 0; }
+    /* .compliance-reporting-seperator{ margin-top: 20px; margin-bottom: 20px; } */
 }
 
 @media screen and (max-width: 1599px) {
@@ -192,6 +201,9 @@
 
     .margin-top-btn-4 { margin-top: calc(72px * 4 + 20px); }
     .margin-top-btn-5 { margin-top: calc(72px * 5 + 10px); }
+
+    /* 404 */
+    .page-not-found-inner img{ width: 410px; height: 410px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -334,7 +346,6 @@
     .compliance-validation-support-card-2, .compliance-validation-support-card-3 { width: 480px; }
     .compliance-immutable-card-left{ padding: 30px; width: 500px; } 
     .compliance-immutable-card-right{ width: 450px;  }
-    .compliance-immutable-card-1{ padding-bottom: 20px; }
     .compliance-operations-head-text-wrapper{ width: 455px; }
     .compliance-operations-stats-wrapper{ width: 500px; }
     .compliance-flexible-operations-right{ width: 435px; }
@@ -386,6 +397,11 @@
     .tools-item.orange, .tools-item.green{ width: 430px !important; }
     .tools-item.purple, .tools-item.blue{ width: 500px !important; }
     .tools-img .tool-lg{ width: 75%; }
+    
+
+    /* 404 */
+    .page-not-found-inner img{ width: 380px; height: 380px; }
+
 }
 
 @media screen and (max-width: 1199px) {
@@ -416,7 +432,6 @@
     .about-signal-management-cards{ height: 320px; }
     .signal-management-text-left h3{ width: 100%; }
     .signal-management-text-left, .signal-management-right{ width: 340px; }
-    .compliance-reporting-point-1{ border-bottom: 1px solid #dbd9d9; }
     /* .about-signal-management-cards-wrapper{ height: 420px !important; } */
     .about-data-meets-medical-cards-wrapper{ margin-bottom: 30px; }
     .medical-detail-cards{ height: 165px; }
@@ -667,6 +682,7 @@
     .margin-top-btn-3 { margin-top: calc(45px * 3); }
     .margin-top-btn-4 { margin-top: calc(45px * 4); }
     .margin-top-btn-5 { margin-top: calc(45px * 5 ); }
+    .compliance-immutable-seperator{ margin-top: 15px; margin-bottom: 15px; }
 } 
 
 @media screen and (max-width: 991px) {
@@ -800,6 +816,8 @@
     .compliance-validation-steps-wrapper{ gap: 20px; }
     .compliance-steps-card-text h3{ margin-top: 10px; }
     /* .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ display: flex; align-items: flex-end; flex-direction: column; text-align: right; } */
+
+    .page-not-found-inner img{ width: 300px; height: 300px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -848,7 +866,7 @@
     .eco-system-accord h3{ margin-bottom: 0 !important; }
     .compliance-accordions .compliance-security-accordion-title button.open{ background-color: red; }
     .compliance-security-accordion-title{ margin-bottom: 0; }
-    .compliance-security-accordion-desciption{ background-color: #c7b0d8; padding: 10px; border-top: 1px solid #B8B8B8; border-radius: 0 0 10px 10px; }
+    .compliance-security-accordion-desciption{ background-color: #c7b0d8; padding: 10px; border-top: 1px solid #B8B8B8;  }
     .compliance-accordions .text-muted-foreground{ color: #c7b0d8; } 
     .compliance-pointers-card .compliance-pointers-text h3{ width: 80%; }
     
@@ -917,8 +935,8 @@
     .tools-item.orange, .tools-item.green{ width: 100% !important; height: max-content; }
     .tools-item.purple, .tools-item.blue{ width:100% !important; height: max-content; }
     .tools-row{ flex-direction: column; }
-    /* .hero-col-one, .hero-col-two{ text-align: center; }
-    .book-demo-inner{ justify-content: center; } */
+
+    .page-not-found-inner img{ width: 250px; height: 250px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -1162,6 +1180,9 @@
    .compliance-pointers-text{ width: 80%; }
    .compliance-pointers-wrapper{ flex-direction: column; width: 100%; }
    .signal-management-arrow-right .signal-arrows  { width: 10px !important; height: 10px !important; }
+
+   .page-not-found-inner img{ width: 200px; height: 200px; }
+   .page-not-found-inner a{ padding: 8px 16px; }
 }
 
 @media screen and (max-width: 459px) {

@@ -15,10 +15,10 @@ export default function ResourceTrendingPost() {
         slidesPerView: 'auto',
         loop: true,
 
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
 
         pagination: {
             clickable: true,

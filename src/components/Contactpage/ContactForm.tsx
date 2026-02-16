@@ -1,38 +1,75 @@
 'use client';
 
 import Image from "next/image";
+import { motion, useInView, Variants } from "framer-motion";
+import { useRef } from "react";
 
 export default function ContactForm() {
+        const ref = useRef(null);
+
+    const isInView = useInView(ref, {
+        once: true,
+        margin: "-100px 0px -100px 0px",
+        amount: 0.5
+    });
+
+    const containerVariants: Variants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.5
+            }
+        }
+    };
+
+    const iconVariants: Variants = {
+        hidden: {
+            scale: 0,
+            opacity: 1
+        },
+        visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+                duration: 0.6,
+                ease: [0.25, 0.46, 0.45, 0.94]
+            }
+        }
+    };
     return (
         <>
-            <section className="contact-form-wrapper section">
+            <section className="contact-form-wrapper section" ref={ref} id="contact-form">
                 <div className="container">
-                    <div className="contact-form">
+                    <motion.div className="contact-form"  variants={containerVariants}
+                    initial="hidden"
+                    animate={isInView ? "visible" : "hidden"}>
                         <div className="contact-form-text-left">
                             <div className="contactform-text-wrapper">
                                 <h2 className="text-md text-white">Your Queries Matter</h2>
                                 <p className="h6 text-rg text-white">Submit your request and our experts will connect with you shortly to provide solutions.</p>
                             </div>
 
-                            <div className="contact-form-address-card-wrapper">
-                                <div className="contact-form-card contact-form-card-1">
-                                    <span className="icon-contact-call"></span>
+                            <div className="contact-form-address-card-wrapper" >
+                                <div className="contact-form-card contact-form-card-1" >
+                                    <motion.span className="icon-contact-call" variants={iconVariants}></motion.span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Phone Number</p>
                                         <p className="text-18 text-rg text-grey">+1 512 843 2002</p>
                                     </div>
                                 </div>
-                                <div className="contact-form-card contact-form-card-2">
-                                    <span className="icon-contact-location"></span>
+
+                                <div className="contact-form-card contact-form-card-2" >
+                                    <motion.span className="icon-contact-location" variants={iconVariants}></motion.span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Location</p>
                                         <p className="text-18 text-rg text-grey">240, Newark, DE 19702, USA</p>
                                     </div>
                                 </div>
-                                <div className="contact-form-card contact-form-card-3">
-                                    <span className="icon-contact-mail"></span>
+
+                                <div className="contact-form-card contact-form-card-3" >
+                                    <motion.span className="icon-contact-mail" variants={iconVariants}></motion.span>
 
                                     <div>
                                         <p className="h6 text-md text-white">Email</p>
@@ -42,13 +79,13 @@ export default function ContactForm() {
                             </div>
                         </div>
 
-                        <div className="contact-form-text-right">
-                            <div className="cnct-form-row cnct-form-row-1">
+                        <div className="contact-form-text-right"                     >
+                            <div className="cnct-form-row cnct-form-row-1" >
                                 <input type="text" placeholder="Full Name" className="h6 text-rg"></input>
                                 <input type="text" placeholder="Email Address" className="h6 text-rg"></input>
                             </div>
 
-                            <div className="cnct-form-row cnct-form-row-2">
+                            <div className="cnct-form-row cnct-form-row-2" >
                                 <input type="text" placeholder="Organization Name" className="h6 text-rg"></input>
                             </div>
 
@@ -63,7 +100,7 @@ export default function ContactForm() {
                                 </svg></span><span className='text-md text-white text-18'>Send Message</span></button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>

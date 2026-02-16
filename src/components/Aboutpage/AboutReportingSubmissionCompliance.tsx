@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AboutReportingSubmissionCompliance() {
     return (
@@ -22,11 +23,29 @@ export default function AboutReportingSubmissionCompliance() {
                                 <p className="text-rg h6">Generate regulator-ready safety reports with full compliance and speed. The platform supports E2B (R3) compliant case generation, including initial, follow-up  with built-in validation to ensure data completeness.</p>
                             </div>
 
+                            <motion.div
+                                className="compliance-reporting-seperator"
+                                initial={{ scaleX: 0 }}
+                                whileInView={{ scaleX: 1 }}
+                                viewport={{ once: true, amount: 0.6 }}
+                                transition={{ duration: 4, ease: "easeOut" }}
+                                style={{ transformOrigin: "left" }}
+                            />
+
                             <div className="compliance-reporting-point-1">
                                 <h3 className="h5 text-md">Aggregate Reporting</h3>
 
                                 <p className="text-rg h6">Manage periodic safety reports through structured, end-to-end workflows. DhatuSafety supports PSUR, PBRER, and DSUR preparation, including line listings and cumulative summaries.</p>
                             </div>
+
+                            <motion.div
+                                className="compliance-reporting-seperator"
+                                initial={{ scaleX: 0 }}
+                                whileInView={{ scaleX: 1 }}
+                                viewport={{ once: true, amount: 0.6 }}
+                                transition={{ duration: 4, ease: "easeOut" }}
+                                style={{ transformOrigin: "left" }}
+                            />
 
                             <div className="compliance-reporting-point-1" style={{ borderBottom: 0 }}>
                                 <h3 className="h5 text-md">Submission Monitoring</h3>
@@ -36,7 +55,7 @@ export default function AboutReportingSubmissionCompliance() {
                         </div>
 
                         <div className="about-reporting-compliance-right">
-                            <Image src="/images/aboutpage/reporting-submission-right.webp" alt="reporting icon" width={558} height={690}></Image>
+                            <Image src="/images/aboutpage/reporting-submission-img.webp" alt="reporting icon" width={558} height={690}></Image>
                         </div>
                     </div>
                 </div>

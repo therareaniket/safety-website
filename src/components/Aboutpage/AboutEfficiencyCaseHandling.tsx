@@ -3,9 +3,49 @@ import { type SwiperProps } from 'swiper/react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { motion, Variants } from "framer-motion";
 
 
 export default function AboutEfficiencyCaseHandling() {
+    const containerVariant = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.55, 
+            },
+        },
+    };
+
+    const itemVariant: Variants = {
+        hidden: {
+            opacity: 0,
+            x: -80,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1,
+                ease: "easeOut",
+            },
+        },
+    };
+
+        const arrowVariant: Variants = {
+        hidden: {
+            opacity: 0,
+            x: -30,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1,
+                ease: "easeOut",
+            },
+        },
+    };
+
     const swiperConfig: SwiperProps = {
         modules: [Pagination, Autoplay],
         spaceBetween: 20,
@@ -25,7 +65,7 @@ export default function AboutEfficiencyCaseHandling() {
             0: {
                 slidesPerView: 1,
             },
-                        392: {
+            392: {
                 slidesPerView: 1,
             },
             401: {
@@ -44,8 +84,19 @@ export default function AboutEfficiencyCaseHandling() {
                         <p className="text-rg h6">Optimize how cases are collected, processed, reviewed, and submitted with an intelligent and guided workflow.</p>
                     </div>
 
-                    <div className="efficiency-steps-wrapper">
-                        <div className="efficiency-step-card efficiency-step-card-1">
+                    <motion.div
+                        className="efficiency-steps-wrapper"
+                        variants={containerVariant}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.4 }}
+                    >
+
+                        <motion.div
+                            className="efficiency-step-card efficiency-step-card-1"
+                            variants={itemVariant}
+                        >
+
                             <span className="text-mid-grey text-18">Step 01</span>
 
                             <h3 className="text-md h5">Intake & Case Creation</h3>
@@ -56,13 +107,21 @@ export default function AboutEfficiencyCaseHandling() {
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>New case creation</li>
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Case Linking</li>
                             </ul>
-                        </div>
+                        </motion.div>
 
-                        <div className="about-steps-arrow">
+                        <motion.div
+                            className="about-steps-arrow"
+                            variants={arrowVariant}
+                        >
+
                             <Image src="/images/aboutpage/about-steps-arrow.svg" alt="arrow-icon" width={21} height={21}></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="efficiency-step-card efficiency-step-card-2">
+                        <motion.div
+                            className="efficiency-step-card efficiency-step-card-2"
+                            variants={itemVariant}
+                        >
+
                             <span className="text-mid-grey text-18">Step 02</span>
 
                             <h3 className="text-md h5">Processing & Medical Review</h3>
@@ -73,13 +132,21 @@ export default function AboutEfficiencyCaseHandling() {
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Seriousness, causality</li>
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Follow-Ups</li>
                             </ul>
-                        </div>
+                        </motion.div>
 
-                        <div className="about-steps-arrow about-steps-arrow-1">
+                        <motion.div
+                            className="about-steps-arrow about-steps-arrow-1"
+                            variants={arrowVariant}
+                        >
+
                             <Image src="/images/aboutpage/about-steps-arrow.svg" alt="arrow-icon" width={21} height={21}></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="efficiency-step-card efficiency-step-card-3">
+                        <motion.div
+                            className="efficiency-step-card efficiency-step-card-3"
+                            variants={itemVariant}
+                        >
+
                             <span className="text-mid-grey text-18">Step 03</span>
 
                             <h3 className="text-md h5">Regulatory & Report</h3>
@@ -90,13 +157,21 @@ export default function AboutEfficiencyCaseHandling() {
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>New case creation</li>
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Follow‑Up Reporting</li>
                             </ul>
-                        </div>
+                        </motion.div>
 
-                        <div className="about-steps-arrow about-steps-arrow-2">
+                        <motion.div
+                            className="about-steps-arrow about-steps-arrow-2"
+                            variants={arrowVariant}
+                        >
+
                             <Image src="/images/aboutpage/about-steps-arrow.svg" alt="arrow-icon" width={21} height={21}></Image>
-                        </div>
+                        </motion.div>
 
-                        <div className="efficiency-step-card efficiency-step-card-4">
+                        <motion.div
+                            className="efficiency-step-card efficiency-step-card-4"
+                            variants={itemVariant}
+                        >
+
                             <span className="text-mid-grey text-18">Step 04</span>
 
                             <h3 className="text-md h5">Signal & Safety Oversight</h3>
@@ -107,8 +182,8 @@ export default function AboutEfficiencyCaseHandling() {
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Audit trails</li>
                                 <li><span><Image src="/images/aboutpage/about-steps-check.svg" alt="check-icon" width={10} height={7}></Image></span>Portfolio Oversight</li>
                             </ul>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
 
                     <div className="efficiency-steps-wrapper-responsive">
                         <Swiper {...swiperConfig} className='aboutSwiper-wrapper'>

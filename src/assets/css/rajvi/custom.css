@@ -278,16 +278,9 @@
   padding: 20px 0 94px 20px;
   overflow-x: auto;
   scrollbar-width: none;
-    animation: timelineMove 18s linear infinite;
 }
-/* @keyframes timelineMove {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-60%);
-  }
-} */
+
+
 
 .compliance-steps-card{ 
   width: 314px;
@@ -449,6 +442,7 @@
 .resource-detail-qna p{ margin-bottom: 0; }
 
 .resource-detail-more-blogs{ display: flex; align-items: flex-start; gap: 40px; padding-top: 80px; }
+/* .resources-tab-content:hover{ background-color: #e3cef1; } */
 
 .contact-hero-wrapper{ text-align: center;}
 .contact-form-wrapper{ width: 100%; height: max-content; background-color: var(--darkGrey); }
@@ -588,6 +582,7 @@
 .compliance-steps-divider-responsive{ display: none; }
 
 .resources-tab-content:hover h3{ color: #4b0081; }
+/* .resources-tab-content:hover p{ color: #4b0081; } */
 .compliance-steps-swiper-cards{ display: none; }
 
 .resource-listSwiper-wrapper-responsive{ display: none; }
@@ -618,3 +613,17 @@
 .margin-top-btn-3 { margin-top: calc(72px * 3); }
 .margin-top-btn-4 { margin-top: calc(72px * 4); }
 .margin-top-btn-5 { margin-top: calc(72px * 5); }
+
+.page-not-found-wrapper{ width:max-content; margin: 0 auto; }
+.page-not-found-inner{ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; }
+.page-not-found-inner a{ display: inline-block; background-color: var(--lavender); color: var(--white); padding: 10px 20px; margin-top: 20px; }
+.page-not-found-inner img{ width: 400px; height: 400px; }
+.compliance-reporting-point-1{ border-bottom: 0; }
+.compliance-reporting-point-1:first-child{ padding-bottom: 0; }
+.compliance-reporting-point-1:nth-child(3){ padding-top: 0; }
+.compliance-reporting-seperator{ width: 100%; height: 1px; background-color: #dbd9d9; margin-top: 40px; margin-bottom: 40px; }
+.about-reporting-compliance-right img{ width: 100%; height: 100%; object-fit: cover; }
+.compliance-immutable-card-1{ padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+.compliance-immutable-seperator{ width: 100%; height: 1px; background-color: #dbd9d9; margin-top: 20px; margin-bottom: 20px;  }
+
+.faq-row{ margin-top: 50px; }

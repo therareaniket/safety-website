@@ -1,11 +1,15 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 
 export default function PricingFAQ() {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const faqs = [
         {
@@ -30,11 +34,22 @@ export default function PricingFAQ() {
 
     return (
         <>
-            <section className="faq-wrapper section pt-0">
+            <section className="faq-wrapper section pt-0" ref={ref}>
                 <div className="container">
                     <div className="faq-row flex">
                         <div className="fq-col-one">
-                            <Image className="faq-img" src='images/homepage/faq-icon.svg' alt="FAQ" width={211} height={226} priority />
+                            <motion.div
+                                initial={{ y: 0 }}
+                                animate={{ y: [0, -18, 0] }}   // up → down → up loop
+                                transition={{
+                                    duration: 1.2,
+                                    ease: "easeInOut",
+                                    repeat: Infinity,            // infinite bounce
+                                    repeatType: "loop"
+                                }}
+                            >
+                                <Image className="faq-img" src='images/homepage/faq-icon.svg' alt="FAQ" width={211} height={226} priority />
+                            </motion.div>
                             <h2 className="text-md text-black">Plans Designed for Smarter Safety Management</h2>
                             <p className="h6 op-desc text-black">Here are answers to the top questions teams ask about DhatuSafety, helping you understand our features, workflows.</p>
                         </div>
@@ -76,7 +91,6 @@ export default function PricingFAQ() {
                                                 </span>
                                             </button>
                                         </h3>
-
 
                                         <div
                                             className={`accordion-content ${activeIndex === index ? "open" : ""

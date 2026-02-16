@@ -22,18 +22,18 @@ export default function HomeEcosystem() {
       const isDesktop = window.innerWidth >= 768;
 
       const config: EcoAnimations = isDesktop ? {
-            top_initial: { opacity: 0, y: -80 },
-            top_animate: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" }, },
+        top_initial: { opacity: 0, y: -80 },
+        top_animate: { opacity: 1, y: 0, transition: { duration: 1.3, ease: "easeOut" }, },
 
-            bottom_initial: { opacity: 0, y: 80 },
-            bottom_animate: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" }, },
-            viewportAmount: 0.6,
-          } : {
-            left_initial: { opacity: 1, x: 0 },
-            left_animate: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" }, },
+        bottom_initial: { opacity: 0, y: 80 },
+        bottom_animate: { opacity: 1, y: 0, transition: { duration: 1.3, ease: "easeOut" }, },
+        viewportAmount: 0.6,
+      } : {
+        left_initial: { opacity: 1, x: 0 },
+        left_animate: { opacity: 1, x: 0, transition: { duration: 0.7, ease: "easeOut" }, },
 
-            viewportAmount: 0.4,
-          };
+        viewportAmount: 0.5,
+      };
 
       setAnimations(config);
     };
@@ -51,8 +51,8 @@ export default function HomeEcosystem() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
+        staggerChildren: 1,
+        delayChildren: 0.5,
       },
     },
   };
@@ -108,8 +108,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
-              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
+              hidden: animations.bottom_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.bottom_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-title top">
@@ -160,8 +160,8 @@ export default function HomeEcosystem() {
           <motion.div
             className="eco-item"
             variants={{
-              hidden: animations.top_initial ?? animations.left_initial ?? { opacity: 0 },
-              visible: animations.top_animate ?? animations.left_animate ?? { opacity: 1 },
+              hidden: animations.bottom_initial ?? animations.left_initial ?? { opacity: 0 },
+              visible: animations.bottom_animate ?? animations.left_animate ?? { opacity: 1 },
             }}
           >
             <div className="eco-title top">
