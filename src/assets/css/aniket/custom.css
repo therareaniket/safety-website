@@ -10,3 +10,6 @@ header { position: sticky; top: 0; }
 .tbl-col-5 { width: 205px; }
 .tbl-col-6 { width: 170px; }
 .footer-links li { padding-bottom: 8px; }
+
+.resource-detail-qna p { margin-bottom: 16px; }
+.resource-detail-qna ul li { list-style-type: disc; list-style-position: inside; }
