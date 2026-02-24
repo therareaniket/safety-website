@@ -7,12 +7,12 @@ export default function HomeOperations() {
 
     const totalItems = 4;
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveIndex((prev) => (prev + 1) % totalItems)
-        }, 3000);
-        return () => clearInterval(interval);
-    }, []);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setActiveIndex((prev) => (prev + 1) % totalItems)
+    //     }, 4000);
+    //     return () => clearInterval(interval);
+    // }, []);
 
     const opDesc = [
         { text: 'Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.' },
@@ -74,7 +74,7 @@ export default function HomeOperations() {
                                 </div>
                                 <h3 className={`op-item-title one left-center absolute h5 ${activeIndex === 0 ? 'active' : ''}`}>Unified Data Intake</h3>
 
-                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}> Cash Managment </h3>
+                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}> Case Managment </h3>
 
                                 <h3 className={`op-item-title three left-center absolute h5 ${activeIndex === 2 ? 'active' : ''}`}> Reporting & Compliance </h3>
 

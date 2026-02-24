@@ -1090,7 +1090,7 @@ background: var(--grey);
 
 .nav-wrapper { padding: 30px 0 20px; }
 
-.post-item:hover .h4 { color: #4B0081; }
-.blog-row-inner > a:hover .h4 { color: #4B0081; }
+.post-item:hover .h5 { color: #4B0081; }
+.blog-row-inner > a:hover .h5 { color: #4B0081; }
 
 .stats-count .h2 { margin-bottom: 4px; }

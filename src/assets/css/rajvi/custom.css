@@ -627,3 +627,6 @@
 .compliance-immutable-seperator{ width: 100%; height: 1px; background-color: #dbd9d9; margin-top: 20px; margin-bottom: 20px;  }
 
 .faq-row{ margin-top: 50px; }
+.op-item-title.one{ top: -4px;} .op-item-title.three{ bottom: -20px; }
+
+.name-initial{ width: 60px; min-width: 60px; height: 60px; }
