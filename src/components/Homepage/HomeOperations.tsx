@@ -10,7 +10,7 @@ export default function HomeOperations() {
     useEffect(() => {
         const interval = setInterval(() => {
             setActiveIndex((prev) => (prev + 1) % totalItems)
-        }, 4000);
+        }, 2000);
         return () => clearInterval(interval);
     }, []);
 
