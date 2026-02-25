@@ -630,3 +630,6 @@
 .op-item-title.one{ top: -4px;} .op-item-title.three{ bottom: -20px; }
 
 .name-initial{ width: 60px; min-width: 60px; height: 60px; }
+.op-item-title.h5{ line-height: 30px }
+.op-item-title.two{ right: -9px; }
+.op-item-title.four{ left: 36px; }

@@ -671,7 +671,7 @@ header {
 }
 
 .op-item-title.h5.active {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     color: rgb(195, 67, 255);
 }
 

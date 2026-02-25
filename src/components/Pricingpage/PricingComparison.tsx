@@ -1,10 +1,16 @@
 'use client';
-import Image from "next/image";
+
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
+import { useReducedMotion } from "framer-motion";
 
 export default function PricingPlanFeatures() {
     const ref = useRef(null);
+    const shouldReduceMotion = useReducedMotion();
+    const isDesktop =
+  typeof window !== "undefined" && window.innerWidth > 1023;
+
+const disableAnimation = shouldReduceMotion || !isDesktop;
 
     const isInView = useInView(ref, {
         once: true,
@@ -78,8 +84,8 @@ export default function PricingPlanFeatures() {
                 <motion.div
                     className="compari-tbl"
                     variants={containerVariants}
-                    initial="hidden"
-                    animate={isInView ? "visible" : "hidden"}
+                    initial={disableAnimation ? false : "hidden"}
+                    animate={ disableAnimation ? false : isInView ? "visible" : "hidden"}
                 >
                     <div className="table-headers">
                         <div className="tbl-col-1"><span className="h5 text-md text-white">Feature</span></div>

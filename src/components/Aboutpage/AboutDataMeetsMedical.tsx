@@ -7,17 +7,21 @@ import { useRef } from "react";
 export default function AboutDataMeetsMedical() {
     const ref = useRef(null);
 
+    const isDesktop =
+        typeof window !== "undefined" ? window.innerWidth > 1023 : true;
+
     const isInView = useInView(ref, {
         once: true,
         margin: "-100px 0px -100px 0px",
-        amount: 0.5
+        amount: 0.1
     });
+
 
     const containerVariants: Variants = {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.5
+                staggerChildren: isDesktop ? 0.5 : 0.3
             }
         }
     };
@@ -40,7 +44,12 @@ export default function AboutDataMeetsMedical() {
         <>
             <section className="about-data-meets-medical-wrapper section" ref={ref}>
                 <div className="container">
-                    <div className="about-data-meets-medical-inner">
+                    <motion.div
+                        className="about-data-meets-medical-inner"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={isInView ? "visible" : "hidden"}
+                    >
                         <h2 className="text-md text-white">
                             Where Data Meets Medical Expertise
                         </h2>
@@ -48,12 +57,7 @@ export default function AboutDataMeetsMedical() {
                             Transform safety data into clinically sound, regulator-ready decisions through structured review and coding.
                         </p>
 
-                        <motion.div
-                            className="about-data-meets-medical-cards-wrapper about-data-meets-medical-cards-wrapper-desktop"
-                            variants={containerVariants}
-                            initial="hidden"
-                            animate={isInView ? "visible" : "hidden"}
-                        >
+                        <div className="about-data-meets-medical-cards-wrapper about-data-meets-medical-cards-wrapper-desktop">
                             <div className="about-medical-card-row about-medical-card-row-1">
                                 <div className="about-data-card about-data-card-1">
                                     <motion.span
@@ -95,20 +99,20 @@ export default function AboutDataMeetsMedical() {
 
                             <div className="about-medical-card-row about-medical-card-row-3">
                                 <div className="about-data-card about-data-card-3">
-                                        <motion.span
-                                            className="about-data-cards-svg site-all-svg about-data-cards-svg-3"
-                                            variants={iconVariants}
-                                            style={{ originX: 0.5, originY: 0.5 }}
-                                        >
-                                            <Image src="/images/aboutpage/reference-safety-card-3.svg" alt="medical icon" width={24} height={24}></Image>
-                                        </motion.span>
+                                    <motion.span
+                                        className="about-data-cards-svg site-all-svg about-data-cards-svg-3"
+                                        variants={iconVariants}
+                                        style={{ originX: 0.5, originY: 0.5 }}
+                                    >
+                                        <Image src="/images/aboutpage/reference-safety-card-3.svg" alt="medical icon" width={24} height={24}></Image>
+                                    </motion.span>
 
 
-                                        <div className="about-data-card-text">
-                                            <h3 className="h5 text-md text-white">Reference safety information linkage</h3>
+                                    <div className="about-data-card-text">
+                                        <h3 className="h5 text-md text-white">Reference safety information linkage</h3>
 
-                                            <p className="text-rg text-18 text-grey">Map assessments to RSI, guided by the Investigator’s Brochure.</p>
-                                        </div>
+                                        <p className="text-rg text-18 text-grey">Map assessments to RSI, guided by the Investigator’s Brochure.</p>
+                                    </div>
                                 </div>
 
                                 <div className="about-data-card about-data-card-4">
@@ -126,7 +130,7 @@ export default function AboutDataMeetsMedical() {
                                     </div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
 
                         <div className="about-data-meets-medical-cards-wrapper about-data-meets-medical-cards-wrapper-responsive">
                             <div className=" about-medical-card-row-2">
@@ -137,9 +141,13 @@ export default function AboutDataMeetsMedical() {
 
                             <div className="about-medical-card-row">
                                 <div className="about-data-card about-data-card-1">
-                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-1">
+                                    <motion.span
+                                        className="about-data-cards-svg site-all-svg about-data-cards-svg-1"
+                                        variants={iconVariants}
+                                        style={{ originX: 0.5, originY: 0.5 }}
+                                    >
                                         <Image src="/images/aboutpage/seriousness-assessment-card-1.svg" alt="medical icon" width={24} height={24}></Image>
-                                    </span>
+                                    </motion.span>
 
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Seriousness & causality assessment</h3>
@@ -149,9 +157,13 @@ export default function AboutDataMeetsMedical() {
                                 </div>
 
                                 <div className="about-data-card about-data-card-2">
-                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-2">
+                                    <motion.span
+                                        className="about-data-cards-svg site-all-svg about-data-cards-svg-2"
+                                        variants={iconVariants}
+                                        style={{ originX: 0.5, originY: 0.5 }}
+                                    >
                                         <Image src="/images/aboutpage/structurednarrative-card-2.svg" alt="medical icon" width={24} height={24}></Image>
-                                    </span>
+                                    </motion.span>
 
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Structured narrative templates</h3>
@@ -161,9 +173,13 @@ export default function AboutDataMeetsMedical() {
                                 </div>
 
                                 <div className="about-data-card about-data-card-3">
-                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-3">
+                                    <motion.span
+                                        className="about-data-cards-svg site-all-svg about-data-cards-svg-3"
+                                        variants={iconVariants}
+                                        style={{ originX: 0.5, originY: 0.5 }}
+                                    >
                                         <Image src="/images/aboutpage/reference-safety-card-3.svg" alt="medical icon" width={24} height={24}></Image>
-                                    </span>
+                                    </motion.span>
 
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Reference safety information linkage</h3>
@@ -173,9 +189,13 @@ export default function AboutDataMeetsMedical() {
                                 </div>
 
                                 <div className="about-data-card about-data-card-4">
-                                    <span className="about-data-cards-svg site-all-svg about-data-cards-svg-4">
+                                    <motion.span
+                                        className="about-data-cards-svg site-all-svg about-data-cards-svg-4"
+                                        variants={iconVariants}
+                                        style={{ originX: 0.5, originY: 0.5 }}
+                                    >
                                         <Image src="/images/aboutpage/controlled-medical-approval-card-4.svg" alt="medical icon" width={24} height={24}></Image>
-                                    </span>
+                                    </motion.span>
 
                                     <div className="about-data-card-text">
                                         <h3 className="h5 text-md text-white">Controlled medical approvals</h3>
@@ -211,7 +231,7 @@ export default function AboutDataMeetsMedical() {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
         </>

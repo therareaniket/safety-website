@@ -96,6 +96,9 @@
     /* .compliance-reporting-seperator{ margin-top: 20px; margin-bottom: 20px; } */
 
     .op-item-title.one , .op-item-title.two, .op-item-title.three, .op-item-title.four{ font-size: 20px; line-height: 24px; }
+    .op-item-title.one{ top: 6px; }
+    .op-item-title.three{ bottom: -5px; }
+    .op-item-title.four{ left: 24px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -121,7 +124,7 @@
 
     .about-data-card{ width: 324px; }
     .about-data-card-text{ width: 264px; }
-    .medical-detail-cards{ height: 180px; }
+    .medical-detail-cards{ height: 165px; }
     .about-signal-management-title{ width: 530px; }
     .about-signal-management-para{ width: 590px; }
     .about-signal-management-cards{ padding: 60px 90px; height: 430px; }
@@ -205,7 +208,7 @@
     /* 404 */
     .page-not-found-inner img{ width: 410px; height: 410px; }
     .op-item-title.one, .op-item-title.two, .op-item-title.three, .op-item-title.four{ font-size: 18px; line-height: 22px; }
-    .op-item-title.one{ width: 160px; } .op-item-title.two{ width: 160px; right: -24px; }
+    .op-item-title.one{ width: 160px; top: 18px; } .op-item-title.two{ width: 160px; right: -12px; } .op-item-title.three{ bottom: 2px; } .op-item-title.four{ left: 8px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -230,7 +233,7 @@
 
     .efficiency-step-card{ height: 350px; }
     .about-data-meets-medical-cards-wrapper{ padding-bottom: 20px; gap: 20px; }
-    .medical-detail-cards{ padding: 20px; height: 187px; }
+    .medical-detail-cards{ padding: 20px; height: 145px; }
     .about-signal-management-para{ width: 495px; }
     .about-reporting-compliance-left{ width: 750px; }
     .compliance-reporting-point-1{ width: 670px; }
@@ -296,7 +299,7 @@
     .margin-top-btn-5 { margin-top: calc(60px * 5); }
 
     .op-item-title.one, .op-item-title.two, .op-item-title.three, .op-item-title.four{ font-size: 16px; line-height: 22px; }
-    .op-item-title.one{ width: 150px; } .op-item-title.two{ width: 140px; }
+    .op-item-title.one{ width: 150px; top: 40px; } .op-item-title.two{ width: 140px; } .op-item-title.three{ bottom: 23px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -335,7 +338,7 @@
     .about-data-meets-medical-cards-wrapper{ gap: 30px; }
     .about-steps-arrow { height: 24px; }
 
-    .medical-detail-cards{ height: 170px; }
+    .medical-detail-cards{ height: 130px; }
     .signal-management-text-left{ width: 410px; }
     .signal-management-right{ width: 410px; }
     .about-signal-management-cards{ height: 370px; }
@@ -386,7 +389,7 @@
     .about-data-card-text { width: 230px; }
     .about-data-card { height: 135px; }
     .medical-detail-cards-wrapper { gap: 0; justify-content: space-between; }
-    .medical-detail-cards { width: calc(33% - 8px); height: 150px; padding: 15px; }
+    .medical-detail-cards { width: calc(33% - 8px); padding: 15px; }
     .t-testimonial-slider .testi-desc { padding: 20px; }
 
     /* pricing */
@@ -441,7 +444,7 @@
     .signal-management-text-left, .signal-management-right{ width: 340px; }
     /* .about-signal-management-cards-wrapper{ height: 420px !important; } */
     .about-data-meets-medical-cards-wrapper{ margin-bottom: 30px; }
-    .medical-detail-cards{ height: 165px; }
+    .medical-detail-cards{ height: 120px; }
 
     .stack{ height: 400px !important; }
 
@@ -523,7 +526,7 @@
 
 @media screen and (max-width: 1023px) {
     h1, .h1{ font-size: 34px; line-height: 40px; }
-    h6, .h6, .text-18{ font-size: 14px; line-height: 20px; }
+    h6, .h6{ font-size: 14px; line-height: 20px; }
     footer .text-16{ font-size: 12px; line-height: 20px; }
     .copyright-links .text-16{ font-size: 12px; line-height: 20px; }
 
@@ -561,7 +564,7 @@
     .about-medical-card-row-2{ margin: 0 auto; height: max-content; }
     .about-data-card-5 img{ width: 100% !important; height: 100% !important; object-fit: cover; }
     .medical-detail-cards-wrapper{ gap: 20px; }
-    .medical-detail-cards{ width: 220px; height: 230px; }
+    .medical-detail-cards{ width: 220px; height: 135px; }
     .about-data-meets-medical-cards-wrapper{ padding-top: 50px; padding-bottom: 30px; }
     .about-signal-management-content{ flex-direction: column; gap: 0px; text-align: center; }
     .about-signal-management-title{ width: 100%; }
@@ -704,7 +707,7 @@
     /* h1, .h1{ font-size: 30px; line-height: 38px; } */
     h2, .h2{ font-size: 26px; line-height: 34px; }
     h4, .h4{ font-size: 20px; line-height: 28px; }
-    h6, .h6, .text-18{ font-size: 14px; line-height: 20px; }
+    h6, .h6{ font-size: 14px; line-height: 20px; }
     /* about */
     .build-to-advance-left-wrapper{ width: 650px; margin: 0 auto; }
     .about-data-meets-medical-cards-wrapper{ padding-top: 30px; }
@@ -745,7 +748,7 @@
     h1, .h1{ font-size: 32px; line-height: 40px; }
 
     /* about */
-    .medical-detail-cards{ height: 190px; }
+    .medical-detail-cards{ height: 135px; }
     .about-data-meets-medical-cards-wrapper{ padding-bottom: 0; }
 
     /* compliance */
