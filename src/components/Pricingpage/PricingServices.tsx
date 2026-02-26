@@ -58,7 +58,7 @@ export default function PricingServices() {
                             <Image src='/images/pricingpage/ps-01.svg' alt="Additional Service Capacity" width={18.44} height={16} priority />
                         </motion.div>
                         <div className="ps-content">
-                            <h3 className="h5 text-md">Additional Service Capacity</h3>
+                            <h3 className="h5 text-md">Additional Service</h3>
                             <p className="h6 text-grey mb-0">Scale up your processing volume as needed</p>
                         </div>
                     </div>

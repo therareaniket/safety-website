@@ -3,9 +3,16 @@ import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
 export default function PricingPlans() {
-    const ref = useRef(null);
+    const standardRef = useRef(null);
+    const enterpriseRef = useRef(null);
 
-    const isInView = useInView(ref, {
+    const standardInView = useInView(standardRef, {
+        once: true,
+        margin: "-100px 0px -100px 0px",
+        amount: 0.5
+    });
+
+    const enterpriseInView = useInView(enterpriseRef, {
         once: true,
         margin: "-100px 0px -100px 0px",
         amount: 0.5
@@ -15,7 +22,7 @@ export default function PricingPlans() {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.5
+                staggerChildren: 0.8
             }
         }
     };
@@ -25,25 +32,30 @@ export default function PricingPlans() {
             y: -50,
             opacity: 0
         },
-
         visible: {
-            y: 1,
+            y: 0,
             opacity: 1,
             transition: {
-                duration: 0.5,
+                duration: 1,
                 ease: "easeOut"
             }
         }
     };
 
     return (
-        <section className="plans-wrapper pricing section" ref={ref}>
+        <section className="plans-wrapper pricing section" >
             <div className="container">
                 <div className="main-title center text-center">
                     <h2 className="text-md text-black">Plans Designed for Smarter Safety Management</h2>
                 </div>
                 <div className="plans-row flex">
-                    <motion.div className="plan-item bg-dark-grey" variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+                    <motion.div
+                        ref={standardRef}
+                        className="plan-item bg-dark-grey"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={standardInView ? "visible" : "hidden"}
+                    >
                         <div className="plan-title flex">
                             <h3 className="h4 text-sb text-white">Standard</h3>
                             <div className="p-price flex"><h4 className="text-bd text-white">$49</h4><span className="text-18 text-white">per user/month</span></div>
@@ -65,7 +77,13 @@ export default function PricingPlans() {
                         </div>
                     </motion.div>
 
-                    <motion.div className="plan-item bg-light-grey" variants={containerVariants} initial="hidden" animate={isInView ? "visible" : "hidden"}>
+                    <motion.div
+                        ref={enterpriseRef}
+                        className="plan-item bg-light-grey"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={enterpriseInView ? "visible" : "hidden"}
+                    >
                         <div className="plan-title flex">
                             <h3 className="h4 text-sb text-black">Enterprise</h3>
                             <div className="p-price flex"><h4 className="text-bd text-black">$299</h4><span className="text-18 text-black"> per user/month</span></div>
@@ -89,6 +107,5 @@ export default function PricingPlans() {
                 </div>
             </div>
         </section>
-
     )
 }

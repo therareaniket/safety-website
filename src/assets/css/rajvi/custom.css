@@ -631,5 +631,8 @@
 
 .name-initial{ width: 60px; min-width: 60px; height: 60px; }
 .op-item-title.h5{ line-height: 30px }
-.op-item-title.two{ right: -9px; }
-.op-item-title.four{ left: 36px; }
+.op-item-title.two{ right: -9px; top: 50%; transform: translateY(-50%); }
+.op-item-title.four{ left: 36px; top: 50%; transform: translateY(-50%); }
+.op-item-title.one{ left: 50%; transform: translateX(-50%); }
+.op-item-title.three{ left: 50%; transform: translateX(-50%); }
+
