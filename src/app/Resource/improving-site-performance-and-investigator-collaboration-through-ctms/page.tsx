@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Blog7() {
+export default function Blog9() {
     return (
         <>
             <Header />
@@ -17,13 +17,13 @@ export default function Blog7() {
                     </div>
 
                     <div className="blog-sm-container blog-detail-text-wrapper">
-                        <h1 className="text-md h2">Cloud-Based vs On-Premise CTMS: Making the Right Decision</h1>
+                        <h1 className="text-md h2">Improving Site Performance and Investigator Collaboration Through CTMS</h1>
 
-                        <p className="h6 text-rg">Technology infrastructure decisions significantly impact cost, scalability, and compliance.</p>
+                        <p className="h6 text-rg">Sites are the backbone of clinical trials. Poor site performance directly affects timelines and cost.</p>
                     </div>
 
                     <div className="resource-detail-banner-img">
-                        <Image src="/images/live-blogs/Blog 7.webp" alt="" width={1400} height={830}></Image>
+                        <Image src="/images/live-blogs/Blog 8.webp" alt="" width={1400} height={830}></Image>
                     </div>
 
                     <div className="resources-detail-social-links">
@@ -54,33 +54,35 @@ export default function Blog7() {
 
                     <div className="blog-sm-container blog-detail-qna-wrapper">
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Cloud-Based CTMS</h3>
-                            <p className="text-rg h6">Cloud solutions are hosted on secure remote servers and accessed via web browsers.</p>
-
-                            <p className="text-rg h6"><b>Advantages:</b></p>
-
+                            <h3 className="h5 text-md">Key Site Performance Metrics</h3>
                             <ul>
-                                <li>Lower upfront investment</li>
-                                <li>Faster deployment</li>
-                                <li>Automatic system updates</li>
-                                <li>Remote access for global teams</li>
-                                <li>Scalable storage and performance</li>
-                                <li>Reduced IT burden</li>
+                                <li>• Time to activation</li>
+                                <li>• Enrollment rate</li>
+                                <li>• Screen failure rate</li>
+                                <li>• Monitoring visit compliance</li>
+                                <li>• Data entry timeliness</li>
                             </ul>
                         </div>
 
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Security Considerations:</h3>
+                            <h3 className="h5 text-md">How CTMS Improves Site Oversight</h3>
+                            <p className="text-rg h6"><b>Performance Dashboards</b></p>
+                            <p className="text-rg h6">Compare sites across regions and studies.</p>
+                        </div>
 
-                            <p className="text-rg h6"><b>Modern cloud CTMS platforms comply with:</b></p>
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">Investigator Payment Automation</h3>
+                            <p className="text-rg h6">Ensure timely and transparent payments to maintain strong relationships.</p>
+                        </div>
 
-                            <ul>
-                                <li>21 CFR Part 11</li>
-                                <li>GDPR</li>
-                                <li>ISO certifications</li>
-                                <li>Role-based access control</li>
-                                <li>Data encryption</li>
-                            </ul>
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">Visit Scheduling Tools</h3>
+                            <p className="text-rg h6">Avoid missed visits and compliance gaps.</p>
+                        </div>
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">Communication Tracking</h3>
+                            <p className="text-rg h6">Maintain documented interactions and action plans.</p>
+                            <p className="text-rg h6">With structured oversight, sponsors can support high-performing sites and intervene early with underperforming ones.</p>
                         </div>
                     </div>
 

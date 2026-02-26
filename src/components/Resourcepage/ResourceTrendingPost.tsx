@@ -4,7 +4,6 @@ import { type SwiperProps } from 'swiper/react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-import { useEffect } from 'react';
 import Link from 'next/link';
 
 export default function ResourceTrendingPost() {
@@ -34,10 +33,10 @@ export default function ResourceTrendingPost() {
 
                     <Swiper {...swiperConfig} className='resource-listSwiper-wrapper'>
                         <SwiperSlide>
-                            <Link href="/Resourcedetail"  className='resource-swiper-card'>
+                            <Link href="/Resource/the-complete-guide-to-clinical-trial-management-systems" className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
-                                        src="/images/resourcepage/trending-post-1.webp"
+                                        src="/images/live-blogs/Blog 1.webp"
                                         alt="Trending post"
                                         width={714}
                                         height={424}
@@ -47,13 +46,11 @@ export default function ResourceTrendingPost() {
                                 <div className="blog-swiper-right blog-swiper-right-desktop">
                                     <div className="">
                                         <h3 className="h5 text-md">
-                                            How AI Is Reshaping Modern Pharmacovigilance
+                                            The Complete Guide to Clinical Trial Management Systems (CTMS)
                                         </h3>
 
                                         <p className='h6 text-rg'>
-                                            Discover how AI-powered tools are speeding up case review,
-                                            improving signal detection accuracy, and helping safety teams
-                                            make faster, smarter decisions.
+                                            Clinical trials are becoming increasingly complex, involving multiple sites, global regulatory frameworks, tight timelines, and high financial stakes. Managing this complexity through spreadsheets and disconnected systems is no longer sustainable. A Clinical Trial Management System (CTMS) is the operational backbone that centralizes, tracks, and optimizes clinical trial activities from study startup to close-out.
                                         </p>
                                     </div>
 
@@ -76,7 +73,7 @@ export default function ResourceTrendingPost() {
 
                                     <div className="blog-swiper-left">
                                         <Image
-                                            src="/images/resourcepage/trending-post-1.webp"
+                                            src="/images/live-blogs/Blog 1.webp"
                                             alt="Trending post"
                                             width={714}
                                             height={424}
@@ -104,10 +101,10 @@ export default function ResourceTrendingPost() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <Link href="/Resourcedetail" className='resource-swiper-card'>
+                            <Link href="/Resource/top-features-to-look-for-in-a-modern-ctms-platform" className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
-                                        src="/images/resourcepage/trending-post-3.webp"
+                                        src="/images/live-blogs/Blog 2.webp"
                                         alt="Trending post"
                                         width={714}
                                         height={424}
@@ -116,7 +113,7 @@ export default function ResourceTrendingPost() {
 
                                 <div className="blog-swiper-right blog-swiper-right-desktop">
                                     <h3 className="h5 text-md">
-                                        Enhancing Compliance With Intelligent Reporting
+                                        Top Features to Look for in a Modern CTMS Platform
                                     </h3>
 
                                     <p className='h6 text-rg'>
@@ -139,12 +136,12 @@ export default function ResourceTrendingPost() {
 
                                 <div className="blog-swiper-mob-res">
                                     <h3 className="h5 text-md">
-                                        Enhancing Compliance With Intelligent Reporting
+                                        Top Features to Look for in a Modern CTMS Platform
                                     </h3>
 
                                     <div className="blog-swiper-left">
                                         <Image
-                                            src="/images/resourcepage/trending-post-3.webp"
+                                            src="/images/live-blogs/Blog 2.webp"
                                             alt="Trending post"
                                             width={714}
                                             height={424}
@@ -172,10 +169,10 @@ export default function ResourceTrendingPost() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <Link href="/Resourcedetail" className='resource-swiper-card'>
+                            <Link href="/Resource/how-ctms-improves-clinical-trial-efficiency" className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
-                                        src="/images/resourcepage/trending-post-2.webp"
+                                        src="/images/live-blogs/Blog 3.webp"
                                         alt="Trending post"
                                         width={714}
                                         height={424}

@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Blog7() {
+export default function Blog12() {
     return (
         <>
             <Header />
@@ -17,13 +17,13 @@ export default function Blog7() {
                     </div>
 
                     <div className="blog-sm-container blog-detail-text-wrapper">
-                        <h1 className="text-md h2">Cloud-Based vs On-Premise CTMS: Making the Right Decision</h1>
+                        <h1 className="text-md h2">Why Small & Mid-Size CROs Need a CTMS More Than Ever</h1>
 
-                        <p className="h6 text-rg">Technology infrastructure decisions significantly impact cost, scalability, and compliance.</p>
+                        <p className="h6 text-rg">Smaller CROs face increasing pressure to compete with global players while maintaining profitability.</p>
                     </div>
 
                     <div className="resource-detail-banner-img">
-                        <Image src="/images/live-blogs/Blog 7.webp" alt="" width={1400} height={830}></Image>
+                        <Image src="/images/live-blogs/Blog 12.webp" alt="" width={1400} height={830}></Image>
                     </div>
 
                     <div className="resources-detail-social-links">
@@ -54,33 +54,32 @@ export default function Blog7() {
 
                     <div className="blog-sm-container blog-detail-qna-wrapper">
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Cloud-Based CTMS</h3>
-                            <p className="text-rg h6">Cloud solutions are hosted on secure remote servers and accessed via web browsers.</p>
-
-                            <p className="text-rg h6"><b>Advantages:</b></p>
+                            <h3 className="h5 text-md">Common Growth Challenges</h3>
 
                             <ul>
-                                <li>Lower upfront investment</li>
-                                <li>Faster deployment</li>
-                                <li>Automatic system updates</li>
-                                <li>Remote access for global teams</li>
-                                <li>Scalable storage and performance</li>
-                                <li>Reduced IT burden</li>
+                                <li>Limited resource visibility</li>
+                                <li>Manual tracking systems</li>
+                                <li>Inconsistent reporting</li>
+                                <li>Budget misalignment</li>
+                                <li>Sponsor transparency demands</li>
                             </ul>
                         </div>
 
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Security Considerations:</h3>
+                            <h3 className="h5 text-md">How CTMS Empowers Growing CROs</h3>
+                            
+                            <h3 className="h5 text-md">Operational Standardization</h3>
+                            <p className="text-rg h6">Create repeatable workflows across studies.</p>
 
-                            <p className="text-rg h6"><b>Modern cloud CTMS platforms comply with:</b></p>
+                            <h3 className="h5 text-md">Financial Control</h3>
+                            <p className="text-rg h6">Track budgets in real time and avoid revenue leakage.</p>
 
-                            <ul>
-                                <li>21 CFR Part 11</li>
-                                <li>GDPR</li>
-                                <li>ISO certifications</li>
-                                <li>Role-based access control</li>
-                                <li>Data encryption</li>
-                            </ul>
+                            <h3 className="h5 text-md">Scalable Infrastructure</h3>
+                            <p className="text-rg h6">Support more studies without increasing administrative burden.</p>
+                            
+                            <h3 className="h5 text-md">Enhanced Sponsor Confidence</h3>
+                            <p className="text-rg h6">Provide real-time dashboards and professional reporting.</p>
+                            <p className="text-rg h6">For emerging CROs, a CTMS is not just software — it is a growth accelerator.</p>
                         </div>
                     </div>
 

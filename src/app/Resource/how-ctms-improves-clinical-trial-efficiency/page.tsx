@@ -85,11 +85,11 @@ export default function Blog3() {
                     <div className="resource-detail-more-blogs">
                         <Link href='#' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
-                                <Image src="/images/" alt="resource-tab-1" width={680} height={404}></Image>
+                                <Image src="/images/live-blogs/Blog 1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
 
                             <div className="resources-card-text-wrapper">
-                                <h3 className="h5 text-md">Need to Change</h3>
+                                <h3 className="h5 text-md">The Complete Guide to Clinical Trial Management Systems (CTMS)</h3>
 
                                 <p className="h6 text-rg text-grey">Need to Change</p>
                             </div>
@@ -97,11 +97,11 @@ export default function Blog3() {
 
                         <Link href='#' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
-                                <Image src="/images/" alt="resource-tab-1" width={680} height={404}></Image>
+                                <Image src="/images/live-blogs/Blog 2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
 
                             <div className="resources-card-text-wrapper">
-                                <h3 className="h5 text-md">Need to Change</h3>
+                                <h3 className="h5 text-md">Top Features to Look for in a Modern CTMS Platform</h3>
 
                                 <p className="h6 text-rg text-grey">Need to Change</p>
                             </div>

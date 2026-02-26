@@ -26,9 +26,9 @@ export default function ResourceListingCards() {
                                 </TabsList>
 
                                 <TabsContent value="workflows" className="resources-cards-wrapper">
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
+                                    <Link href='/Resource/the-complete-guide-to-clinical-trial-management-systems' className="resources-tab-content resources-tab-content-1">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/live-blogs/Blog 1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -48,15 +48,15 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">Building a Future Ready Safety Workflow For Intelligence</h3>
+                                            <h3 className="h5 text-md">The Complete Guide to Clinical Trial Management Systems (CTMS)</h3>
 
                                             <p className="h6 text-rg text-grey">A future‑ready safety workflow integrates automation, AI‑driven insights, and standardized processes to help teams manage cases more efficiently and spot risks sooner.</p>
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
+                                    <Link href='/Resource/top-features-to-look-for-in-a-modern-ctms-platform' className="resources-tab-content resources-tab-content-2">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/live-blogs/Blog 2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -76,15 +76,15 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">Why Multi‑Source Safety Data Intake are Used For Trials</h3>
+                                            <h3 className="h5 text-md">Top Features to Look for in a Modern CTMS Platform</h3>
 
                                             <p className="h6 text-rg text-grey">It is essential during clinical trials because it brings together safety information from a wide range of channels—such as investigator reports, patient diaries, EDC systems, lab results.</p>
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-3">
+                                    <Link href='/Resource/how-ctms-improves-clinical-trial-efficiency' className="resources-tab-content resources-tab-content-3">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-3.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/live-blogs/Blog 3.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -104,15 +104,15 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">Enhancing Compliance With Intelligent Reporting</h3>
+                                            <h3 className="h5 text-md">How CTMS Improves Clinical Trial Efficiency</h3>
 
                                             <p className="h6 text-rg text-grey">Explore how automated aggregate reporting tools are helping safety teams reduce manual errors, streamline submissions, and stay audit‑ready across global regulatory requirements.</p>
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/regulatory-compliance-and-ctms' className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
-                                            <Image src="/images/resourcepage/resource-card-4.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                            <Image src="/images/live-blogs/Blog 5.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
 
                                         <div className="resource-card-btn-wrapper">
@@ -132,7 +132,175 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">The Role of Literature Surveillance in Risk Identification</h3>
+                                            <h3 className="h5 text-md">Regulatory Compliance and CTMS</h3>
+
+                                            <p className="h6 text-rg text-grey">Learn why continuous literature monitoring is essential for detecting emerging signals, strengthening case assessments, and supporting comprehensive safety evaluations.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/major-clinical-trial-challenges-and-how-a-ctms-solves-them' className="resources-tab-content resources-tab-content-1">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 6.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">ST</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Sarah Thompson</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Workflows
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">Major Clinical Trial Challenges — And How a CTMS Solves Them</h3>
+
+                                            <p className="h6 text-rg text-grey">A future‑ready safety workflow integrates automation, AI‑driven insights, and standardized processes to help teams manage cases more efficiently and spot risks sooner.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/cloud-based-vs-on-premise-ctms-making-the-right-decision' className="resources-tab-content resources-tab-content-2">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 7.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">RM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Rohan Mehta</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Detection
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">Cloud-Based vs On-Premise CTMS: Making the Right Decision</h3>
+
+                                            <p className="h6 text-rg text-grey">It is essential during clinical trials because it brings together safety information from a wide range of channels—such as investigator reports, patient diaries, EDC systems, lab results.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/the-role-of-ctms-in-risk-based-monitoring' className="resources-tab-content resources-tab-content-3">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 8.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">NP</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Neha Pandey</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Reporting
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">The Role of CTMS in Risk-Based Monitoring (RBM)</h3>
+
+                                            <p className="h6 text-rg text-grey">Explore how automated aggregate reporting tools are helping safety teams reduce manual errors, streamline submissions, and stay audit‑ready across global regulatory requirements.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/improving-site-performance-and-investigator-collaboration-through-ctms' className="resources-tab-content resources-tab-content-4">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 9.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">SM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Smriti Rai</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Monitoring
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">Improving Site Performance and Investigator Collaboration Through CTMS</h3>
+
+                                            <p className="h6 text-rg text-grey">Learn why continuous literature monitoring is essential for detecting emerging signals, strengthening case assessments, and supporting comprehensive safety evaluations.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/the-future-of-clinical-trial-technology' className="resources-tab-content resources-tab-content-4">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 11.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">SM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Smriti Rai</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Monitoring
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">The Future of Clinical Trial Technology: AI, Automation & Predictive CTMS</h3>
+
+                                            <p className="h6 text-rg text-grey">Learn why continuous literature monitoring is essential for detecting emerging signals, strengthening case assessments, and supporting comprehensive safety evaluations.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/why-small-mid-size-cros-need-a-ctms-more-than-ever' className="resources-tab-content resources-tab-content-4">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 12.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">SM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Smriti Rai</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Monitoring
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">Why Small & Mid-Size CROs Need a CTMS More Than Ever</h3>
 
                                             <p className="h6 text-rg text-grey">Learn why continuous literature monitoring is essential for detecting emerging signals, strengthening case assessments, and supporting comprehensive safety evaluations.</p>
                                         </div>
@@ -140,7 +308,7 @@ export default function ResourceListingCards() {
                                 </TabsContent>
 
                                 <TabsContent value="monitoring">
-                                    <Link href='/Resourcedetail'className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/resourcepage/resource-card-4.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>

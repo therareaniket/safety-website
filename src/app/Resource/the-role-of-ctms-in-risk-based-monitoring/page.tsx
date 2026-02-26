@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Blog7() {
+export default function Blog8() {
     return (
         <>
             <Header />
@@ -17,13 +17,13 @@ export default function Blog7() {
                     </div>
 
                     <div className="blog-sm-container blog-detail-text-wrapper">
-                        <h1 className="text-md h2">Cloud-Based vs On-Premise CTMS: Making the Right Decision</h1>
+                        <h1 className="text-md h2">The Role of CTMS in Risk-Based Monitoring (RBM)</h1>
 
-                        <p className="h6 text-rg">Technology infrastructure decisions significantly impact cost, scalability, and compliance.</p>
+                        <p className="h6 text-rg">Risk-Based Monitoring is a regulatory-supported strategy that prioritizes high-risk data and sites rather than performing equal oversight across all sites.</p>
                     </div>
 
                     <div className="resource-detail-banner-img">
-                        <Image src="/images/live-blogs/Blog 7.webp" alt="" width={1400} height={830}></Image>
+                        <Image src="/images/live-blogs/Blog 8.webp" alt="" width={1400} height={830}></Image>
                     </div>
 
                     <div className="resources-detail-social-links">
@@ -54,33 +54,43 @@ export default function Blog7() {
 
                     <div className="blog-sm-container blog-detail-qna-wrapper">
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Cloud-Based CTMS</h3>
-                            <p className="text-rg h6">Cloud solutions are hosted on secure remote servers and accessed via web browsers.</p>
-
-                            <p className="text-rg h6"><b>Advantages:</b></p>
-
+                            <h3 className="h5 text-md">What is RBM?</h3>
+                            <p className="text-rg h6">RBM focuses on:</p>
                             <ul>
-                                <li>Lower upfront investment</li>
-                                <li>Faster deployment</li>
-                                <li>Automatic system updates</li>
-                                <li>Remote access for global teams</li>
-                                <li>Scalable storage and performance</li>
-                                <li>Reduced IT burden</li>
+                                <li>• Critical data points</li>
+                                <li>• Key Risk Indicators (KRIs)</li>
+                                <li>• Centralized monitoring</li>
+                                <li>• Reduced on-site visits</li>
+                                <li>• Proactive issue detection</li>
                             </ul>
                         </div>
 
                         <div className="resource-detail-qna">
-                            <h3 className="h5 text-md">Security Considerations:</h3>
-
-                            <p className="text-rg h6"><b>Modern cloud CTMS platforms comply with:</b></p>
-
+                            <h3 className="h5 text-md">How CTMS Supports RBM</h3>
+                            <p className="text-rg h6"><b>Centralized Dashboards</b></p>
+                            <p className="text-rg h6">Real-time visualization of:</p>
                             <ul>
-                                <li>21 CFR Part 11</li>
-                                <li>GDPR</li>
-                                <li>ISO certifications</li>
-                                <li>Role-based access control</li>
-                                <li>Data encryption</li>
+                                <li>• Enrollment rates</li>
+                                <li>• Protocol deviations</li>
+                                <li>• Monitoring findings</li>
+                                <li>• Reduced on-site visits</li>
+                                <li>• Data entry delays</li>
                             </ul>
+                        </div>
+
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">KRI Tracking</h3>
+                            <p className="text-rg h6">Automated identification of sites exceeding predefined risk thresholds.</p>
+                        </div>
+
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">Trend Analysis</h3>
+                            <p className="text-rg h6">Historical performance analytics to predict emerging risks.</p>
+                        </div>
+                        <div className="resource-detail-qna">
+                            <h3 className="h5 text-md">Remote Oversight</h3>
+                            <p className="text-rg h6">Operational review without requiring physical site visits.</p>
+                            <p className="text-rg h6">A CTMS enables data-driven monitoring strategies aligned with regulatory expectations.</p>
                         </div>
                     </div>
 
