@@ -77,6 +77,7 @@ export default function Header() {
                     {/* Hamburger */}
                     <button
                         ref={hamburgerRef}
+                        aria-label="Hamburger Menu"
                         className={`hamburger ${menuOpen ? "active" : ""}`}
                         onClick={() => setMenuOpen(!menuOpen)}
                     >

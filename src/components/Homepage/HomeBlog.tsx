@@ -63,7 +63,7 @@ useEffect(() => {
                 <div className="blog-row-inner lg flex">
                     <Link href='/Resourcedetail' title="b-post" className="b-feature-item reveal-feature">
                         <div className="b-post-img">
-                            <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
+                            <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424}   priority />
                         </div>
 
                         <div className="b-post-content">
