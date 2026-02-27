@@ -234,10 +234,13 @@
 	0% { transform: translate(2px, -2px); }
 	100% { transform: translate(-2px, 2px); }
 }
+.b-arrw { animation: cta-arrow 1s infinite alternate; }
 
-.b-arrw {
-	/* transition: all 0.2s ease-in-out; */
-  	animation: cta-arrow 1s infinite alternate;
+footer{ perspective: 900px; }
+
+.f-cta-block {
+  /* transform-style: preserve-3d; */
+  backface-visibility: hidden;
 }
 
-
+/* .compliance-steps-validation-section{ position: sticky; top: 0;  } */

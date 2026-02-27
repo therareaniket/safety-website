@@ -83,7 +83,7 @@ export default function Blog2() {
                             <div className="resources-card-text-wrapper">
                                 <h3 className="h5 text-md">The Complete Guide to Clinical Trial Management Systems (CTMS)</h3>
 
-                                <p className="h6 text-rg text-grey">Need to Change</p>
+                                <p className="h6 text-rg text-grey">Clinical trials are becoming increasingly complex, involving multiple sites, global regulatory frameworks, tight timelines, and high financial stakes. Managing this complexity through spreadsheets and disconnected systems is no longer sustainable. A Clinical Trial Management System (CTMS) is the operational backbone that centralizes, tracks, and optimizes clinical trial activities from study startup to close-out.</p>
                             </div>
                         </Link>
 
@@ -95,7 +95,7 @@ export default function Blog2() {
                             <div className="resources-card-text-wrapper">
                                 <h3 className="h5 text-md">Top Features to Look for in a Modern CTMS Platform</h3>
 
-                                <p className="h6 text-rg text-grey">Need to Change</p>
+                                <p className="h6 text-rg text-grey">Choosing the right CTMS directly impacts operational efficiency and study success. A modern CTMS must go beyond basic tracking and offer intelligent automation and integration.</p>
                             </div>
                         </Link>
                     </div>

@@ -12,7 +12,7 @@ export default function ResourceDetailHeading() {
 
                     <div className="resource-detail-breadcrumb">
                         <span className="text-18 text-rg text-grey">{"<"}</span>
-                        <Link href="/Resource" className="text-18 text-rg text-grey">Back to Resources</Link>
+                        <Link href="/Resource" title="resources" className="text-18 text-rg text-grey">Back to Resources</Link>
 
                     </div>
 
@@ -44,10 +44,10 @@ export default function ResourceDetailHeading() {
 
                         <div className="resource-detail-right social-icons-wrapper">
                             <ul>
-                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
-                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
-                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
-                                <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
+                                <Link href="#" title="facebook"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
+                                <Link href="#" title="twitter"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
+                                <Link href="#" title="linkedin"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
+                                <Link href="#" title="instagram"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
                             </ul>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function ResourceDetailHeading() {
                     </div>
 
                     <div className="resource-detail-more-blogs">
-                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-1">
+                        <Link href='/Resourcedetail' title="read more" className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/resourcepage/resource-card-1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
@@ -92,7 +92,7 @@ export default function ResourceDetailHeading() {
                             </div>
                         </Link>
 
-                        <Link href='/Resourcedetail' className="resources-tab-content resources-tab-content-2">
+                        <Link href='/Resourcedetail' title="read more" className="resources-tab-content resources-tab-content-2">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/resourcepage/resource-card-2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>

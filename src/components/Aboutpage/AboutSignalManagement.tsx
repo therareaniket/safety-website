@@ -152,16 +152,21 @@ const ClickableCard = ({
 
   const isActive = index === activeIndex;
 
-  useEffect(() => {
-    if (!isActive || !direction) return;
+useEffect(() => {
+  if (!isActive || !direction) return;
 
+  const timer = setTimeout(() => {
     setIsThrowing(true);
 
     setTimeout(() => {
       onThrowComplete(index);
       setIsThrowing(false);
     }, 350);
-  }, [throwSignal]);
+
+  }, 0);
+
+  return () => clearTimeout(timer);
+}, [throwSignal]);
 
   const throwX = direction === 'right' ? 700 : -700;
   const throwRotate = direction === 'right' ? 25 : -25;

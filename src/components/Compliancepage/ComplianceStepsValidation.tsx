@@ -8,11 +8,17 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function ComplianceStepsValidation() {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const [activeStep, setActiveStep] = useState<number>(0);
+    const [isAutoScrolling, setIsAutoScrolling] = useState(false);
+
     useEffect(() => {
         const wrapper = wrapperRef.current;
         if (!wrapper) return;
 
         const handleScroll = () => {
+
+            // prevent conflict while auto animation is running
+            if (isAutoScrolling) return;
+
             const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
 
             let closestIndex = 0;
@@ -38,36 +44,56 @@ export default function ComplianceStepsValidation() {
 
         wrapper.addEventListener("scroll", handleScroll);
         return () => wrapper.removeEventListener("scroll", handleScroll);
-    }, []);
+
+    }, [isAutoScrolling]);
 
 
     useEffect(() => {
+
         const section = document.querySelector('.compliance-steps-validation-section');
         const wrapper = wrapperRef.current;
+
         if (!section || !wrapper) return;
+
+        const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
 
         let interval: NodeJS.Timeout;
 
         const observer = new IntersectionObserver(([entry]) => {
-            if (entry.isIntersecting) {
-                let step = 0;
 
-                interval = setInterval(() => {
-                    const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
-                    if (!cards.length) return;
+            if (!entry.isIntersecting) return;
 
-                    wrapper.scrollTo({
-                        left: cards[step].offsetLeft,
-                        behavior: "smooth"
-                    });
+            setIsAutoScrolling(true);
 
-                    setActiveStep(step);
+            let step = 0;
 
-                    step++;
-                    if (step >= cards.length) clearInterval(interval);
-                }, 2000);
-            }
-        }, { threshold: 0.4 });
+            setActiveStep(0);
+
+            wrapper.scrollTo({
+                left: cards[0].offsetLeft,
+                behavior: "smooth"
+            });
+
+            interval = setInterval(() => {
+
+                step++;
+
+                if (step >= cards.length) {
+                    clearInterval(interval);
+                    setIsAutoScrolling(false);
+                    return;
+                }
+
+                wrapper.scrollTo({
+                    left: cards[step].offsetLeft,
+                    behavior: "smooth"
+                });
+
+                setActiveStep(step);
+
+            }, 3500);
+
+        }, { threshold: 0.5 });
 
         observer.observe(section);
 
@@ -75,6 +101,7 @@ export default function ComplianceStepsValidation() {
             observer.disconnect();
             clearInterval(interval);
         };
+
     }, []);
 
 
@@ -125,6 +152,25 @@ export default function ComplianceStepsValidation() {
             wrapper.removeEventListener("mouseleave", handleMouseLeave);
             wrapper.removeEventListener("mouseup", handleMouseUp);
             wrapper.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []);
+
+    useEffect(() => {
+        const wrapper = wrapperRef.current;
+        if (!wrapper) return;
+
+        const handleWheel = (e: WheelEvent) => {
+            // Only convert vertical scroll to horizontal
+            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                e.preventDefault();
+                wrapper.scrollLeft += e.deltaY;
+            }
+        };
+
+        wrapper.addEventListener("wheel", handleWheel, { passive: false });
+
+        return () => {
+            wrapper.removeEventListener("wheel", handleWheel);
         };
     }, []);
 
@@ -204,6 +250,8 @@ export default function ComplianceStepsValidation() {
                                 <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
                             </div>
                         </div>
+
+
                     </div>
 
                     <div className="compliance-steps-divider-mobile">

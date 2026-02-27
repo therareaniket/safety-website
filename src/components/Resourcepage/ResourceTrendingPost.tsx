@@ -33,7 +33,7 @@ export default function ResourceTrendingPost() {
 
                     <Swiper {...swiperConfig} className='resource-listSwiper-wrapper'>
                         <SwiperSlide>
-                            <Link href="/Resource/the-complete-guide-to-clinical-trial-management-systems" className='resource-swiper-card'>
+                            <Link href="/Resource/the-complete-guide-to-clinical-trial-management-systems" title='blog 1' className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
                                         src="/images/live-blogs/Blog 1.webp"
@@ -81,9 +81,7 @@ export default function ResourceTrendingPost() {
                                     </div>
 
                                     <p className='h6 text-rg'>
-                                        Discover how AI-powered tools are speeding up case review,
-                                        improving signal detection accuracy, and helping safety teams
-                                        make faster, smarter decisions.
+                                        Clinical trials are becoming increasingly complex, involving multiple sites, global regulatory frameworks, tight timelines, and high financial stakes. Managing this complexity through spreadsheets and disconnected systems is no longer sustainable. A Clinical Trial Management System (CTMS) is the operational backbone that centralizes, tracks, and optimizes clinical trial activities from study startup to close-out.
                                     </p>
 
                                     <div className="trending-date-span">
@@ -101,7 +99,7 @@ export default function ResourceTrendingPost() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <Link href="/Resource/top-features-to-look-for-in-a-modern-ctms-platform" className='resource-swiper-card'>
+                            <Link href="/Resource/top-features-to-look-for-in-a-modern-ctms-platform" title='blog 2' className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
                                         src="/images/live-blogs/Blog 2.webp"
@@ -117,9 +115,7 @@ export default function ResourceTrendingPost() {
                                     </h3>
 
                                     <p className='h6 text-rg'>
-                                        Discover how AI-powered tools are speeding up case review,
-                                        improving signal detection accuracy, and helping safety teams
-                                        make faster, smarter decisions.
+                                        Choosing the right CTMS directly impacts operational efficiency and study success. A modern CTMS must go beyond basic tracking and offer intelligent automation and integration.
                                     </p>
 
                                     <div className="trending-date-span">
@@ -149,9 +145,7 @@ export default function ResourceTrendingPost() {
                                     </div>
 
                                     <p className='h6 text-rg'>
-                                        Discover how AI-powered tools are speeding up case review,
-                                        improving signal detection accuracy, and helping safety teams
-                                        make faster, smarter decisions.
+                                        Choosing the right CTMS directly impacts operational efficiency and study success. A modern CTMS must go beyond basic tracking and offer intelligent automation and integration.
                                     </p>
 
                                     <div className="trending-date-span">
@@ -169,7 +163,7 @@ export default function ResourceTrendingPost() {
                         </SwiperSlide>
 
                         <SwiperSlide>
-                            <Link href="/Resource/how-ctms-improves-clinical-trial-efficiency" className='resource-swiper-card'>
+                            <Link href="/Resource/how-ctms-improves-clinical-trial-efficiency" title='blog 3' className='resource-swiper-card'>
                                 <div className="blog-swiper-left blog-swiper-left-desktop">
                                     <Image
                                         src="/images/live-blogs/Blog 3.webp"
@@ -181,13 +175,11 @@ export default function ResourceTrendingPost() {
 
                                 <div className="blog-swiper-right blog-swiper-right-desktop">
                                     <h3 className="h5 text-md">
-                                        Building a Future Ready Safety Workflow
+                                        How CTMS Improves Clinical Trial Efficiency
                                     </h3>
 
                                     <p className='h6 text-rg'>
-                                        Discover how AI-powered tools are speeding up case review,
-                                        improving signal detection accuracy, and helping safety teams
-                                        make faster, smarter decisions.
+                                        Operational inefficiencies are one of the leading causes of trial delays. CTMS platforms streamline processes and improve coordination across stakeholders.
                                     </p>
 
                                     <div className="trending-date-span">
@@ -204,12 +196,12 @@ export default function ResourceTrendingPost() {
 
                                 <div className="blog-swiper-mob-res">
                                     <h3 className="h5 text-md">
-                                        Building a Future Ready Safety Workflow
+                                        How CTMS Improves Clinical Trial Efficiency
                                     </h3>
 
                                     <div className="blog-swiper-left">
                                         <Image
-                                            src="/images/resourcepage/trending-post-2.webp"
+                                            src="/images/live-blogs/Blog 3.webp"
                                             alt="Trending post"
                                             width={714}
                                             height={424}
@@ -217,9 +209,7 @@ export default function ResourceTrendingPost() {
                                     </div>
 
                                     <p className='h6 text-rg'>
-                                        Discover how AI-powered tools are speeding up case review,
-                                        improving signal detection accuracy, and helping safety teams
-                                        make faster, smarter decisions.
+                                        Operational inefficiencies are one of the leading causes of trial delays. CTMS platforms streamline processes and improve coordination across stakeholders.
                                     </p>
 
                                     <div className="trending-date-span">

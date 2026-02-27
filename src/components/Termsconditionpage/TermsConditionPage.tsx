@@ -1,7 +1,5 @@
 'use client';
 
-"use client"
-
 import Link from "next/link";
 
 export default function TermsConditionPage() {
@@ -76,8 +74,7 @@ export default function TermsConditionPage() {
                     <div className="text-block">
                         <h2 className="h4 text-md">10. Contact</h2>
 
-                        <p className="h6 da-site-para">General inquiries: <Link href="mailto:enquiry@dfolds.com">enquiry@dfolds.com</Link></p>
-                        <p className="h6 da-site-para">Legal notices & contracts: <Link href="mailto:contactus@dfolds.com">contactus@dfolds.com</Link></p>
+                        <p className="h6 da-site-para">General inquiries: <Link href="mailto:enquiry@dfolds.com" title="email">enquiry@dhatusafety.com</Link></p>
                         <p className="h6 da-site-para">Address: DFOLDS LLC, 262 CHAPMAN RD, STE 240, NEWARK, DE 19702, USA</p>
                     </div>
                 </div>

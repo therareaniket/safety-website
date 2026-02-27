@@ -54,7 +54,7 @@ export default function Header() {
         <header>
             <div className="container">
                 <nav className="nav-wrapper">
-                    <Link href="/" className="navbar-img-wrapper">
+                    <Link href="/" title="logo" className="navbar-img-wrapper">
                         <Image
                             className="navbar-logo"
                             src='/images/homepage/logo.svg'
@@ -66,12 +66,12 @@ export default function Header() {
                     </Link>
 
                     <ul className="navbar-links flex">
-                        <li><Link href="/" className={`nav-link text-16 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
-                        <li><Link href="/About" className={`nav-link text-16 ${pathname === "/About" ? "active-link" : ""}`}>About</Link></li>
-                        <li><Link href="/Pricing" className={`nav-link text-16 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link></li>
-                        <li><Link href="/Compliance" className={`nav-link text-16 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link></li>
-                        <li><Link href="/Resource" className={`nav-link text-16 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link></li>
-                        <li><Link href="/Contact" className={`nav-link text-16 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link></li>
+                        <li><Link href="/" title="home" className={`nav-link text-16 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
+                        <li><Link href="/About" title="about" className={`nav-link text-16 ${pathname === "/About" ? "active-link" : ""}`}>About</Link></li>
+                        <li><Link href="/Pricing" title="pricing" className={`nav-link text-16 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link></li>
+                        <li><Link href="/Compliance" title="compliance" className={`nav-link text-16 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link></li>
+                        <li><Link href="/Resource" title="resource" className={`nav-link text-16 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link></li>
+                        <li><Link href="/Contact" title="contact" className={`nav-link text-16 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link></li>
                     </ul>
 
                     {/* Hamburger */}
@@ -91,25 +91,25 @@ export default function Header() {
                         className={`navbar-links nav-mobile ${menuOpen ? "active" : ""}`}
                     >
                         <ul className="mobile-menu-ul">
-                            <li><Link href="/" className={`nav-link text-18 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
-                            <li><Link href="/About" className={`nav-link text-18 ${pathname === "/About" ? "active-link" : ""}`}>About</Link></li>
-                            <li><Link href="/Pricing" className={`nav-link text-18 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link></li>
-                            <li><Link href="/Compliance" className={`nav-link text-18 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link></li>
-                            <li><Link href="/Resource" className={`nav-link text-18 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link></li>
-                            <li><Link href="/Contact" className={`nav-link text-18 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link></li>
+                            <li><Link href="/" title="home" className={`nav-link text-18 ${pathname === "/" ? "active-link" : ""}`}>Home</Link></li>
+                            <li><Link href="/About" title="about" className={`nav-link text-18 ${pathname === "/About" ? "active-link" : ""}`}>About</Link></li>
+                            <li><Link href="/Pricing" title="pricing" className={`nav-link text-18 ${pathname === "/Pricing" ? "active-link" : ""}`}>Pricing</Link></li>
+                            <li><Link href="/Compliance" title="compliance" className={`nav-link text-18 ${pathname === "/Compliance" ? "active-link" : ""}`}>Compliance & Quality</Link></li>
+                            <li><Link href="/Resource" title="resource" className={`nav-link text-18 ${pathname === "/Resource" ? "active-link" : ""}`}>Resources</Link></li>
+                            <li><Link href="/Contact" title="contact" className={`nav-link text-18 ${pathname === "/Contact" ? "active-link" : ""}`}>Contact</Link></li>
                         </ul>
 
                         <span className="menu-hl"></span>
 
                         <div className="nav-contact-block">
-                            <Link href="tel:+1 512 843 2002"><i className="icon-footerCall"></i>+1 512 843 2002</Link>
-                            <Link href="mailto:enquiry@dhatusafety.com"><i className="icon-footerMail"></i>enquiry@dhatusafety.com</Link>
+                            <Link href="tel:+1 512 843 2002" title="call"><i className="icon-footerCall"></i>+1 512 843 2002</Link>
+                            <Link href="mailto:enquiry@dhatusafety.com" title="mail"><i className="icon-footerMail"></i>enquiry@dhatusafety.com</Link>
 
                             <ul className="nav-connect-socials">
-                                <li><Link href="#"><i className="icon-linkedin"></i></Link></li>
-                                <li><Link href="#"><i className="icon-twitter"></i></Link></li>
-                                <li><Link href="#"><i className="icon-instagram"></i></Link></li>
-                                <li><Link href="#"><i className="icon-facebook"></i></Link></li>
+                                <li><Link href="#" title="linkedin"><i className="icon-linkedin"></i></Link></li>
+                                <li><Link href="#" title="twitter"><i className="icon-twitter"></i></Link></li>
+                                <li><Link href="#" title="instagram"><i className="icon-instagram"></i></Link></li>
+                                <li><Link href="#" title="facebook"><i className="icon-facebook"></i></Link></li>
                             </ul>
                         </div>
                     </div>

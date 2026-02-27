@@ -99,6 +99,8 @@
     .op-item-title.one{ top: 6px; }
     .op-item-title.three{ bottom: -5px; }
     .op-item-title.four{ left: 24px; }
+
+    .coming-soon-wrapper h1{ font-size: 54px; line-height: 66px; }
 }
 
 @media screen and (max-width: 1599px) {
@@ -209,6 +211,9 @@
     .page-not-found-inner img{ width: 410px; height: 410px; }
     .op-item-title.one, .op-item-title.two, .op-item-title.three, .op-item-title.four{ font-size: 18px; line-height: 22px; }
     .op-item-title.one{ width: 160px; top: 18px; } .op-item-title.two{ width: 160px; right: -12px; } .op-item-title.three{ bottom: 2px; } .op-item-title.four{ left: 8px; }
+
+    .coming-soon-wrapper h1{ font-size: 52px; line-height: 60px; }
+    .comming-soon-btn{ margin-top: 40px; }
 }
 
 @media screen and (max-width: 1439px) {
@@ -300,6 +305,9 @@
 
     .op-item-title.one, .op-item-title.two, .op-item-title.three, .op-item-title.four{ font-size: 16px; line-height: 22px; }
     .op-item-title.one{ width: 150px; top: 40px; } .op-item-title.two{ width: 140px; } .op-item-title.three{ bottom: 23px; }
+
+    .coming-soon-wrapper h1{ font-size: 48px; line-height: 52px; }
+    .blog-swiper-left img{ height: 364px; }
 }
 
 @media screen and (max-width: 1359px) {
@@ -372,7 +380,7 @@
     .resource-detail-banner-img{ width: 100%; height: 430px; }
     .social-icons-wrapper img{ width: 24px; height: 24px; }
     .resources-detail-social-links{ padding-bottom: 30px; }
-    .blog-swiper-left img{ height: 100%; }
+    .blog-swiper-left img{ height: 342px; }
     .social-icons-wrapper img{ width: 20px; height: 20px; }
     .resource-trending-post .blog-swiper-left { width: 48%; }
     .resource-trending-post .blog-swiper-right { width: 48%; }
@@ -412,6 +420,8 @@
     .op-item-title.two{ right: -10px;} .op-item-title.one{ top: 50px; }
     .op-item-title.three{ bottom: 35px; }
     .op-item-title.four{ left: 16px; }
+
+    .name-initial{ width: 40px !important; height: 40px !important; }
 }
 
 @media screen and (max-width: 1199px) {
@@ -488,6 +498,7 @@
     .resource-listing-tabs-wrapper{ margin-bottom: 40px; }
     .resource-heading-wrapper h1{ margin-bottom: 15px; }
     .resources-tab-content .resource-card-image-wrapper{ height: 200px; }
+    .blog-swiper-left img{ height: 100%; }
     
 
     /* resource detail */
@@ -530,9 +541,13 @@
     .op-item-number.three{ bottom: 25px; }
     .op-item-number.four{ left: 25px; }
     .op-item-title.one{ top: 65px; }
-    .op-item-title.four{ left: -5px; }
+    .op-item-title.four{ left: -2px; }
     .op-item-title.three{ bottom: 50px; }
     .eco-title{ height: 140px; }
+
+    .op-text.text-18{ width: 80%; }
+
+    .coming-soon-wrapper h1{ font-size: 44px; line-height: 50px; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -711,6 +726,8 @@
     .op-item-title.one{ top: 30px; }
     .op-item-title.three{ bottom: 10px; }
     .eco-title{ height: 105px; }
+
+    .coming-soon-wrapper h1{ font-size: 40px; line-height: 50px; }
 } 
 
 @media screen and (max-width: 991px) {
@@ -771,7 +788,7 @@
     .compliance-steps-divider-desktop{ display: none; }
     .compliance-steps-divider-mobile{ display: block; }
     /* .compliance-steps-divider-mobile .compliance-validation-steps-wrapper .compliance-steps-card{ flex: 0 0 0; } */
-    .compliance-steps-card-responsive{ width: 416px; position: relative; }
+    .compliance-steps-card-responsive{ width: 416px; position: relative; height: 150px; }
     .compliance-steps-card-responsive p { width: 275px; }
     /* .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{  transform: translateY(0px); transform: translateX(60%); } */
     .compliance-step-span{ background-color: #C7B0D8; }
@@ -796,11 +813,11 @@
         background-image: url(/images/compliancepage/compliance-steps-responsive-arrow.svg);
         background-repeat: no-repeat;
         background-size: contain;
-        width: 623px;
-        height: 299px;
+        width: 607px;
+        height: 253px;
         position: absolute;
         top: -160px;
-        left: -213px;
+        left: -200px;
     }
     .compliance-validation-steps-wrapper 
     .compliance-steps-card-responsive:nth-child(1)::before{
@@ -848,6 +865,8 @@
 
     .page-not-found-inner img{ width: 300px; height: 300px; }
     .eco-img img{ height: 255px; }
+
+    .comming-soon-btn{ margin-top: 35px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -940,18 +959,19 @@
     .legel-page{ padding-top: 30px !important;  }
     .operational-card-1 h4{ width: 100%; }
 
+    .compliance-steps-card-responsive{ height: 140px; }
 
     .compliance-steps-card-1, .compliance-steps-card-3, .compliance-steps-card-5{ transform: translateX(-10%); }
     .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{ transform: translateX(10%); }
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(2n):before{
         width: 451px;
-        top: -140px;
+        top: -125px;
         left: -44px; 
     }
 
     .compliance-validation-steps-wrapper .compliance-steps-card-responsive:nth-child(odd):before{
         width: 451px; 
-        top: -140px;
+        top: -125px;
     }
 
     .compliance-validation-steps-wrapper{ gap: 0; }
@@ -969,6 +989,9 @@
     .page-not-found-inner img{ width: 250px; height: 250px; }
     .op-item-title.two{ right: -90px; } .op-item-title.one{ top: 20px; } .op-item-title.three{ bottom: 0; }
     .op-item-title.four{ left: -60px; }
+
+    .comming-soon-btn .book-btn-icon{ width: 32px; height: 32px; }  
+    .comming-soon-btn{ gap: 16px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -1025,7 +1048,7 @@
         width: 299px;
         height: 299px;
         position: absolute;
-        top: -132px;
+        top: -127px;
         left: -20px;
     }
 
@@ -1038,7 +1061,7 @@
         width: 299px;
         height: 299px;
         position: absolute;
-        top: -132px;
+        top: -127px;
         left: 8px;    
     }
 
@@ -1095,7 +1118,7 @@
     .resources-tab-content .resource-card-image-wrapper{ height: 200px; }
     .blog-swiper-mob-res h3{ width: 100%; margin-bottom: 0; }
     .blog-swiper-mob-res{ text-align: left;  }
-
+    .resource-listing-swiper-wrapper h2{ text-align: left; }
 
     /* contact */
     .contact-form-card div{ width: 152px; }
@@ -1130,15 +1153,13 @@
     .compliance-steps-mobile-swiper { width: 100%; padding: 20px 0; }
 
     /* main swiper */
-    .compliance-steps-swiper {
-  width: 100%;
-    }
+    .compliance-steps-swiper { width: 100%; }
 
     /* IMPORTANT: target real slide */
     .compliance-steps-swiper .swiper-slide { width: 100% !important; margin-right: 20px; }
     .efficiency-step-card-3 h3{ width: 100%; }
 
-/* card design */
+    /* card design */
     .compliance-swiper-card { background: rgba(255, 255, 255, 0.2); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); border: 1px solid rgba(255, 255, 255, 0.3); padding: 20px; color: white;}
     .card-inner { display: flex; flex-direction: column; gap: 10px; }
     
@@ -1160,6 +1181,9 @@
     .op-item-title.two{ width: 90px; }
     .op-item-title.three{ bottom: 4px; }
     .name-initial{ width: 40px !important; min-width: auto; height: 40px !important; }
+    .efficiency-step-card h3{ width: 100%; }
+
+    .nav-seprator{ width: 60px !important; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1228,13 +1252,16 @@
 
    .op-item-title.two{ right: -23px; }
    .op-item-title.four{ left: -15px; }
+    .efficiency-step-card h3{ width: 80%; }
+
+    .coming-soon-wrapper h1{ font-size: 36px; line-height: 42px; }
 }
 
 @media screen and (max-width: 459px) {
     /* .section{ padding: 40px 0; } */
     /* about */
     .build-to-advance-right-wrapper{ padding: 20px; }
-    .compliance-driven-wrapper{ width: 100%; }
+    /* .compliance-driven-wrapper{ width: 100%; } */
     /* .compliance-driven-by span, .build-for-safety-Operations{ width: 38px !important; height: 32px !important; } */
     .about-reporting-compliance-right img{ height: 300px !important;  }
     .signal-management-right{ width: 230px; }
@@ -1244,7 +1271,6 @@
     /* compliance  */
     .operational-card-right{ width: 290px; }
     .compliance-steps-divider-mobile .compliance-validation-steps-wrapper{ gap: 20px; }
-    .compliance-steps-card-responsive{ width: 100%; }
     .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6 { transform: translateX(0); }
     .fq-show-icon { top: 50%; transform: translateY(-50%); }
     .b-feature-item img { height: 200px; }
@@ -1336,10 +1362,12 @@
     .compliance-validation-support-card{ height: 185px; }
     .compliance-pointers-card .compliance-pointers-text h3{ width: 100%; }
 
-    .op-item-title.one{ top: 10px; } .op-item-title.three{ bottom: -5px; } .op-item-title.two{ right: -16px; }
+    .op-item-title.one{ top: 10px; } .op-item-title.three{ bottom: -5px; } .op-item-title.two{ right: 6px; } .op-item-title.four{ left: -1px; }
     .hero-wrapper{ padding-top: 40px !important; }
     .op-item-title.two, .op-item-title.four{ top: 60%; }
     .name-initial{ width: 30px !important; height: 30px !important; }
+
+    .coming-soon-wrapper h1{ font-size: 30px; line-height: 40px; }
 }
 
 @media screen and (max-width: 374px) {

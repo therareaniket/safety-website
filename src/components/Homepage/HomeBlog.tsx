@@ -61,7 +61,7 @@ useEffect(() => {
                 </div>
 
                 <div className="blog-row-inner lg flex">
-                    <Link href='/Resourcedetail' className="b-feature-item reveal-feature">
+                    <Link href='/Resourcedetail' title="b-post" className="b-feature-item reveal-feature">
                         <div className="b-post-img">
                             <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
                         </div>
@@ -82,7 +82,7 @@ useEffect(() => {
                     </Link>
 
                     <div className="b-post-items flex mini ">
-                        <Link href='/Resourcedetail' className="post-item flex reveal-post">
+                        <Link href='/Resourcedetail' title="b-post" className="post-item flex reveal-post">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-2.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
@@ -92,7 +92,7 @@ useEffect(() => {
                             </div>
                         </Link>
 
-                        <Link href='/Resourcedetail' className="post-item flex reveal-post">
+                        <Link href='/Resourcedetail' title="b-post" className="post-item flex reveal-post">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-3.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
@@ -102,7 +102,7 @@ useEffect(() => {
                             </div>
                         </Link>
 
-                        <Link href='/Resourcedetail' className="post-item flex reveal-post">
+                        <Link href='/Resourcedetail' title="b-post" className="post-item flex reveal-post">
                             <div className="b-post-img">
                                 <Image src='/images/homepage/blogs/home-blog-4.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>

@@ -20,7 +20,7 @@ export default function Footer() {
                     <div className="footer-inner-main flex">
                         <div className="f-col-one flex flex-col">
                             <div className='f-logo'>
-                                <Link href="/" className="navbar-img-wrapper">
+                                <Link href="/" title="dhatusafety-logo" className="navbar-img-wrapper">
                                     <Image className="navbar-logo" src='/images/homepage/logo.svg' alt="dhatusafety-logo" width={150}
                                         height={25} priority />
                                 </Link>
@@ -44,10 +44,10 @@ export default function Footer() {
 
                             <div className="f-contact flex">
                                 <ul className='flex social-links'>
-                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
-                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
-                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
-                                    <Link href="#"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
+                                    <Link href="#" title="facebook"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
+                                    <Link href="#" title="twitter"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
+                                    <Link href="#" title="linkedin"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
+                                    <Link href="#" title="instagram"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
                                 </ul>
                             </div>
                         </div>
@@ -57,37 +57,37 @@ export default function Footer() {
                                 <h2 className='text-18 text-sb text-grey'>Quick Links</h2>
                                 <ul className="footer-links">
                                     <li>
-                                        <Link href="/" className={`f-link text-16 text-grey ${pathname === "/" ? "active-link" : ""}`}>
+                                        <Link href="/" title="home" className={`f-link text-16 text-grey ${pathname === "/" ? "active-link" : ""}`}>
                                             Home
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/About" className={`f-link text-16 text-grey ${pathname === "/About" ? "active-link" : ""}`}>
+                                        <Link href="/About" title="about" className={`f-link text-16 text-grey ${pathname === "/About" ? "active-link" : ""}`}>
                                             About
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/Pricing" className={`f-link text-16 text-grey ${pathname === "/Pricing" ? "active-link" : ""}`}>
+                                        <Link href="/Pricing" title="pricing" className={`f-link text-16 text-grey ${pathname === "/Pricing" ? "active-link" : ""}`}>
                                             Pricing
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/Compliance" className={`f-link text-16 text-grey ${pathname === "/Compliance" ? "active-link" : ""}`}>
+                                        <Link href="/Compliance" title="compliance" className={`f-link text-16 text-grey ${pathname === "/Compliance" ? "active-link" : ""}`}>
                                             Compliance & quality
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/Resource" className={`f-link text-16 text-grey ${pathname === "/Resource" ? "active-link" : ""}`}>
+                                        <Link href="/Resource" title="resources" className={`f-link text-16 text-grey ${pathname === "/Resource" ? "active-link" : ""}`}>
                                             Resources
                                         </Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/Contact" className={`f-link text-16 text-grey ${pathname === "/Contact" ? "active-link" : ""}`}>
+                                        <Link href="/Contact" title="contact" className={`f-link text-16 text-grey ${pathname === "/Contact" ? "active-link" : ""}`}>
                                             Contact
                                         </Link>
                                     </li>
@@ -98,13 +98,13 @@ export default function Footer() {
                                 <h2 className='text-18 text-sb text-grey'>Contact</h2>
                                 <ul className="">
                                     <li>
-                                        <Link href="callto:+1 512 843 2002" className="further-link-wrapper f-link flex text-16 text-grey ">
+                                        <Link href="callto:+1 512 843 2002" title="call" className="further-link-wrapper f-link flex text-16 text-grey ">
                                             <span className="icon-footerCall"></span>
                                             <p className='text-16 text-grey'>+1 512 843 2002</p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="mailto:enquiry@dhatusafety.com" className="further-link-wrapper f-link flex text-16 text-grey">
+                                        <Link href="mailto:enquiry@dhatusafety.com" title="mail" className="further-link-wrapper f-link flex text-16 text-grey">
                                             <span className="icon-footerMail"></span>
                                             <p className='text-16 text-grey'>enquiry@dhatusafety.com</p>
                                         </Link>
@@ -116,12 +116,12 @@ export default function Footer() {
                                 <h2 className='text-18 text-sb text-grey'>More</h2>
                                 <ul className="">
                                     <li>
-                                        <Link href="/TermsCondition" className="further-link-wrapper f-link flex text-16 text-grey ">
+                                        <Link href="/TermsCondition" title="terms and condition" className="further-link-wrapper f-link flex text-16 text-grey ">
                                             <p className='text-16 text-grey'>Terms of Use</p>
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/PrivacyPolicy" className="further-link-wrapper f-link flex text-16 text-grey">
+                                        <Link href="/PrivacyPolicy" title="privacy policy" className="further-link-wrapper f-link flex text-16 text-grey">
                                             <p className='text-16 text-grey'>Privacy Policy</p>
                                         </Link>
                                     </li>

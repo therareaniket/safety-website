@@ -11,7 +11,7 @@ export default function HomeHero() {
                             <h1 className="text-md">Central Hub of Safety <br /> & Intelligence</h1>
                             <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p>
                             <div className="book-demo-main lg">
-                                <Link href='#'>
+                                <Link href='/ComingSoon' title="Book a demo">
                                     <div className="book-demo-inner flex">
                                         <span className="flex">
                                             <span className="book-btn-icon bg-purple centered-block"><svg width="21" height="19" className="b-arrw" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ export default function HomeHero() {
                         </div>
                     </div>
                     <div className="book-demo-main sm">
-                        <Link href='#'>
+                        <Link href='/ComingSoon' title="Book a demo">
                             <div className="book-demo-inner flex">
                                 <span className="flex">
                                     <span className="book-btn-icon bg-purple centered-block"><svg width="21" height="19" className="b-arrw" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
