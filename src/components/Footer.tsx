@@ -44,10 +44,10 @@ export default function Footer() {
 
                             <div className="f-contact flex">
                                 <ul className='flex social-links'>
-                                    <Link href="#" title="facebook"><li className="text-grey footer-social-icons"><span className="icon-facebook"></span></li></Link>
-                                    <Link href="#" title="twitter"><li className="text-grey footer-social-icons"><span className="icon-twitter"></span></li></Link>
-                                    <Link href="#" title="linkedin"><li className="text-grey footer-social-icons"><span className="icon-linkedin"></span></li></Link>
-                                    <Link href="#" title="instagram"><li className="text-grey footer-social-icons"><span className="icon-instagram"></span></li></Link>
+                                    <li className="text-grey footer-social-icons"><Link href="#" title="facebook"><span className="icon-facebook"></span></Link></li>
+                                    <li className="text-grey footer-social-icons"><Link href="#" title="twitter"><span className="icon-twitter"></span></Link></li>
+                                    <li className="text-grey footer-social-icons"><Link href="#" title="linkedin"><span className="icon-linkedin"></span></Link></li>
+                                    <li className="text-grey footer-social-icons"><Link href="#" title="instagram"><span className="icon-instagram"></span></Link></li>
                                 </ul>
                             </div>
                         </div>
