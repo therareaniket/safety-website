@@ -13,3 +13,5 @@ header { position: sticky; top: 0; }
 
 .resource-detail-qna p { margin-bottom: 16px; }
 .resource-detail-qna ul li { list-style-type: disc; list-style-position: inside; }
+
+.main-btn { gap: 15px; align-items: center; }
