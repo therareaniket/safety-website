@@ -84,7 +84,7 @@ export default function Blog12() {
                     </div>
 
                     <div className="resource-detail-more-blogs">
-                        <Link href='#' className="resources-tab-content resources-tab-content-1">
+                        <Link href='/Resource/the-complete-guide-to-clinical-trial-management-systems' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/live-blogs/Blog 1.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>
@@ -96,7 +96,7 @@ export default function Blog12() {
                             </div>
                         </Link>
 
-                        <Link href='#' className="resources-tab-content resources-tab-content-1">
+                        <Link href='/Resource/top-features-to-look-for-in-a-modern-ctms-platform' className="resources-tab-content resources-tab-content-1">
                             <div className="resource-card-image-wrapper">
                                 <Image src="/images/live-blogs/Blog 2.webp" alt="resource-tab-1" width={680} height={404}></Image>
                             </div>

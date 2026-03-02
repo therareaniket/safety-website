@@ -110,7 +110,35 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/regulatory-compliance-and-ctms' title="Blog 4" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/budget-planning-and-financial-transparency-in-clinical-trials-through-ctms' title="Blog 4" className="resources-tab-content resources-tab-content-4">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 4.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">SM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Smriti Rai</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Monitoring
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">CTMS Implementation Guide</h3>
+
+                                            <p className="h6 text-rg text-grey">Implementing a CTMS requires strategic planning, stakeholder alignment, and effective change management to ensure successful adoption and maximize return on investment.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/regulatory-compliance-and-ctms' title="Blog 5" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 5.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -138,7 +166,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/major-clinical-trial-challenges-and-how-a-ctms-solves-them' title="Blog 5" className="resources-tab-content resources-tab-content-1">
+                                    <Link href='/Resource/major-clinical-trial-challenges-and-how-a-ctms-solves-them' title="Blog 6" className="resources-tab-content resources-tab-content-1">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 6.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -166,7 +194,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/cloud-based-vs-on-premise-ctms-making-the-right-decision' title="Blog 6" className="resources-tab-content resources-tab-content-2">
+                                    <Link href='/Resource/cloud-based-vs-on-premise-ctms-making-the-right-decision' title="Blog 7" className="resources-tab-content resources-tab-content-2">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 7.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -194,7 +222,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/the-role-of-ctms-in-risk-based-monitoring' title="Blog 7" className="resources-tab-content resources-tab-content-3">
+                                    <Link href='/Resource/the-role-of-ctms-in-risk-based-monitoring' title="Blog 8" className="resources-tab-content resources-tab-content-3">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 8.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -222,7 +250,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/improving-site-performance-and-investigator-collaboration-through-ctms' title="Blog 8" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/improving-site-performance-and-investigator-collaboration-through-ctms' title="Blog 9" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 9.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -250,7 +278,35 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/the-future-of-clinical-trial-technology' title="Blog 9" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/ctms-implementation-guide' title="Blog 10" className="resources-tab-content resources-tab-content-4">
+                                        <div className="resource-card-image-wrapper">
+                                            <Image src="/images/live-blogs/Blog 10.webp" alt="resource-tab-1" width={680} height={404}></Image>
+                                        </div>
+
+                                        <div className="resource-card-btn-wrapper">
+                                            <div className="resources-card-btn-dtl-left">
+                                                <span className="text-sb">SM</span>
+
+                                                <div className="resource-card-date">
+                                                    <p className="text-18 text-rg text-grey">Smriti Rai</p>
+
+                                                    <p className="text-18 text-rg text-grey">27 January 2026</p>
+                                                </div>
+                                            </div>
+
+                                            <div className="resources-card-btn-detail-right text-16">
+                                                Monitoring
+                                            </div>
+                                        </div>
+
+                                        <div className="resources-card-text-wrapper">
+                                            <h3 className="h5 text-md">Budget Planning and Financial Transparency in Clinical Trials Through CTMS</h3>
+
+                                            <p className="h6 text-rg text-grey">A modern CTMS improves financial transparency in clinical trials by replacing manual budget tracking with structured, real-time financial management.</p>
+                                        </div>
+                                    </Link>
+
+                                    <Link href='/Resource/the-future-of-clinical-trial-technology' title="Blog 11" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 11.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -278,7 +334,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/why-small-mid-size-cros-need-a-ctms-more-than-ever' title="Blog 10" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/why-small-mid-size-cros-need-a-ctms-more-than-ever' title="Blog 12" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 12.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -305,6 +361,8 @@ export default function ResourceListingCards() {
                                             <p className="h6 text-rg text-grey">Smaller CROs face increasing pressure to compete with global players while maintaining profitability.</p>
                                         </div>
                                     </Link>
+
+
                                 </TabsContent>
 
                                 <TabsContent value="monitoring" className="resources-cards-wrapper">
