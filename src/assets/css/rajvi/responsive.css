@@ -548,6 +548,7 @@
     .op-text.text-18{ width: 80%; }
 
     .coming-soon-wrapper h1{ font-size: 44px; line-height: 50px; }
+    .faq-row{ margin-top: 0; }
 }
 
 @media screen and (max-width: 1023px) {
@@ -728,6 +729,9 @@
     .eco-title{ height: 105px; }
 
     .coming-soon-wrapper h1{ font-size: 40px; line-height: 50px; }
+    .pf-item{ width: 220px; }
+    .pf-item:nth-child(4){ width: 280px; }
+    .pf-item:nth-child(5){ width: 280px; }
 } 
 
 @media screen and (max-width: 991px) {
@@ -746,8 +750,8 @@
 
     .about-reporting-submission-compliance-inner{ margin-bottom: 30px; }
     /* .about-signal-management-cards-wrapper{ height: 365px !important; } */
-    .compliance-validation-support-card-2, .compliance-validation-support-card-3{ height: 220px; }
-    .compliance-validation-support-card-1, .compliance-validation-support-card-4{ height: 220px; }
+    .compliance-validation-support-card-2, .compliance-validation-support-card-3{ height: 200px; }
+    .compliance-validation-support-card-1, .compliance-validation-support-card-4{ height: 200px; }
 
     /* compliance */
     .compliance-operational-wrapper{ gap: 30px; }
@@ -789,7 +793,7 @@
     .compliance-steps-divider-mobile{ display: block; }
     /* .compliance-steps-divider-mobile .compliance-validation-steps-wrapper .compliance-steps-card{ flex: 0 0 0; } */
     .compliance-steps-card-responsive{ width: 416px; position: relative; height: 150px; }
-    .compliance-steps-card-responsive p { width: 275px; }
+    .compliance-steps-card-responsive p { width: 300px; }
     /* .compliance-steps-card-2, .compliance-steps-card-4, .compliance-steps-card-6{  transform: translateY(0px); transform: translateX(60%); } */
     .compliance-step-span{ background-color: #C7B0D8; }
     .compliance-validation-steps-wrapper 
@@ -853,7 +857,6 @@
     .site-all-svg{ width: 32px !important; height: 32px!important    ; }
     .site-all-svg img{ width: 16px !important; height: 16px!important    ; }
 
-    .compliance-validation-support-card-2, .compliance-validation-support-card-3, .compliance-validation-support-card-1, .compliance-validation-support-card-4{ height: 210px; }
     .operational-card-1 h4{ width: 150px; }
 
     .compliance-validation-steps-wrapper{ flex-direction: column; align-items: center; }
@@ -867,6 +870,9 @@
     .eco-img img{ height: 255px; }
 
     .comming-soon-btn{ margin-top: 35px; }
+    .pf-item{ width: 220px; }
+    .pf-item:nth-child(4){ width: 280px; }
+    .pf-item:nth-child(5){ width: 280px; }
 }
 
 @media screen and (max-width: 767px) {
@@ -896,7 +902,7 @@
     .stack { height: 375px !important; }
 
     /* compliance */
-    .compliance-validation-support-card{ width: calc( 50% - 10px ); height: 260px; }
+    .compliance-validation-support-card{ width: calc( 50% - 10px ); height: 245px; }
     .compliance-immutable-row{ flex-direction: column-reverse; gap: 30px;  }
     .compliance-immutable-card-right{ width: 80%; text-align: center; margin: 0 auto; }
     .compliance-immutable-card-right p{ margin-bottom: 0; }
@@ -992,6 +998,7 @@
 
     .comming-soon-btn .book-btn-icon{ width: 32px; height: 32px; }  
     .comming-soon-btn{ gap: 16px; }
+    .pf-item:nth-child(4), .pf-item:nth-child(5){ width: 220px; }
 }
 
 @media screen and (max-width: 639px) {
@@ -1013,15 +1020,16 @@
     .about-data-card{ height: 125px; }
     
     /* compliance */
-    .compliance-validation-support-card{ height: 245px; }
+    .compliance-validation-support-card{ height: 240px; }
+    .compliance-validation-support-card h3{ width: 70%; }
     .compliance-pointers-card h3{ margin-bottom: 10px; margin-top: 8px; }
     .compliance-immutable-card-right{ width: 100%; }
     .operational-card-right{ width: 445px; }
 
     .compliance-steps-card-responsive p{ width: 100%; }
     .compliance-steps-card-responsive{ width: 290px; }
+    .compliance-step-span{ width: 26px !important; height: 26px !important; }
     .compliance-pointers-card .compliance-pointers-text h3{ width: 60%; }
-    .compliance-validation-support-card h3{ width: 70%; }
     /* resources detail */
 
     .resource-detail-qna{ margin-top: 25px; }
@@ -1095,7 +1103,7 @@
     .about-data-card{ height: 168px; }
 
     /* compliance */
-    .compliance-validation-support-card{ height: 270px; }
+    .compliance-validation-support-card{ height: 260px; }
     .operational-card-right{ width: 385px; }
     .compliance-steps-card-responsive{ width: 70%; }
     .compliance-steps-card-responsive h3{ margin-top: 10px; }
@@ -1184,6 +1192,7 @@
     .efficiency-step-card h3{ width: 100%; }
 
     .nav-seprator{ width: 60px !important; }
+    .pf-item{ width: 196px !important; }
 }
 
 @media screen and (max-width: 480px) {
@@ -1313,6 +1322,7 @@
     .op-item-number.four{ left: -10px; }
     .op-items-inner{ width: 100%; }
     .op-dashed-circle{ width: 200px; height: 200px; }
+    .pf-item, .pf-item.green .pf-content .h5{ width: 100% !important; }
 }
 
 @media screen and (max-width: 400px) {
