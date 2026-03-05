@@ -110,7 +110,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/budget-planning-and-financial-transparency-in-clinical-trials-through-ctms' title="Blog 4" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/budget-planning-and-financial-transparency-in-clinical-trials-through-ctms' title="Blog 10" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 4.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -132,11 +132,12 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">CTMS Implementation Guide</h3>
+                                            <h3 className="h5 text-md">Budget Planning and Financial Transparency in Clinical Trials Through CTMS</h3>
 
-                                            <p className="h6 text-rg text-grey">Implementing a CTMS requires strategic planning, stakeholder alignment, and effective change management to ensure successful adoption and maximize return on investment.</p>
+                                            <p className="h6 text-rg text-grey">A modern CTMS improves financial transparency in clinical trials by replacing manual budget tracking with structured, real-time financial management.</p>
                                         </div>
                                     </Link>
+
 
                                     <Link href='/Resource/regulatory-compliance-and-ctms' title="Blog 5" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
@@ -278,7 +279,7 @@ export default function ResourceListingCards() {
                                         </div>
                                     </Link>
 
-                                    <Link href='/Resource/ctms-implementation-guide' title="Blog 10" className="resources-tab-content resources-tab-content-4">
+                                    <Link href='/Resource/ctms-implementation-guide' title="Blog 4" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
                                             <Image src="/images/live-blogs/Blog 10.webp" alt="resource-tab-1" width={680} height={404}></Image>
                                         </div>
@@ -300,9 +301,9 @@ export default function ResourceListingCards() {
                                         </div>
 
                                         <div className="resources-card-text-wrapper">
-                                            <h3 className="h5 text-md">Budget Planning and Financial Transparency in Clinical Trials Through CTMS</h3>
+                                            <h3 className="h5 text-md">CTMS Implementation Guide</h3>
 
-                                            <p className="h6 text-rg text-grey">A modern CTMS improves financial transparency in clinical trials by replacing manual budget tracking with structured, real-time financial management.</p>
+                                            <p className="h6 text-rg text-grey">Implementing a CTMS requires strategic planning, stakeholder alignment, and effective change management to ensure successful adoption and maximize return on investment.</p>
                                         </div>
                                     </Link>
 

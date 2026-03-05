@@ -16,7 +16,7 @@ export default function ComplianceSecureConnectivity() {
     const buttons = [
         "EDC & CTMS Reconciliation",
         "Medical Information Integration",
-        "Partner & Licensee Exchange",
+        "Partner & License Exchange",
         "Regulatory Gateway Connectivity",
         "E2B (R3) Data Exchange",
         "Secure APIs & Controlled Exports"

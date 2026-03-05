@@ -23,7 +23,7 @@ export default function Blog9() {
                     </div>
 
                     <div className="resource-detail-banner-img">
-                        <Image src="/images/live-blogs/Blog 8.webp" alt="" width={1400} height={830}></Image>
+                        <Image src="/images/live-blogs/Blog 9.webp" alt="" width={1400} height={830}></Image>
                     </div>
 
                     <div className="resources-detail-social-links">
