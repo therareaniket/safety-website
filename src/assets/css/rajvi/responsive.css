@@ -1013,7 +1013,7 @@
 
     /* about */
     .site-hero-text{ width: 100%; }
-    .aboutSwiper-wrapper .swiper-slide{ width: 260px !important; }
+    /* .aboutSwiper-wrapper .swiper-slide{ width: 260px !important; } */
     .compliance-driven-wrapper{ width: 380px; }
     .medical-detail-cards-wrapper{ flex-direction: column; }
     .medical-detail-cards{ width: 100%; height: auto; }
@@ -1084,7 +1084,7 @@
     .resource-heading-wrapper, .contact-hero-section{ padding-top: 50px !important; }
 
     .compliance-driven-wrapper{ width: 310px; }
-    .aboutSwiper-wrapper .swiper-slide{ width: 220px !important; height: 295px !important; }
+    .aboutSwiper-wrapper .swiper-slide{ height: 240px !important; }
     .about-medical-card-row-2{ width: 100%; }
     .about-data-card-text{ width: 80%; }
     /* .about-data-card{ width: 80%; height: auto; } */
@@ -1264,6 +1264,8 @@
     .efficiency-step-card h3{ width: 80%; }
 
     .coming-soon-wrapper h1{ font-size: 36px; line-height: 42px; }
+
+    .aboutSwiper-wrapper .swiper-slide{ height: 280px !important; }
 }
 
 @media screen and (max-width: 459px) {

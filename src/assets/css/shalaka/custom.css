@@ -271,13 +271,13 @@ header {
 }
 
 .graph-two {
-    width: 156px;
+    /* width: 156px; */
     right: 0;
     bottom: 0;
 }
 
 .graph-three {
-    width: 170px;
+    /* width: 170px; */
     left: 0;
     bottom: 0;
 }

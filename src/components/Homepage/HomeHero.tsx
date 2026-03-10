@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function HomeHero() {
+
     return (
         <>
             <section className="hero-wrapper centered-block">
@@ -27,9 +30,9 @@ export default function HomeHero() {
                             <div className="recent-activity-circle relative centered-block">
                                 <div className="ra-circle-mini centered-block">
                                     <div className="ra-graph-images relative">
-                                        <Image className="graph-one site-radius-10" src='/images/homepage/hero-graph.webp' alt="hero-graph" width={300} height={206} priority />
-                                        {/* <Image className="graph-two absolute" src='/images/homepage/graph-02.webp' alt="graph" width={444} height={319} priority />
-                                        <Image className="graph-three absolute" src='/images/homepage/graph-03.webp' alt="graph" width={430} height={318} priority /> */}
+                                        <Image className="graph-one site-radius-10" id="graph1" src='/images/homepage/hero-graph.webp' alt="hero-graph" width={300} height={206} priority />
+                                        {/* <Image className="graph-two absolute" id="graph2" src='/images/homepage/graph 2.png' alt="graph" width={300} height={206} priority /> */}
+                                        {/* <Image className="graph-three absolute" id="graph3" src='/images/homepage/graph 3.png' alt="graph" width={300} height={154} priority /> */}
                                     </div>
                                 </div>
                                 <div className="ra-spin-circle">

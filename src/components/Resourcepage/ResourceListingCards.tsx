@@ -17,7 +17,6 @@ export default function ResourceListingCards() {
                     <div className="resporce-listing-wrapper">
                         <div className="resporce-listing-tab-wrapper">
                             <Tabs defaultValue="workflows" className="">
-
                                 <TabsList className="resource-listing-tabs-wrapper h6 text-rg">
                                     <TabsTrigger value="workflows" className="resource-tab-btn h6 text-rg">Workflows</TabsTrigger>
                                     <TabsTrigger value="monitoring" className="resource-tab-btn h6 text-rg">Monitoring</TabsTrigger>
@@ -137,7 +136,6 @@ export default function ResourceListingCards() {
                                             <p className="h6 text-rg text-grey">A modern CTMS improves financial transparency in clinical trials by replacing manual budget tracking with structured, real-time financial management.</p>
                                         </div>
                                     </Link>
-
 
                                     <Link href='/Resource/regulatory-compliance-and-ctms' title="Blog 5" className="resources-tab-content resources-tab-content-4">
                                         <div className="resource-card-image-wrapper">
@@ -362,8 +360,6 @@ export default function ResourceListingCards() {
                                             <p className="h6 text-rg text-grey">Smaller CROs face increasing pressure to compete with global players while maintaining profitability.</p>
                                         </div>
                                     </Link>
-
-
                                 </TabsContent>
 
                                 <TabsContent value="monitoring" className="resources-cards-wrapper">

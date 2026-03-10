@@ -2,7 +2,7 @@
 import { type SwiperProps } from 'swiper/react';
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { motion, Variants } from "framer-motion";
 
 
@@ -11,7 +11,7 @@ export default function AboutEfficiencyCaseHandling() {
         hidden: {},
         visible: {
             transition: {
-                staggerChildren: 0.55, 
+                staggerChildren: 0.55,
             },
         },
     };
@@ -31,7 +31,7 @@ export default function AboutEfficiencyCaseHandling() {
         },
     };
 
-        const arrowVariant: Variants = {
+    const arrowVariant: Variants = {
         hidden: {
             opacity: 0,
             x: -30,
@@ -71,6 +71,7 @@ export default function AboutEfficiencyCaseHandling() {
             401: {
                 slidesPerView: 2,
             },
+
         },
     };
 
