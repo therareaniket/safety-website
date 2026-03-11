@@ -2507,10 +2507,7 @@
 
 @media screen and (max-width: 575px) {
 
-    .graph-two,
-    .graph-three {
-        display: none;
-    }
+
     .pc-text .h5, .pc-type .h4 {
         font-size: 18px;
         line-height: 26px;

@@ -101,6 +101,34 @@
     .op-item-title.four{ left: 24px; }
 
     .coming-soon-wrapper h1{ font-size: 54px; line-height: 66px; }
+
+    .graph-one{ width: 250px; }
+
+    /* card 3 */
+
+@keyframes card3{
+
+0%{
+transform:translate(-240px,90px) scale(.52);
+/* z-index: 6; */
+}
+
+33%{
+transform:translate(-50%,0) scale(1);
+/* z-index: 3; */
+}
+
+66%{
+transform:translate(-50px,90px) scale(.52);
+/* z-index: 6; */
+}
+
+100%{
+transform:translate(-240px,90px) scale(.52);
+/* z-index: 6; */
+}
+
+}
 }
 
 @media screen and (max-width: 1599px) {
@@ -214,6 +242,8 @@
 
     .coming-soon-wrapper h1{ font-size: 52px; line-height: 60px; }
     .comming-soon-btn{ margin-top: 40px; }
+
+    /* .graph-one{ width: 200px !important; } */
 }
 
 @media screen and (max-width: 1439px) {
@@ -308,6 +338,60 @@
 
     .coming-soon-wrapper h1{ font-size: 48px; line-height: 52px; }
     .blog-swiper-left img{ height: 364px; }
+
+    .graph-one{ width: 200px !important; }
+
+    /* card 2 */
+
+    @keyframes card2{
+
+    0%{
+        transform:translate(-50px,40px) scale(.40);
+        /* z-index: 7; */
+    }
+
+    33%{
+        transform:translate(-230px,40px) scale(.40);
+        /* z-index: 7; */
+    }
+
+    66%{
+        transform:translate(-50%,0) scale(1);
+        /* z-index: 4; */
+    }
+
+    100%{
+        transform:translate(-50px,40px) scale(.40);
+        /* z-index: 7; */
+    }
+
+    }
+
+    /* card 3 */
+
+@keyframes card3{
+
+0%{
+transform:translate(-240px,50px) scale(.52);
+/* z-index: 6; */
+}
+
+33%{
+transform:translate(-50%,0) scale(1);
+/* z-index: 3; */
+}
+
+66%{
+transform:translate(-50px,90px) scale(.52);
+/* z-index: 6; */
+}
+
+100%{
+transform:translate(-240px,50px) scale(.52);
+/* z-index: 6; */
+}
+
+}
 }
 
 @media screen and (max-width: 1359px) {
@@ -422,6 +506,67 @@
     .op-item-title.four{ left: 16px; }
 
     .name-initial{ width: 40px !important; height: 40px !important; }
+
+    /* card 1 */
+
+    @keyframes card1{
+
+    0%,100%{
+        transform:translate(-50%,40%) scale(1);
+    }
+
+    33%{
+        transform:translate(-20px,50px) scale(.30);
+    }
+
+    66%{
+        transform:translate(-200px,90px) scale(.30);
+    }
+
+    }
+
+    /* card 3 */
+
+    @keyframes card3{
+
+    0%{
+        transform:translate(-240px,90px) scale(.52);
+    }
+
+    33%{
+        transform:translate(-50%,0) scale(1);
+    }
+
+    66%{
+        transform:translate(-50px,90px) scale(.52);
+    }
+
+    100%{
+        transform:translate(-240px,90px) scale(.52);
+    }
+    }
+
+    /* card 2 */
+
+@keyframes card2{
+
+0%{
+transform:translate(10px, 50px) scale(.40);
+}
+
+33%{
+transform:translate(-230px,50px) scale(.40);
+}
+
+66%{
+transform:translate(-50%,0) scale(1);
+}
+
+100%{
+transform:translate(10px,50px) scale(.40);
+}
+
+}
 }
 
 @media screen and (max-width: 1199px) {
@@ -732,6 +877,70 @@
     .pf-item{ width: 220px; }
     .pf-item:nth-child(4){ width: 280px; }
     .pf-item:nth-child(5){ width: 280px; }
+
+    .graph-one{ width: 150px !important; }
+
+    /* card 1 */
+
+    @keyframes card1{
+
+    0%,100%{
+        transform:translate(-50%,40) scale(1);
+    }
+
+    33%{
+        transform:translate(-20px,90px) scale(.30);
+    }
+
+    66%{
+        transform:translate(-160px, 90px) scale(.30);
+    }
+
+    }
+
+    /* card 2 */
+
+    @keyframes card2{
+
+    0%{
+        transform:translate(-30px,60px) scale(.40);
+    }
+
+    33%{
+    transform:translate(-180px,60px) scale(.40);
+    }
+
+    66%{
+        transform:translate(-50%,0) scale(1);
+    }
+
+    100%{
+        transform:translate(-30px,60px) scale(.40);
+    }
+
+    }
+
+    /* card 3 */
+
+    @keyframes card3{
+
+    0%{
+        transform:translate(-180px, 60px) scale(.52);
+    }
+
+    33%{
+        transform:translate(-50%,30%) scale(1);
+    }
+
+    66%{
+        transform:translate(-50px,60px) scale(.52);
+    }
+
+    100%{ 
+        transform:translate(-180px, 60px) scale(.52);
+    }
+
+}
 } 
 
 @media screen and (max-width: 991px) {
@@ -1077,6 +1286,24 @@
    .op-item-title.two{ right: 16px; }
    .efficiency-step-card h3{ width: 70%; }
    .op-item-title.four{ left: 40px; }
+
+        /* card 1 */
+
+    @keyframes card1{
+
+    0%,100%{
+        transform:translate(-50%,40) scale(1);
+    }
+
+    33%{
+        transform:translate(-20px,90px) scale(.30);
+    }
+
+    66%{
+        transform:translate(-120px, 70px) scale(.30);
+    }
+
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -1380,6 +1607,67 @@
     .name-initial{ width: 30px !important; height: 30px !important; }
 
     .coming-soon-wrapper h1{ font-size: 30px; line-height: 40px; }
+
+    /* card 1 */
+
+    @keyframes card1{
+
+    0%,100%{
+        transform:translate(-50%,60%) scale(1);
+    }
+
+    33%{
+        transform:translate(-20px,90px) scale(.30);
+    }
+
+    66%{
+        transform:translate(-130px,90px) scale(.30);   
+    }
+    }
+
+    /* card 2 */
+
+@keyframes card2{
+
+0%{
+transform:translate(10px,90px) scale(.40);
+}
+
+33%{
+transform:translate(-110px,80px) scale(.40);
+}
+
+66%{
+transform:translate(-50%, 60%) scale(1);
+}
+
+100%{
+transform:translate(10px, 90px) scale(.40);
+}
+
+}
+
+/* card 3 */
+
+@keyframes card3{
+
+0%{
+transform:translate(-150px,110px) scale(.52);
+}
+
+33%{
+transform:translate(-50%,60%) scale(1);
+}
+
+66%{
+transform:translate(-30px,90px) scale(.52);
+}
+
+100%{ 
+transform:translate(-150px,110px) scale(.52);
+}
+
+}
 }
 
 @media screen and (max-width: 374px) {

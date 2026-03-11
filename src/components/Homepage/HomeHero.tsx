@@ -31,8 +31,8 @@ export default function HomeHero() {
                                 <div className="ra-circle-mini centered-block">
                                     <div className="ra-graph-images relative">
                                         <Image className="graph-one site-radius-10" id="graph1" src='/images/homepage/hero-graph.webp' alt="hero-graph" width={300} height={206} priority />
-                                        {/* <Image className="graph-two absolute" id="graph2" src='/images/homepage/graph 2.png' alt="graph" width={300} height={206} priority /> */}
-                                        {/* <Image className="graph-three absolute" id="graph3" src='/images/homepage/graph 3.png' alt="graph" width={300} height={154} priority /> */}
+                                        <Image className="graph-two absolute" id="graph2" src='/images/homepage/graph 2.png' alt="graph" width={300} height={206} priority />
+                                        <Image className="graph-three absolute" id="graph3" src='/images/homepage/graph 3.png' alt="graph" width={300} height={154} priority />
                                     </div>
                                 </div>
                                 <div className="ra-spin-circle">
