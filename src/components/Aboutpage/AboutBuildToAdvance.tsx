@@ -4,7 +4,20 @@ import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
-export default function AboutBuildToAdvance() {
+type AboutBuildProps = {
+    aboutBuildTitle: string;
+    aboutBuildSubtitle: string;
+
+    aboutBuildToAdvanceCardWrapper: {
+        detail1Title: string;
+        detail1Description: string;
+
+        detail2Title: string;
+        detail2Description: string;
+    }
+}
+
+export default function AboutBuildToAdvance({ aboutBuildTitle, aboutBuildSubtitle, aboutBuildToAdvanceCardWrapper }: AboutBuildProps) {
     const ref = useRef(null);
 
     const isInView = useInView(ref, {
@@ -42,9 +55,9 @@ export default function AboutBuildToAdvance() {
             <div className="container">
                 <div className="build-to-advance-wrapper">
                     <div className="build-to-advance-left-wrapper">
-                        <h2 className="text-md">Built to Advance Pharmacovigilance with Confidence</h2>
+                        <h2 className="text-md">{aboutBuildTitle}</h2>
                         <p className="text-rg h6">
-                            DhatuSafety is a modern pharmacovigilance platform designed to help life sciences organizations manage safety data with clarity, control, and regulatory confidence.
+                            {aboutBuildSubtitle}
                         </p>
                     </div>
 
@@ -66,9 +79,9 @@ export default function AboutBuildToAdvance() {
                             </motion.span>
 
                             <div className="compliance-driven-wrapper">
-                                <h3 className="text-md h5">Compliance-Driven by Design</h3>
+                                <h3 className="text-md h5">{aboutBuildToAdvanceCardWrapper.detail1Title}</h3>
                                 <p className="h6 text-rg">
-                                    It is built from the ground up to align with global pharmacovigilance quality expectations.
+                                    {aboutBuildToAdvanceCardWrapper.detail1Description}
                                 </p>
                             </div>
                         </div>
@@ -83,15 +96,15 @@ export default function AboutBuildToAdvance() {
                             </motion.span>
 
                             <div className="compliance-driven-wrapper">
-                                <h3 className="text-md h5">Built for Real-World Safety Operations</h3>
+                                <h3 className="text-md h5">{aboutBuildToAdvanceCardWrapper.detail2Title}</h3>
                                 <p className="h6 text-rg">
-                                    Shaped by real pharmacovigilance workflows supporting sponsors, CROs, multi-region environments.
+                                    {aboutBuildToAdvanceCardWrapper.detail2Description}
                                 </p>
                             </div>
                         </div>
-                </motion.div>
+                    </motion.div>
+                </div>
             </div>
-        </div>
         </section >
     );
 }

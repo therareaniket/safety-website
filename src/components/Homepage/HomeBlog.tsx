@@ -9,42 +9,60 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { useEffect, useRef } from "react";
 
-export default function HomeBlog() {
-const sectionRef = useRef<HTMLDivElement | null>(null);
+
+type HomeBlogProps = {
+    homeBlogTitle: string;
+    homeBlogSubtitle: string;
+
+    homeBlogCardWrapper: {
+        blogCard1Title: string;
+        blogCard1Description: string;
+        blogCard2Title: string;
+        blogCard2Description: string;
+        blogCard3Title: string;
+        blogCard3Description: string;
+        blogCard4Title: string;
+        blogCard4Description: string;
+    }
+};
 
 
-useEffect(() => {
-  const section = sectionRef.current;
-  if (!section) return;
+export default function HomeBlog({ homeBlogTitle, homeBlogSubtitle, homeBlogCardWrapper }: HomeBlogProps) {
+    const sectionRef = useRef<HTMLDivElement | null>(null);
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
 
-        const feature = section.querySelector(".reveal-feature");
-        const posts = section.querySelectorAll(".reveal-post");
+    useEffect(() => {
+        const section = sectionRef.current;
+        if (!section) return;
 
-        // feature first
-        feature?.classList.add("show");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
 
-        // stagger posts one by one
-        posts.forEach((post, index) => {
-          setTimeout(() => {
-            post.classList.add("show");
-          }, 500 + index * 350); 
-          // 500ms wait after feature
-          // then each card 350ms apart
-        });
+                    const feature = section.querySelector(".reveal-feature");
+                    const posts = section.querySelectorAll(".reveal-post");
 
-        observer.disconnect();
-      });
-    },
-    { threshold: 0.3 }
-  );
+                    // feature first
+                    feature?.classList.add("show");
 
-  observer.observe(section);
-}, []);
+                    // stagger posts one by one
+                    posts.forEach((post, index) => {
+                        setTimeout(() => {
+                            post.classList.add("show");
+                        }, 500 + index * 350);
+                        // 500ms wait after feature
+                        // then each card 350ms apart
+                    });
+
+                    observer.disconnect();
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        observer.observe(section);
+    }, []);
 
 
     return (
@@ -52,24 +70,24 @@ useEffect(() => {
             <div className="container">
                 <div className="blog-title-row flex">
                     <div className="b-col-one">
-                        <h2 className="text-md">Elevate Your Safety Knowledge for a Smarter, Safer Tomorrow</h2>
+                        <h2 className="text-md">{homeBlogTitle}</h2>
                     </div>
 
                     <div className="b-col-two">
-                        <p className="h6 text-black b-desc">Stay informed with valuable content on case management, AI, and safety innovation.</p>
+                        <p className="h6 text-black b-desc">{homeBlogSubtitle}</p>
                     </div>
                 </div>
 
                 <div className="blog-row-inner lg flex">
                     <Link href='/Resourcedetail' title="b-post" className="b-feature-item reveal-feature">
                         <div className="b-post-img">
-                            <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424}   priority />
+                            <Image src='/images/homepage/blogs/b-01.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={714} height={424} priority />
                         </div>
 
                         <div className="b-post-content">
                             <div className="b-post-title">
-                                <h3 className="h5 text-md text-black">How AI Is Reshaping Modern Pharmacovigilance</h3>
-                                <p id='feature-desc' className="text-black text-grey text-18">Discover how AI‑powered tools are speeding up case review, improving signal detection accuracy, and helping safety teams make faster, smarter decisions—reshaping the future.</p>
+                                <h3 className="h5 text-md text-black"> { homeBlogCardWrapper.blogCard1Title } </h3>
+                                <p id='feature-desc' className="text-black text-grey text-18">{ homeBlogCardWrapper.blogCard1Description }</p>
                             </div>
                             <div className="b-meta">
                                 <p className="text-16 text-mid-grey">Arjun Deshpande , Clinical Research Lead</p>
@@ -87,8 +105,8 @@ useEffect(() => {
                                 <Image src='/images/homepage/blogs/home-blog-2.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <h3 className="h5 text-md text-black">Why Use Unified Safety Data</h3>
-                                <p className="text-black text-grey text-18">A deep dive into the importance of gathering safety information</p>
+                                <h3 className="h5 text-md text-black">{ homeBlogCardWrapper.blogCard2Title }</h3>
+                                <p className="text-black text-grey text-18">{ homeBlogCardWrapper.blogCard2Description }</p>
                             </div>
                         </Link>
 
@@ -97,8 +115,8 @@ useEffect(() => {
                                 <Image src='/images/homepage/blogs/home-blog-3.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <h3 className="h5 text-md text-black">Building a Future Ready Safety Workflow</h3>
-                                <p className="text-black text-grey text-18">Organizations are modernizing their safety processes</p>
+                                <h3 className="h5 text-md text-black">{ homeBlogCardWrapper.blogCard3Title }</h3>
+                                <p className="text-black text-grey text-18">{ homeBlogCardWrapper.blogCard3Description }</p>
                             </div>
                         </Link>
 
@@ -107,8 +125,8 @@ useEffect(() => {
                                 <Image src='/images/homepage/blogs/home-blog-4.webp' alt="How AI Is Reshaping Modern Pharmacovigilance" width={341} height={203} priority />
                             </div>
                             <div className="b-post-title">
-                                <h3 className="h5 text-md text-black">The Rising Importance of Real‑Time Signal</h3>
-                                <p className="text-black text-grey text-18">Real‑time monitoring tools are helping organizations</p>
+                                <h3 className="h5 text-md text-black">{ homeBlogCardWrapper.blogCard4Title }</h3>
+                                <p className="text-black text-grey text-18">{ homeBlogCardWrapper.blogCard4Description }</p>
                             </div>
                         </Link>
                     </div>

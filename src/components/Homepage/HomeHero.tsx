@@ -3,7 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-export default function HomeHero() {
+type HomeHeroProps = {
+    homeHeroTitle: string;
+    homeHeroSubtitle: string;
+}
+
+export default function HomeHero( { homeHeroTitle, homeHeroSubtitle }: HomeHeroProps ) {
+
 
     return (
         <>
@@ -11,8 +17,10 @@ export default function HomeHero() {
                 <div className="container">
                     <div className="hero-row flex items-center">
                         <div className="hero-col-one">
-                            <h1 className="text-md">Central Hub of Safety <br /> & Intelligence</h1>
-                            <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p>
+                            {/* <h1 className="text-md">Central Hub of Safety <br /> & Intelligence</h1> */}
+                            <h1 className="text-md">{homeHeroTitle}</h1>
+                            {/* <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p> */}
+                            <p className="h6 hero-desc">{homeHeroSubtitle}</p>
                             <div className="book-demo-main lg">
                                 <Link href='/ComingSoon' title="Book a demo">
                                     <div className="book-demo-inner flex">

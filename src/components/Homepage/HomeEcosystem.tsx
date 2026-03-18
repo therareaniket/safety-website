@@ -14,7 +14,23 @@ type EcoAnimations = {
   viewportAmount: number;
 };
 
-export default function HomeEcosystem() {
+type EcoProps = {
+  homeSafetyEcosystemTitle: string;
+  homeSafetyEcosystemSubtitle: string;
+
+  homeEcosystemCards: {
+    homeEcosystemCard1Title: string;
+    homeEcosystemCard1Description: string;
+    homeEcosystemCard2Title: string;
+    homeEcosystemCard2Description: string;
+    homeEcosystemCard3Title: string;
+    homeEcosystemCard3Description: string;
+    homeEcosystemCard4Title: string;
+    homeEcosystemCard4Description: string;
+  }
+};
+
+export default function HomeEcosystem({ homeSafetyEcosystemTitle, homeSafetyEcosystemSubtitle, homeEcosystemCards }: EcoProps) {
   const [animations, setAnimations] = useState<EcoAnimations | null>(null);
 
   useEffect(() => {
@@ -63,10 +79,12 @@ export default function HomeEcosystem() {
 
         <div className="main-title center text-center">
           <h2 className="text-md">
-            Supporting Every Corner of the Safety Ecosystem
+            {/* Supporting Every Corner of the Safety Ecosystem */}
+            {homeSafetyEcosystemTitle}
           </h2>
           <p className="h6">
-            Built for medical teams, regulatory units, researchers, and organizations.
+            {/* Built for medical teams, regulatory units, researchers, and organizations. */}
+            {homeSafetyEcosystemSubtitle}
           </p>
         </div>
 
@@ -97,9 +115,11 @@ export default function HomeEcosystem() {
               />
             </div>
             <div className="eco-title">
-              <h3 className="h5 text-md">Clinical Sponsors</h3>
+              {/* <h3 className="h5 text-md">Clinical Sponsors</h3> */}
+              <h3 className="h5 text-md">{ homeEcosystemCards.homeEcosystemCard1Title}</h3>
               <p className="text-18">
-                Use to streamline safety data capture, case processing
+                {/* Use to streamline safety data capture, case processing */}
+                { homeEcosystemCards.homeEcosystemCard1Description}
               </p>
             </div>
           </motion.div>
@@ -113,9 +133,11 @@ export default function HomeEcosystem() {
             }}
           >
             <div className="eco-title top">
-              <h3 className="h5 text-md">CROs</h3>
+              {/* <h3 className="h5 text-md">CROs</h3> */}
+              <h3 className="h5 text-md">{homeEcosystemCards.homeEcosystemCard2Title}</h3>
               <p className="text-18">
-                Depend for efficiently manage safety operations for multiple clients
+                {homeEcosystemCards.homeEcosystemCard2Description}
+                {/* Depend for efficiently manage safety operations for multiple clients */}
               </p>
             </div>
             <div className="eco-img">
@@ -149,9 +171,11 @@ export default function HomeEcosystem() {
               />
             </div>
             <div className="eco-title">
-              <h3 className="h5 text-md">Pharma</h3>
+              <h3 className="h5 text-md">{homeEcosystemCards.homeEcosystemCard3Title}</h3>
+              {/* <h3 className="h5 text-md">Pharma</h3> */}
               <p className="text-18">
-                To unify case manage, evaluate emerging safety signals, and meet global
+                {homeEcosystemCards.homeEcosystemCard3Description}
+                {/* To unify case manage, evaluate emerging safety signals, and meet global */}
               </p>
             </div>
           </motion.div>
@@ -165,9 +189,11 @@ export default function HomeEcosystem() {
             }}
           >
             <div className="eco-title top">
-              <h3 className="h5 text-md">MAHs</h3>
+              <h3 className="h5 text-md">{homeEcosystemCards.homeEcosystemCard4Title}</h3>
+              {/* <h3 className="h5 text-md">MAHs</h3> */}
               <p className="text-18">
-                Marketing Authorization Holders rely to manage
+                {homeEcosystemCards.homeEcosystemCard4Description}
+                {/* Marketing Authorization Holders rely to manage */}
               </p>
             </div>
             <div className="eco-img">

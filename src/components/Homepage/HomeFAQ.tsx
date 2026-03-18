@@ -5,27 +5,45 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
+type HomeFaqProps = {
+    homeFaqTitle: string;
+    homeFaqSubtitle: string;
 
-export default function HomeFAQ() {
+    homeFaqWrapper: {
+        question1: string;
+        answer1: string;
+        question2: string;
+        answer2: string;
+        question3: string;
+        answer3: string;
+        question4: string;
+        answer4: string;
+        question5: string;
+        answer5: string;
+    }
+}
+
+
+export default function HomeFAQ({ homeFaqTitle, homeFaqSubtitle, homeFaqWrapper }: HomeFaqProps) {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const faqs = [
         {
-            question: 'What is DhatuSafety?',
-            answer: 'DhatuSafety is a unified patient safety and pharmacovigilance platform that helps teams manage ICSRs, track safety signals, monitor literature.'
+            question: homeFaqWrapper.question1,
+            answer: homeFaqWrapper.answer1
         }, {
-            question: 'Who can use DhatuSafety?',
-            answer: 'It is designed for MAHs, clinical trial sponsors, CROs, pharma & biotech company and any organization involved in safety monitoring and regulatory reporting.'
+            question: homeFaqWrapper.question2,
+            answer: homeFaqWrapper.answer2
         }, {
-            question: 'Can DhatuSafety integrate with other systems?',
-            answer: 'Yes. DhatuSafety supports integrations with EHR, ERP, EDC, and other clinical systems to ensure seamless data intake and workflow automation.'
+            question: homeFaqWrapper.question3,
+            answer: homeFaqWrapper.answer3
         }, {
-            question: 'Does DhatuSafety support global regulatory compliance?',
-            answer: 'Yes . The platform includes features for regulatory reporting, audit trails, compliance tracking, and jurisdiction‑specific requirements (US/EU/IN).'
+            question: homeFaqWrapper.question4,
+            answer: homeFaqWrapper.answer4
         }, {
-            question: 'What kind of support is offered?',
-            answer: 'Provides dedicated onboarding, training, documentation, and ongoing support. Enterprise plans also include priority assistance and advanced configuration.'
+            question: homeFaqWrapper.question5,
+            answer: homeFaqWrapper.answer5
         }
     ];
 
@@ -49,8 +67,8 @@ export default function HomeFAQ() {
                             >
                                 <Image className="faq-img" src='images/homepage/faq-icon.svg' alt="FAQ" width={211} height={226} priority />
                             </motion.div>
-                            <h2 className="text-md text-black">Plans Designed for Smarter Safety Management</h2>
-                            <p className="h6 op-desc text-black">Here are answers to the top questions teams ask about DhatuSafety, helping you understand our features, workflows.</p>
+                            <h2 className="text-md text-black">{homeFaqTitle}</h2>
+                            <p className="h6 op-desc text-black">{homeFaqSubtitle}</p>
                         </div>
 
                         <div className="fq-col-two">

@@ -10,6 +10,12 @@ type SignalCard = {
   img: string;
 };
 
+type AboutSignalManagementProps = {
+  aboutSignalMangementTitle: string;
+  aboutSignalManagementSubtitle: string;
+};
+
+
 type DraggableCardProps = {
   card: SignalCard;
   index: number;
@@ -20,7 +26,7 @@ type DraggableCardProps = {
   onThrowComplete: (index: number) => void;
 };
 
-export default function AboutSignalManagement() {
+export default function AboutSignalManagement( { aboutSignalMangementTitle, aboutSignalManagementSubtitle }: AboutSignalManagementProps ) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [throwSignal, setThrowSignal] = useState(0);
   const [direction, setDirection] = useState<'left' | 'right' | null>(null);
@@ -73,11 +79,10 @@ export default function AboutSignalManagement() {
           {/* Title */}
           <div className="about-signal-management-content">
             <h2 className="about-signal-management-title text-md">
-              Signal Management & Safety Oversight
+              {aboutSignalMangementTitle}
             </h2>
             <p className="about-signal-management-para text-rg h6">
-              Proactively identify, assess, and monitor safety risks with full visibility,
-              traceability, and operational control.
+              {aboutSignalManagementSubtitle}
             </p>
           </div>
 

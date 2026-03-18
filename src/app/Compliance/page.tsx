@@ -9,7 +9,9 @@ import ComplianceSecureConnectivity from "@/components/Compliancepage/Compliance
 import ComplianceFlexibleOperations from "@/components/Compliancepage/ComplianceFlexibleOperations";
 import Header from "@/components/Header";
 
-export default function Compliance() {
+
+export default  function Compliance() {
+
     return (
         <>
             <Header />
