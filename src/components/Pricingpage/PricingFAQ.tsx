@@ -6,27 +6,45 @@ import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 
-export default function PricingFAQ() {
+type PricingFaqProps = {
+    pricingFaqTitle: string;
+    pricingFaqSubtitle: string;
+
+    pricingFaqWrapper: {
+        question1: string;
+        answer1: string;
+        question2: string;
+        answer2: string;
+        question3: string;
+        answer3: string;
+        question4: string;
+        answer4: string;
+        question5: string;
+        answer5: string;
+    }
+};
+
+export default function PricingFAQ({ pricingFaqTitle, pricingFaqSubtitle, pricingFaqWrapper }: PricingFaqProps) {
 
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
 
     const faqs = [
         {
-            question: 'Can I change plans later? ',
-            answer: 'Yes, you can upgrade or downgrade your plan at any time as your needs change.'
+            question: pricingFaqWrapper.question1,
+            answer: pricingFaqWrapper.answer1
         }, {
-            question: 'Do you offer custom pricing?',
-            answer: 'Yes, pricing can be customized based on your needs, usage volume, and service requirements.'
+            question: pricingFaqWrapper.question2 ,
+            answer: pricingFaqWrapper.answer2 
         }, {
-            question: 'Is onboarding included? ',
-            answer: 'Yes, onboarding and setup are included, helping your team get started quickly and confidently.'
+            question:  pricingFaqWrapper.question3,
+            answer: pricingFaqWrapper.answer3 
         }, {
-            question: 'Are there long-term contracts?',
-            answer: 'Yes, flexible contract options are available, allowing you to choose terms that work best for you.'
+            question:  pricingFaqWrapper.question4 ,
+            answer: pricingFaqWrapper.answer4 
         }, {
-            question: 'How fast can we start? ',
-            answer: 'Typically within a few business days, depending on the scope and requirements.'
+            question: pricingFaqWrapper.question5 ,
+            answer:  pricingFaqWrapper.answer5 
         }
     ];
 
@@ -50,8 +68,8 @@ export default function PricingFAQ() {
                             >
                                 <Image className="faq-img" src='images/homepage/faq-icon.svg' alt="FAQ" width={211} height={226} priority />
                             </motion.div>
-                            <h2 className="text-md text-black">Plans Designed for Smarter Safety Management</h2>
-                            <p className="h6 op-desc text-black">Here are answers to the top questions teams ask about DhatuSafety, helping you understand our features, workflows.</p>
+                            <h2 className="text-md text-black">{pricingFaqTitle}</h2>
+                            <p className="h6 op-desc text-black">{pricingFaqSubtitle}</p>
                         </div>
 
                         <div className="fq-col-two">

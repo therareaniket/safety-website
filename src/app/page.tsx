@@ -16,7 +16,10 @@ type HomepageData = {
         homepage: {
             homeHeroTitle: string;
             homeHeroSubtitle: string;
-
+            homeHeroLink: {
+                title: string;
+                url: string;
+            }
             homeStatsTitle: string;
             homeStatsSubtitle: string;
             homeStatsCard1Numeric: string;
@@ -45,6 +48,17 @@ type HomepageData = {
             homeSafetyOperationTitle : string;
             homeSafetyOperationSubtitle : string;
 
+            safetyOperationWrapper : {
+                safetyOperation1Title : string;
+                safetyOperation1Description : string;
+                safetyOperation2Title : string;
+                safetyOperation2Description : string;
+                safetyOperation3Title : string;
+                safetyOperation3Description : string;
+                safetyOperation4Title : string;
+                safetyOperation4Description : string;
+            }
+
             homeSafetyEcosystemTitle : string;
             homeSafetyEcosystemSubtitle : string;
 
@@ -67,10 +81,18 @@ type HomepageData = {
                 standardPrice : string;
                 standardPricePerMonth : string;
                 standardPlanDescription : string;
+                homePricingStandardLink : {
+                    title : string;
+                    url : string;   
+                }
                 enterpriseTitle : string;
                 enterprisePrice : string;
                 enterprisePricePerMonth : string;
                 enterprisePlanDescription : string;
+                homePricingEnterpriseLink : {
+                    title : string;
+                    url : string;
+                }
             }
 
             homeBlogTitle : string;
@@ -127,6 +149,10 @@ export default async function Home() {
             homepage {
                 homeHeroTitle
                 homeHeroSubtitle
+                homeHeroLink {
+                    title
+                    url
+                }
 
                 homeStatsTitle
                 homeStatsSubtitle
@@ -156,6 +182,17 @@ export default async function Home() {
                 homeSafetyOperationTitle
                 homeSafetyOperationSubtitle
 
+                safetyOperationWrapper {
+                    safetyOperation1Title
+                    safetyOperation1Description
+                    safetyOperation2Title
+                    safetyOperation2Description
+                    safetyOperation3Title
+                    safetyOperation3Description
+                    safetyOperation4Title
+                    safetyOperation4Description
+                }
+
                 homeSafetyEcosystemTitle
                 homeSafetyEcosystemSubtitle
 
@@ -178,10 +215,18 @@ export default async function Home() {
                     standardPrice
                     standardPricePerMonth
                     standardPlanDescription
+                    homePricingStandardLink {
+                        title
+                        url
+                    }
                     enterpriseTitle
                     enterprisePrice
                     enterprisePricePerMonth
                     enterprisePlanDescription
+                    homePricingEnterpriseLink {
+                        title
+                        url
+                    }
                 }
 
                 homeBlogTitle
@@ -237,7 +282,9 @@ export default async function Home() {
         <>
             <Header />
 
-            <HomeHero homeHeroTitle={HomeFetch.homeHeroTitle} homeHeroSubtitle={HomeFetch.homeHeroSubtitle} />
+            <HomeHero 
+            homeHeroTitle={HomeFetch.homeHeroTitle} homeHeroSubtitle={HomeFetch.homeHeroSubtitle} 
+            homeHeroLink={HomeFetch.homeHeroLink} />
 
             <HomeStatistics homeStatsTitle={HomeFetch.homeStatsTitle}
                 homeStatsSubtitle={HomeFetch.homeStatsSubtitle}
@@ -252,7 +299,11 @@ export default async function Home() {
 
             <HomeModals homeAiSafetyTitle={HomeFetch.homeAiSafetyTitle} homeAiSafetySubtitle={HomeFetch.homeAiSafetySubtitle} />
 
-            <HomeOperations homeSafetyOperationTitle={HomeFetch.homeSafetyOperationTitle} homeSafetyOperationSubtitle={HomeFetch.homeSafetyOperationSubtitle} />
+            <HomeOperations 
+                homeSafetyOperationTitle={HomeFetch.homeSafetyOperationTitle} 
+                homeSafetyOperationSubtitle={HomeFetch.homeSafetyOperationSubtitle} 
+                safetyOperationWrapper={HomeFetch.safetyOperationWrapper}
+                />
 
             <HomeEcosystem 
                 homeSafetyEcosystemTitle={HomeFetch.homeSafetyEcosystemTitle} 

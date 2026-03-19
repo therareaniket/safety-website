@@ -9,26 +9,47 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 
-export default function ComplianceSecureConnectivity() {
+type ComplianceSecureConnectivityProps = {
+    complianceSecureConnectivityTitle: string
+    complianceSecureConnectivitySubtitle: string
+
+    complianceSecureConnectivityWrapper: {
+        accordion1Title: string
+        accordion1Description: string
+        accordion2Title: string
+        accordion2Description: string
+        accordion3Title: string
+        accordion3Description: string
+        accordion4Title: string
+        accordion4Description: string
+        accordion5Title: string
+        accordion5Description: string
+        accordion6Title: string
+        accordion6Description: string
+    }
+}
+
+
+export default function ComplianceSecureConnectivity({ complianceSecureConnectivityTitle, complianceSecureConnectivitySubtitle, complianceSecureConnectivityWrapper }: ComplianceSecureConnectivityProps) {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
     const buttons = [
-        "EDC & CTMS Reconciliation",
-        "Medical Information Integration",
-        "Partner & License Exchange",
-        "Regulatory Gateway Connectivity",
-        "E2B (R3) Data Exchange",
-        "Secure APIs & Controlled Exports"
+        complianceSecureConnectivityWrapper.accordion1Title,
+        complianceSecureConnectivityWrapper.accordion2Title,
+        complianceSecureConnectivityWrapper.accordion3Title,
+        complianceSecureConnectivityWrapper.accordion4Title,
+        complianceSecureConnectivityWrapper.accordion5Title,
+        complianceSecureConnectivityWrapper.accordion6Title,
     ];
 
     const descriptions = [
-        "Automated reconciliation of safety data with EDC and CTMS systems to identify discrepancies, ensure completeness, and maintain consistency.",
-        "Bi-directional integration with medical information systems to capture, track, and assess safety-relevant inquiries and adverse events.",
-        "Secure case exchange with partners, CROs, and licensees, supporting defined data scopes, timelines, and responsibilities.",
-        "Direct integration with global regulatory gateways to support compliant electronic submissions and acknowledgements.",
-        "Standardized E2B (R3) compliant data transmission ensuring structured, validated, and regulator-ready safety reporting.",
-        "Secure APIs enable analytics and reporting while ensuring masked, logged, and permission-based data exports with full auditability."
+        complianceSecureConnectivityWrapper.accordion1Description,
+        complianceSecureConnectivityWrapper.accordion2Description,
+        complianceSecureConnectivityWrapper.accordion3Description,
+        complianceSecureConnectivityWrapper.accordion4Description,
+        complianceSecureConnectivityWrapper.accordion5Description,
+        complianceSecureConnectivityWrapper.accordion6Description,
     ];
 
     return (
@@ -36,8 +57,8 @@ export default function ComplianceSecureConnectivity() {
             <div className="container">
 
                 <div className="compliance-security-head-wrapper">
-                    <h2 className="text-md text-white">Secure Connectivity Across the Safety Ecosystem</h2>
-                    <p className="text-rg h6 text-white">Enables seamless, compliant, and secure data exchange</p>
+                    <h2 className="text-md text-white">{complianceSecureConnectivityTitle}</h2>
+                    <p className="text-rg h6 text-white">{complianceSecureConnectivitySubtitle}</p>
                 </div>
 
                 <div className="compliance-security-button-wrapper compliance-security-button-wrapper-desktop">
@@ -52,13 +73,13 @@ export default function ComplianceSecureConnectivity() {
                             >
                                 {btn}
                                 {activeIndex === index && (
-                                <Image
-                                    src="/images/compliancepage/compliance-security-desktop-arrow.svg"
-                                    alt="arrow"
-                                    width={16}
-                                    height={16}
-                                />
-                                    )}
+                                    <Image
+                                        src="/images/compliancepage/compliance-security-desktop-arrow.svg"
+                                        alt="arrow"
+                                        width={16}
+                                        height={16}
+                                    />
+                                )}
                             </h3>
                         ))}
                     </div>
@@ -80,44 +101,44 @@ export default function ComplianceSecureConnectivity() {
                 <div className="compliance-security-responsive-accordion">
                     <Accordion type="single" collapsible defaultValue="item-1" className="eco-system-accord">
                         <AccordionItem value="item-1" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white ">EDC & CTMS Reconciliation</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white ">{complianceSecureConnectivityWrapper.accordion1Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Automated reconciliation of safety data with EDC and CTMS systems to identify discrepancies, ensure completeness, and maintain consistency.
+                                {complianceSecureConnectivityWrapper.accordion1Description}
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-2" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">Medical Information Integration</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">{complianceSecureConnectivityWrapper.accordion2Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Bi-directional integration with medical information systems to capture, track, and assess safety-relevant inquiries and adverse events.
+                                {complianceSecureConnectivityWrapper.accordion2Description}
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-3" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">Partner & Licensee Exchange</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">{complianceSecureConnectivityWrapper.accordion3Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Secure case exchange with partners, CROs, and licensees, supporting defined data scopes, timelines, and responsibilities.
+                                {complianceSecureConnectivityWrapper.accordion3Description}
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-4" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">Regulatory Gateway Connectivity</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">{complianceSecureConnectivityWrapper.accordion4Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Direct integration with global regulatory gateways to support compliant electronic submissions and acknowledgements.
+                                {complianceSecureConnectivityWrapper.accordion4Description}
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-5" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">E2B (R3) Data Exchange</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">{complianceSecureConnectivityWrapper.accordion5Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Standardized E2B (R3) compliant data transmission ensuring structured, validated, and regulator-ready safety reporting.
+                                {complianceSecureConnectivityWrapper.accordion5Description}
                             </AccordionContent>
                         </AccordionItem>
 
                         <AccordionItem value="item-6" className="compliance-accordions">
-                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">Secure APIs & Controlled Exports</AccordionTrigger>
+                            <AccordionTrigger className="compliance-security-accordion-title h5 text-md text-white">{complianceSecureConnectivityWrapper.accordion6Title}</AccordionTrigger>
                             <AccordionContent className="compliance-security-accordion-desciption h6 text-rg ">
-                                Secure APIs enable analytics and reporting while ensuring masked, logged, and permission-based data exports with full auditability.
+                                {complianceSecureConnectivityWrapper.accordion6Description}
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>

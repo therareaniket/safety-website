@@ -4,7 +4,37 @@ import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
-export default function PricingPlanFeatures() {
+type PlanCardProps = {
+    planIncludesTitle: string;
+    planIncludesSubtitle: string;
+
+    planIncludesCard1: {
+        title: string;
+        description: string;
+    }
+
+    planIncludesCard2: {
+        title: string;
+        description: string;
+    }
+
+    planIncludesCard3: {
+        title: string;
+        description: string;
+    }
+
+    planIncludesCard4: {
+        title: string;
+        description: string;
+    }
+
+    planIncludesCard5: {
+        title: string;
+        description: string;
+    }
+}
+
+export default function PricingPlanFeatures( { planIncludesTitle, planIncludesSubtitle, planIncludesCard1, planIncludesCard2, planIncludesCard3, planIncludesCard4, planIncludesCard5 } : PlanCardProps ) {
     const ref = useRef(null);
 
     const isInView = useInView(ref, {
@@ -58,8 +88,8 @@ export default function PricingPlanFeatures() {
         <section className="pricing-feature-wrapper section pt-0" ref={ref}>
             <div className="container">
                 <div className="main-title center text-center">
-                    <h2 className="text-md text-black">What’s Included In All Plans</h2>
-                    <p className="h6">Every plan comes with our core features and commitment to excellence</p>
+                    <h2 className="text-md text-black">{planIncludesTitle}</h2>
+                    <p className="h6">{planIncludesSubtitle}</p>
                 </div>
 
 
@@ -78,8 +108,8 @@ export default function PricingPlanFeatures() {
                             <Image src='/images/pricingpage/pf-01.svg' alt="Compliant Process" width={16.67} height={15.83} priority />
                         </motion.div>
                         <div className="pf-content">
-                            <h3 className="h5 text-md">Compliant Process</h3>
-                            <p className="h6 text-grey mb-0">All workflows meet standards</p>
+                            <h3 className="h5 text-md">{planIncludesCard1.title}</h3>
+                            <p className="h6 text-grey mb-0">{planIncludesCard1.description}</p>
                         </div>
                     </motion.div>
 
@@ -92,8 +122,8 @@ export default function PricingPlanFeatures() {
                             <Image src='/images/pricingpage/pf-02.svg' alt="Experienced Professionals" width={16.67} height={15.83} priority />
                         </motion.div>
                         <div className="pf-content">
-                            <h3 className="h5 text-md">Experienced Professionals</h3>
-                            <p className="h6 text-grey mb-0">Industry-leading safety experts</p>
+                            <h3 className="h5 text-md">{planIncludesCard2.title}</h3>
+                            <p className="h6 text-grey mb-0">{planIncludesCard2.description}</p>
                         </div>
                     </motion.div>
 
@@ -106,8 +136,8 @@ export default function PricingPlanFeatures() {
                             <Image src='/images/pricingpage/pf-03.svg' alt="Quality Checks" width={13.33} height={17.5} priority />
                         </motion.div>
                         <div className="pf-content">
-                            <h3 className="h5 text-md">Quality Checks</h3>
-                            <p className="h6 text-grey mb-0">Multi-level review processes</p>
+                            <h3 className="h5 text-md">{planIncludesCard3.title}</h3>
+                            <p className="h6 text-grey mb-0">{planIncludesCard3.description}</p>
                         </div>
                     </motion.div>
 
@@ -120,8 +150,8 @@ export default function PricingPlanFeatures() {
                             <Image src='/images/pricingpage/pf-04.svg' alt="Secure Data Handling" width={13.33} height={16.67} priority />
                         </motion.div>
                         <div className="pf-content">
-                            <h3 className="h5 text-md">Secure Data Handling</h3>
-                            <p className="h6 text-grey mb-0">Enterprise-grade security protocols</p>
+                            <h3 className="h5 text-md">{planIncludesCard4.title}</h3>
+                            <p className="h6 text-grey mb-0">{planIncludesCard4.description}</p>
                         </div>
                     </motion.div>
 
@@ -134,8 +164,8 @@ export default function PricingPlanFeatures() {
                             <Image src='/images/pricingpage/pf-05.svg' alt="Compliant Process" width={20} height={15} priority />
                         </motion.div>
                         <div className="pf-content">
-                            <h3 className="h5 text-md">Regular Communication</h3>
-                            <p className="h6 text-grey mb-0">Transparent updates and reporting</p>
+                            <h3 className="h5 text-md">{planIncludesCard5.title}</h3>
+                            <p className="h6 text-grey mb-0">{planIncludesCard5.description}</p>
                         </div>
                     </motion.div>
                 </motion.div>

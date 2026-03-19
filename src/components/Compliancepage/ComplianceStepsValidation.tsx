@@ -5,7 +5,37 @@ import 'swiper/css';
 import type { SwiperProps } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-export default function ComplianceStepsValidation() {
+type ComplianceStepsValidationProps = {
+    complianceValidationTitle: string
+    complianceValidationSubtitle: string
+
+    complianceValidationCard1: {
+        title: string
+        description: string
+    }
+    complianceValidationCard2: {
+        title: string
+        description: string
+    }
+    complianceValidationCard3: {
+        title: string
+        description: string
+    }
+    complianceValidationCard4: {
+        title: string
+        description: string
+    }
+    complianceValidationCard5: {
+        title: string
+        description: string
+    }
+    complianceValidationCard6: {
+        title: string
+        description: string
+    }
+}
+
+export default function ComplianceStepsValidation( { complianceValidationTitle, complianceValidationSubtitle, complianceValidationCard1, complianceValidationCard2, complianceValidationCard3, complianceValidationCard4, complianceValidationCard5, complianceValidationCard6 } : ComplianceStepsValidationProps) {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const [activeStep, setActiveStep] = useState<number>(0);
     const [isAutoScrolling, setIsAutoScrolling] = useState(false);
@@ -46,7 +76,6 @@ export default function ComplianceStepsValidation() {
         return () => wrapper.removeEventListener("scroll", handleScroll);
 
     }, [isAutoScrolling]);
-
 
     useEffect(() => {
 
@@ -103,7 +132,6 @@ export default function ComplianceStepsValidation() {
         };
 
     }, []);
-
 
     useEffect(() => {
         const wrapper = wrapperRef.current;
@@ -195,9 +223,9 @@ export default function ComplianceStepsValidation() {
             <section className="section compliance-steps-validation-section">
                 <div className="container">
                     <div className=" compliance-steps-head-text-wrapper">
-                        <h2 className="text-md text-white">Validation, Change Control & Auditability</h2>
+                        <h2 className="text-md text-white">{complianceValidationTitle}</h2>
 
-                        <p className="h6 text-rg text-white">Validation, Change Control & Auditability</p>
+                        <p className="h6 text-rg text-white">{complianceValidationSubtitle}</p>
                     </div>
 
                     <div className="compliance-steps-divider compliance-steps-divider-desktop">
@@ -205,49 +233,49 @@ export default function ComplianceStepsValidation() {
                             <div data-index={0} className={`compliance-steps-card compliance-steps-card-1 ${activeStep === 0 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">1</span>
 
-                                <h3 className="h5 text-md text-white">CSV Compliance</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard1.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard1.description}</p>
                             </div>
 
                             <div data-index={1} className={`compliance-steps-card compliance-steps-card-2 ${activeStep === 1 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">2</span>
 
-                                <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard2.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard2.description}</p>
                             </div>
 
                             <div data-index={2} className={`compliance-steps-card compliance-steps-card-3 ${activeStep === 2 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">3</span>
 
-                                <h3 className="h5 text-md text-white">Change Control</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard3.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard3.description}</p>
                             </div>
 
                             <div data-index={3} className={`compliance-steps-card compliance-steps-card-4 ${activeStep === 3 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">4</span>
 
-                                <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard4.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard4.description}</p>
                             </div>
 
                             <div data-index={4} className={`compliance-steps-card compliance-steps-card-5 ${activeStep === 4 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">5</span>
 
-                                <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard5.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard5.description}</p>
                             </div>
 
                             <div data-index={5} className={`compliance-steps-card compliance-steps-card-6 ${activeStep === 5 ? 'active' : ''}`}>
                                 <span className="text-md h5 compliance-step-span">6</span>
 
-                                <h3 className="h5 text-md text-white">Validation Status</h3>
+                                <h3 className="h5 text-md text-white">{complianceValidationCard6.title}</h3>
 
-                                <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                <p className="text-18 text-rg text-grey">{complianceValidationCard6.description}</p>
                             </div>
                         </div>
 
@@ -260,9 +288,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">1</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard1.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard1.description}</p>
                                 </div>
                             </div>
 
@@ -270,9 +298,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">2</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard2.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard2.description}</p>
                                 </div>
                             </div>
 
@@ -280,9 +308,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">3</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">Change Control</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard3.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard3.description}</p>
                                 </div>
                             </div>
 
@@ -290,9 +318,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">4</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard4.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard4.description}</p>
                                 </div>
                             </div>
 
@@ -300,9 +328,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">5</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard5.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard5.description}</p>
                                 </div>
                             </div>
 
@@ -310,9 +338,9 @@ export default function ComplianceStepsValidation() {
                                 <span className="text-md h5 site-all-svg compliance-step-span">6</span>
 
                                 <div className="compliance-steps-card-text">
-                                    <h3 className="h5 text-md text-white">Validation Status</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard6.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard6.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -325,9 +353,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">1</span>
 
-                                    <h3 className="h5 text-md text-white">CSV Compliance</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard1.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard1.description}</p>
                                 </div>
                             </SwiperSlide>
 
@@ -335,9 +363,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">2</span>
 
-                                    <h3 className="h5 text-md text-white">IQ/OQ/PQ Management</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard2.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">End-to-end support for Computer System Validation, including structured documentation</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard2.description}</p>
                                 </div>
                             </SwiperSlide>
 
@@ -345,9 +373,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">3</span>
 
-                                    <h3 className="h5 text-md text-white">Change Control</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard3.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">All system configurations and changes are managed through controlled change workflows.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard3.description}</p>
                                 </div>
                             </SwiperSlide>
 
@@ -355,9 +383,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">4</span>
 
-                                    <h3 className="h5 text-md text-white">Audit Trails</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard4.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Complete, immutable audit trails capturing data changes, configuration updates, user.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard4.description}</p>
                                 </div>
                             </SwiperSlide>
 
@@ -365,9 +393,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">5</span>
 
-                                    <h3 className="h5 text-md text-white">Bulk Data Changes</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard5.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Supports controlled bulk updates through predefined workflows, ensuring validation, review.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard5.description}</p>
                                 </div>
                             </SwiperSlide>
 
@@ -375,9 +403,9 @@ export default function ComplianceStepsValidation() {
                                 <div className="card-inner">
                                     <span className="text-md h5 compliance-step-span">6</span>
 
-                                    <h3 className="h5 text-md text-white">Validation Status</h3>
+                                    <h3 className="h5 text-md text-white">{complianceValidationCard6.title}</h3>
 
-                                    <p className="text-18 text-rg text-grey">Provides visibility into validation status, open changes, and compliance indicators.</p>
+                                    <p className="text-18 text-rg text-grey">{complianceValidationCard6.description}</p>
                                 </div>
                             </SwiperSlide>
 

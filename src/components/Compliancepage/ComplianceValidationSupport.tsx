@@ -4,7 +4,37 @@ import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
-export default function ComplianceValidationSupport() {
+type ComplianceValidationSupportProps = {
+    complianceImplementationTitle: string
+    complianceImplementationSubtitle: string
+
+    complianceImplementationCard1: {
+        title: string
+        description: string
+    }
+    complianceImplementationCard2: {
+        title: string
+        description: string
+    }
+    complianceImplementationCard3: {
+        title: string
+        description: string
+    }
+    complianceImplementationCard4: {
+        title: string
+        description: string
+    }
+    
+}
+
+export default function ComplianceValidationSupport( {
+    complianceImplementationTitle,
+    complianceImplementationSubtitle,
+    complianceImplementationCard1,
+    complianceImplementationCard2,
+    complianceImplementationCard3,
+    complianceImplementationCard4,
+}: ComplianceValidationSupportProps) {
     const ref = useRef(null);
 
     const isInView = useInView(ref, {
@@ -42,9 +72,9 @@ export default function ComplianceValidationSupport() {
             <section className="section" ref={ref}>
                 <div className="container">
                     <div className=" compliance-validation-head-text-wrapper">
-                        <h2 className="text-md ">Implementation, Validation & Ongoing Support</h2>
+                        <h2 className="text-md ">{complianceImplementationTitle}</h2>
 
-                        <p className="h6 text-rg">Ensures compliance is embedded from implementation through validation, ongoing operations, and continuous regulatory change.</p>
+                        <p className="h6 text-rg">{complianceImplementationSubtitle}</p>
                     </div>
 
 
@@ -66,9 +96,9 @@ export default function ComplianceValidationSupport() {
                                 </motion.span>
 
                                 <div className="ongoing-support-text-card">
-                                    <h3 className="h5 text-md">Requirements & Solution Design</h3>
+                                    <h3 className="h5 text-md">{complianceImplementationCard1.title}</h3>
 
-                                    <p className="h6 text-rg text-grey">Structured requirement assessment and solution design aligned with regulatory expectations and SOPs.</p>
+                                    <p className="h6 text-rg text-grey">{complianceImplementationCard1.description}</p>
                                 </div>
 
                             </div>
@@ -85,9 +115,9 @@ export default function ComplianceValidationSupport() {
 
 
                                 <div className="ongoing-support-text-card">
-                                    <h3 className="h5 text-md">SOP-Aligned Configuration</h3>
+                                    <h3 className="h5 text-md">{complianceImplementationCard2.title}</h3>
 
-                                    <p className="h6 text-rg text-grey">System configuration mapped directly to approved SOPs, ensuring operational fit without compromising compliance.</p>
+                                    <p className="h6 text-rg text-grey">{complianceImplementationCard2.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -104,9 +134,9 @@ export default function ComplianceValidationSupport() {
                                 </motion.span>
 
                                 <div className="ongoing-support-text-card">
-                                    <h3 className="h5 text-md">Validated Data Migration</h3>
+                                    <h3 className="h5 text-md">{complianceImplementationCard3.title}</h3>
 
-                                    <p className="h6 text-rg text-grey">Secure data migration with reconciliation, validation, and documented evidence to ensure data integrity and continuity.</p>
+                                    <p className="h6 text-rg text-grey">{complianceImplementationCard3.description}</p>
                                 </div>
                             </div>
 
@@ -121,9 +151,9 @@ export default function ComplianceValidationSupport() {
                                 </motion.span>
 
                                 <div className="ongoing-support-text-card">
-                                    <h3 className="h5 text-md">Training & User Onboarding</h3>
+                                    <h3 className="h5 text-md">{complianceImplementationCard4.title}</h3>
 
-                                    <p className="h6 text-rg text-grey">Role-based training and onboarding to support compliant system usage and inspection readiness.</p>
+                                    <p className="h6 text-rg text-grey">{complianceImplementationCard4.description}</p>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,32 @@ import { motion, useInView, Variants, useMotionValue, useTransform, animate } fr
 import { useRef, useEffect } from "react";
 
 
-export default function ComplianceFlexibleOperations() {
+type ComplianceFlexibleOperationsProps = {
+    complianceFlexibleOperationTitle: string
+    complianceFlexibleOperationSubtitle: string
+    statsNumericDescription1: string
+    statsNumericDescription2: string
+
+    complianceConfigWorkflowCard: {
+        title: string
+        description: string
+    }
+
+    complianceSlaManagementCard: {
+        title: string
+        description: string
+    }
+
+    complianceCaseLifecycleCard: {
+        title: string
+        description: string
+    }
+}
+
+export default function ComplianceFlexibleOperations({ 
+    complianceFlexibleOperationTitle, 
+    complianceFlexibleOperationSubtitle, 
+    complianceConfigWorkflowCard, complianceSlaManagementCard, complianceCaseLifecycleCard, statsNumericDescription1, statsNumericDescription2 }: ComplianceFlexibleOperationsProps) {
     const ref = useRef(null);
 
     const isInView = useInView(ref, {
@@ -59,21 +84,21 @@ export default function ComplianceFlexibleOperations() {
                     <div className="compliance-operational-wrapper">
                         <div className="compliance-flexible-operations-left">
                             <div className=" compliance-operations-head-text-wrapper">
-                                <h2 className="text-md">Flexible Operations with Built In Compliance Control</h2>
-                                <p className="h6 text-rg">Enables operational teams to adapt workflows, timelines, and templates while maintaining full regulatory control</p>
+                                <h2 className="text-md">{complianceFlexibleOperationTitle}</h2>
+                                <p className="h6 text-rg">{complianceFlexibleOperationSubtitle}</p>
                             </div>
 
                             <div className="compliance-operations-stats-wrapper">
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-1">
                                     <motion.h2 className="h3 text-md"> <motion.span >{rounded60}</motion.span>%</motion.h2>
-                                    <p className="text-rg text-18">Faster Workflow Adaptation</p>
+                                    <p className="text-rg text-18">{statsNumericDescription1}</p>
                                 </div>
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-2">
 
                                 </div>
                                 <div className="compliance-operations-stat-card compliance-operations-stat-card-3">
                                     <motion.h2 className="h3 text-md"><motion.span>{rounded40}</motion.span>%</motion.h2>
-                                    <p className="text-rg text-18">Reduction in SLA Breaches</p>
+                                    <p className="text-rg text-18">{statsNumericDescription2}</p>
                                 </div>
                             </div>
                         </div>
@@ -94,9 +119,9 @@ export default function ComplianceFlexibleOperations() {
                                 </motion.span>
 
                                 <div className="operational-card-right">
-                                    <h4 className="h5 text-md">Configurable Workflows</h4>
+                                    <h4 className="h5 text-md">{complianceConfigWorkflowCard.title}</h4>
 
-                                    <p className="h6 text-rg text-grey">Design and manage workflows by product, study, region, and case type to support diverse operational needs without code changes.</p>
+                                    <p className="h6 text-rg text-grey">{complianceConfigWorkflowCard.description}</p>
                                 </div>
                             </div>
 
@@ -110,9 +135,9 @@ export default function ComplianceFlexibleOperations() {
                                 </motion.span>
 
                                 <div className="operational-card-right">
-                                    <h4 className="h5 text-md">SLA Management & Escalation</h4>
+                                    <h4 className="h5 text-md">{complianceSlaManagementCard.title}</h4>
 
-                                    <p className="h6 text-rg text-grey">Define, monitor, and enforce regulatory and operational SLAs, with automated alerts and escalations to ensure timely compliance.</p>
+                                    <p className="h6 text-rg text-grey">{complianceSlaManagementCard.description}</p>
                                 </div>
                             </div>
 
@@ -126,9 +151,9 @@ export default function ComplianceFlexibleOperations() {
                                     <Image src="/images/compliancepage/case-lifecycle-config.svg" alt="Operational Card 3" width={32} height={32}></Image>
                                 </motion.span>
                                 <div className="operational-card-right">
-                                    <h4 className="h5 text-md">Case Lifecycle Configuration</h4>
+                                    <h4 className="h5 text-md">{complianceCaseLifecycleCard.title}</h4>
 
-                                    <p className="h6 text-rg text-grey">Configure case statuses, transitions, and checkpoints to align with organizational processes and regulatory expectations.</p>
+                                    <p className="h6 text-rg text-grey">{complianceCaseLifecycleCard.description}</p>
                                 </div>
                             </div>
                         </motion.div>

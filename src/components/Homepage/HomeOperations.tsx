@@ -2,11 +2,22 @@
 import { useState, useEffect } from "react";
 
 type HomeOperationProps = {
-                homeSafetyOperationTitle : string;
-            homeSafetyOperationSubtitle : string;
+    homeSafetyOperationTitle: string;
+    homeSafetyOperationSubtitle: string;
+
+    safetyOperationWrapper: {
+        safetyOperation1Title: string;
+        safetyOperation1Description: string;
+        safetyOperation2Title: string;
+        safetyOperation2Description: string;
+        safetyOperation3Title: string;
+        safetyOperation3Description: string;
+        safetyOperation4Title: string;
+        safetyOperation4Description: string;
+    }
 }
 
-export default function HomeOperations( { homeSafetyOperationTitle, homeSafetyOperationSubtitle } : HomeOperationProps ) {
+export default function HomeOperations({ homeSafetyOperationTitle, homeSafetyOperationSubtitle, safetyOperationWrapper }: HomeOperationProps) {
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -20,12 +31,12 @@ export default function HomeOperations( { homeSafetyOperationTitle, homeSafetyOp
     }, []);
 
     const opDesc = [
-        { text: 'Collect and consolidate safety data from multiple sources, including ICSRs, medical literature, and external systems.' },
-        { text: 'Streamline Individual Case Safety Report handling from data entry and validation to medical review.' },
-        { text: 'Generate aggregate reports, manage regulatory submissions, and maintain complete quality controls.' },
-        { text: 'Identify, assess, and track safety signals through their full lifecycle with automated insights monitoring.' },
+        { text: safetyOperationWrapper.safetyOperation1Description },
+        { text: safetyOperationWrapper.safetyOperation2Description },
+        { text: safetyOperationWrapper.safetyOperation3Description },
+        { text: safetyOperationWrapper.safetyOperation4Description },
     ]
-                                                                                                                                                                                   
+
     const opNumber = [
         {
             num: 1,
@@ -62,8 +73,8 @@ export default function HomeOperations( { homeSafetyOperationTitle, homeSafetyOp
                         <div className="op-col-two">
                             <div className="op-items-inner relative centered-block">
                                 <div className="op-dashed-circle rounded-full relative centered-block">
-                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10"/></svg>
-                                    
+                                    <svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="150" r="149.5" stroke="white" strokeDasharray="10 10" /></svg>
+
                                     <div className="op-items-desc centered-block absolute text-center">
                                         {opDesc.map((text, index) => (
                                             <p key={index} className={`op-text text-18 text-white ${activeIndex === index ? 'active' : ''}`}>{text.text}</p>
@@ -77,13 +88,13 @@ export default function HomeOperations( { homeSafetyOperationTitle, homeSafetyOp
                                         </div>
                                     ))}
                                 </div>
-                                <h3 className={`op-item-title one left-center absolute h5 ${activeIndex === 0 ? 'active' : ''}`}>Unified Data Intake</h3>
+                                <h3 className={`op-item-title one left-center absolute h5 ${activeIndex === 0 ? 'active' : ''}`}>{safetyOperationWrapper.safetyOperation1Title}</h3>
 
-                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}> Case Managment </h3>
+                                <h3 className={`op-item-title two top-center absolute h5 ${activeIndex === 1 ? 'active' : ''}`}> {safetyOperationWrapper.safetyOperation2Title} </h3>
 
-                                <h3 className={`op-item-title three left-center absolute h5 ${activeIndex === 2 ? 'active' : ''}`}> Reporting & Compliance </h3>
+                                <h3 className={`op-item-title three left-center absolute h5 ${activeIndex === 2 ? 'active' : ''}`}> {safetyOperationWrapper.safetyOperation3Title} </h3>
 
-                                <h3 className={`op-item-title four top-center absolute h5 ${activeIndex === 3 ? 'active' : ''}`}> Signal Detection </h3>
+                                <h3 className={`op-item-title four top-center absolute h5 ${activeIndex === 3 ? 'active' : ''}`}> {safetyOperationWrapper.safetyOperation4Title} </h3>
                             </div>
                         </div>
                     </div>

@@ -6,9 +6,13 @@ import Link from "next/link";
 type HomeHeroProps = {
     homeHeroTitle: string;
     homeHeroSubtitle: string;
+    homeHeroLink: {
+        title: string;
+        url: string;
+    }
 }
 
-export default function HomeHero( { homeHeroTitle, homeHeroSubtitle }: HomeHeroProps ) {
+export default function HomeHero( { homeHeroTitle, homeHeroSubtitle, homeHeroLink }: HomeHeroProps ) {
 
 
     return (
@@ -22,7 +26,7 @@ export default function HomeHero( { homeHeroTitle, homeHeroSubtitle }: HomeHeroP
                             {/* <p className="h6 hero-desc">Track patient cases, analyze clinical details, and detect safety signals all from one unified, trusted platform.</p> */}
                             <p className="h6 hero-desc">{homeHeroSubtitle}</p>
                             <div className="book-demo-main lg">
-                                <Link href='/ComingSoon' title="Book a demo">
+                                <Link href={homeHeroLink.url} title={homeHeroLink.title}>
                                     <div className="book-demo-inner flex">
                                         <span className="flex">
                                             <span className="book-btn-icon bg-purple centered-block"><svg width="21" height="19" className="b-arrw" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">

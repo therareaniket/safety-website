@@ -13,6 +13,20 @@ type SignalCard = {
 type AboutSignalManagementProps = {
   aboutSignalMangementTitle: string;
   aboutSignalManagementSubtitle: string;
+
+  aboutSignalManagementCards: {
+    card1Title: string;
+    card1Description: string;
+
+    card2Title: string;
+    card2Description: string;
+
+    card3Title: string;
+    card3Description: string;
+
+    card4Title: string;
+    card4Description: string;
+  }
 };
 
 
@@ -26,30 +40,30 @@ type DraggableCardProps = {
   onThrowComplete: (index: number) => void;
 };
 
-export default function AboutSignalManagement( { aboutSignalMangementTitle, aboutSignalManagementSubtitle }: AboutSignalManagementProps ) {
+export default function AboutSignalManagement({ aboutSignalMangementTitle, aboutSignalManagementSubtitle, aboutSignalManagementCards }: AboutSignalManagementProps) {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [throwSignal, setThrowSignal] = useState(0);
   const [direction, setDirection] = useState<'left' | 'right' | null>(null);
 
   const [visibleCards, setVisibleCards] = useState<SignalCard[]>([
     {
-      title: 'Signal Detection and Prioritization',
-      desc: 'Continuously identify potential safety signals across cases, reports, and data trends, and prioritize them based on clinical relevance, impact, and regulatory risk.',
+      title: aboutSignalManagementCards.card1Title,
+      desc: aboutSignalManagementCards.card1Description,
       img: '/images/aboutpage/signal-detection-card.webp',
     },
     {
-      title: 'Signal Lifecycle Documentation',
-      desc: 'Maintain structured documentation for every stage of the signal lifecycle from detection and evaluation to decision and closure ensuring audit readiness.',
+      title: aboutSignalManagementCards.card2Title,
+      desc: aboutSignalManagementCards.card2Description,
       img: '/images/aboutpage/signal-lifecycle-card.webp',
     },
     {
-      title: 'Linkage to Cases and Reports',
-      desc: 'Establish direct traceability between signals, individual cases, and aggregate reports, enabling consistent evaluations and evidence-based decision making.',
+      title: aboutSignalManagementCards.card3Title,
+      desc: aboutSignalManagementCards.card3Description,
       img: '/images/aboutpage/linkage-to-cases-card.webp',
     },
     {
-      title: 'SLA and Compliance Monitoring',
-      desc: 'Track timelines, workload, and compliance metrics against defined SLAs, with early visibility into risks, delays, and regulatory commitments.',
+      title: aboutSignalManagementCards.card4Title,
+      desc: aboutSignalManagementCards.card4Description,
       img: '/images/aboutpage/sla-compliance-card.webp',
     },
   ]);
@@ -132,7 +146,7 @@ export default function AboutSignalManagement( { aboutSignalMangementTitle, abou
             >
               <svg className='arrow-svg' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="30" height="30" rx="15" fill="#C7B0D8" />
-                <path className='signal-arrows'  d="M8.01073 14.0001C7.45848 13.9941 7.00598 14.437 7.00006 14.9893C6.99413 15.5415 7.43702 15.994 7.98927 15.9999L8 15L8.01073 14.0001ZM23.6986 15.8756C24.0933 15.4893 24.1001 14.8562 23.7138 14.4615L17.4185 8.02959C17.0322 7.63489 16.399 7.6281 16.0043 8.01441C15.6097 8.40072 15.6029 9.03385 15.9892 9.42854L21.585 15.1458L15.8678 20.7416C15.4731 21.1279 15.4663 21.761 15.8526 22.1557C16.2389 22.5504 16.872 22.5572 17.2667 22.1709L23.6986 15.8756ZM8 15L7.98927 15.9999L22.9884 16.1609L22.9991 15.1609L23.0099 14.161L8.01073 14.0001L8 15Z" fill="white" />
+                <path className='signal-arrows' d="M8.01073 14.0001C7.45848 13.9941 7.00598 14.437 7.00006 14.9893C6.99413 15.5415 7.43702 15.994 7.98927 15.9999L8 15L8.01073 14.0001ZM23.6986 15.8756C24.0933 15.4893 24.1001 14.8562 23.7138 14.4615L17.4185 8.02959C17.0322 7.63489 16.399 7.6281 16.0043 8.01441C15.6097 8.40072 15.6029 9.03385 15.9892 9.42854L21.585 15.1458L15.8678 20.7416C15.4731 21.1279 15.4663 21.761 15.8526 22.1557C16.2389 22.5504 16.872 22.5572 17.2667 22.1709L23.6986 15.8756ZM8 15L7.98927 15.9999L22.9884 16.1609L22.9991 15.1609L23.0099 14.161L8.01073 14.0001L8 15Z" fill="white" />
               </svg>
 
             </div>
@@ -157,21 +171,21 @@ const ClickableCard = ({
 
   const isActive = index === activeIndex;
 
-useEffect(() => {
-  if (!isActive || !direction) return;
+  useEffect(() => {
+    if (!isActive || !direction) return;
 
-  const timer = setTimeout(() => {
-    setIsThrowing(true);
+    const timer = setTimeout(() => {
+      setIsThrowing(true);
 
-    setTimeout(() => {
-      onThrowComplete(index);
-      setIsThrowing(false);
-    }, 350);
+      setTimeout(() => {
+        onThrowComplete(index);
+        setIsThrowing(false);
+      }, 350);
 
-  }, 0);
+    }, 0);
 
-  return () => clearTimeout(timer);
-}, [throwSignal]);
+    return () => clearTimeout(timer);
+  }, [throwSignal]);
 
   const throwX = direction === 'right' ? 700 : -700;
   const throwRotate = direction === 'right' ? 25 : -25;

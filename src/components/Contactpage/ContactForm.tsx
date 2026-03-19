@@ -4,7 +4,20 @@ import Image from "next/image";
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 
-export default function ContactForm() {
+type ContactFormProps = {
+    contactFormTitle: string;
+    contactFormSubtitle: string;
+    contactFormDetailWrapper: {
+        phoneTitle: string;
+        phoneNumber: string;
+        addressTitle: string;
+        address: string;
+        emailTitle: string;
+        email: string;
+    };
+};
+
+export default function ContactForm( { contactFormTitle, contactFormSubtitle, contactFormDetailWrapper }: ContactFormProps ) {
         const ref = useRef(null);
 
     const isInView = useInView(ref, {
@@ -45,8 +58,8 @@ export default function ContactForm() {
                     animate={isInView ? "visible" : "hidden"}>
                         <div className="contact-form-text-left">
                             <div className="contactform-text-wrapper">
-                                <h2 className="text-md text-white">Your Queries Matter</h2>
-                                <p className="h6 text-rg text-white">Submit your request and our experts will connect with you shortly to provide solutions.</p>
+                                <h2 className="text-md text-white">{contactFormTitle}</h2>
+                                <p className="h6 text-rg text-white">{contactFormSubtitle}</p>
                             </div>
 
                             <div className="contact-form-address-card-wrapper" >
@@ -54,8 +67,8 @@ export default function ContactForm() {
                                     <motion.span className="icon-contact-call" variants={iconVariants}></motion.span>
 
                                     <div>
-                                        <p className="h6 text-md text-white">Phone Number</p>
-                                        <p className="text-18 text-rg text-grey">+1 512 843 2002</p>
+                                        <p className="h6 text-md text-white">{contactFormDetailWrapper.phoneTitle}</p>
+                                        <p className="text-18 text-rg text-grey">{contactFormDetailWrapper.phoneNumber}</p>
                                     </div>
                                 </div>
 
@@ -63,8 +76,8 @@ export default function ContactForm() {
                                     <motion.span className="icon-contact-location" variants={iconVariants}></motion.span>
 
                                     <div>
-                                        <p className="h6 text-md text-white">Location</p>
-                                        <p className="text-18 text-rg text-grey">240, Newark, DE 19702, USA</p>
+                                        <p className="h6 text-md text-white">{contactFormDetailWrapper.addressTitle}</p>
+                                        <p className="text-18 text-rg text-grey">{contactFormDetailWrapper.address}</p>
                                     </div>
                                 </div>
 
@@ -72,8 +85,8 @@ export default function ContactForm() {
                                     <motion.span className="icon-contact-mail" variants={iconVariants}></motion.span>
 
                                     <div>
-                                        <p className="h6 text-md text-white">Email</p>
-                                        <p className="text-18 text-rg text-grey">enquiry@dhatusafety.com</p>
+                                        <p className="h6 text-md text-white">{contactFormDetailWrapper.emailTitle}</p>
+                                        <p className="text-18 text-rg text-grey">{contactFormDetailWrapper.email}</p>
                                     </div>
                                 </div>
                             </div>

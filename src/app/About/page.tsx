@@ -103,6 +103,19 @@ type AboutpageData = {
 
       aboutSignalMangementTitle: string;
       aboutSignalManagementSubtitle: string;
+      aboutSignalManagementCards: {
+        card1Title: string;
+        card1Description: string;
+
+        card2Title: string;
+        card2Description: string;
+
+        card3Title: string;
+        card3Description: string;
+
+        card4Title: string;
+        card4Description: string;
+      }
 
       aboutReportingComplianceTitle: string;
       aboutReportingComplianceSubtitle: string;
@@ -226,6 +239,20 @@ export default async function About() {
                   aboutSignalMangementTitle
                   aboutSignalManagementSubtitle
 
+                  aboutSignalManagementCards {
+                      card1Title
+                      card1Description
+
+                      card2Title
+                      card2Description
+
+                      card3Title
+                      card3Description
+
+                      card4Title
+                      card4Description
+                  }
+
                   aboutReportingComplianceTitle
                   aboutReportingComplianceSubtitle
 
@@ -282,6 +309,7 @@ export default async function About() {
       <AboutSignalManagement 
         aboutSignalMangementTitle={AboutFetch.aboutSignalMangementTitle}
         aboutSignalManagementSubtitle={AboutFetch.aboutSignalManagementSubtitle}
+        aboutSignalManagementCards={AboutFetch.aboutSignalManagementCards}
         />
 
       <AboutReportingSubmissionCompliance 
