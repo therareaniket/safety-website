@@ -532,9 +532,7 @@
 .nav-link:hover::after { width: 100%; }
 .active-link { color: black; }
 .nav-link.active-link { color: black; }
-/* .nav-link.active-link::after { width: 100%; } */
-.nav-link.active-link { color: #4b0081; }
-
+.nav-link.active-link { color: #4b0081; font-weight: bold; }
 
 /* .footer-links a {
   position: relative;
@@ -542,12 +540,7 @@
 } */
 
 .footer-links a:hover { color: #4b0081; }
-
-
-.footer-links a.active-link {
-  color: black;
-}
-
+.footer-links a.active-link { color: black; }
 
 .footer-social-icons span:hover{ color: #4b0081 }
 .foot-margin{ margin-top: 0 !important;  }

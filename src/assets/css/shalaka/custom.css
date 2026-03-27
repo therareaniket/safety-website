@@ -1062,7 +1062,7 @@ background: var(--grey);
     color: #CDD8FF;
 }
 .ps-item{
-    width: calc(33.33% - 20px);
+    width: calc(33.33% - 14px);
     gap:10px;
 }
 .pricing-services-inner{
