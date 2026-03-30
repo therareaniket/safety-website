@@ -563,10 +563,10 @@
 
 .signal-management-arrows{ margin-top: 100px; display: flex; align-items: center; justify-content: end; gap: 20px; }
 
-.signal-management-arrow-left .arrow-svg rect { transition: fill 0.2s ease; fill: #C7B0D8; }
+.signal-management-arrow-left .arrow-svg rect { cursor: pointer; transition: fill 0.2s ease; fill: #C7B0D8; }
 .signal-management-arrow-left:hover .arrow-svg rect { fill: #e3cef1; }
 
-.signal-management-arrow-right .arrow-svg rect { transition: fill 0.2s ease; fill: #C7B0D8; }
+.signal-management-arrow-right .arrow-svg rect { cursor: pointer; transition: fill 0.2s ease; fill: #C7B0D8; }
 .signal-management-arrow-right:hover .arrow-svg rect { fill: #e3cef1; }
 
 .site-all-svg{ width: 50px !important; height: 50px !important;  }
@@ -736,3 +736,4 @@ transform:translate(-240px,130px) scale(.52);
 }
 
 }
+

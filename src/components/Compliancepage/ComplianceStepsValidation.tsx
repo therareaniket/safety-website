@@ -35,7 +35,7 @@ type ComplianceStepsValidationProps = {
     }
 }
 
-export default function ComplianceStepsValidation( { complianceValidationTitle, complianceValidationSubtitle, complianceValidationCard1, complianceValidationCard2, complianceValidationCard3, complianceValidationCard4, complianceValidationCard5, complianceValidationCard6 } : ComplianceStepsValidationProps) {
+export default function ComplianceStepsValidation({ complianceValidationTitle, complianceValidationSubtitle, complianceValidationCard1, complianceValidationCard2, complianceValidationCard3, complianceValidationCard4, complianceValidationCard5, complianceValidationCard6 }: ComplianceStepsValidationProps) {
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const [activeStep, setActiveStep] = useState<number>(0);
     const [isAutoScrolling, setIsAutoScrolling] = useState(false);
@@ -77,130 +77,130 @@ export default function ComplianceStepsValidation( { complianceValidationTitle, 
 
     }, [isAutoScrolling]);
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const section = document.querySelector('.compliance-steps-validation-section');
-        const wrapper = wrapperRef.current;
+    //     const section = document.querySelector('.compliance-steps-validation-section');
+    //     const wrapper = wrapperRef.current;
 
-        if (!section || !wrapper) return;
+    //     if (!section || !wrapper) return;
 
-        const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
+    //     const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
 
-        let interval: NodeJS.Timeout;
+    //     let interval: NodeJS.Timeout;
 
-        const observer = new IntersectionObserver(([entry]) => {
+    //     const observer = new IntersectionObserver(([entry]) => {
 
-            if (!entry.isIntersecting) return;
+    //         if (!entry.isIntersecting) return;
 
-            setIsAutoScrolling(true);
+    //         setIsAutoScrolling(true);
 
-            let step = 0;
+    //         let step = 0;
 
-            setActiveStep(0);
+    //         setActiveStep(0);
 
-            wrapper.scrollTo({
-                left: cards[0].offsetLeft,
-                behavior: "smooth"
-            });
+    //         wrapper.scrollTo({
+    //             left: cards[0].offsetLeft,
+    //             behavior: "smooth"
+    //         });
 
-            interval = setInterval(() => {
+    //         interval = setInterval(() => {
 
-                step++;
+    //             step++;
 
-                if (step >= cards.length) {
-                    clearInterval(interval);
-                    setIsAutoScrolling(false);
-                    return;
-                }
+    //             if (step >= cards.length) {
+    //                 clearInterval(interval);
+    //                 setIsAutoScrolling(false);
+    //                 return;
+    //             }
 
-                wrapper.scrollTo({
-                    left: cards[step].offsetLeft,
-                    behavior: "smooth"
-                });
+    //             wrapper.scrollTo({
+    //                 left: cards[step].offsetLeft,
+    //                 behavior: "smooth"
+    //             });
 
-                setActiveStep(step);
+    //             setActiveStep(step);
 
-            }, 3500);
+    //         }, 3500);
 
-        }, { threshold: 0.5 });
+    //     }, { threshold: 0.5 });
 
-        observer.observe(section);
+    //     observer.observe(section);
 
-        return () => {
-            observer.disconnect();
-            clearInterval(interval);
-        };
+    //     return () => {
+    //         observer.disconnect();
+    //         clearInterval(interval);
+    //     };
 
-    }, []);
+    // }, []);
 
-    useEffect(() => {
-        const wrapper = wrapperRef.current;
-        if (!wrapper) return;
+    // useEffect(() => {
+    //     const wrapper = wrapperRef.current;
+    //     if (!wrapper) return;
 
-        let isDown = false;
-        let startX = 0;
-        let scrollLeft = 0;
+    //     let isDown = false;
+    //     let startX = 0;
+    //     let scrollLeft = 0;
 
-        // mouse down
-        const handleMouseDown = (e: MouseEvent) => {
-            isDown = true;
-            wrapper.classList.add("dragging");
-            startX = e.pageX - wrapper.offsetLeft;
-            scrollLeft = wrapper.scrollLeft;
-        };
+    //     // mouse down
+    //     const handleMouseDown = (e: MouseEvent) => {
+    //         isDown = true;
+    //         wrapper.classList.add("dragging");
+    //         startX = e.pageX - wrapper.offsetLeft;
+    //         scrollLeft = wrapper.scrollLeft;
+    //     };
 
-        // mouse leave
-        const handleMouseLeave = () => {
-            isDown = false;
-            wrapper.classList.remove("dragging");
-        };
+    //     // mouse leave
+    //     const handleMouseLeave = () => {
+    //         isDown = false;
+    //         wrapper.classList.remove("dragging");
+    //     };
 
-        // mouse up
-        const handleMouseUp = () => {
-            isDown = false;
-            wrapper.classList.remove("dragging");
-        };
+    //     // mouse up
+    //     const handleMouseUp = () => {
+    //         isDown = false;
+    //         wrapper.classList.remove("dragging");
+    //     };
 
-        // mouse move
-        const handleMouseMove = (e: MouseEvent) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - wrapper.offsetLeft;
-            const walk = (x - startX) * 1.5; // speed
-            wrapper.scrollLeft = scrollLeft - walk;
-        };
+    //     // mouse move
+    //     const handleMouseMove = (e: MouseEvent) => {
+    //         if (!isDown) return;
+    //         e.preventDefault();
+    //         const x = e.pageX - wrapper.offsetLeft;
+    //         const walk = (x - startX) * 1.5; // speed
+    //         wrapper.scrollLeft = scrollLeft - walk;
+    //     };
 
-        wrapper.addEventListener("mousedown", handleMouseDown);
-        wrapper.addEventListener("mouseleave", handleMouseLeave);
-        wrapper.addEventListener("mouseup", handleMouseUp);
-        wrapper.addEventListener("mousemove", handleMouseMove);
+    //     wrapper.addEventListener("mousedown", handleMouseDown);
+    //     wrapper.addEventListener("mouseleave", handleMouseLeave);
+    //     wrapper.addEventListener("mouseup", handleMouseUp);
+    //     wrapper.addEventListener("mousemove", handleMouseMove);
 
-        return () => {
-            wrapper.removeEventListener("mousedown", handleMouseDown);
-            wrapper.removeEventListener("mouseleave", handleMouseLeave);
-            wrapper.removeEventListener("mouseup", handleMouseUp);
-            wrapper.removeEventListener("mousemove", handleMouseMove);
-        };
-    }, []);
+    //     return () => {
+    //         wrapper.removeEventListener("mousedown", handleMouseDown);
+    //         wrapper.removeEventListener("mouseleave", handleMouseLeave);
+    //         wrapper.removeEventListener("mouseup", handleMouseUp);
+    //         wrapper.removeEventListener("mousemove", handleMouseMove);
+    //     };
+    // }, []);
 
-    useEffect(() => {
-        const wrapper = wrapperRef.current;
-        if (!wrapper) return;
+    // useEffect(() => {
+    //     const wrapper = wrapperRef.current;
+    //     if (!wrapper) return;
 
-        const handleWheel = (e: WheelEvent) => {
-            // Only convert vertical scroll to horizontal
-            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-                e.preventDefault();
-                wrapper.scrollLeft += e.deltaY;
-            }
-        };
+    //     const handleWheel = (e: WheelEvent) => {
+    //         // Only convert vertical scroll to horizontal
+    //         if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+    //             e.preventDefault();
+    //             wrapper.scrollLeft += e.deltaY;
+    //         }
+    //     };
 
-        wrapper.addEventListener("wheel", handleWheel, { passive: false });
+    //     wrapper.addEventListener("wheel", handleWheel, { passive: false });
 
-        return () => {
-            wrapper.removeEventListener("wheel", handleWheel);
-        };
-    }, []);
+    //     return () => {
+    //         wrapper.removeEventListener("wheel", handleWheel);
+    //     };
+    // }, []);
 
     const swiperConfig: SwiperProps = {
         modules: [Pagination, Autoplay],
@@ -218,6 +218,37 @@ export default function ComplianceStepsValidation( { complianceValidationTitle, 
         },
     };
 
+    const triggerArrowThrow = (direction: 'left' | 'right') => {
+        const wrapper = wrapperRef.current;
+        if (!wrapper) return;
+
+        const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
+
+        let newIndex = activeStep;
+
+        if (direction === 'right') {
+            newIndex = activeStep + 1;
+        } else {
+            newIndex = activeStep - 1;
+        }
+        if (newIndex < 0) newIndex = cards.length - 1;
+        if (newIndex >= cards.length) newIndex = 0;
+
+        const targetCard = cards[newIndex];
+
+        const wrapperWidth = wrapper.offsetWidth;
+        const cardWidth = targetCard.offsetWidth;
+
+        const scrollPosition =
+            targetCard.offsetLeft - (wrapperWidth / 2 - cardWidth / 2);
+
+        wrapper.scrollTo({
+            left: scrollPosition,
+            behavior: 'smooth'
+        });
+
+        setActiveStep(newIndex);
+    };
     return (
         <>
             <section className="section compliance-steps-validation-section">
@@ -279,6 +310,29 @@ export default function ComplianceStepsValidation( { complianceValidationTitle, 
                             </div>
                         </div>
 
+
+                        <div className="signal-management-arrows">
+                            <div
+                                className="signal-management-arrow-left"
+                                onClick={() => triggerArrowThrow('left')}
+                            >
+                                <svg className='arrow-svg' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="30" height="30" rx="15" transform="matrix(-1 0 0 1 30 0)" fill="#C7B0D8" />
+                                    <path d="M21.9893 14.0001C22.5415 13.9941 22.994 14.437 22.9999 14.9893C23.0059 15.5415 22.563 15.994 22.0107 15.9999L22 15L21.9893 14.0001ZM6.30138 15.8756C5.90669 15.4893 5.8999 14.8562 6.28621 14.4615L12.5815 8.02959C12.9678 7.63489 13.601 7.6281 13.9957 8.01441C14.3903 8.40072 14.3971 9.03385 14.0108 9.42854L8.415 15.1458L14.1322 20.7416C14.5269 21.1279 14.5337 21.761 14.1474 22.1557C13.7611 22.5504 13.128 22.5572 12.7333 22.1709L6.30138 15.8756ZM22 15L22.0107 15.9999L7.01159 16.1609L7.00086 15.1609L6.99013 14.161L21.9893 14.0001L22 15Z" fill="white" />
+                                </svg>
+                            </div>
+
+                            <div
+                                className="signal-management-arrow-right"
+                                onClick={() => triggerArrowThrow('right')}
+                            >
+                                <svg className='arrow-svg' width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="30" height="30" rx="15" fill="#C7B0D8" />
+                                    <path className='signal-arrows' d="M8.01073 14.0001C7.45848 13.9941 7.00598 14.437 7.00006 14.9893C6.99413 15.5415 7.43702 15.994 7.98927 15.9999L8 15L8.01073 14.0001ZM23.6986 15.8756C24.0933 15.4893 24.1001 14.8562 23.7138 14.4615L17.4185 8.02959C17.0322 7.63489 16.399 7.6281 16.0043 8.01441C15.6097 8.40072 15.6029 9.03385 15.9892 9.42854L21.585 15.1458L15.8678 20.7416C15.4731 21.1279 15.4663 21.761 15.8526 22.1557C16.2389 22.5504 16.872 22.5572 17.2667 22.1709L23.6986 15.8756ZM8 15L7.98927 15.9999L22.9884 16.1609L22.9991 15.1609L23.0099 14.161L8.01073 14.0001L8 15Z" fill="white" />
+                                </svg>
+
+                            </div>
+                        </div>
 
                     </div>
 

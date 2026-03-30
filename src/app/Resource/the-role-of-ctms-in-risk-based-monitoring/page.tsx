@@ -38,7 +38,7 @@ export default function Blog8() {
                         </div>
 
                         <div className="resource-detail-middle">
-                            <span className="text-16 text-rg">Workflows</span>
+                            <span className="text-16 text-rg">Automation</span>
                             <p className="text-18 text-rg text-grey">5 min read</p>
                         </div>
 

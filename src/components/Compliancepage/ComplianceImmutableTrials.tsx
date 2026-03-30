@@ -46,8 +46,8 @@ export default function ComplianceImmutableTrials( {
                         <div className="compliance-immutable-row compliance-immutable-row-1">
                             <div className="compliance-immutable-card-left">
                                 <div className="compliance-immutable-card compliance-immutable-card-1">
-                                    <h3 className="h5 text-md">{complianceImmutableTitle}</h3>
-                                    <p className="text-18 text-rg">{complianceImmutableSubtitle}</p>
+                                    <h3 className="h5 text-md">{complianceImmutableCard1.title}</h3>
+                                    <p className="text-18 text-rg">{complianceImmutableCard1.description}</p>
                                 </div>
                                 <motion.div
                                     className="compliance-immutable-seperator"
@@ -58,23 +58,23 @@ export default function ComplianceImmutableTrials( {
                                     style={{ transformOrigin: "left" }}
                                 />
                                 <div className="compliance-immutable-card compliance-immutable-card-2">
-                                    <h3 className="h5 text-md">{complianceImmutableCard1.title}</h3>
-                                    <p className="text-18 text-rg">{complianceImmutableCard1.description}</p>
+                                    <h3 className="h5 text-md">{complianceImmutableCard2.title}</h3>
+                                    <p className="text-18 text-rg">{complianceImmutableCard2.description}</p>
                                 </div>
                             </div>
 
                             <div className="compliance-immutable-card-right">
-                                <h2 className="text-md">{complianceImmutableCard2.title}</h2>
+                                <h2 className="text-md">{complianceImmutableTitle}</h2> 
 
-                                <p className="text-rg h6">{complianceImmutableCard2.description}</p>
+                                <p className="text-rg h6">{complianceImmutableSubtitle}</p>
                             </div>
                         </div>
 
                         <div className="compliance-immutable-row compliance-immutable-row-2">
                             <div className="compliance-immutable-card-left">
                                 <div className="compliance-immutable-card compliance-immutable-card-1">
-                                    <h3 className="h5 text-md">{complianceControlledAccessTitle}</h3>
-                                    <p className="text-18 text-rg">{complianceControlledAccessSubtitle}</p>
+                                    <h3 className="h5 text-md">{complianceControlledAccessCard1.title}</h3>
+                                    <p className="text-18 text-rg"> {complianceControlledAccessCard1.subtitle}</p>
                                 </div>
                                 <motion.div
                                     className="compliance-immutable-seperator"
@@ -85,15 +85,15 @@ export default function ComplianceImmutableTrials( {
                                     style={{ transformOrigin: "left" }}
                                 />
                                 <div className="compliance-immutable-card compliance-immutable-card-2">
-                                    <h3 className="h5 text-md">{complianceControlledAccessCard1.title}</h3>
-                                    <p className="text-18 text-rg">{complianceControlledAccessCard1.subtitle}</p>
+                                    <h3 className="h5 text-md">{complianceControlledAccessCard2.title}</h3>
+                                    <p className="text-18 text-rg">{complianceControlledAccessCard2.subtitle}</p>
                                 </div>
                             </div>
 
                             <div className="compliance-immutable-card-right">
-                                <h2 className="text-md">{complianceControlledAccessCard2.title}</h2>
+                                <h2 className="text-md">{complianceControlledAccessTitle}</h2> 
 
-                                <p className="text-rg h6">{complianceControlledAccessCard2.subtitle}</p>
+                                <p className="text-rg h6">{complianceControlledAccessSubtitle}</p>
                             </div>
                         </div>
                     </div>

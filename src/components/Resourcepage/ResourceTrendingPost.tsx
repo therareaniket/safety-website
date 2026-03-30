@@ -60,7 +60,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Arjun Deshpande</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
@@ -90,7 +90,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Arjun Deshpande</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Neha Pandey</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Neha Pandey</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
@@ -188,7 +188,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Sarah Thompson</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
@@ -218,7 +218,7 @@ export default function ResourceTrendingPost() {
                                         </div>
 
                                         <div className="trending-post-name-span">
-                                            <span className='text-rg text-16 text-grey'>Sarah Thompson</span>
+                                            <span className='text-rg text-16 text-grey'>Smit Shah</span>
                                             <span className='text-rg text-16 text-grey'>27 January 2026</span>
                                         </div>
                                     </div>
