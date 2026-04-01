@@ -39,6 +39,7 @@ export default function ComplianceStepsValidation({ complianceValidationTitle, c
     const wrapperRef = useRef<HTMLDivElement | null>(null);
     const [activeStep, setActiveStep] = useState<number>(0);
     const [isAutoScrolling, setIsAutoScrolling] = useState(false);
+    const [isArrowScrolling, setIsArrowScrolling] = useState(false);
 
     useEffect(() => {
         const wrapper = wrapperRef.current;
@@ -77,131 +78,6 @@ export default function ComplianceStepsValidation({ complianceValidationTitle, c
 
     }, [isAutoScrolling]);
 
-    // useEffect(() => {
-
-    //     const section = document.querySelector('.compliance-steps-validation-section');
-    //     const wrapper = wrapperRef.current;
-
-    //     if (!section || !wrapper) return;
-
-    //     const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
-
-    //     let interval: NodeJS.Timeout;
-
-    //     const observer = new IntersectionObserver(([entry]) => {
-
-    //         if (!entry.isIntersecting) return;
-
-    //         setIsAutoScrolling(true);
-
-    //         let step = 0;
-
-    //         setActiveStep(0);
-
-    //         wrapper.scrollTo({
-    //             left: cards[0].offsetLeft,
-    //             behavior: "smooth"
-    //         });
-
-    //         interval = setInterval(() => {
-
-    //             step++;
-
-    //             if (step >= cards.length) {
-    //                 clearInterval(interval);
-    //                 setIsAutoScrolling(false);
-    //                 return;
-    //             }
-
-    //             wrapper.scrollTo({
-    //                 left: cards[step].offsetLeft,
-    //                 behavior: "smooth"
-    //             });
-
-    //             setActiveStep(step);
-
-    //         }, 3500);
-
-    //     }, { threshold: 0.5 });
-
-    //     observer.observe(section);
-
-    //     return () => {
-    //         observer.disconnect();
-    //         clearInterval(interval);
-    //     };
-
-    // }, []);
-
-    // useEffect(() => {
-    //     const wrapper = wrapperRef.current;
-    //     if (!wrapper) return;
-
-    //     let isDown = false;
-    //     let startX = 0;
-    //     let scrollLeft = 0;
-
-    //     // mouse down
-    //     const handleMouseDown = (e: MouseEvent) => {
-    //         isDown = true;
-    //         wrapper.classList.add("dragging");
-    //         startX = e.pageX - wrapper.offsetLeft;
-    //         scrollLeft = wrapper.scrollLeft;
-    //     };
-
-    //     // mouse leave
-    //     const handleMouseLeave = () => {
-    //         isDown = false;
-    //         wrapper.classList.remove("dragging");
-    //     };
-
-    //     // mouse up
-    //     const handleMouseUp = () => {
-    //         isDown = false;
-    //         wrapper.classList.remove("dragging");
-    //     };
-
-    //     // mouse move
-    //     const handleMouseMove = (e: MouseEvent) => {
-    //         if (!isDown) return;
-    //         e.preventDefault();
-    //         const x = e.pageX - wrapper.offsetLeft;
-    //         const walk = (x - startX) * 1.5; // speed
-    //         wrapper.scrollLeft = scrollLeft - walk;
-    //     };
-
-    //     wrapper.addEventListener("mousedown", handleMouseDown);
-    //     wrapper.addEventListener("mouseleave", handleMouseLeave);
-    //     wrapper.addEventListener("mouseup", handleMouseUp);
-    //     wrapper.addEventListener("mousemove", handleMouseMove);
-
-    //     return () => {
-    //         wrapper.removeEventListener("mousedown", handleMouseDown);
-    //         wrapper.removeEventListener("mouseleave", handleMouseLeave);
-    //         wrapper.removeEventListener("mouseup", handleMouseUp);
-    //         wrapper.removeEventListener("mousemove", handleMouseMove);
-    //     };
-    // }, []);
-
-    // useEffect(() => {
-    //     const wrapper = wrapperRef.current;
-    //     if (!wrapper) return;
-
-    //     const handleWheel = (e: WheelEvent) => {
-    //         // Only convert vertical scroll to horizontal
-    //         if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-    //             e.preventDefault();
-    //             wrapper.scrollLeft += e.deltaY;
-    //         }
-    //     };
-
-    //     wrapper.addEventListener("wheel", handleWheel, { passive: false });
-
-    //     return () => {
-    //         wrapper.removeEventListener("wheel", handleWheel);
-    //     };
-    // }, []);
-
     const swiperConfig: SwiperProps = {
         modules: [Pagination, Autoplay],
         spaceBetween: 20,
@@ -218,36 +94,59 @@ export default function ComplianceStepsValidation({ complianceValidationTitle, c
         },
     };
 
+    const getScrollAmount = () => {
+        const width = window.innerWidth;
+
+        const map: Record<number, number> = {
+            1920: 314,
+            1600: 290,
+            1440: 255,
+            1024: 225
+        };
+
+        return map[width] ?? 225; // fallback
+    };
+
     const triggerArrowThrow = (direction: 'left' | 'right') => {
         const wrapper = wrapperRef.current;
-        if (!wrapper) return;
+        if (!wrapper || isArrowScrolling) return;
+
+        setIsArrowScrolling(true);
 
         const cards = wrapper.querySelectorAll<HTMLDivElement>('.compliance-steps-card');
 
         let newIndex = activeStep;
 
-        if (direction === 'right') {
-            newIndex = activeStep + 1;
-        } else {
-            newIndex = activeStep - 1;
-        }
+        if (direction === 'right') newIndex++;
+        else newIndex--;
+
         if (newIndex < 0) newIndex = cards.length - 1;
         if (newIndex >= cards.length) newIndex = 0;
 
-        const targetCard = cards[newIndex];
+        setActiveStep(newIndex);
 
-        const wrapperWidth = wrapper.offsetWidth;
-        const cardWidth = targetCard.offsetWidth;
+        const baseScroll = getScrollAmount();
+
+        const targetCard = cards[newIndex];
+        const styles = window.getComputedStyle(targetCard);
+        const marginRight = parseInt(styles.marginRight) || 0;
+        const marginLeft = parseInt(styles.marginLeft) || 0;
+
+        const scrollAmount = baseScroll + marginLeft + marginRight;
 
         const scrollPosition =
-            targetCard.offsetLeft - (wrapperWidth / 2 - cardWidth / 2);
+            direction === "right"
+                ? wrapper.scrollLeft + scrollAmount
+                : wrapper.scrollLeft - scrollAmount;
 
         wrapper.scrollTo({
             left: scrollPosition,
             behavior: 'smooth'
         });
 
-        setActiveStep(newIndex);
+        setTimeout(() => {
+            setIsArrowScrolling(false);
+        }, 400);
     };
     return (
         <>

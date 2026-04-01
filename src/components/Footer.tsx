@@ -97,13 +97,13 @@ export default function Footer() {
                             <div className="f-col-three">
                                 <h2 className='text-18 text-sb text-grey'>Contact</h2>
                                 <ul className="">
-                                    <li>
+                                    <li className="cnct-link">
                                         <Link href="callto:+1 512 843 2002" title="call" className="further-link-wrapper f-link flex text-16 text-grey ">
                                             <span className="icon-footerCall"></span>
                                             <p className='text-16 text-grey'>+1 512 843 2002</p>
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="cnct-link">
                                         <Link href="mailto:enquiry@dhatusafety.com" title="mail" className="further-link-wrapper f-link flex text-16 text-grey">
                                             <span className="icon-footerMail"></span>
                                             <p className='text-16 text-grey'>enquiry@dhatusafety.com</p>
@@ -115,12 +115,12 @@ export default function Footer() {
                             <div className="f-col-five">
                                 <h2 className='text-18 text-sb text-grey'>More</h2>
                                 <ul className="">
-                                    <li>
+                                    <li className="tc-link">
                                         <Link href="/TermsCondition" title="terms and condition" className="further-link-wrapper f-link flex text-16 text-grey ">
                                             <p className='text-16 text-grey'>Terms of Use</p>
                                         </Link>
                                     </li>
-                                    <li>
+                                    <li className="tc-link">
                                         <Link href="/PrivacyPolicy" title="privacy policy" className="further-link-wrapper f-link flex text-16 text-grey">
                                             <p className='text-16 text-grey'>Privacy Policy</p>
                                         </Link>

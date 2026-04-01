@@ -540,6 +540,9 @@
 } */
 
 .footer-links a:hover { color: #4b0081; }
+.cnct-link a:hover { color: #4b0081 !important; }
+.cnct-link p:hover { color: #4b0081; }
+.tc-link a p:hover { color: #4b0081; }
 .footer-links a.active-link { color: black; }
 
 .footer-social-icons span:hover{ color: #4b0081 }
